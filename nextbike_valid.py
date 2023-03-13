@@ -70,7 +70,7 @@ class NextbikeValidator:
         return [nearest, dist]
 
     def pair(self, next_places):
-        """Makes pair of OSM and Nexbike features by they's distance."""
+        """Makes a pair of OSM and Nextbike features by their distance."""
         # input: list of next_places from city & osm
         dane = []
         for i in next_places:
@@ -98,7 +98,7 @@ class NextbikeValidator:
 
         self.pair_bank = dane
 
-    def html_it(self, nazwa="nextbikeOSM_results.html"):
+    def html_it(self, filename="nextbikeOSM_results.html"):
         """Produces html with processing data."""
         import difflib as SC
         from time import localtime, strftime
@@ -112,12 +112,7 @@ class NextbikeValidator:
         copyright = "Created using NextbikeOSM v.{0} by Javnik".format(__VERSION__)
 
         for i in self.pair_bank:
-            i_dict = {}
-            i_dict["distance"] = i[0]
-            i_dict["nxtb"] = i[1]
-            i_dict["osm"] = i[2]
-            i_dict["type"] = i[3]
-            i_dict["match"] = i[4]
+            i_dict = {"distance": i[0], "nxtb": i[1], "osm": i[2], "type": i[3], "match": i[4]}
 
             nextb = i[1]
             osm = i[2]
@@ -136,7 +131,7 @@ class NextbikeValidator:
             {"items": dane, "timek": timestamp, "copy": copyright}
         )
 
-        with open(nazwa, "w", encoding="utf-8") as f:
+        with open(filename, "w", encoding="utf-8") as f:
             f.write(fill_template)
 
         # NEXT vs osm
@@ -200,23 +195,23 @@ if __name__ == "__main__":
         a.clear_nodes()
         a.fake_all()
         b = NP.NextbikeParser()
-        c = NextbikeValidator(b, a)
+        validator = NextbikeValidator(b, a)
         if args.auto[0].isnumeric():
             d = b.find_city(args.auto[0])
         else:
             d = b.find_network(args.auto[0])
-        c.is_whatever(args.auto[2])
-        c.pair(d)
-        c.html_it(args.auto[2])
+        validator.is_whatever(args.auto[2])
+        validator.pair(d)
+        validator.html_it(args.auto[2])
         if args.feed:
             import feed_gen as FG
 
             a.remove_fakes()
-            f = FG.Feed(args.auto[2].rstrip(".html"), a.nodes, a.ways, d)
-            f.new_db()
-            f.check_db()
-            f.make_feeds()
-            f.create_feed()
+            feed = FG.Feed(args.auto[2].rstrip(".html"), a.nodes, a.ways, d)
+            feed.new_db()
+            feed.check_db()
+            feed.make_feeds()
+            feed.create_feed()
 
     if args.interactive:
         path_osm = input("Write path to osm file:\n")
@@ -228,13 +223,13 @@ if __name__ == "__main__":
         place = input(
             "______________\nWhat kind of network\city should I process?\n>If you want particular city please write it's uid number from nextbike_uids.txt\n>>For whole network write it's name(within ''), also from nextbike_uids.txt\n"
         )
-        c = NextbikeValidator(b, a)
+        validator = NextbikeValidator(b, a)
         if place.isnumeric():
             d = b.find_city(place)
         else:
             d = b.find_network(place)
-        c.pair(d)
+        validator.pair(d)
         html = input("______________\nHTML name?\n")
-        c.is_whatever(html)
-        c.html_it(html)
+        validator.is_whatever(html)
+        validator.html_it(html)
         print("______________\nAll done...thanks!")
