@@ -94,7 +94,6 @@ class NextbikeValidator:
 
         dane = []
         timestamp = "Updated: {0}".format(timek)
-        copyright = "Created using NextbikeOSM v.{0} by Javnik".format(__VERSION__)
 
         for i in self.pair_bank:
             i_dict = {
@@ -119,7 +118,7 @@ class NextbikeValidator:
             dane.append(i_dict)
 
         fill_template = template.render(
-            {"items": dane, "timek": timestamp, "copy": copyright}
+            {"items": dane, "timek": timestamp, "VERSION": __VERSION__}
         )
 
         with open(filename, "w", encoding="utf-8") as f:
