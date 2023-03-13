@@ -1,7 +1,18 @@
+from pyproj import Geod
+
 import osm_parser as OP
 import nextbike_parser as NP
 
 __VERSION__ = "2.0.1"
+
+wgs84Geod = Geod(ellps="WGS84")
+
+
+def measure(point_next, point_osm):
+    return round(
+        wgs84Geod.inv(point_next.lon, point_next.lat, point_osm.lon, point_osm.lat)[2],
+        ndigits=2,
+    )
 
 
 class NextbikeValidator:
@@ -16,32 +27,6 @@ class NextbikeValidator:
         self.pair_bank = []
         self.html = html
         self.envir = Environment(loader=PackageLoader("nextbike_valid", "templates"))
-
-    def measure(self, point_next, point_osm):
-        """Measures distance between 2 points with Haversine formula."""
-        import math as m
-
-        lat_next = float(point_next.lat)
-        lon_next = float(point_next.lon)
-        lat_osm = float(point_osm.lat)
-        lon_osm = float(point_osm.lon)
-
-        R = 6378.41
-        # Haversine formula
-        dist = (
-            2
-            * R
-            * m.asin(
-                m.sqrt(
-                    (m.sin(m.radians(0.5 * (lat_next - lat_osm)))) ** 2
-                    + m.cos(m.radians(lat_osm))
-                    * m.cos(m.radians(lat_next))
-                    * (m.sin(m.radians(0.5 * (lon_next - lon_osm)))) ** 2
-                )
-            )
-        )  # in KM
-        dist_m = round((dist * 1000), 2)  # WORKS!
-        return dist_m
 
     def via_id(self, place):
         """Return osm feature by ref matching"""
@@ -61,7 +46,7 @@ class NextbikeValidator:
         dist = 10000000
         nearest = 0
         for i in self.osm_data.nodes:
-            meas = self.measure(place, i)
+            meas = measure(place, i)
             if meas < dist:
                 dist = meas
                 nearest = i
@@ -76,7 +61,7 @@ class NextbikeValidator:
         for i in next_places:
             id_match = self.via_id(i)
             if id_match is not None:
-                meas = self.measure(i, id_match)
+                meas = measure(i, id_match)
 
                 fway = self.osm_data.find(id_match.iD, "w")
                 if fway is not None:
@@ -112,7 +97,13 @@ class NextbikeValidator:
         copyright = "Created using NextbikeOSM v.{0} by Javnik".format(__VERSION__)
 
         for i in self.pair_bank:
-            i_dict = {"distance": i[0], "nxtb": i[1], "osm": i[2], "type": i[3], "match": i[4]}
+            i_dict = {
+                "distance": i[0],
+                "nxtb": i[1],
+                "osm": i[2],
+                "type": i[3],
+                "match": i[4],
+            }
 
             nextb = i[1]
             osm = i[2]
