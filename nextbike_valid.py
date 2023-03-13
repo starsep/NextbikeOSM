@@ -1,8 +1,13 @@
+import argparse
+import difflib as SC
 from dataclasses import dataclass
-from typing import Optional, List, Tuple
+from time import localtime, strftime
+from typing import List, Optional, Tuple
 
+from jinja2 import Environment, PackageLoader
 from overpy import Element, Way
 
+import feed_gen as FG
 import nextbike_parser as NP
 from distance import GeoPoint, distance
 from overpass_parser import OverpassParser
@@ -25,7 +30,6 @@ class NextbikeValidator:
     """Analyzer class"""
 
     def __init__(self, nextbikeData, osmParser, html=None):
-        from jinja2 import PackageLoader, Environment
 
         self.nextbikeData = nextbikeData
         self.osmParser: OverpassParser = osmParser
@@ -86,8 +90,6 @@ class NextbikeValidator:
 
     def html_it(self, filename="nextbikeOSM_results.html"):
         """Produces html with processing data."""
-        import difflib as SC
-        from time import localtime, strftime
 
         timestamp = strftime("%a, %d %b @ %H:%M:%S", localtime())
 
@@ -120,7 +122,6 @@ class NextbikeValidator:
         # stands      capacity {tags}++
 
     def containsData(self, path):
-        from time import localtime, strftime
 
         timek = strftime("%a, %d %b @ %H:%M:%S", localtime())
 
@@ -152,8 +153,6 @@ def main(update: bool, network: str, osmAreaName: str, htmlPath: str, feed: bool
         validator.pair(d)
         validator.html_it(htmlPath)
         if feed:
-            import feed_gen as FG
-
             feed = FG.Feed(args.auto[2].rstrip(".html"), data.nodes, data.ways, d)
             feed.new_db()
             feed.check_db()
@@ -162,8 +161,6 @@ def main(update: bool, network: str, osmAreaName: str, htmlPath: str, feed: bool
 
 
 if __name__ == "__main__":
-    import argparse
-
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-a",

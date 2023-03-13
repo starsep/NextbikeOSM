@@ -1,11 +1,13 @@
 import sqlite3 as sql
+from time import localtime, strftime
+
+from jinja2 import Environment, PackageLoader
 
 __DB__ = "feeds.db"
 
 
 class Feed:
     def __init__(self, objname, nodes, ways, places):
-        from jinja2 import PackageLoader, Environment
 
         self.objname = objname
         self.nodes = nodes
@@ -114,8 +116,6 @@ class Feed:
         connection.close()
 
     def make_feeds(self):
-        from time import localtime, strftime
-
         # osm_changes, osm_rem, osm_new
         # nxtb_changes, nxtb_rem, nxtb_new
         connection = sql.connect(__DB__)
@@ -173,7 +173,6 @@ class Feed:
         connection.close()
 
     def create_feed(self):
-        from time import localtime, strftime
 
         connection = sql.connect(__DB__)
         c = connection.cursor()

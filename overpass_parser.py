@@ -1,7 +1,8 @@
-from typing import List, Dict
+from typing import Dict, List
 
-from diskcache import Cache
 import overpy
+from diskcache import Cache
+
 from configuration import OVERPASS_URL, cacheDirectory
 
 overpassApi = overpy.Overpass(url=OVERPASS_URL)

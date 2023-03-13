@@ -1,5 +1,9 @@
+import os
+import urllib.request as urllib
+import xml.etree.ElementTree as XML
 from dataclasses import dataclass
 from typing import List
+
 from distance import GeoPoint
 
 
@@ -26,14 +30,7 @@ class Network:
 
 
 class NextbikeParser:
-
-    """Aggregates Nextbike country Classes"""
-
     def __init__(self):
-        import xml.etree.ElementTree as XML
-        import urllib.request as urllib
-        import os
-
         path = "https://nextbike.net/maps/nextbike-official.xml"
         if "nextbike.xml" in os.listdir():
             pass
@@ -161,8 +158,5 @@ class NextbikeParser:
 
     @staticmethod
     def update():
-        """Updates xml manually"""
-        import urllib.request as urllib
-
         path = "https://nextbike.net/maps/nextbike-live.xml"
         urllib.urlretrieve(path, "nextbike.xml")
