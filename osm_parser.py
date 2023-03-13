@@ -1,6 +1,15 @@
 class Node:
-
-    def __init__(self, iD, lat, lon, tags, version=None, changeset=None, user=None, timestamp=None):
+    def __init__(
+        self,
+        iD,
+        lat,
+        lon,
+        tags,
+        version=None,
+        changeset=None,
+        user=None,
+        timestamp=None,
+    ):
         self.iD = iD
         self.lat = lat
         self.lon = lon
@@ -11,15 +20,32 @@ class Node:
         self.timestamp = timestamp
 
     def __str__(self):
-        return str(self.iD) + " @lat: " + str(self.lat) + " @lon: " + str(self.lon) + " $tags " + str(len(self.tags))
+        return (
+            str(self.iD)
+            + " @lat: "
+            + str(self.lat)
+            + " @lon: "
+            + str(self.lon)
+            + " $tags "
+            + str(len(self.tags))
+        )
 
     def type(self):
-        return 'node'
+        return "node"
 
 
 class Way:
-
-    def __init__(self, iD, nodes, tags, version=None, changeset=None, user=None, timestamp=None, fake_node=None):
+    def __init__(
+        self,
+        iD,
+        nodes,
+        tags,
+        version=None,
+        changeset=None,
+        user=None,
+        timestamp=None,
+        fake_node=None,
+    ):
         self.iD = iD
         self.nodes = nodes  # []
         self.tags = tags  # {}
@@ -30,13 +56,19 @@ class Way:
         self.timestamp = timestamp
 
     def __str__(self):
-        return str(self.iD) + " $points " + str(len(self.nodes)) + " $tags " + str(len(self.tags))
+        return (
+            str(self.iD)
+            + " $points "
+            + str(len(self.nodes))
+            + " $tags "
+            + str(len(self.tags))
+        )
 
     def type(self):
-        return 'way'
+        return "way"
 
     def fake_it(self):
-        #nodes = [  (y,x)  ]
+        # nodes = [  (y,x)  ]
         count = 0
         y_count = 0
         x_count = 0
@@ -51,11 +83,12 @@ class Way:
         return y_s, x_s
 
     def fake_instance(self):
-        return Node(self.iD, self.fake_node[0], self.fake_node[1], self.tags, user='fake')
+        return Node(
+            self.iD, self.fake_node[0], self.fake_node[1], self.tags, user="fake"
+        )
 
 
 class osmParser:
-
     def __init__(self, path="export.osm", nodes=None, ways=None):
         self.path = path
         import xml.etree.ElementTree as XML
@@ -79,7 +112,7 @@ class osmParser:
                     user = child.attrib["user"]
                     time = child.attrib["timestamp"]
                 except:
-                    #print("No version data")
+                    # print("No version data")
                     pass
                 tags = {}
 
@@ -88,7 +121,15 @@ class osmParser:
                     if tag.attrib["k"] == "amenity":
                         if tag.attrib["v"] == "bicycle_rental":
                             tags["is_rental"] = "yes"
-                    elif tag.attrib["k"] in ["capacity", "name", "network", "operator", "ref", "website", "source"]:
+                    elif tag.attrib["k"] in [
+                        "capacity",
+                        "name",
+                        "network",
+                        "operator",
+                        "ref",
+                        "website",
+                        "source",
+                    ]:
                         k = tag.attrib["k"]
                         v = tag.attrib["v"]
                         tags[k] = v
@@ -118,14 +159,29 @@ class osmParser:
                         if instance.attrib["k"] == "amenity":
                             if instance.attrib["v"] == "bicycle_rental":
                                 tags["is_rental"] = "yes"
-                        elif instance.attrib["k"] in ["capacity", "name", "network", "operator", "ref", "website", "source"]:
+                        elif instance.attrib["k"] in [
+                            "capacity",
+                            "name",
+                            "network",
+                            "operator",
+                            "ref",
+                            "website",
+                            "source",
+                        ]:
                             k = instance.attrib["k"]
                             v = instance.attrib["v"]
                             tags[k] = v
 
                 try:
-                    w = Way(iD, nodes, tags, version=ver,
-                            changeset=chan, user=user, timestamp=time)
+                    w = Way(
+                        iD,
+                        nodes,
+                        tags,
+                        version=ver,
+                        changeset=chan,
+                        user=user,
+                        timestamp=time,
+                    )
                 except:
                     w = Way(iD, nodes, tags)
 
@@ -135,15 +191,21 @@ class osmParser:
         self.ways = ways_list
 
     def __str__(self):
-        return "Found " + str(len(self.nodes)) + " nodes and " + str(len(self.ways)) + " ways."
+        return (
+            "Found "
+            + str(len(self.nodes))
+            + " nodes and "
+            + str(len(self.ways))
+            + " ways."
+        )
 
-    def find(self, iD, mode='n'):
-        '''Returns data from iD searched'''
-        if mode == 'n':
+    def find(self, iD, mode="n"):
+        """Returns data from iD searched"""
+        if mode == "n":
             for i in self.nodes:
                 if i.iD == iD:
                     return i
-        elif mode == 'w':
+        elif mode == "w":
             for i in self.ways:
                 if i.iD == iD:
                     return i
@@ -160,7 +222,7 @@ class osmParser:
         self.nodes = new_nodes
 
     def fill_ways(self):
-        '''Fills up ways with data from nodes'''
+        """Fills up ways with data from nodes"""
         for way in self.ways:
             new_nodes = []
             for node in way.nodes:
@@ -170,17 +232,17 @@ class osmParser:
             way.nodes = new_nodes
 
     def fake_all(self):
-        '''Run fake_it for all ways in Class'''
+        """Run fake_it for all ways in Class"""
         for way in self.ways:
             way.fake_it()
             fi = way.fake_instance()
             self.nodes.append(fi)
 
     def remove_fakes(self):
-        '''Remove all fake nodes'''
+        """Remove all fake nodes"""
         new_nodes = []
         for i in self.nodes:
-            if i.user == 'fake':
+            if i.user == "fake":
                 pass
             else:
                 new_nodes.append(i)

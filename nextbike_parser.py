@@ -1,5 +1,4 @@
 class Place:
-
     def __init__(self, uid, lat, lon, name, num, stands, bike_numbers=None):
         self.uid = uid
         self.lat = lat
@@ -10,18 +9,40 @@ class Place:
         self.bike_numbers = []
 
     def __str__(self):
-        return "#" + str(self.uid) + ": " + str(self.num) + "," + self.name + " with " + str(self.stands) + " stands. $lat$" + str(self.lat) + " $lon$" + str(self.lon) + " $bike_numbers$" + str(len(self.bike_numbers))
+        return (
+            "#"
+            + str(self.uid)
+            + ": "
+            + str(self.num)
+            + ","
+            + self.name
+            + " with "
+            + str(self.stands)
+            + " stands. $lat$"
+            + str(self.lat)
+            + " $lon$"
+            + str(self.lon)
+            + " $bike_numbers$"
+            + str(len(self.bike_numbers))
+        )
 
 
 class City:
-
     def __init__(self, uid, name, places=None):
         self.uid = uid
         self.name = name
         self.places = []
 
     def __str__(self):
-        return "#" + str(self.uid) + " @" + self.name + " with " + str(len(self.places)) + " places."
+        return (
+            "#"
+            + str(self.uid)
+            + " @"
+            + self.name
+            + " with "
+            + str(len(self.places))
+            + " places."
+        )
 
     def get(self, nr):
         if self.uid == nr:
@@ -32,19 +53,26 @@ class City:
 
 
 class Country:
-
     def __init__(self, name, country, cities=None):
         self.name = name
         self.country = country
         self.cities = []
 
     def __str__(self):
-        return "$" + self.name + " @" + self.country + " with " + str(len(self.cities)) + " cities."
+        return (
+            "$"
+            + self.name
+            + " @"
+            + self.country
+            + " with "
+            + str(len(self.cities))
+            + " cities."
+        )
 
 
 class NextbikeParser:
 
-    '''Aggregates Nextbike country Classes'''
+    """Aggregates Nextbike country Classes"""
 
     def __init__(self, countrys=None):
         import xml.etree.ElementTree as XML
@@ -93,8 +121,7 @@ class NextbikeParser:
                             bike_stands = "None"
                         try:
                             bike_nrs = place.attrib["bike_numbers"]
-                            n = Place(
-                                uid, lat, lon, name, num, bike_stands, bike_nrs)
+                            n = Place(uid, lat, lon, name, num, bike_stands, bike_nrs)
                         except:
                             n = Place(uid, lat, lon, name, num, bike_stands)
 
@@ -117,7 +144,7 @@ class NextbikeParser:
             return i.name
 
     def find_network(self, name):
-        '''Returns data for whole network'''
+        """Returns data for whole network"""
         db = []
         for i in self.countrys:
             if i.name == name:
@@ -127,7 +154,7 @@ class NextbikeParser:
         return db
 
     def find_city(self, name):
-        '''Returns data for city only'''
+        """Returns data for city only"""
         for i in self.countrys:
             for city in i.cities:
                 if city.uid == str(name):
@@ -136,7 +163,7 @@ class NextbikeParser:
 
     def check_uids(self, new_uids):
         old_uids = []
-        with open("uids.set", 'r') as f:
+        with open("uids.set", "r") as f:
             for line in f.readlines():
                 line = line.rstrip()
                 old_uids.append(line)
@@ -155,7 +182,7 @@ class NextbikeParser:
             print("NEW UIDS FOUND! {0}".format(str(new)))
 
     def get_uids(self, cons="n"):
-        '''Makes file with all uids from xml-file. If cons='y' it's print it to console too.'''
+        """Makes file with all uids from xml-file. If cons='y' it's print it to console too."""
         temp = []
         uids = []
         for c in self.countrys:
@@ -165,27 +192,28 @@ class NextbikeParser:
             for ci in c.cities:
                 a = ci.get_uid()
                 b = str(ci.name)
-                c = a + ' ' + b
+                c = a + " " + b
                 temp.append(c)
                 uids.append(a)
 
-        plik = open("nextbike_uids.txt", 'w', encoding="utf-8")
+        plik = open("nextbike_uids.txt", "w", encoding="utf-8")
         plik.write("Network\nuid<<>>city name\n")
         for i in temp:
             if cons == "y":
                 print(str(i))
-            plik.write(str(i) + '\n')
+            plik.write(str(i) + "\n")
         plik.close()
 
         self.check_uids(uids)
 
-        with open("uids.set", 'w') as f:
+        with open("uids.set", "w") as f:
             for i in uids:
                 f.write("{0}\n".format(i))
 
     @staticmethod
     def update():
-        '''Updates xml manually'''
+        """Updates xml manually"""
         import urllib.request as urllib
+
         path = "https://nextbike.net/maps/nextbike-live.xml"
         urllib.urlretrieve(path, "nextbike.xml")
