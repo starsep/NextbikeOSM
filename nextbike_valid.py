@@ -75,11 +75,11 @@ class NextbikeValidator:
         dane = []
         for i in next_places:
             id_match = self.via_id(i)
-            if id_match != None:
+            if id_match is not None:
                 meas = self.measure(i, id_match)
 
                 fway = self.osm_data.find(id_match.iD, "w")
-                if fway != None:
+                if fway is not None:
                     d1 = (meas, i, fway, "w", "id")
                 else:
                     d1 = (meas, i, id_match, "n", "id")
@@ -90,7 +90,7 @@ class NextbikeValidator:
                 meas = data[1]
 
                 fway = self.osm_data.find(obj.iD, "w")
-                if fway != None:
+                if fway is not None:
                     d1 = (meas, i, fway, "w", "di")
                 else:
                     d1 = (meas, i, obj, "n", "di")

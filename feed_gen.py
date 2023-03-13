@@ -21,7 +21,6 @@ class Feed:
         self.nxtb_changes = []
 
     def new_db(self):
-        import os
 
         connection = sql.connect(__DB__)
         c = connection.cursor()
@@ -66,7 +65,7 @@ class Feed:
         for i in self.features:
             osm_hist = c.execute(sel.format(self.objname, str(i.iD))).fetchone()
 
-            if osm_hist == None:
+            if osm_hist is None:
                 self.osm_new.append(i)
                 c.execute(new.format(self.objname, i.iD, i.version))
             else:
@@ -94,7 +93,7 @@ class Feed:
         for i in self.places:
             nxtb_hist = c.execute(sel.format(self.objname, i.num)).fetchone()
 
-            if nxtb_hist == None:
+            if nxtb_hist is None:
                 self.nxtb_new.append(i)
                 c.execute(new.format(self.objname, i.num, i.name))
             else:
@@ -162,8 +161,6 @@ class Feed:
             c.execute(ins.format(self.objname, title, timek, fill_template))
         template = self.envir.get_template("nxtb_changes.html")
         for i in self.nxtb_changes:
-            now = i[1]
-            old = i[0]
             fill_template = template.render(
                 {"i": i[1], "old": i[0].name, "name": self.objname}
             )
