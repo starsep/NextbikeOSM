@@ -7,6 +7,7 @@
     <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
     <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
     <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
 </head>
 <style>
     table,
@@ -83,7 +84,7 @@
             });
         });
     </script>
-    <i>{{ timek }}</i>
+    <i>Updated: {{ timestamp }}</i>
     <table>
         <thead>
             <tr>
@@ -109,44 +110,42 @@
             </tr>
         </thead>
         <tbody>
-            {% for i in items %}
+            {% for match in matches %}
             <tr>
                 <td>
-                    <a href="http://www.openstreetmap.org/?mlat={{ i.nxtb.lat }}&mlon={{ i.nxtb.lon }}#map=19/{{ i.nxtb.lat }}/{{ i.nxtb.lon }}">{{ i.nxtb.uid }}</a>
+                    <a href="https://osm.org/?mlat={{ match.nextbike.lat }}&mlon={{ match.nextbike.lon }}#map=19/{{ match.nextbike.lat }}/{{ match.nextbike.lon }}">{{ match.nextbike.uid }}</a>
                 </td>
                 <td>
-                    {% if i.type == 'w' %}
-                    <a href="http://www.openstreetmap.org/way/{{ i.osm.iD }}">{{ i.osm.iD }}</a> {% else %}
-                    <a href="http://www.openstreetmap.org/node/{{ i.osm.iD }}">{{ i.osm.iD }}</a> {% endif %}
-                    <a href="http://localhost:8111/load_and_zoom?left={{ i.nxtb.lon|float - 0.0009 }}&right={{ i.nxtb.lon|float + 0.0009 }}&top={{ i.nxtb.lat|float + 0.0009 }}&bottom={{ i.nxtb.lat|float - 0.0009 }}&select={{ i.type ~ i.osm.iD }}">
+                    <a href="https://osm.org/{{ match.osmType }}/{{ match.osm.id }}">{{ match.osm.id }}</a>
+                    <a href="http://localhost:8111/load_and_zoom?left={{ match.nextbike.lon|float - 0.0009 }}&right={{ match.nextbike.lon|float + 0.0009 }}&top={{ match.nextbike.lat|float + 0.0009 }}&bottom={{ match.nextbike.lat|float - 0.0009 }}&select={{ match.osmType[0] ~ match.osm.iD }}">
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
-                <td {% if i.distance>50 %}class="red"{% endif %}> {% if i.match == 'id' %}<b>{% endif %}{{ i.distance }}{% if i.match == 'id' %}</b>{% endif %}
+                <td {% if match.distance>50 %}class="red"{% endif %}> {% if match.match == 'id' %}<b>{% endif %}{{ match.distance }}{% if match.match == 'id' %}</b>{% endif %}
                 </td>
                 <td>
-                    {{ i.nxtb.name }}
+                    {{ match.nextbike.name }}
                 </td>
-                <td {% if i.prob|float <= 0.8 %}class="red" {% endif %}>
-                    {{ i.osm.tags.name|default("NONE") }}
-                </td>
-                <td>
-                    {{ i.nxtb.num }}
-                </td>
-                <td {% if i.nxtb.num != i.osm.tags.ref %}class="red" {% endif %}>
-                    {{ i.osm.tags.ref|default("NONE") }}
+                <td {% if match.ratio|float <= 0.8 %}class="red" {% endif %}>
+                    {{ match.osm.tags.name|default("NONE") }}
                 </td>
                 <td>
-                    {{ i.nxtb.stands }}
+                    {{ match.nextbike.num }}
                 </td>
-                <td {% if i.nxtb.stands != i.osm.tags.capacity %}class="red" {% endif %}>
-                    {{ i.osm.tags.capacity|default("NONE") }}
+                <td {% if match.nextbike.num != match.osm.tags.ref %}class="red" {% endif %}>
+                    {{ match.osm.tags.ref|default("NONE") }}
                 </td>
-                <td {% if not i.osm.tags.network %}class="red" {% endif %}>
-                    {{ i.osm.tags.network|default("NONE") }}
+                <td>
+                    {{ match.nextbike.stands }}
                 </td>
-                <td {% if not i.osm.tags.operator %}class="red" {% endif %}>
-                    {{ i.osm.tags.operator|default("NONE") }}
+                <td {% if match.nextbike.stands != match.osm.tags.capacity %}class="red" {% endif %}>
+                    {{ match.osm.tags.capacity|default("NONE") }}
+                </td>
+                <td {% if not match.osm.tags.network %}class="red" {% endif %}>
+                    {{ match.osm.tags.network|default("NONE") }}
+                </td>
+                <td {% if not match.osm.tags.operator %}class="red" {% endif %}>
+                    {{ match.osm.tags.operator|default("NONE") }}
                 </td>
             </tr>
             {% endfor %}

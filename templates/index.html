@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NextBikeOSM</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+<span>
+    {% for cityName, citySlug in cities %}
+        <a href="{{ citySlug }}.html">{{ cityName }}</a>
+    {% endfor %}
+</span>
+</body>
+</html>

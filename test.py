@@ -1,17 +1,10 @@
-from dataclasses import dataclass
 from unittest import TestCase
 
-from nextbike_valid import measure
+from distance import GeoPoint, distance
 
 
-@dataclass
-class GeoPoint:
-    lat: float
-    lon: float
-
-
-class MeasureTestCase(TestCase):
-    def test_measure(self):
+class DistanceTestCase(TestCase):
+    def test_distance(self):
         testCases = [
             (
                 GeoPoint(lat=52.263298, lon=21.046161),
@@ -29,5 +22,5 @@ class MeasureTestCase(TestCase):
                 14307.62,
             ),
         ]
-        for (pointA, pointB, distance) in testCases:
-            self.assertAlmostEqual(measure(pointA, pointB), distance, places=2)
+        for (pointA, pointB, expected) in testCases:
+            self.assertAlmostEqual(distance(pointA, pointB), expected, places=2)

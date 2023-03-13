@@ -1,80 +1,35 @@
-class Place:
-    def __init__(self, uid, lat, lon, name, num, stands, bike_numbers=None):
-        self.uid = uid
-        self.lat = lat
-        self.lon = lon
-        self.name = name
-        self.num = num
-        self.stands = stands
-        self.bike_numbers = []
-
-    def __str__(self):
-        return (
-            "#"
-            + str(self.uid)
-            + ": "
-            + str(self.num)
-            + ","
-            + self.name
-            + " with "
-            + str(self.stands)
-            + " stands. $lat$"
-            + str(self.lat)
-            + " $lon$"
-            + str(self.lon)
-            + " $bike_numbers$"
-            + str(len(self.bike_numbers))
-        )
+from dataclasses import dataclass
+from typing import List
+from distance import GeoPoint
 
 
+@dataclass
+class Place(GeoPoint):
+    uid: str
+    name: str
+    num: int
+    stands: int
+
+
+@dataclass
 class City:
-    def __init__(self, uid, name, places=None):
-        self.uid = uid
-        self.name = name
-        self.places = []
-
-    def __str__(self):
-        return (
-            "#"
-            + str(self.uid)
-            + " @"
-            + self.name
-            + " with "
-            + str(len(self.places))
-            + " places."
-        )
-
-    def get(self, nr):
-        if self.uid == nr:
-            return self.places
-
-    def get_uid(self):
-        return self.uid
+    uid: str
+    name: str
+    places: List[Place]
 
 
-class Country:
-    def __init__(self, name, country, cities=None):
-        self.name = name
-        self.country = country
-        self.cities = []
-
-    def __str__(self):
-        return (
-            "$"
-            + self.name
-            + " @"
-            + self.country
-            + " with "
-            + str(len(self.cities))
-            + " cities."
-        )
+@dataclass
+class Network:
+    name: str
+    countryCode: str
+    cities: List[City]
 
 
 class NextbikeParser:
 
     """Aggregates Nextbike country Classes"""
 
-    def __init__(self, countrys=None):
+    def __init__(self):
         import xml.etree.ElementTree as XML
         import urllib.request as urllib
         import os
@@ -92,57 +47,48 @@ class NextbikeParser:
 
         singleBikePlaceTypes = ["12", "20", "22", "24"]
 
-        for country in root:
+        for network in root:
             cities_list = []
 
-            name = country.attrib["name"]
-            countryName = country.attrib["country"]
+            networkName = network.attrib["name"]
+            countryCode = network.attrib["country"]
 
-            C = Country(name, countryName)
-            for city in country:
+            for city in network:
                 place_list = []
 
-                uid = city.attrib["uid"]
-                name = city.attrib["name"]
-
-                c = City(uid, name)
+                cityId = city.attrib["uid"]
+                cityName = city.attrib["name"]
 
                 for place in city:
                     place_attrib = place.attrib
                     uid = place_attrib["uid"]
-                    lat = place_attrib["lat"]
-                    lon = place_attrib["lng"]
+                    lat = float(place_attrib["lat"])
+                    lon = float(place_attrib["lng"])
                     name = place_attrib["name"]
                     place_type = place_attrib["place_type"]
                     if name.startswith("BIKE") or place_type in singleBikePlaceTypes:
                         continue
                     num = place_attrib["number"] if "number" in place_attrib else 0
-                    bike_stands = (
+                    stands = (
                         int(place_attrib["bike_racks"])
                         if "bike_racks" in place_attrib
                         else "None"
                     )
                     if "terminal_type" in place_attrib:
                         terminal_type = place_attrib["terminal_type"]
-                        if terminal_type == "sign" and type(bike_stands) == int:
+                        if terminal_type == "sign" and type(stands) == int:
                             # TODO: move logic somewhere else?
-                            bike_stands = bike_stands * 2
-                    bike_numbers = (
-                        place.attrib["bike_numbers"]
-                        if "bike_numbers" in place_attrib
-                        else None
-                    )
+                            stands = stands * 2
                     place_list.append(
-                        Place(uid, lat, lon, name, num, bike_stands, bike_numbers)
+                        Place(
+                            uid=uid, lat=lat, lon=lon, name=name, num=num, stands=stands
+                        )
                     )
-
-                c.places = place_list
-                cities_list.append(c)
-
-            C.cities = cities_list
-            C_list.append(C)
+                # if countryCode == "PL" and len(place_list) > 0:
+                #     print(networkName, countryCode, cityId, cityName)
+                cities_list.append(City(cityId, cityName, place_list))
+            C_list.append(Network(networkName, countryCode, cities_list))
         self.countries = C_list
-        # self.countries = []
 
     def __str__(self):
         for i in self.countries:
@@ -158,11 +104,11 @@ class NextbikeParser:
                     db += e
         return db
 
-    def find_city(self, name):
+    def find_city(self, cityId: str):
         """Returns data for city only"""
         for i in self.countries:
             for city in i.cities:
-                if city.uid == str(name):
+                if city.uid == cityId:
                     e = city.places
                     return e
 
@@ -195,7 +141,7 @@ class NextbikeParser:
             temp.append("_______________")
             temp.append(p)
             for ci in c.cities:
-                a = ci.get_uid()
+                a = ci.uid
                 b = str(ci.name)
                 c = a + " " + b
                 temp.append(c)
