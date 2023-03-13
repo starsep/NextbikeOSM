@@ -49,7 +49,10 @@ class NextbikeValidator:
         best: Optional[Element] = None
 
         for element in self.osmParser.elements:
-            if "amenity" not in element.tags or element.tags["amenity"] != "bicycle_rental":
+            if (
+                "amenity" not in element.tags
+                or element.tags["amenity"] != "bicycle_rental"
+            ):
                 continue
             point = GeoPoint.fromElement(element, self.osmParser)
             dist = distance(place, point)
@@ -137,13 +140,18 @@ class NextbikeValidator:
         return True
 
 
-def main(update: bool, network: str, osmAreaName: str, htmlPath: str, feed: bool):
+def main(
+    update: bool,
+    network: str,
+    osmAreaName: str,
+    htmlPath: str,
+    feed: bool,
+    nextbikeParser: NP.NextbikeParser,
+):
     if update:
         NP.NextbikeParser.update()
-        nextbikeParser = NP.NextbikeParser()
         nextbikeParser.get_uids()
     data = OverpassParser(osmAreaName)
-    nextbikeParser = NP.NextbikeParser()
     validator = NextbikeValidator(nextbikeParser, data)
     if network.isnumeric():
         d = nextbikeParser.find_city(network)
@@ -187,4 +195,5 @@ if __name__ == "__main__":
         osmAreaName=args.auto[1],
         htmlPath=args.auto[2],
         feed=args.feed,
+        nextbikeParser=NP.NextbikeParser(),
     )

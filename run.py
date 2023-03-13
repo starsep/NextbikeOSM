@@ -1,6 +1,7 @@
 from jinja2 import Environment, PackageLoader
 from slugify import slugify
 
+from nextbike_parser import NextbikeParser
 from nextbike_valid import main
 
 if __name__ == "__main__":
@@ -32,6 +33,7 @@ if __name__ == "__main__":
         (812, "Warszawa"),
         (831, "Wolsztyn"),
     ]
+    nextbikeParser = NextbikeParser()
     for (networkId, cityName) in networksPoland:
         slug = slugify(cityName)
         main(
@@ -40,6 +42,7 @@ if __name__ == "__main__":
             osmAreaName=cityName,
             htmlPath=f"docs/{slug}.html",
             feed=False,
+            nextbikeParser=nextbikeParser,
         )
 
     environment = Environment(loader=PackageLoader("nextbike_valid", "templates"))
