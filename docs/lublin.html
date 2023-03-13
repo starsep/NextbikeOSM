@@ -1,0 +1,4717 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
+    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
+</head>
+<style>
+    table,
+    td,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: white;
+        /*border: 1px solid black;*/
+    }
+
+    .fill {
+        background-color: #D4D4D4;
+    }
+
+    .red {
+        background-color: #FF8080;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <script>
+        $(function() {
+            $('table').floatThead({
+                useAbsolutePositioning: true
+            });
+        });
+        $.tablesorter.addParser({
+            id: 'refs',
+            is: function(s, table, cell, $cell) {
+                return false;
+            },
+            format: function(s, table, cell, cellIndex) {
+                if (s.length == 4) {
+                    return s.concat('0');
+                } else {
+                    return s;
+                }
+            },
+            type: 'numeric'
+        });
+        $(function() {
+            $('table').tablesorter({
+                widgets: ["zebra"],
+                widgetOptions: {
+                    zebra: [, "fill"]
+                },
+
+                headers: {
+                    0: {sorter: false},
+                    1: {sorter: false},
+                    2: {sorter: true},
+                    3: {sorter: false}, //name TOP
+                    4: {sorter: false}, //ref TOP
+                    5: {sorter: false}, //stands TOP
+                    6: {sorter: false}, //network
+                    7: {sorter: false},
+                    8: {sorter: false},
+                    9: {sorter: false},
+                    10: {sorter: 'refs'}, //nextb ref
+                    11: {sorter: 'refs'}, //ref osm
+                    12: {sorter: false},
+                    13: {sorter: false},
+                }
+            });
+        });
+    </script>
+    <i>Updated: Tue, 14 Mar @ 00:38:09</i>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">NextBike
+                    <br>uid</th>
+                <th rowspan="2">OSM id
+                    <br>(closest match)</th>
+                <th rowspan="2">Distance
+                    <br>(in meters)</th>
+                <th colspan="2">Name</th>
+                <th colspan="2">Ref</th>
+                <th colspan="2">Stands</th>
+                <th rowspan="2">Network</th>
+                <th rowspan="2">Operator</th>
+            </tr>
+            <tr>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.262979&mlon=22.552207#map=19/51.262979/22.552207">47261835</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090665849">3090665849</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.551306999999998&right=22.553107&top=51.263879&bottom=51.262079&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.4
+                </td>
+                <td>
+                    Al. Smorawińskiego / Al. Kompozytorów Polskich
+                </td>
+                <td >
+                    al. Smorawińskiego / Al. Kompozytorów Polskich
+                </td>
+                <td>
+                    60002
+                </td>
+                <td class="red" >
+                    6902
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.259108&mlon=22.568209#map=19/51.259108/22.568209">47261865</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090666688">3090666688</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.567308999999998&right=22.569109&top=51.260008&bottom=51.258207999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.1
+                </td>
+                <td>
+                    ul. Chodźki / ul. Hirszfelda
+                </td>
+                <td >
+                    ul. Chodźki / ul. Hirszfelda
+                </td>
+                <td>
+                    60003
+                </td>
+                <td class="red" >
+                    6903
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.269893&mlon=22.569142#map=19/51.269893/22.569142">47261927</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090666416">3090666416</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.568241999999998&right=22.570042&top=51.270793000000005&bottom=51.268993&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.53
+                </td>
+                <td>
+                    ul. Związkowa / WSPA
+                </td>
+                <td >
+                    ul. Związkowa / WSPA
+                </td>
+                <td>
+                    60004
+                </td>
+                <td class="red" >
+                    6905
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.239291&mlon=22.571127#map=19/51.239291/22.571127">47261981</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3082663684">3082663684</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.570227&right=22.572027000000002&top=51.240191&bottom=51.238391&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.09
+                </td>
+                <td>
+                    ul. Zamojska / Stary most
+                </td>
+                <td >
+                    ul. Zamojska / Stary most
+                </td>
+                <td>
+                    60005
+                </td>
+                <td class="red" >
+                    6906
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.247626&mlon=22.55322#map=19/51.247626/22.55322">47262053</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3076351438">3076351438</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.552319999999998&right=22.55412&top=51.248526&bottom=51.246725999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.27
+                </td>
+                <td>
+                    ul. Krakowskie Przedmieście / ul. Krótka
+                </td>
+                <td >
+                    ul. Krakowskie Przedmieście / ul. Krótka
+                </td>
+                <td>
+                    60006
+                </td>
+                <td class="red" >
+                    6907
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski LRM
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.238549&mlon=22.55395#map=19/51.238549/22.55395">47262119</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090861469">3090861469</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.55305&right=22.554850000000002&top=51.239449&bottom=51.237649&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 8.86
+                </td>
+                <td>
+                    ul. Szczerbowskiego / ul. Muzyczna
+                </td>
+                <td >
+                    ul. Szczerbowskiego / ul. Muzyczna
+                </td>
+                <td>
+                    60007
+                </td>
+                <td class="red" >
+                    6910
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24366&mlon=22.51611#map=19/51.24366/22.51611">47262160</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090867574">3090867574</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.51521&right=22.517010000000003&top=51.24456&bottom=51.24276&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.5
+                </td>
+                <td>
+                    ul. Zana / Akademiki UMCS
+                </td>
+                <td >
+                    ul. Zana / Akademiki UMCS
+                </td>
+                <td>
+                    60008
+                </td>
+                <td class="red" >
+                    6911
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23595&mlon=22.48856#map=19/51.23595/22.48856">47262204</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6452395925">6452395925</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.487659999999998&right=22.48946&top=51.236850000000004&bottom=51.23505&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.32
+                </td>
+                <td>
+                    ul. Judyma 2a - Dom Kultury
+                </td>
+                <td >
+                    ul. Judyma 2a - Dom Kultury
+                </td>
+                <td>
+                    60009
+                </td>
+                <td class="red" >
+                    6912
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.239949&mlon=22.501443#map=19/51.239949/22.501443">47262232</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090921863">3090921863</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.500542999999997&right=22.502343&top=51.240849000000004&bottom=51.239049&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 14.49
+                </td>
+                <td>
+                    al. Kraśnicka / Konstantynów
+                </td>
+                <td >
+                    al. Kraśnicka / Konstantynów
+                </td>
+                <td>
+                    60010
+                </td>
+                <td class="red" >
+                    6913
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.268991&mlon=22.549084#map=19/51.268991/22.549084">47263095</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090663748">3090663748</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.548184&right=22.549984000000002&top=51.269891&bottom=51.268091&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.4
+                </td>
+                <td>
+                    ul. Żywnego / ul. Paryska
+                </td>
+                <td >
+                    ul. Żywnego / ul. Paryska
+                </td>
+                <td>
+                    60001
+                </td>
+                <td class="red" >
+                    6901
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23043&mlon=22.513288#map=19/51.23043/22.513288">47263385</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090896725">3090896725</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.512387999999998&right=22.514188&top=51.23133&bottom=51.22953&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 7.34
+                </td>
+                <td>
+                    ul. Armii Krajowej / ul. Jutrzenki
+                </td>
+                <td >
+                    ul. Armii Krajowej / ul. Jutrzenki
+                </td>
+                <td>
+                    60011
+                </td>
+                <td class="red" >
+                    6914
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22186&mlon=22.50975#map=19/51.22186/22.50975">47263438</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090867957">3090867957</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.50885&right=22.510650000000002&top=51.22276&bottom=51.22096&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.66
+                </td>
+                <td>
+                    ul. Ametystowa 15 / sklep Stokrotka
+                </td>
+                <td >
+                    ul. Ametystowa 15 / sklep Stokrotka
+                </td>
+                <td>
+                    60012
+                </td>
+                <td class="red" >
+                    6915
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22341&mlon=22.52336#map=19/51.22341/22.52336">47264055</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090871264">3090871264</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.52246&right=22.52426&top=51.22431&bottom=51.22251&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.94
+                </td>
+                <td>
+                    ul. Filaretów - pętla autobusowa / ul. Wyżynna
+                </td>
+                <td >
+                    ul. Filaretów - pętla autobusowa / ul. Wyżynna
+                </td>
+                <td>
+                    60013
+                </td>
+                <td class="red" >
+                    6916
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23076&mlon=22.527857#map=19/51.23076/22.527857">47264313</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3076295981">3076295981</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.526957&right=22.528757000000002&top=51.23166&bottom=51.229859999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 41.6
+                </td>
+                <td>
+                    ul. Filaretów / ul. Radości
+                </td>
+                <td >
+                    ul. Filaretów / ul. Radości
+                </td>
+                <td>
+                    60014
+                </td>
+                <td class="red" >
+                    6917
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25147&mlon=22.52671#map=19/51.25147/22.52671">47264562</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090642931">3090642931</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.52581&right=22.527610000000003&top=51.25237&bottom=51.250569999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 7.86
+                </td>
+                <td>
+                    Al. Racławickie / Rondo Krwiodawców
+                </td>
+                <td >
+                    al. Racławickie / Rondo Krwiodawców
+                </td>
+                <td>
+                    60015
+                </td>
+                <td class="red" >
+                    6918
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.26603&mlon=22.51724#map=19/51.26603/22.51724">47264647</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090661322">3090661322</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.51634&right=22.518140000000002&top=51.26693&bottom=51.26513&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.31
+                </td>
+                <td>
+                    ul. Willowa / ul.Relaksowa
+                </td>
+                <td >
+                    ul. Willowa / ul.Relaksowa
+                </td>
+                <td>
+                    60016
+                </td>
+                <td class="red" >
+                    6919
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25814&mlon=22.58431#map=19/51.25814/22.58431">47264814</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090668178">3090668178</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.583409999999997&right=22.58521&top=51.25904&bottom=51.257239999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.65
+                </td>
+                <td>
+                    Rondo Gen. Leona Berbeckiego / Lidl
+                </td>
+                <td >
+                    Rondo Gen. Leona Berbeckiego / Lidl
+                </td>
+                <td>
+                    60017
+                </td>
+                <td class="red" >
+                    6920
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.251296&mlon=22.540373#map=19/51.251296/22.540373">47265072</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141413790">4141413790</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.539472999999997&right=22.541273&top=51.252196000000005&bottom=51.250396&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 229.45
+                </td>
+                <td>
+                    ul. Poniatowskiego / XXIII LO
+                </td>
+                <td class="red" >
+                    ul. Długosza
+                </td>
+                <td>
+                    60018
+                </td>
+                <td class="red" >
+                    6981
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.21071&mlon=22.5422#map=19/51.21071/22.5422">47265146</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/way/678497580">678497580</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.5413&right=22.543100000000003&top=51.21161&bottom=51.20981&select=w">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.34
+                </td>
+                <td>
+                    ul. Romera 
+                </td>
+                <td >
+                    ul. Romera
+                </td>
+                <td>
+                    60019
+                </td>
+                <td class="red" >
+                    6922
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.216525&mlon=22.58045#map=19/51.216525/22.58045">47265265</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090854895">3090854895</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.579549999999998&right=22.58135&top=51.217425&bottom=51.215624999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.3
+                </td>
+                <td>
+                    ul. Kunickiego / ul. Mickiewicza
+                </td>
+                <td >
+                    ul. Kunickiego / ul. Mickiewicza
+                </td>
+                <td>
+                    60020
+                </td>
+                <td class="red" >
+                    6923
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22457&mlon=22.60914#map=19/51.22457/22.60914">47265314</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090843305">3090843305</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.60824&right=22.61004&top=51.22547&bottom=51.22367&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.48
+                </td>
+                <td>
+                    ul. Droga Męczenników Majdanka - Muzeum
+                </td>
+                <td >
+                    ul. Droga Męczenników Majdanka - Muzeum
+                </td>
+                <td>
+                    60021
+                </td>
+                <td class="red" >
+                    6924
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23187&mlon=22.59049#map=19/51.23187/22.59049">47265356</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090851929">3090851929</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.589589999999998&right=22.59139&top=51.23277&bottom=51.23097&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.41
+                </td>
+                <td>
+                    ul. Droga Męczenników Majdanka / ul. Krańcowa
+                </td>
+                <td >
+                    ul. Droga Męczenników Majdanka / ul. Krańcowa
+                </td>
+                <td>
+                    60022
+                </td>
+                <td class="red" >
+                    6925
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.226319&mlon=22.622695#map=19/51.226319/22.622695">47265491</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3082671046">3082671046</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.621795&right=22.623595&top=51.227219&bottom=51.225418999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.19
+                </td>
+                <td>
+                    ul. Dobrzańskiego / pętla autobusowa 
+                </td>
+                <td >
+                    ul. Dobrzańskiego / pętla autobusowa
+                </td>
+                <td>
+                    60023
+                </td>
+                <td class="red" >
+                    6926
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.2469&mlon=22.61116#map=19/51.2469/22.61116">47265563</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090669817">3090669817</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.61026&right=22.612060000000003&top=51.2478&bottom=51.245999999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.35
+                </td>
+                <td>
+                    ul. Mełgiewska / WSEI
+                </td>
+                <td >
+                    ul. Mełgiewska / WSEI
+                </td>
+                <td>
+                    60024
+                </td>
+                <td class="red" >
+                    6928
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.262207&mlon=22.506239#map=19/51.262207/22.506239">47265712</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090648909">3090648909</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.505339&right=22.507139000000002&top=51.263107&bottom=51.261306999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.6
+                </td>
+                <td>
+                    ul. Agronomiczna / Skansen
+                </td>
+                <td >
+                    ul. Agronomiczna / Skansen
+                </td>
+                <td>
+                    60025
+                </td>
+                <td class="red" >
+                    6929
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23349&mlon=22.566476#map=19/51.23349/22.566476">47265804</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/8248785262">8248785262</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.565576&right=22.567376000000003&top=51.234390000000005&bottom=51.23259&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 311.63
+                </td>
+                <td>
+                    Dworzec PKP
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    60026
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23699&mlon=22.548698#map=19/51.23699/22.548698">47265891</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3076285757">3076285757</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.547798&right=22.549598000000003&top=51.23789&bottom=51.23609&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.15
+                </td>
+                <td>
+                    ul. Nadbystrzycka / Politechnika Lubelska
+                </td>
+                <td >
+                    ul. Nadbystrzycka / Politechnika Lubelska
+                </td>
+                <td>
+                    60027
+                </td>
+                <td class="red" >
+                    6934
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24634&mlon=22.54231#map=19/51.24634/22.54231">47265973</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090685806">3090685806</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.54141&right=22.543210000000002&top=51.24724&bottom=51.245439999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.35
+                </td>
+                <td>
+                    ul. Radziszewskiego / ul. Akademicka 
+                </td>
+                <td >
+                    ul. Radziszewskiego / ul. Akademicka
+                </td>
+                <td>
+                    60028
+                </td>
+                <td class="red" >
+                    6935
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23826&mlon=22.52883#map=19/51.23826/22.52883">47266021</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090868965">3090868965</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.527929999999998&right=22.52973&top=51.23916&bottom=51.237359999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.16
+                </td>
+                <td>
+                    ul. Zana / ZUS
+                </td>
+                <td >
+                    ul. Zana / ZUS
+                </td>
+                <td>
+                    60029
+                </td>
+                <td class="red" >
+                    6936
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.239818&mlon=22.558698#map=19/51.239818/22.558698">47266528</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3076343651">3076343651</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.557798&right=22.559598&top=51.240718&bottom=51.238918&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.12
+                </td>
+                <td>
+                    ul. Piłsudskiego / MPWiK 
+                </td>
+                <td >
+                    ul. Piłsudskiego / MPWiK
+                </td>
+                <td>
+                    60030
+                </td>
+                <td class="red" >
+                    6938
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.234098&mlon=22.505643#map=19/51.234098/22.505643">47266678</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090913502">3090913502</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.504742999999998&right=22.506543&top=51.234998000000004&bottom=51.233198&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.34
+                </td>
+                <td>
+                    ul. Szaserów 15 / biblioteka
+                </td>
+                <td >
+                    ul. Szaserów 15 / Biblioteka
+                </td>
+                <td>
+                    60031
+                </td>
+                <td class="red" >
+                    6939
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22993&mlon=22.4928#map=19/51.22993/22.4928">47266926</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3082654345">3082654345</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.491899999999998&right=22.4937&top=51.230830000000005&bottom=51.22903&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 6.6
+                </td>
+                <td>
+                    ul. Roztocze / SP nr 50
+                </td>
+                <td >
+                    ul. Roztocze / SP nr 50
+                </td>
+                <td>
+                    60032
+                </td>
+                <td class="red" >
+                    6940
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.27511&mlon=22.54847#map=19/51.27511/22.54847">47267108</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141497913">4141497913</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.547569999999997&right=22.54937&top=51.27601&bottom=51.27421&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.39
+                </td>
+                <td>
+                    ul. Zakopiańska 5 
+                </td>
+                <td >
+                    ul. Zakopiańska 5
+                </td>
+                <td>
+                    60033
+                </td>
+                <td class="red" >
+                    6944
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.259199&mlon=22.544739#map=19/51.259199/22.544739">47267143</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141497912">4141497912</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.543839&right=22.545639&top=51.260099000000004&bottom=51.258299&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.45
+                </td>
+                <td>
+                    ul. Kiepury / Dom Kultury
+                </td>
+                <td >
+                    ul. Kiepury / Dom Kultury
+                </td>
+                <td>
+                    60034
+                </td>
+                <td class="red" >
+                    6945
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.249896&mlon=22.553832#map=19/51.249896/22.553832">47267178</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4088421506">4088421506</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.552932&right=22.554732&top=51.250796&bottom=51.248996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.85
+                </td>
+                <td>
+                    ul. Spokojna / Urząd Wojewódzki
+                </td>
+                <td >
+                    ul. Spokojna / Urząd Wojewódzki
+                </td>
+                <td>
+                    60035
+                </td>
+                <td class="red" >
+                    6946
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24818&mlon=22.54336#map=19/51.24818/22.54336">47267277</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141557494">4141557494</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.54246&right=22.54426&top=51.24908&bottom=51.247279999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.7
+                </td>
+                <td>
+                    ul. Hieronima Łopacińskiego / KUL
+                </td>
+                <td >
+                    ul. Hieronima Łopacińskiego / KUL
+                </td>
+                <td>
+                    60036
+                </td>
+                <td class="red" >
+                    6948
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.246773&mlon=22.558504#map=19/51.246773/22.558504">47267604</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4056640923">4056640923</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.557603999999998&right=22.559404&top=51.247673&bottom=51.245872999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.63
+                </td>
+                <td>
+                    ul. Jana Hempla / ul. Peowiaków
+                </td>
+                <td >
+                    ul. Jana Hempla / ul. Peowiaków
+                </td>
+                <td>
+                    60037
+                </td>
+                <td class="red" >
+                    6949
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.260703&mlon=22.561718#map=19/51.260703/22.561718">47267693</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141497909">4141497909</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.560817999999998&right=22.562618&top=51.261603&bottom=51.259803&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.76
+                </td>
+                <td>
+                    ul. Antoniego Gębali / Szpital
+                </td>
+                <td >
+                    ul. Antoniego Gębali / Szpital
+                </td>
+                <td>
+                    60038
+                </td>
+                <td class="red" >
+                    6950
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.269403&mlon=22.557378#map=19/51.269403/22.557378">47267761</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141497911">4141497911</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.556478&right=22.558278&top=51.270303&bottom=51.268502999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.74
+                </td>
+                <td>
+                    ul. Elsnera / WSSP / ul. Choiny
+                </td>
+                <td >
+                    ul. Elsnera / WSSP / ul. Choiny
+                </td>
+                <td>
+                    60039
+                </td>
+                <td class="red" >
+                    6951
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.240886&mlon=22.54578#map=19/51.240886/22.54578">47267806</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4144071196">4144071196</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.54488&right=22.546680000000002&top=51.241786000000005&bottom=51.239986&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.42
+                </td>
+                <td>
+                    ul. Głęboka / Uniwersytet Przyrodniczy
+                </td>
+                <td >
+                    ul. Głęboka / Uniwersytet Przyrodniczy
+                </td>
+                <td>
+                    60040
+                </td>
+                <td class="red" >
+                    6952
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.242011&mlon=22.596393#map=19/51.242011/22.596393">47269258</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4144071195">4144071195</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.595492999999998&right=22.597293&top=51.242911&bottom=51.241111&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.64
+                </td>
+                <td>
+                    ul. Gospodarcza / ul. Hutnicza
+                </td>
+                <td >
+                    ul. Gospodarcza / ul. Hutnicza
+                </td>
+                <td>
+                    60041
+                </td>
+                <td class="red" >
+                    6954
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23295&mlon=22.51703#map=19/51.23295/22.51703">47269296</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4056734577">4056734577</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.516129999999997&right=22.51793&top=51.233850000000004&bottom=51.23205&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 6.24
+                </td>
+                <td>
+                    ul. Dziewanny 21 / ul. Różana
+                </td>
+                <td >
+                    ul. Dziewanny 21 / ul. Różana
+                </td>
+                <td>
+                    60042
+                </td>
+                <td class="red" >
+                    6955
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.231687&mlon=22.537664#map=19/51.231687/22.537664">47269341</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4071332406">4071332406</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.536763999999998&right=22.538564&top=51.232587&bottom=51.230787&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.93
+                </td>
+                <td>
+                    ul. Nadbystrzycka / ul. Pozytywistów
+                </td>
+                <td >
+                    ul. Nadbystrzycka / ul. Pozytywistów
+                </td>
+                <td>
+                    60043
+                </td>
+                <td class="red" >
+                    6956
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.247042&mlon=22.507703#map=19/51.247042/22.507703">47269449</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4144071201">4144071201</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.506802999999998&right=22.508603&top=51.247942&bottom=51.246142&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.29
+                </td>
+                <td>
+                    ul. Wojciechowska / Szkoła 
+                </td>
+                <td >
+                    ul. Wojciechowska / Szkoła
+                </td>
+                <td>
+                    60044
+                </td>
+                <td class="red" >
+                    6957
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.26933&mlon=22.582585#map=19/51.26933/22.582585">47269537</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4085447616">4085447616</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.581685&right=22.583485000000003&top=51.27023&bottom=51.268429999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.19
+                </td>
+                <td>
+                    ul. Węglarza / Pętla MPK
+                </td>
+                <td >
+                    ul. Węglarza / Pętla MPK
+                </td>
+                <td>
+                    60045
+                </td>
+                <td class="red" >
+                    6958
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.20116&mlon=22.54271#map=19/51.20116/22.54271">47269736</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4144071197">4144071197</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.541809999999998&right=22.54361&top=51.20206&bottom=51.20026&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.24
+                </td>
+                <td>
+                    ul. Nałkowskich / ul. Fulmana 
+                </td>
+                <td >
+                    ul. Nałkowskich / ul. Fulmana
+                </td>
+                <td>
+                    60046
+                </td>
+                <td class="red" >
+                    6959
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25815&mlon=22.5936#map=19/51.25815/22.5936">47269760</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4138846862">4138846862</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.592699999999997&right=22.5945&top=51.25905&bottom=51.25725&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.8
+                </td>
+                <td>
+                    ul. Niepodległości 12
+                </td>
+                <td >
+                    ul. Niepodległości 12
+                </td>
+                <td>
+                    60047
+                </td>
+                <td class="red" >
+                    6960
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.225613&mlon=22.491556#map=19/51.225613/22.491556">47270007</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141369000">4141369000</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.490655999999998&right=22.492456&top=51.226513000000004&bottom=51.224713&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.86
+                </td>
+                <td>
+                    ul. Jantarowa / al. Jana Pawła II 
+                </td>
+                <td >
+                    ul. Jantarowa / al. Jana Pawła II
+                </td>
+                <td>
+                    60048
+                </td>
+                <td class="red" >
+                    6961
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24952&mlon=22.536322#map=19/51.24952/22.536322">47270098</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4088440030">4088440030</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.535421999999997&right=22.537222&top=51.25042&bottom=51.248619999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.76
+                </td>
+                <td>
+                    ul. Godebskiego / LO im. Staszica 
+                </td>
+                <td >
+                    ul. Godebskiego / LO im. Staszica
+                </td>
+                <td>
+                    60049
+                </td>
+                <td class="red" >
+                    6962
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25621&mlon=22.57553#map=19/51.25621/22.57553">47270186</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4057164007">4057164007</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.57463&right=22.576430000000002&top=51.257110000000004&bottom=51.25531&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.2
+                </td>
+                <td>
+                    ul. Walecznych / ul. Unicka
+                </td>
+                <td >
+                    ul. Walecznych / ul. Unicka
+                </td>
+                <td>
+                    60050
+                </td>
+                <td class="red" >
+                    6963
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25575&mlon=22.49161#map=19/51.25575/22.49161">47270254</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4144071198">4144071198</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.49071&right=22.492510000000003&top=51.25665&bottom=51.25485&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.45
+                </td>
+                <td>
+                    ul. Nałęczowska / ul. Sławin 
+                </td>
+                <td >
+                    ul. Nałęczowska / ul. Sławin
+                </td>
+                <td>
+                    60051
+                </td>
+                <td class="red" >
+                    6964
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.27488&mlon=22.50463#map=19/51.27488/22.50463">47270299</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4116313329">4116313329</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.503729999999997&right=22.50553&top=51.275780000000005&bottom=51.27398&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.56
+                </td>
+                <td>
+                    ul. Zbożowa / Pętla autobusowa 
+                </td>
+                <td >
+                    ul. Zbożowa / Pętla autobusowa
+                </td>
+                <td>
+                    60052
+                </td>
+                <td class="red" >
+                    6965
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25573&mlon=22.51767#map=19/51.25573/22.51767">47270367</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141580789">4141580789</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.516769999999998&right=22.51857&top=51.25663&bottom=51.25483&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.57
+                </td>
+                <td>
+                    al. Warszawska / ul. Boh. M. Cassino 
+                </td>
+                <td >
+                    al. Warszawska / ul. Boh. M. Cassino
+                </td>
+                <td>
+                    60053
+                </td>
+                <td class="red" >
+                    6966
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.2281&mlon=22.531#map=19/51.2281/22.531">47270522</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4071338480">4071338480</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.530099999999997&right=22.5319&top=51.229&bottom=51.227199999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.51
+                </td>
+                <td>
+                    ul. Radości / Gimnazjum
+                </td>
+                <td >
+                    ul. Radości / Gimnazjum
+                </td>
+                <td>
+                    60054
+                </td>
+                <td class="red" >
+                    6968
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.21786&mlon=22.54604#map=19/51.21786/22.54604">47270562</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141354431">4141354431</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.54514&right=22.546940000000003&top=51.21876&bottom=51.21696&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.39
+                </td>
+                <td>
+                    ul. Diamentowa / ul. Medalionów 
+                </td>
+                <td >
+                    ul. Diamentowa / ul. Medalionów
+                </td>
+                <td>
+                    60055
+                </td>
+                <td class="red" >
+                    6970
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.20741&mlon=22.58643#map=19/51.20741/22.58643">47270661</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141321042">4141321042</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.58553&right=22.58733&top=51.208310000000004&bottom=51.20651&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.27
+                </td>
+                <td>
+                    ul. Abramowicka / ul. Sierpińskiego
+                </td>
+                <td >
+                    ul. Abramowicka / ul. Sierpińskiego
+                </td>
+                <td>
+                    60056
+                </td>
+                <td class="red" >
+                    6971
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.2146&mlon=22.57176#map=19/51.2146/22.57176">47270783</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141321044">4141321044</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.57086&right=22.572660000000003&top=51.2155&bottom=51.213699999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.95
+                </td>
+                <td>
+                    ul. Kruczkowskiego / ul. Dunikowskiego 
+                </td>
+                <td >
+                    ul. Kruczkowskiego / ul. Dunikowskiego
+                </td>
+                <td>
+                    60057
+                </td>
+                <td class="red" >
+                    6972
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22299&mlon=22.57502#map=19/51.22299/22.57502">47271057</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141321045">4141321045</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.574119999999997&right=22.57592&top=51.223890000000004&bottom=51.22209&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.53
+                </td>
+                <td>
+                    ul. Kunickiego / ul. Oboźna 
+                </td>
+                <td >
+                    ul. Kunickiego / ul. Oboźna
+                </td>
+                <td>
+                    60058
+                </td>
+                <td class="red" >
+                    6973
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.2257&mlon=22.56399#map=19/51.2257/22.56399">47271296</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141321046">4141321046</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.56309&right=22.564890000000002&top=51.226600000000005&bottom=51.2248&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.94
+                </td>
+                <td>
+                    ul. Nowy Świat 36 
+                </td>
+                <td class="red" >
+                    Nowy Świat
+                </td>
+                <td>
+                    60059
+                </td>
+                <td class="red" >
+                    6974
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.228143&mlon=22.581722#map=19/51.228143/22.581722">47271329</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141321043">4141321043</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.580821999999998&right=22.582622&top=51.229043000000004&bottom=51.227243&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.28
+                </td>
+                <td>
+                    ul. Długa / Poczta 
+                </td>
+                <td >
+                    ul. Długa / Poczta
+                </td>
+                <td>
+                    60060
+                </td>
+                <td class="red" >
+                    6975
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24156&mlon=22.58788#map=19/51.24156/22.58788">47271373</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141321047">4141321047</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.586979999999997&right=22.58878&top=51.24246&bottom=51.24066&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.39
+                </td>
+                <td>
+                    ul. Łęczyńska / ul. Przyjaźni 
+                </td>
+                <td >
+                    ul. Łęczyńska / ul. Przyjaźni
+                </td>
+                <td>
+                    60061
+                </td>
+                <td class="red" >
+                    6976
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23749&mlon=22.53018#map=19/51.23749/22.53018">47271407</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4100357490">4100357490</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.52928&right=22.531080000000003&top=51.23839&bottom=51.23659&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.65
+                </td>
+                <td>
+                    ul. Zana / Policja 
+                </td>
+                <td >
+                    ul. Zana / Policja
+                </td>
+                <td>
+                    60062
+                </td>
+                <td class="red" >
+                    6977
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.241&mlon=22.53073#map=19/51.241/22.53073">47271473</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4144071200">4144071200</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.529829999999997&right=22.53163&top=51.2419&bottom=51.2401&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.45
+                </td>
+                <td>
+                    ul. Rymwida / ul. Filaretów 
+                </td>
+                <td >
+                    ul. Rymwida / ul. Filaretów
+                </td>
+                <td>
+                    60063
+                </td>
+                <td class="red" >
+                    6978
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25708&mlon=22.55393#map=19/51.25708/22.55393">47271796</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141497907">4141497907</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.55303&right=22.554830000000003&top=51.25798&bottom=51.25618&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.79
+                </td>
+                <td>
+                    al. Kompozytorów Polskich / ul. Paganiniego 
+                </td>
+                <td >
+                    al. Kompozytorów Polskich / ul. Paganiniego
+                </td>
+                <td>
+                    60064
+                </td>
+                <td class="red" >
+                    6982
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.26276&mlon=22.54592#map=19/51.26276/22.54592">47271875</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141497910">4141497910</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.545019999999997&right=22.54682&top=51.26366&bottom=51.26186&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.72
+                </td>
+                <td>
+                    ul. Braci Wieniawskich / ul. Kaprysowa 
+                </td>
+                <td >
+                    ul. Braci Wieniawskich / ul. Kaprysowa
+                </td>
+                <td>
+                    60065
+                </td>
+                <td class="red" >
+                    6983
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.26344&mlon=22.55739#map=19/51.26344/22.55739">47271955</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141497908">4141497908</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.55649&right=22.558290000000003&top=51.264340000000004&bottom=51.26254&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.75
+                </td>
+                <td>
+                    al. Smorawińskiego / ul. Szeligowskiego 
+                </td>
+                <td >
+                    al. Smorawińskiego / ul. Szeligowskiego
+                </td>
+                <td>
+                    60066
+                </td>
+                <td class="red" >
+                    6984
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.27746&mlon=22.58098#map=19/51.27746/22.58098">47272086</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4138747970">4138747970</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.58008&right=22.58188&top=51.27836&bottom=51.276559999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.52
+                </td>
+                <td>
+                    ul. Dożynkowa / ul. Cynamonowa 
+                </td>
+                <td >
+                    ul. Dożynkowa /ul. Cynamonowa
+                </td>
+                <td>
+                    60067
+                </td>
+                <td class="red" >
+                    6985
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.243358&mlon=22.636594#map=19/51.243358/22.636594">47272122</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5736935821">5736935821</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.635693999999997&right=22.637494&top=51.244258&bottom=51.242458&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 13.02
+                </td>
+                <td>
+                    ul. Antoniny Grygowej 
+                </td>
+                <td >
+                    ul. Antoniny Grygowej
+                </td>
+                <td>
+                    60068
+                </td>
+                <td class="red" >
+                    6987
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.262472&mlon=22.528167#map=19/51.262472/22.528167">47272210</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6612822567">6612822567</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.527267&right=22.529067&top=51.263372000000004&bottom=51.261572&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.68
+                </td>
+                <td>
+                    ul. Willowa / ul. Mineralna
+                </td>
+                <td >
+                    ul. Willowa / ul. Mineralna
+                </td>
+                <td>
+                    60069
+                </td>
+                <td class="red" >
+                    6988
+                </td>
+                <td>
+                    30
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Nextbike
+                </td>
+                <td >
+                    LRM
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25342&mlon=22.57551#map=19/51.25342/22.57551">47272244</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4144071199">4144071199</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.57461&right=22.576410000000003&top=51.25432&bottom=51.25252&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 219.47
+                </td>
+                <td>
+                    Plac Singera
+                </td>
+                <td class="red" >
+                    ul. Ruska / Skarpa
+                </td>
+                <td>
+                    60070
+                </td>
+                <td class="red" >
+                    6979
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25905&mlon=22.57268#map=19/51.25905/22.57268">47272284</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090666688">3090666688</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.571779999999997&right=22.57358&top=51.25995&bottom=51.25815&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 312.33
+                </td>
+                <td>
+                    ul. Bazylianówka / al. Spółdzielczości Pracy 
+                </td>
+                <td class="red" >
+                    ul. Chodźki / ul. Hirszfelda
+                </td>
+                <td>
+                    60071
+                </td>
+                <td class="red" >
+                    6903
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.28464&mlon=22.55097#map=19/51.28464/22.55097">47272355</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090665884">3090665884</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.550069999999998&right=22.55187&top=51.285540000000005&bottom=51.28374&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 975.09
+                </td>
+                <td>
+                    Choiny P+R
+                </td>
+                <td class="red" >
+                    ul. Paderewskiego / ul. Leszetyckiego
+                </td>
+                <td>
+                    60072
+                </td>
+                <td class="red" >
+                    6904
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25989&mlon=22.57839#map=19/51.25989/22.57839">47272411</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090668178">3090668178</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.577489999999997&right=22.57929&top=51.26079&bottom=51.25899&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 456.46
+                </td>
+                <td>
+                    al. Andersa cmentarz
+                </td>
+                <td class="red" >
+                    Rondo Gen. Leona Berbeckiego / Lidl
+                </td>
+                <td>
+                    60073
+                </td>
+                <td class="red" >
+                    6920
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.26948&mlon=22.5728#map=19/51.26948/22.5728">47272463</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090666416">3090666416</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.5719&right=22.573700000000002&top=51.27038&bottom=51.26858&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 255.28
+                </td>
+                <td>
+                    ul. Związkowa / al. Spółdzielczości Pracy
+                </td>
+                <td class="red" >
+                    ul. Związkowa / WSPA
+                </td>
+                <td>
+                    60074
+                </td>
+                <td class="red" >
+                    6905
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25659&mlon=22.55823#map=19/51.25659/22.55823">47272506</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141497907">4141497907</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.557329999999997&right=22.55913&top=51.257490000000004&bottom=51.25569&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 304.69
+                </td>
+                <td>
+                    ul. Szeligowskiego Nord Park
+                </td>
+                <td class="red" >
+                    al. Kompozytorów Polskich / ul. Paganiniego
+                </td>
+                <td>
+                    60075
+                </td>
+                <td class="red" >
+                    6982
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.262393&mlon=22.571562#map=19/51.262393/22.571562">47272535</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090666688">3090666688</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.570662&right=22.572462&top=51.263293000000004&bottom=51.261493&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 433.15
+                </td>
+                <td>
+                    al. Smorawińskiego / al. Spółdzielczości Pracy
+                </td>
+                <td class="red" >
+                    ul. Chodźki / ul. Hirszfelda
+                </td>
+                <td>
+                    60076
+                </td>
+                <td class="red" >
+                    6903
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.27565&mlon=22.57277#map=19/51.27565/22.57277">47272578</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4138747970">4138747970</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.571869999999997&right=22.57367&top=51.27655&bottom=51.27475&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 607.2
+                </td>
+                <td>
+                    ul. Do Dysa / al. Spółdzielczości Pracy 
+                </td>
+                <td class="red" >
+                    ul. Dożynkowa /ul. Cynamonowa
+                </td>
+                <td>
+                    60077
+                </td>
+                <td class="red" >
+                    6985
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25155&mlon=22.59792#map=19/51.25155/22.59792">47272637</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4138846862">4138846862</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.597019999999997&right=22.59882&top=51.25245&bottom=51.25065&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 790.1
+                </td>
+                <td>
+                    ul. Turystyczna / PH Tatary
+                </td>
+                <td class="red" >
+                    ul. Niepodległości 12
+                </td>
+                <td>
+                    60078
+                </td>
+                <td class="red" >
+                    6960
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23265&mlon=22.61698#map=19/51.23265/22.61698">47272672</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3753624345">3753624345</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.61608&right=22.617880000000003&top=51.23355&bottom=51.23175&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 341.95
+                </td>
+                <td>
+                    ul. Pancerniaków
+                </td>
+                <td class="red" >
+                    Atrium Felicity
+                </td>
+                <td>
+                    60079
+                </td>
+                <td class="red" >
+                    6942
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.235962&mlon=22.594644#map=19/51.235962/22.594644">47272762</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090851929">3090851929</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.593743999999997&right=22.595544&top=51.236862&bottom=51.235062&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 540.04
+                </td>
+                <td>
+                    ul. Krańcowa / Rondo Kasprzaka
+                </td>
+                <td class="red" >
+                    ul. Droga Męczenników Majdanka / ul. Krańcowa
+                </td>
+                <td>
+                    60080
+                </td>
+                <td class="red" >
+                    6925
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22159&mlon=22.64592#map=19/51.22159/22.64592">47272972</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090830294">3090830294</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.64502&right=22.64682&top=51.22249&bottom=51.22069&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 1157.59
+                </td>
+                <td>
+                    Specjalna Strefa Ekonomiczna
+                </td>
+                <td class="red" >
+                    ul. Doświadczalna / ul. Jagiełły
+                </td>
+                <td>
+                    60081
+                </td>
+                <td class="red" >
+                    6927
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.2317&mlon=22.57148#map=19/51.2317/22.57148">47273108</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/8248785262">8248785262</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.57058&right=22.572380000000003&top=51.2326&bottom=51.230799999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 496.6
+                </td>
+                <td>
+                    ul. Kunickiego PKP
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    60082
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.2335&mlon=22.55837#map=19/51.2335/22.55837">47273166</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4088412364">4088412364</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.55747&right=22.55927&top=51.2344&bottom=51.2326&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 524.91
+                </td>
+                <td>
+                    Arena Lublin
+                </td>
+                <td class="red" >
+                    ul. Cukrownicza / ZDiM / Arena Lublin
+                </td>
+                <td>
+                    60083
+                </td>
+                <td class="red" >
+                    6953
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22555&mlon=22.55133#map=19/51.22555/22.55133">47273293</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4088412364">4088412364</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.55043&right=22.55223&top=51.22645&bottom=51.22465&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 542.44
+                </td>
+                <td>
+                    ul. Krochmalna / ul. Przeskok
+                </td>
+                <td class="red" >
+                    ul. Cukrownicza / ZDiM / Arena Lublin
+                </td>
+                <td>
+                    60084
+                </td>
+                <td class="red" >
+                    6953
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23289&mlon=22.5859#map=19/51.23289/22.5859">47273391</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090851929">3090851929</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.584999999999997&right=22.5868&top=51.23379&bottom=51.231989999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 344.34
+                </td>
+                <td>
+                    ul. Lotnicza / LSS
+                </td>
+                <td class="red" >
+                    ul. Droga Męczenników Majdanka / ul. Krańcowa
+                </td>
+                <td>
+                    60085
+                </td>
+                <td class="red" >
+                    6925
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.219445&mlon=22.578213#map=19/51.219445/22.578213">47273447</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090854895">3090854895</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.577313&right=22.579113000000003&top=51.220345&bottom=51.218545&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 359.2
+                </td>
+                <td>
+                    ul. Kunickiego / ul. Matejki
+                </td>
+                <td class="red" >
+                    ul. Kunickiego / ul. Mickiewicza
+                </td>
+                <td>
+                    60086
+                </td>
+                <td class="red" >
+                    6923
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.203344&mlon=22.559642#map=19/51.203344/22.559642">47273574</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4144071197">4144071197</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.558742&right=22.560542&top=51.204244&bottom=51.202444&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 1209.18
+                </td>
+                <td>
+                    ul. Diamentowa / ul. Zemborzycka
+                </td>
+                <td class="red" >
+                    ul. Nałkowskich / ul. Fulmana
+                </td>
+                <td>
+                    60087
+                </td>
+                <td class="red" >
+                    6959
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.225277&mlon=22.530701#map=19/51.225277/22.530701">47273945</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4071338480">4071338480</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.529801&right=22.531601000000002&top=51.226177&bottom=51.224377&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 315.84
+                </td>
+                <td>
+                    ul. Jana Pawła II / os. Górki
+                </td>
+                <td class="red" >
+                    ul. Radości / Gimnazjum
+                </td>
+                <td>
+                    60088
+                </td>
+                <td class="red" >
+                    6968
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.226903&mlon=22.518985#map=19/51.226903/22.518985">47280016</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090871264">3090871264</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.518085&right=22.519885000000002&top=51.227803&bottom=51.226003&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 492.9
+                </td>
+                <td>
+                    ul. Szmaragdowa
+                </td>
+                <td class="red" >
+                    ul. Filaretów - pętla autobusowa / ul. Wyżynna
+                </td>
+                <td>
+                    60089
+                </td>
+                <td class="red" >
+                    6916
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22192&mlon=22.50179#map=19/51.22192/22.50179">47280050</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090867957">3090867957</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.50089&right=22.50269&top=51.22282&bottom=51.221019999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 555.49
+                </td>
+                <td>
+                    Osiedle Poręba pętla
+                </td>
+                <td class="red" >
+                    ul. Ametystowa 15 / sklep Stokrotka
+                </td>
+                <td>
+                    60090
+                </td>
+                <td class="red" >
+                    6915
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22994&mlon=22.50739#map=19/51.22994/22.50739">47280087</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090896725">3090896725</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.50649&right=22.508290000000002&top=51.23084&bottom=51.22904&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 416.27
+                </td>
+                <td>
+                    ul. Biedronki liceum
+                </td>
+                <td class="red" >
+                    ul. Armii Krajowej / ul. Jutrzenki
+                </td>
+                <td>
+                    60091
+                </td>
+                <td class="red" >
+                    6914
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.241159&mlon=22.518896#map=19/51.241159/22.518896">47280120</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090867574">3090867574</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.517996&right=22.519796000000003&top=51.242059000000005&bottom=51.240259&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 341.65
+                </td>
+                <td>
+                    ul. Zana E’Leclerc
+                </td>
+                <td class="red" >
+                    ul. Zana / Akademiki UMCS
+                </td>
+                <td>
+                    60092
+                </td>
+                <td class="red" >
+                    6911
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.2355&mlon=22.53656#map=19/51.2355/22.53656">47280165</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4071332406">4071332406</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.53566&right=22.537460000000003&top=51.2364&bottom=51.2346&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 429.15
+                </td>
+                <td>
+                    ul. Zana / ul. Brzeskiej
+                </td>
+                <td class="red" >
+                    ul. Nadbystrzycka / ul. Pozytywistów
+                </td>
+                <td>
+                    60093
+                </td>
+                <td class="red" >
+                    6956
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22777&mlon=22.52527#map=19/51.22777/22.52527">47280214</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4071338480">4071338480</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.524369999999998&right=22.52617&top=51.22867&bottom=51.22687&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 404.35
+                </td>
+                <td>
+                    ul. Filaretów / ul. Fantastyczna
+                </td>
+                <td class="red" >
+                    ul. Radości / Gimnazjum
+                </td>
+                <td>
+                    60094
+                </td>
+                <td class="red" >
+                    6968
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.23623&mlon=22.57659#map=19/51.23623/22.57659">47280265</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3082663684">3082663684</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.575689999999998&right=22.57749&top=51.23713&bottom=51.23533&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 513.28
+                </td>
+                <td>
+                    ul. Wolska
+                </td>
+                <td class="red" >
+                    ul. Zamojska / Stary most
+                </td>
+                <td>
+                    60095
+                </td>
+                <td class="red" >
+                    6906
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24276&mlon=22.56891#map=19/51.24276/22.56891">47280302</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3082663684">3082663684</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.568009999999997&right=22.56981&top=51.24366&bottom=51.241859999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 413.07
+                </td>
+                <td>
+                    ul. Zamojska
+                </td>
+                <td class="red" >
+                    ul. Zamojska / Stary most
+                </td>
+                <td>
+                    60096
+                </td>
+                <td class="red" >
+                    6906
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24347&mlon=22.5609#map=19/51.24347/22.5609">47280387</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4056640923">4056640923</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.56&right=22.5618&top=51.24437&bottom=51.24257&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 400.45
+                </td>
+                <td>
+                    ul. Dolna Panny Marii
+                </td>
+                <td class="red" >
+                    ul. Jana Hempla / ul. Peowiaków
+                </td>
+                <td>
+                    60097
+                </td>
+                <td class="red" >
+                    6949
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.248567&mlon=22.519256#map=19/51.248567/22.519256">47280436</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090867574">3090867574</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.518355999999997&right=22.520156&top=51.249467&bottom=51.247667&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 586.21
+                </td>
+                <td>
+                    ul. Nałęczowska / al. Kraśnicka
+                </td>
+                <td class="red" >
+                    ul. Zana / Akademiki UMCS
+                </td>
+                <td>
+                    60098
+                </td>
+                <td class="red" >
+                    6911
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24179&mlon=22.55516#map=19/51.24179/22.55516">47280490</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3076343651">3076343651</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.55426&right=22.556060000000002&top=51.24269&bottom=51.24089&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 330.45
+                </td>
+                <td>
+                    Hotel Victoria
+                </td>
+                <td class="red" >
+                    ul. Piłsudskiego / MPWiK
+                </td>
+                <td>
+                    60100
+                </td>
+                <td class="red" >
+                    6938
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.245121&mlon=22.545142#map=19/51.245121/22.545142">47280522</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090685806">3090685806</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.544241999999997&right=22.546042&top=51.246021&bottom=51.244220999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 239.54
+                </td>
+                <td>
+                    ul. Obrońców Pokoju / ul.Raabego
+                </td>
+                <td class="red" >
+                    ul. Radziszewskiego / ul. Akademicka
+                </td>
+                <td>
+                    60101
+                </td>
+                <td class="red" >
+                    6935
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.249768&mlon=22.551804#map=19/51.249768/22.551804">47280555</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4088421506">4088421506</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.550904&right=22.552704000000002&top=51.250668000000005&bottom=51.248868&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 142.24
+                </td>
+                <td>
+                    ul. Wieniawska
+                </td>
+                <td class="red" >
+                    ul. Spokojna / Urząd Wojewódzki
+                </td>
+                <td>
+                    60102
+                </td>
+                <td class="red" >
+                    6946
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24944&mlon=22.55996#map=19/51.24944/22.55996">47280586</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5504885165">5504885165</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.55906&right=22.56086&top=51.25034&bottom=51.24854&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 232.9
+                </td>
+                <td>
+                    ul. Radziwiłłowska / ul. Niecała
+                </td>
+                <td class="red" >
+                    Pl. Litewski / ul. Kapucyńska
+                </td>
+                <td>
+                    60103
+                </td>
+                <td class="red" >
+                    6947
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.26812&mlon=22.543014#map=19/51.26812/22.543014">47280626</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090663748">3090663748</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.542113999999998&right=22.543914&top=51.269020000000005&bottom=51.26722&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 436.17
+                </td>
+                <td>
+                    Rondo Kilara
+                </td>
+                <td class="red" >
+                    ul. Żywnego / ul. Paryska
+                </td>
+                <td>
+                    60104
+                </td>
+                <td class="red" >
+                    6901
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.247337&mlon=22.547953#map=19/51.247337/22.547953">47280747</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141557494">4141557494</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.547053&right=22.548853&top=51.248237&bottom=51.246437&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 334.2
+                </td>
+                <td>
+                    Centrum Spotkania Kultur
+                </td>
+                <td class="red" >
+                    ul. Hieronima Łopacińskiego / KUL
+                </td>
+                <td>
+                    60105
+                </td>
+                <td class="red" >
+                    6948
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24966&mlon=22.5742#map=19/51.24966/22.5742">47281278</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3749433420">3749433420</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.5733&right=22.575100000000003&top=51.25056&bottom=51.24876&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 171.21
+                </td>
+                <td>
+                    al. Unii Lubelskiej / Błonia pod Zamkiem
+                </td>
+                <td class="red" >
+                    Tarasy Zamkowe
+                </td>
+                <td>
+                    60107
+                </td>
+                <td class="red" >
+                    6943
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    14
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.27611&mlon=22.55407#map=19/51.27611/22.55407">47281320</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090665884">3090665884</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.553169999999998&right=22.55497&top=51.277010000000004&bottom=51.27521&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.88
+                </td>
+                <td>
+                    ul. Paderewskiego / ul. Leszetyckiego
+                </td>
+                <td >
+                    ul. Paderewskiego / ul. Leszetyckiego
+                </td>
+                <td>
+                    60108
+                </td>
+                <td class="red" >
+                    6904
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.2469&mlon=22.564#map=19/51.2469/22.564">47281344</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3082624196">3082624196</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.5631&right=22.5649&top=51.2478&bottom=51.245999999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.13
+                </td>
+                <td>
+                    Plac Wolności
+                </td>
+                <td >
+                    Plac Wolności
+                </td>
+                <td>
+                    60109
+                </td>
+                <td class="red" >
+                    6908
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25123&mlon=22.57064#map=19/51.25123/22.57064">47281379</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3082633524">3082633524</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.56974&right=22.571540000000002&top=51.25213&bottom=51.25033&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.56
+                </td>
+                <td>
+                    Al. Tysiąclecia / Plac Zamkowy
+                </td>
+                <td >
+                    al. Tysiąclecia / Plac Zamkowy
+                </td>
+                <td>
+                    60110
+                </td>
+                <td class="red" >
+                    6909
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22126&mlon=22.62934#map=19/51.22126/22.62934">47281400</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090830294">3090830294</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.628439999999998&right=22.63024&top=51.22216&bottom=51.22036&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.32
+                </td>
+                <td>
+                    ul. Doświadczalna / ul. Jagiełły
+                </td>
+                <td >
+                    ul. Doświadczalna / ul. Jagiełły
+                </td>
+                <td>
+                    60111
+                </td>
+                <td class="red" >
+                    6927
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24648&mlon=22.5328#map=19/51.24648/22.5328">47281428</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3090679373">3090679373</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.5319&right=22.533700000000003&top=51.24738&bottom=51.24558&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.5
+                </td>
+                <td>
+                    ul. Czwartaków / DS Helios UMCS
+                </td>
+                <td >
+                    ul. Czwartaków / DS Helios UMCS
+                </td>
+                <td>
+                    60112
+                </td>
+                <td class="red" >
+                    6931
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.235852&mlon=22.568868#map=19/51.235852/22.568868">47281452</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/8248785262">8248785262</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.567967999999997&right=22.569768&top=51.236752&bottom=51.234952&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.33
+                </td>
+                <td>
+                    al. Zygmuntowskie / MOSiR
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    60113
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.189807&mlon=22.544283#map=19/51.189807/22.544283">47281500</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3076255638">3076255638</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.543383&right=22.545183&top=51.190707&bottom=51.188907&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.99
+                </td>
+                <td>
+                    ul. Osmolicka / Słoneczny Wrotków
+                </td>
+                <td >
+                    ul. Osmolicka / Słoneczny Wrotków
+                </td>
+                <td>
+                    60114
+                </td>
+                <td class="red" >
+                    6933
+                </td>
+                <td>
+                    11
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.24816&mlon=22.56558#map=19/51.24816/22.56558">47281530</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3082621473">3082621473</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.56468&right=22.566480000000002&top=51.24906&bottom=51.24726&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.42
+                </td>
+                <td>
+                    ul. Bajkowskiego / Ratusz
+                </td>
+                <td >
+                    ul. Bajkowskiego / Ratusz
+                </td>
+                <td>
+                    60115
+                </td>
+                <td class="red" >
+                    6937
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.247579&mlon=22.561562#map=19/51.247579/22.561562">47281558</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5504885165">5504885165</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.560661999999997&right=22.562462&top=51.248479&bottom=51.246679&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.72
+                </td>
+                <td>
+                    Pl. Litewski / ul. Kapucyńska
+                </td>
+                <td >
+                    Pl. Litewski / ul. Kapucyńska
+                </td>
+                <td>
+                    60116
+                </td>
+                <td class="red" >
+                    6947
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.22886&mlon=22.55704#map=19/51.22886/22.55704">47281586</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4088412364">4088412364</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.55614&right=22.557940000000002&top=51.22976&bottom=51.227959999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.44
+                </td>
+                <td>
+                    ul. Cukrownicza / ZDiM / Arena Lublin
+                </td>
+                <td >
+                    ul. Cukrownicza / ZDiM / Arena Lublin
+                </td>
+                <td>
+                    60117
+                </td>
+                <td class="red" >
+                    6953
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.226691&mlon=22.48057#map=19/51.226691/22.48057">47281623</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141368999">4141368999</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.47967&right=22.48147&top=51.227591000000004&bottom=51.225791&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.06
+                </td>
+                <td>
+                    ul. Jana Pawła II / ul. Gęsia
+                </td>
+                <td >
+                    ul. Jana Pawła II / ul. Gęsia
+                </td>
+                <td>
+                    60118
+                </td>
+                <td class="red" >
+                    6967
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.224017&mlon=22.535985#map=19/51.224017/22.535985">47281668</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4056652265">4056652265</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.535085&right=22.536885&top=51.224917000000005&bottom=51.223117&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.53
+                </td>
+                <td>
+                    ul. Jana Pawła II / Rondo NSZ
+                </td>
+                <td >
+                    ul. Jana Pawła II / Rondo NSZ
+                </td>
+                <td>
+                    60119
+                </td>
+                <td class="red" >
+                    6969
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25293&mlon=22.57235#map=19/51.25293/22.57235">47281718</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4144071199">4144071199</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.57145&right=22.57325&top=51.25383&bottom=51.25203&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 8.31
+                </td>
+                <td>
+                    ul. Ruska / Skarpa
+                </td>
+                <td >
+                    ul. Ruska / Skarpa
+                </td>
+                <td>
+                    60120
+                </td>
+                <td class="red" >
+                    6979
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.25049&mlon=22.54625#map=19/51.25049/22.54625">47282750</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141413791">4141413791</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.54535&right=22.547150000000002&top=51.25139&bottom=51.24959&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.59
+                </td>
+                <td>
+                    ul. Leszczyńskiego
+                </td>
+                <td >
+                    ul. Leszczyńskiego
+                </td>
+                <td>
+                    60121
+                </td>
+                <td class="red" >
+                    6980
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.189726&mlon=22.544975#map=19/51.189726/22.544975">47282782</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3076255638">3076255638</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.544075&right=22.545875000000002&top=51.190626&bottom=51.188826&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 47.0
+                </td>
+                <td>
+                    ul. Osmolicka / Słoneczny Wrotków 2
+                </td>
+                <td >
+                    ul. Osmolicka / Słoneczny Wrotków
+                </td>
+                <td>
+                    60122
+                </td>
+                <td class="red" >
+                    6933
+                </td>
+                <td>
+                    11
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.2622&mlon=22.541816#map=19/51.2622/22.541816">47285204</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4141497910">4141497910</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=22.540916&right=22.542716000000002&top=51.2631&bottom=51.2613&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 292.53
+                </td>
+                <td>
+                    ul. Koncertowa / ul. Braci Wieniawskich
+                </td>
+                <td class="red" >
+                    ul. Braci Wieniawskich / ul. Kaprysowa
+                </td>
+                <td>
+                    60099
+                </td>
+                <td class="red" >
+                    6983
+                </td>
+                <td>
+                    None
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Lubelski Rower Miejski
+                </td>
+                <td >
+                    Nextbike
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v.2.0.1 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+</body>
+
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
+    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
+</head>
+<style>
+    table,
+    td,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: white;
+        /*border: 1px solid black;*/
+    }
+
+    .fill {
+        background-color: #D4D4D4;
+    }
+
+    .red {
+        background-color: #FF8080;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <script>
+        $(function() {
+            $('table').floatThead({
+                useAbsolutePositioning: true
+            });
+        });
+        $.tablesorter.addParser({
+            id: 'refs',
+            is: function(s, table, cell, $cell) {
+                return false;
+            },
+            format: function(s, table, cell, cellIndex) {
+                if (s.length == 4) {
+                    return s.concat('0');
+                } else {
+                    return s;
+                }
+            },
+            type: 'numeric'
+        });
+        $(function() {
+            $('table').tablesorter({
+                widgets: ["zebra"],
+                widgetOptions: {
+                    zebra: [, "fill"]
+                },
+
+                headers: {
+                    0: {sorter: false},
+                    1: {sorter: false},
+                    2: {sorter: true},
+                    3: {sorter: false}, //name TOP
+                    4: {sorter: false}, //ref TOP
+                    5: {sorter: false}, //stands TOP
+                    6: {sorter: false}, //network
+                    7: {sorter: false},
+                    8: {sorter: false},
+                    9: {sorter: false},
+                    10: {sorter: 'refs'}, //nextb ref
+                    11: {sorter: 'refs'}, //ref osm
+                    12: {sorter: false},
+                    13: {sorter: false},
+                }
+            });
+        });
+    </script>
+    <i>Updated: Tue, 14 Mar @ 00:38:11</i>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">NextBike
+                    <br>uid</th>
+                <th rowspan="2">OSM id
+                    <br>(closest match)</th>
+                <th rowspan="2">Distance
+                    <br>(in meters)</th>
+                <th colspan="2">Name</th>
+                <th colspan="2">Ref</th>
+                <th colspan="2">Stands</th>
+                <th rowspan="2">Network</th>
+                <th rowspan="2">Operator</th>
+            </tr>
+            <tr>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.232739&mlon=18.209397#map=19/52.232739/18.209397">9467919</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984701">5877984701</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.208496999999998&right=18.210297&top=52.233639000000004&bottom=52.231839&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    ul. Poznańska
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    2205
+                </td>
+                <td >
+                    2205
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.239091&mlon=18.231043#map=19/52.239091/18.231043">9467926</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984700">5877984700</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.230142999999998&right=18.231943&top=52.239991&bottom=52.238191&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    ul. Zakładowa
+                </td>
+                <td >
+                    ul. Zakładowa
+                </td>
+                <td>
+                    2206
+                </td>
+                <td >
+                    2206
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.230522&mlon=18.251084#map=19/52.230522/18.251084">9467931</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984699">5877984699</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.250183999999997&right=18.251984&top=52.231422&bottom=52.229622&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    ul. Dworcowa
+                </td>
+                <td >
+                    ul. Dworcowa
+                </td>
+                <td>
+                    2207
+                </td>
+                <td >
+                    2207
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.236833&mlon=18.26211#map=19/52.236833/18.26211">9467936</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984698">5877984698</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.26121&right=18.26301&top=52.237733&bottom=52.235932999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 8.83
+                </td>
+                <td>
+                    ul. Paderewskiego
+                </td>
+                <td >
+                    ul. Paderewskiego
+                </td>
+                <td>
+                    2208
+                </td>
+                <td >
+                    2208
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.227753&mlon=18.260492#map=19/52.227753/18.260492">9467942</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984697">5877984697</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.259591999999998&right=18.261392&top=52.228653&bottom=52.226853&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Aleja 1 Maja
+                </td>
+                <td >
+                    Aleja 1 Maja
+                </td>
+                <td>
+                    2209
+                </td>
+                <td >
+                    2209
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.227378&mlon=18.272648#map=19/52.227378/18.272648">9467949</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984696">5877984696</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.271748&right=18.273548&top=52.228278&bottom=52.226478&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    ul. Kard. Stefana Wyszyńskiego
+                </td>
+                <td >
+                    ul. Kard. Stefana Wyszyńskiego
+                </td>
+                <td>
+                    2210
+                </td>
+                <td >
+                    2210
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.230428&mlon=18.284654#map=19/52.230428/18.284654">9467960</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984695">5877984695</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.283754&right=18.285554&top=52.231328000000005&bottom=52.229528&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    ul. Księdza Jerzego Popiełuszki
+                </td>
+                <td >
+                    ul. Księdza Jerzego Popiełuszki
+                </td>
+                <td>
+                    2211
+                </td>
+                <td >
+                    2211
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.212675&mlon=18.252402#map=19/52.212675/18.252402">9467963</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984694">5877984694</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.251502&right=18.253302&top=52.213575&bottom=52.211774999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Bulwar Nadwarciański
+                </td>
+                <td >
+                    Bulwar Nadwarciański
+                </td>
+                <td>
+                    2212
+                </td>
+                <td >
+                    2212
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.209686&mlon=18.257048#map=19/52.209686/18.257048">9468209</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984693">5877984693</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.256148&right=18.257948000000003&top=52.210586&bottom=52.208785999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    ul. Grunwaldzka
+                </td>
+                <td >
+                    ul. Grunwaldzka
+                </td>
+                <td>
+                    2213
+                </td>
+                <td >
+                    2213
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.209765&mlon=18.246305#map=19/52.209765/18.246305">9468213</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984692">5877984692</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.245404999999998&right=18.247205&top=52.210665&bottom=52.208864999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Park im. F. Chopina
+                </td>
+                <td >
+                    Park im. F. Chopina
+                </td>
+                <td>
+                    2214
+                </td>
+                <td >
+                    2214
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.19767&mlon=18.23922#map=19/52.19767/18.23922">9468215</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5877984691">5877984691</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=18.238319999999998&right=18.24012&top=52.198570000000004&bottom=52.19677&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    ul. Józefa Piłsudskiego
+                </td>
+                <td >
+                    ul. Józefa Piłsudskiego
+                </td>
+                <td>
+                    2215
+                </td>
+                <td >
+                    2215
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Koniński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v.2.0.1 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+</body>
+
+</html>
