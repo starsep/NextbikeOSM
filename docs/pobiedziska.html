@@ -1,16 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
+    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
 </head>
+<style>
+    table,
+    td,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: white;
+        /*border: 1px solid black;*/
+    }
+
+    .fill {
+        background-color: #D4D4D4;
+    }
+
+    .red {
+        background-color: #FF8080;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
 
 <body>
-    <h2>Received empty dataset...sorry :(</h2>
-    <br>Add some data in this vicinity, then look here later.
-    <br>
-    <br>
-    <i>Last checked: Tue, 14 Mar @ 00:38:10</i>
+    <script>
+        $(function() {
+            $('table').floatThead({
+                useAbsolutePositioning: true
+            });
+        });
+        $.tablesorter.addParser({
+            id: 'refs',
+            is: function(s, table, cell, $cell) {
+                return false;
+            },
+            format: function(s, table, cell, cellIndex) {
+                if (s.length == 4) {
+                    return s.concat('0');
+                } else {
+                    return s;
+                }
+            },
+            type: 'numeric'
+        });
+        $(function() {
+            $('table').tablesorter({
+                widgets: ["zebra"],
+                widgetOptions: {
+                    zebra: [, "fill"]
+                },
+
+                headers: {
+                    0: {sorter: false},
+                    1: {sorter: false},
+                    2: {sorter: true},
+                    3: {sorter: false}, //name TOP
+                    4: {sorter: false}, //ref TOP
+                    5: {sorter: false}, //stands TOP
+                    6: {sorter: false}, //network
+                    7: {sorter: false},
+                    8: {sorter: false},
+                    9: {sorter: false},
+                    10: {sorter: 'refs'}, //nextb ref
+                    11: {sorter: 'refs'}, //ref osm
+                    12: {sorter: false},
+                    13: {sorter: false},
+                }
+            });
+        });
+    </script>
+    <i>Updated: Tue, 14 Mar @ 01:01:39</i>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">NextBike
+                    <br>uid</th>
+                <th rowspan="2">OSM id
+                    <br>(closest match)</th>
+                <th rowspan="2">Distance
+                    <br>(in meters)</th>
+                <th colspan="2">Name</th>
+                <th colspan="2">Ref</th>
+                <th colspan="2">Stands</th>
+                <th rowspan="2">Network</th>
+                <th rowspan="2">Operator</th>
+            </tr>
+            <tr>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.47931&mlon=17.27735#map=19/52.47931/17.27735">7716446</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5804580838">5804580838</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=17.276449999999997&right=17.27825&top=52.48021&bottom=52.47841&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 8.8
+                </td>
+                <td>
+                    Pobiedziska
+                </td>
+                <td >
+                    Pobiedziska
+                </td>
+                <td>
+                    6241
+                </td>
+                <td >
+                    6241
+                </td>
+                <td>
+                    12
+                </td>
+                <td class="red" >
+                    12
+                </td>
+                <td >
+                    Pobiedziski Rower Gminny
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.47407&mlon=17.24015#map=19/52.47407/17.24015">7716455</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5804580837">5804580837</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=17.23925&right=17.24105&top=52.47497&bottom=52.473169999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Pobiedziska Letnisko
+                </td>
+                <td >
+                    Pobiedziska Letnisko
+                </td>
+                <td>
+                    6242
+                </td>
+                <td >
+                    6242
+                </td>
+                <td>
+                    6
+                </td>
+                <td class="red" >
+                    6
+                </td>
+                <td >
+                    Pobiedziski Rower Gminny
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.46732&mlon=17.16864#map=19/52.46732/17.16864">7716465</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5804580837">5804580837</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=17.16774&right=17.16954&top=52.46822&bottom=52.46642&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 4917.19
+                </td>
+                <td>
+                    Biskupice
+                </td>
+                <td class="red" >
+                    Pobiedziska Letnisko
+                </td>
+                <td>
+                    6243
+                </td>
+                <td class="red" >
+                    6242
+                </td>
+                <td>
+                    6
+                </td>
+                <td class="red" >
+                    6
+                </td>
+                <td >
+                    Pobiedziski Rower Gminny
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v.2.0.1 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
 </body>
 
 </html>

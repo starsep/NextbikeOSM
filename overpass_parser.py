@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import Dict, List, cast
 
 import overpy
 from diskcache import Cache
@@ -13,7 +13,7 @@ cacheOverpass = Cache(str(cacheDirectory / "overpass"))
 def fetchOverpassData(placeName: str) -> overpy.Result:
     query = f"""
     [out:xml][timeout:250];
-    area[admin_level=6][name="{placeName}"]->.searchArea;
+    area[admin_level=8][name="{placeName}"]->.searchArea;
     (
         nwr[amenity=bicycle_rental](area.searchArea);
     );
@@ -28,9 +28,9 @@ class OverpassParser:
         self.data: overpy.Result = fetchOverpassData(placeName)
         self.ways: Dict[int, overpy.Way] = {way.id: way for way in self.data.ways}
         self.nodes: Dict[int, overpy.Node] = {node.id: node for node in self.data.nodes}
-        self.elements: List[overpy.Element] = list(self.nodes.values()) + list(
-            self.ways.values()
-        )
+        self.elements: List[overpy.Element] = cast(
+            List[overpy.Element], list(self.nodes.values())
+        ) + list(self.ways.values())
 
     def find(self, iD: int, mode: str = "n"):
         if mode == "n":

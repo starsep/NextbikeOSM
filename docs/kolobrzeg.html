@@ -1,16 +1,537 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
+    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
 </head>
+<style>
+    table,
+    td,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: white;
+        /*border: 1px solid black;*/
+    }
+
+    .fill {
+        background-color: #D4D4D4;
+    }
+
+    .red {
+        background-color: #FF8080;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
 
 <body>
-    <h2>Received empty dataset...sorry :(</h2>
-    <br>Add some data in this vicinity, then look here later.
-    <br>
-    <br>
-    <i>Last checked: Tue, 14 Mar @ 00:38:09</i>
+    <script>
+        $(function() {
+            $('table').floatThead({
+                useAbsolutePositioning: true
+            });
+        });
+        $.tablesorter.addParser({
+            id: 'refs',
+            is: function(s, table, cell, $cell) {
+                return false;
+            },
+            format: function(s, table, cell, cellIndex) {
+                if (s.length == 4) {
+                    return s.concat('0');
+                } else {
+                    return s;
+                }
+            },
+            type: 'numeric'
+        });
+        $(function() {
+            $('table').tablesorter({
+                widgets: ["zebra"],
+                widgetOptions: {
+                    zebra: [, "fill"]
+                },
+
+                headers: {
+                    0: {sorter: false},
+                    1: {sorter: false},
+                    2: {sorter: true},
+                    3: {sorter: false}, //name TOP
+                    4: {sorter: false}, //ref TOP
+                    5: {sorter: false}, //stands TOP
+                    6: {sorter: false}, //network
+                    7: {sorter: false},
+                    8: {sorter: false},
+                    9: {sorter: false},
+                    10: {sorter: 'refs'}, //nextb ref
+                    11: {sorter: 'refs'}, //ref osm
+                    12: {sorter: false},
+                    13: {sorter: false},
+                }
+            });
+        });
+    </script>
+    <i>Updated: Tue, 14 Mar @ 01:01:39</i>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">NextBike
+                    <br>uid</th>
+                <th rowspan="2">OSM id
+                    <br>(closest match)</th>
+                <th rowspan="2">Distance
+                    <br>(in meters)</th>
+                <th colspan="2">Name</th>
+                <th colspan="2">Ref</th>
+                <th colspan="2">Stands</th>
+                <th rowspan="2">Network</th>
+                <th rowspan="2">Operator</th>
+            </tr>
+            <tr>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.18167&mlon=15.569776#map=19/54.18167/15.569776">3562243</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266952">4926266952</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.568876&right=15.570675999999999&top=54.18257&bottom=54.180769999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 66.81
+                </td>
+                <td>
+                    Dworzec PKP
+                </td>
+                <td >
+                    Dworzec PKP
+                </td>
+                <td>
+                    6305
+                </td>
+                <td >
+                    6305
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.175918&mlon=15.583066#map=19/54.175918/15.583066">3575154</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266937">4926266937</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.582166&right=15.583966&top=54.176818000000004&bottom=54.175018&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 8.95
+                </td>
+                <td>
+                    Ul. Słowińców
+                </td>
+                <td >
+                    Ul. Słowińców
+                </td>
+                <td>
+                    6304
+                </td>
+                <td >
+                    6304
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.176563&mlon=15.57612#map=19/54.176563/15.57612">3576237</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4916278772">4916278772</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.57522&right=15.57702&top=54.177463&bottom=54.175663&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 8.31
+                </td>
+                <td>
+                    Ratusz
+                </td>
+                <td >
+                    Ratusz
+                </td>
+                <td>
+                    6303
+                </td>
+                <td >
+                    6303
+                </td>
+                <td>
+                    20
+                </td>
+                <td class="red" >
+                    20
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.175203&mlon=15.561769#map=19/54.175203/15.561769">3579613</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266935">4926266935</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.560869&right=15.562669&top=54.176103000000005&bottom=54.174303&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 14.38
+                </td>
+                <td>
+                    Stadion
+                </td>
+                <td >
+                    Stadion
+                </td>
+                <td>
+                    6301
+                </td>
+                <td >
+                    6301
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.17906&mlon=15.590422#map=19/54.17906/15.590422">3580557</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266941">4926266941</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.589522&right=15.591322&top=54.17996&bottom=54.17816&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 21.04
+                </td>
+                <td>
+                    Ogrody - ul. Fredry
+                </td>
+                <td >
+                    Ogrody - ul. Fredry
+                </td>
+                <td>
+                    6311
+                </td>
+                <td >
+                    6311
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.187195&mlon=15.592078#map=19/54.187195/15.592078">3580938</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266939">4926266939</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.591178000000001&right=15.592978&top=54.188095000000004&bottom=54.186295&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 10.41
+                </td>
+                <td>
+                    Kamienny Szaniec
+                </td>
+                <td >
+                    Kamienny Szaniec
+                </td>
+                <td>
+                    6307
+                </td>
+                <td >
+                    6307
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.185878&mlon=15.553748#map=19/54.185878/15.553748">3581060</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266940">4926266940</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.552848000000001&right=15.554648&top=54.186778000000004&bottom=54.184978&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 7.41
+                </td>
+                <td>
+                    Latarnia Morska
+                </td>
+                <td >
+                    Latarnia Morska
+                </td>
+                <td>
+                    6306
+                </td>
+                <td >
+                    6306
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.177299&mlon=15.542635#map=19/54.177299/15.542635">3581070</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266934">4926266934</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.541735000000001&right=15.543535&top=54.178199&bottom=54.176398999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.64
+                </td>
+                <td>
+                    ul. Arciszewskiego
+                </td>
+                <td >
+                    ul. Arciszewskiego
+                </td>
+                <td>
+                    6308
+                </td>
+                <td >
+                    6308
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.162546&mlon=15.548692#map=19/54.162546/15.548692">3581078</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266942">4926266942</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.547792000000001&right=15.549592&top=54.163446&bottom=54.161646&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.52
+                </td>
+                <td>
+                    ul. Toruńska
+                </td>
+                <td >
+                    ul. Toruńska
+                </td>
+                <td>
+                    6309
+                </td>
+                <td >
+                    6309
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.156749&mlon=15.553797#map=19/54.156749/15.553797">3581080</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266933">4926266933</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.552897&right=15.554696999999999&top=54.157649&bottom=54.155848999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 13.06
+                </td>
+                <td>
+                    ul. Świętego Wojciecha
+                </td>
+                <td >
+                    ul. Świętego Wojciecha
+                </td>
+                <td>
+                    6310
+                </td>
+                <td >
+                    6310
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=54.192712&mlon=15.662689#map=19/54.192712/15.662689">3581086</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/4926266938">4926266938</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=15.661789&right=15.663589&top=54.193612&bottom=54.191812&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.43
+                </td>
+                <td>
+                    Podczele - ul. Brzeska
+                </td>
+                <td >
+                    Podczele - ul. Brzeska
+                </td>
+                <td>
+                    6312
+                </td>
+                <td >
+                    6312
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v.2.0.1 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
 </body>
 
 </html>

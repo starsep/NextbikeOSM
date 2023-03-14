@@ -20,14 +20,13 @@ This script tries to match stations by ref, when impossible looks for closest no
 ## Help
 Open [nextbike_valid.py](https://github.com/starsep/NextbikeOSM/blob/master/nextbike_valid.py) in command line using:
 ```
-usage: nextbike_valid.py [-h] [-a NETWORK OSM_PATH HTML_PATH] [-i] [-u] [-f]
+usage: nextbike_valid.py [-h] [-a NETWORK OSM_NAME HTML_PATH] [-i] [-u] [-f]
 
 optional arguments:
   -h, --help            show this help message and exit
-  -a NETWORK OSM_PATH HTML_PATH, --auto NETWORK OSM_PATH HTML_PATH
+  -a NETWORK OSM_PATH HTML_PATH, --auto NETWORK OSM_NAME HTML_PATH
                         NETWORK is uid or name to be found in
                         nextbike_uids.txt
-  -i, --interactive     runs interactive guide
   -u, --update          updates manually nextbike .xml file and .set file wit
                         uids
   -f, --feed            runs feed creation (only with -a!)
@@ -38,11 +37,11 @@ If you need more help, ask me (email or whatever :smile:)!
 #### Examples
 * Processes data for network *VETURILO 3.0*, takes osm data from *export.osm* and saves html to *my.html*
 ```
-python nextbike_valid.py -a "VETURILO 3.0" export.osm my.html
+python nextbike_valid.py -a "VETURILO 3.0" Warszawa my.html
 ```
 * Processes data for city *Hamburg*(uids for cities you can find in nextbike_uids.txt in your directory after first program run), takes osm data from *export.osm* and saves html to *my.html*
 ```
-python nextbike_valid.py -a 43 export.osm my.html
+python nextbike_valid.py -a 43 Hamburg my.html
 ```
 * Updates data from nextbike server. This data are downloaded by first run automatically, but if you want to keep it updated, this it for you.
 ```
