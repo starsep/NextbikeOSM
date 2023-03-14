@@ -12,7 +12,7 @@ class Place(GeoPoint):
     uid: str
     name: str
     num: int
-    stands: int
+    stands: str
 
 
 @dataclass
@@ -73,9 +73,10 @@ class NextbikeParser:
                     )
                     if "terminal_type" in place_attrib:
                         terminal_type = place_attrib["terminal_type"]
-                        if terminal_type == "sign" and type(stands) == int:
+                        if terminal_type == "sign" and type(stands) == int and cityName == "Warszawa":
                             # TODO: move logic somewhere else?
                             stands = stands * 2
+                    stands = str(stands)
                     place_list.append(
                         Place(
                             uid=uid, lat=lat, lon=lon, name=name, num=num, stands=stands
