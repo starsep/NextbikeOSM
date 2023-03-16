@@ -8,7 +8,6 @@ __DB__ = "feeds.db"
 
 class Feed:
     def __init__(self, objname, nodes, ways, places):
-
         self.objname = objname
         self.nodes = nodes
         self.ways = ways
@@ -23,7 +22,6 @@ class Feed:
         self.nxtb_changes = []
 
     def new_db(self):
-
         connection = sql.connect(__DB__)
         c = connection.cursor()
         db_tables = c.execute("""SELECT * FROM sqlite_master""").fetchall()
@@ -173,7 +171,6 @@ class Feed:
         connection.close()
 
     def create_feed(self):
-
         connection = sql.connect(__DB__)
         c = connection.cursor()
 

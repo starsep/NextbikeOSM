@@ -22,5 +22,5 @@ class DistanceTestCase(TestCase):
                 14307.62,
             ),
         ]
-        for (pointA, pointB, expected) in testCases:
+        for pointA, pointB, expected in testCases:
             self.assertAlmostEqual(distance(pointA, pointB), expected, places=2)

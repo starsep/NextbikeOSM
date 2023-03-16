@@ -34,6 +34,9 @@ class MapFeatureTags:
     ref: str
     capacity: str
 
+    def toCSV(self) -> str:
+        return f"name={self.name},ref={self.ref},capacity={self.capacity}"
+
 
 @dataclass
 class MapFeature(GeoPoint):
@@ -50,6 +53,9 @@ class MapFeature(GeoPoint):
                 capacity=match.nextbike.stands,
             ),
         )
+
+    def toCSV(self) -> str:
+        return f"{self.lat},{self.lon},addNode " + self.tags.toCSV()
 
 
 class NextbikeValidator:
@@ -135,17 +141,30 @@ class NextbikeValidator:
         if mapPath is not None:
             mapFeatures = list(
                 map(
-                    dataclasses.asdict,
-                    map(
-                        MapFeature.fromMatch,
-                        filter(lambda m: m.distance > distanceThreshold, matches),
-                    ),
-                )
+                    MapFeature.fromMatch,
+                    filter(lambda m: m.distance > distanceThreshold, matches),
+                ),
             )
+            mapFeaturesDict = list(map(dataclasses.asdict, mapFeatures))
             mapTemplate = self.envir.get_template("map.html")
             with mapPath.open("w", encoding="utf-8") as f:
-                context = {"featuresJson": json.dumps(mapFeatures)}
+                context = {"featuresJson": json.dumps(mapFeaturesDict)}
                 f.write(mapTemplate.render(context))
+            networkTags = dict(
+                amenity="bicycle_rental",
+                operator="Nextbike Polska",
+            )
+            if outputPath.name.startswith("warszawa"): # TODO: move logic
+                networkTags["bicycle_rental"] = "dropoff_point"
+                networkTags["brand"] = "Veturilo"
+                networkTags["brand:wikidata"] = "Q3847868"
+                networkTags["network"] = "Veturilo"
+                networkTags["network:wikidata"] = "Q3847868"
+            networkTagsCSV = ",".join([f"{key}={value}" for key, value in networkTags.items()])
+            csvPath = outputPath.with_suffix(".csv")
+            with csvPath.open("w") as f:
+                for feature in mapFeatures:
+                    f.write(feature.toCSV() + "," + networkTagsCSV + "\n")
         # NEXT vs osm
         # uid  !=     iD
         # lat         lat

@@ -40,7 +40,7 @@ if __name__ == "__main__":
         (831, "Wolsztyn"),
     ]
     nextbikeParser = NextbikeParser()
-    for (networkId, cityName) in networksPoland:
+    for networkId, cityName in networksPoland:
         slug = slugify(cityName)
         main(
             update=False,
