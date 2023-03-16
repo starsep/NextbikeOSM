@@ -129,6 +129,7 @@ class NextbikeValidator:
             )
             matches.append(match)
         distanceThreshold = 50.0
+        csvPath = outputPath.with_suffix(".csv")
         with outputPath.open("w", encoding="utf-8") as f:
             context = {
                 "matches": matches,
@@ -136,6 +137,7 @@ class NextbikeValidator:
                 "VERSION": __VERSION__,
                 "distanceThreshold": distanceThreshold,
                 "mapLink": str(mapPath.name),
+                "csvLink": str(csvPath.name),
             }
             f.write(template.render(context))
         if mapPath is not None:
@@ -154,14 +156,15 @@ class NextbikeValidator:
                 amenity="bicycle_rental",
                 operator="Nextbike Polska",
             )
-            if outputPath.name.startswith("warszawa"): # TODO: move logic
+            if outputPath.name.startswith("warszawa"):  # TODO: move logic
                 networkTags["bicycle_rental"] = "dropoff_point"
                 networkTags["brand"] = "Veturilo"
                 networkTags["brand:wikidata"] = "Q3847868"
                 networkTags["network"] = "Veturilo"
                 networkTags["network:wikidata"] = "Q3847868"
-            networkTagsCSV = ",".join([f"{key}={value}" for key, value in networkTags.items()])
-            csvPath = outputPath.with_suffix(".csv")
+            networkTagsCSV = ",".join(
+                [f"{key}={value}" for key, value in networkTags.items()]
+            )
             with csvPath.open("w") as f:
                 for feature in mapFeatures:
                     f.write(feature.toCSV() + "," + networkTagsCSV + "\n")
