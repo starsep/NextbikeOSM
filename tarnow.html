@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
+    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
+</head>
+<style>
+    table,
+    td,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: white;
+        /*border: 1px solid black;*/
+    }
+
+    .fill {
+        background-color: #D4D4D4;
+    }
+
+    .red {
+        background-color: #FF8080;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <script>
+        $(function() {
+            $('table').floatThead({
+                useAbsolutePositioning: true
+            });
+        });
+        $.tablesorter.addParser({
+            id: 'refs',
+            is: function(s, table, cell, $cell) {
+                return false;
+            },
+            format: function(s, table, cell, cellIndex) {
+                if (s.length == 4) {
+                    return s.concat('0');
+                } else {
+                    return s;
+                }
+            },
+            type: 'numeric'
+        });
+        $(function() {
+            $('table').tablesorter({
+                widgets: ["zebra"],
+                widgetOptions: {
+                    zebra: [, "fill"]
+                },
+
+                headers: {
+                    0: {sorter: false},
+                    1: {sorter: false},
+                    2: {sorter: true},
+                    3: {sorter: false}, //name TOP
+                    4: {sorter: false}, //ref TOP
+                    5: {sorter: false}, //stands TOP
+                    6: {sorter: false}, //network
+                    7: {sorter: false},
+                    8: {sorter: false},
+                    9: {sorter: false},
+                    10: {sorter: 'refs'}, //nextb ref
+                    11: {sorter: 'refs'}, //ref osm
+                    12: {sorter: false},
+                    13: {sorter: false},
+                }
+            });
+        });
+    </script>
+    <i>Updated: Thu, 16 Mar @ 18:56:01</i>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">NextBike
+                    <br>uid</th>
+                <th rowspan="2">OSM id
+                    <br>(closest match)</th>
+                <th rowspan="2">Distance
+                    <br>(in meters)</th>
+                <th colspan="2">Name</th>
+                <th colspan="2">Ref</th>
+                <th colspan="2">Stands</th>
+                <th rowspan="2">Network</th>
+                <th rowspan="2">Operator</th>
+            </tr>
+            <tr>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.011964&mlon=20.986858#map=19/50.011964/20.986858">10031377</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050880">5976050880</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.985958&right=20.987758000000003&top=50.012864&bottom=50.011064&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 10.61
+                </td>
+                <td>
+                    Plac Kazimierza
+                </td>
+                <td class="red" >
+                    Plac Sobieskiego
+                </td>
+                <td>
+                    3880
+                </td>
+                <td >
+                    3880
+                </td>
+                <td>
+                    14
+                </td>
+                <td >
+                    14
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.015361&mlon=20.98884#map=19/50.015361/20.98884">10031384</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050879">5976050879</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.98794&right=20.98974&top=50.016261&bottom=50.014461&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.21
+                </td>
+                <td>
+                    Plac Jana Szczepanika
+                </td>
+                <td >
+                    Plac Jana Szczepanika
+                </td>
+                <td>
+                    3881
+                </td>
+                <td >
+                    3881
+                </td>
+                <td>
+                    15
+                </td>
+                <td >
+                    15
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.006967&mlon=20.974204#map=19/50.006967/20.974204">10031388</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050878">5976050878</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.973304&right=20.975104&top=50.007867000000005&bottom=50.006067&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 25.78
+                </td>
+                <td>
+                    Dworzec PKP
+                </td>
+                <td >
+                    Dworzec PKP
+                </td>
+                <td>
+                    3882
+                </td>
+                <td >
+                    3882
+                </td>
+                <td>
+                    12
+                </td>
+                <td class="red" >
+                    16
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.021536&mlon=20.985465#map=19/50.021536/20.985465">10031393</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050877">5976050877</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.984565&right=20.986365000000003&top=50.022436&bottom=50.020635999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Park Strzelecki
+                </td>
+                <td >
+                    Park Strzelecki
+                </td>
+                <td>
+                    3883
+                </td>
+                <td >
+                    3883
+                </td>
+                <td>
+                    20
+                </td>
+                <td >
+                    20
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.022558&mlon=21.012712#map=19/50.022558/21.012712">10031400</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050876">5976050876</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=21.011812&right=21.013612000000002&top=50.023458&bottom=50.021657999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Osiedle Zielone
+                </td>
+                <td >
+                    Osiedle Zielone
+                </td>
+                <td>
+                    3884
+                </td>
+                <td >
+                    3884
+                </td>
+                <td>
+                    15
+                </td>
+                <td >
+                    15
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.044311&mlon=20.992433#map=19/50.044311/20.992433">10031402</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050875">5976050875</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.991532999999997&right=20.993333&top=50.045211&bottom=50.043411&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Krzyska – Szkoła
+                </td>
+                <td >
+                    Krzyska – Szkoła
+                </td>
+                <td>
+                    3885
+                </td>
+                <td >
+                    3885
+                </td>
+                <td>
+                    15
+                </td>
+                <td >
+                    15
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=49.992456&mlon=21.001062#map=19/49.992456/21.001062">10031406</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050874">5976050874</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=21.000162&right=21.001962000000002&top=49.993356&bottom=49.991555999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Góra Św. Marcina
+                </td>
+                <td >
+                    Góra Św. Marcina
+                </td>
+                <td>
+                    3886
+                </td>
+                <td >
+                    3886
+                </td>
+                <td>
+                    15
+                </td>
+                <td >
+                    15
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=49.994859&mlon=20.947723#map=19/49.994859/20.947723">10031409</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050873">5976050873</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.946823&right=20.948623&top=49.995759&bottom=49.993959&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Osiedle Koszyckie
+                </td>
+                <td >
+                    Osiedle Koszyckie
+                </td>
+                <td>
+                    3887
+                </td>
+                <td >
+                    3887
+                </td>
+                <td>
+                    15
+                </td>
+                <td >
+                    15
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.009739&mlon=20.925607#map=19/50.009739/20.925607">10031415</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050872">5976050872</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.924706999999998&right=20.926507&top=50.010639000000005&bottom=50.008839&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Centrum Sztuki Mościce
+                </td>
+                <td >
+                    Centrum Sztuki Mościce
+                </td>
+                <td>
+                    3888
+                </td>
+                <td >
+                    3888
+                </td>
+                <td>
+                    20
+                </td>
+                <td >
+                    20
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.0149&mlon=20.923703#map=19/50.0149/20.923703">10031418</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050871">5976050871</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.922803&right=20.924603&top=50.0158&bottom=50.013999999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Mościce – Kwiatkowskiego
+                </td>
+                <td >
+                    Mościce – Kwiatkowskiego
+                </td>
+                <td>
+                    3889
+                </td>
+                <td >
+                    3889
+                </td>
+                <td>
+                    19
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.02666&mlon=21.00299#map=19/50.02666/21.00299">32183274</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050876">5976050876</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=21.00209&right=21.003890000000002&top=50.02756&bottom=50.02576&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 832.78
+                </td>
+                <td>
+                    Osiedle Legionów
+                </td>
+                <td class="red" >
+                    Osiedle Zielone
+                </td>
+                <td>
+                    3890
+                </td>
+                <td class="red" >
+                    3884
+                </td>
+                <td>
+                    15
+                </td>
+                <td >
+                    15
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.03047&mlon=21.00667#map=19/50.03047/21.00667">32183286</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050876">5976050876</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=21.00577&right=21.00757&top=50.03137&bottom=50.02957&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 980.78
+                </td>
+                <td>
+                    Osiedle Westerplatte
+                </td>
+                <td class="red" >
+                    Osiedle Zielone
+                </td>
+                <td>
+                    3891
+                </td>
+                <td class="red" >
+                    3884
+                </td>
+                <td>
+                    13
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.01163&mlon=20.96975#map=19/50.01163/20.96975">32183346</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050878">5976050878</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.96885&right=20.970650000000003&top=50.01253&bottom=50.010729999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 634.48
+                </td>
+                <td>
+                    Mościckiego - Osiedle
+                </td>
+                <td class="red" >
+                    Dworzec PKP
+                </td>
+                <td>
+                    3892
+                </td>
+                <td class="red" >
+                    3882
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    16
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.01442&mlon=21.00469#map=19/50.01442/21.00469">32183368</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/7984538436">7984538436</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=21.00379&right=21.00559&top=50.01532&bottom=50.01352&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 10.8
+                </td>
+                <td>
+                    Lwowska - Kowalska
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    3893
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    16
+                </td>
+                <td class="red" >
+                    12
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.01906&mlon=20.97496#map=19/50.01906/20.97496">32183374</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/7984526143">7984526143</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.974059999999998&right=20.97586&top=50.019960000000005&bottom=50.01816&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 14.47
+                </td>
+                <td>
+                    Klikowska - Pułaskiego
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    3894
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    12
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.01759&mlon=21.0041#map=19/50.01759/21.0041">32183410</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/7984538436">7984538436</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=21.0032&right=21.005000000000003&top=50.01849&bottom=50.01669&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 350.61
+                </td>
+                <td>
+                    Słoneczna
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    3895
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    16
+                </td>
+                <td class="red" >
+                    12
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.009141&mlon=20.992723#map=19/50.009141/20.992723">130235737</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050880">5976050880</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.991823&right=20.993623000000003&top=50.010041&bottom=50.008241&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 534.85
+                </td>
+                <td>
+                    Konarskiego - Sąd
+                </td>
+                <td class="red" >
+                    Plac Sobieskiego
+                </td>
+                <td>
+                    3896
+                </td>
+                <td class="red" >
+                    3880
+                </td>
+                <td>
+                    15
+                </td>
+                <td class="red" >
+                    14
+                </td>
+                <td >
+                    Kołobrzeski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.032008&mlon=20.981917#map=19/50.032008/20.981917">130238242</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5976050877">5976050877</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.981016999999998&right=20.982817&top=50.032908&bottom=50.031107999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 1192.22
+                </td>
+                <td>
+                    Piaskowa – Park
+                </td>
+                <td class="red" >
+                    Park Strzelecki
+                </td>
+                <td>
+                    3897
+                </td>
+                <td class="red" >
+                    3883
+                </td>
+                <td>
+                    12
+                </td>
+                <td class="red" >
+                    20
+                </td>
+                <td >
+                    Tarnowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v.2.0.1 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+</body>
+
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
+    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
+</head>
+<style>
+    table,
+    td,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: white;
+        /*border: 1px solid black;*/
+    }
+
+    .fill {
+        background-color: #D4D4D4;
+    }
+
+    .red {
+        background-color: #FF8080;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <script>
+        $(function() {
+            $('table').floatThead({
+                useAbsolutePositioning: true
+            });
+        });
+        $.tablesorter.addParser({
+            id: 'refs',
+            is: function(s, table, cell, $cell) {
+                return false;
+            },
+            format: function(s, table, cell, cellIndex) {
+                if (s.length == 4) {
+                    return s.concat('0');
+                } else {
+                    return s;
+                }
+            },
+            type: 'numeric'
+        });
+        $(function() {
+            $('table').tablesorter({
+                widgets: ["zebra"],
+                widgetOptions: {
+                    zebra: [, "fill"]
+                },
+
+                headers: {
+                    0: {sorter: false},
+                    1: {sorter: false},
+                    2: {sorter: true},
+                    3: {sorter: false}, //name TOP
+                    4: {sorter: false}, //ref TOP
+                    5: {sorter: false}, //stands TOP
+                    6: {sorter: false}, //network
+                    7: {sorter: false},
+                    8: {sorter: false},
+                    9: {sorter: false},
+                    10: {sorter: 'refs'}, //nextb ref
+                    11: {sorter: 'refs'}, //ref osm
+                    12: {sorter: false},
+                    13: {sorter: false},
+                }
+            });
+        });
+    </script>
+    <i>Updated: Thu, 16 Mar @ 18:56:01</i>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">NextBike
+                    <br>uid</th>
+                <th rowspan="2">OSM id
+                    <br>(closest match)</th>
+                <th rowspan="2">Distance
+                    <br>(in meters)</th>
+                <th colspan="2">Name</th>
+                <th colspan="2">Ref</th>
+                <th colspan="2">Stands</th>
+                <th rowspan="2">Network</th>
+                <th rowspan="2">Operator</th>
+            </tr>
+            <tr>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.114787&mlon=19.949966#map=19/52.114787/19.949966">10279700</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909832997">5909832997</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.949066&right=19.950866&top=52.115687&bottom=52.113887&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 109.03
+                </td>
+                <td>
+                    Armii Krajowej
+                </td>
+                <td >
+                    Armii Krajowej
+                </td>
+                <td>
+                    7463
+                </td>
+                <td >
+                    7463
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.11941&mlon=19.946192#map=19/52.11941/19.946192">10279911</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909832998">5909832998</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.945292&right=19.947092&top=52.12031&bottom=52.11851&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 62.52
+                </td>
+                <td>
+                    Grunwaldzka - SP 3
+                </td>
+                <td >
+                    Grunwaldzka - SP 3
+                </td>
+                <td>
+                    7464
+                </td>
+                <td >
+                    7464
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.105865&mlon=19.955242#map=19/52.105865/19.955242">10279944</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6087951315">6087951315</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.954341999999997&right=19.956142&top=52.106765&bottom=52.104965&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.42
+                </td>
+                <td>
+                    Dworcowa - Łowicz Główny
+                </td>
+                <td >
+                    Dworcowa - Łowicz Główny
+                </td>
+                <td>
+                    7465
+                </td>
+                <td >
+                    7465
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.103286&mlon=19.946465#map=19/52.103286/19.946465">10279970</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909833000">5909833000</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.945565&right=19.947365&top=52.104186&bottom=52.102385999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 8.05
+                </td>
+                <td>
+                    Kaliska - pływalnia
+                </td>
+                <td >
+                    Kaliska - pływalnia
+                </td>
+                <td>
+                    7466
+                </td>
+                <td >
+                    7466
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.093827&mlon=19.94667#map=19/52.093827/19.94667">10279995</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909832996">5909832996</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.94577&right=19.947570000000002&top=52.094727&bottom=52.092926999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 46.91
+                </td>
+                <td>
+                    Łowicz Przedmieście
+                </td>
+                <td >
+                    Łowicz Przedmieście
+                </td>
+                <td>
+                    7467
+                </td>
+                <td >
+                    7467
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.082957&mlon=19.929298#map=19/52.082957/19.929298">10280031</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909832991">5909832991</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.928397999999998&right=19.930198&top=52.083857&bottom=52.082057&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 56.61
+                </td>
+                <td>
+                    Podleśna
+                </td>
+                <td >
+                    Podleśna
+                </td>
+                <td>
+                    7468
+                </td>
+                <td >
+                    7468
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.100899&mlon=19.926215#map=19/52.100899/19.926215">10280072</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909832990">5909832990</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.925314999999998&right=19.927115&top=52.101799&bottom=52.099999&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.87
+                </td>
+                <td>
+                    Medyczna
+                </td>
+                <td >
+                    Medyczna
+                </td>
+                <td>
+                    7469
+                </td>
+                <td >
+                    7469
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.10552&mlon=19.915379#map=19/52.10552/19.915379">10280091</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909832989">5909832989</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.914479&right=19.916279000000003&top=52.10642&bottom=52.10462&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 7.57
+                </td>
+                <td>
+                    Sadowa -os. Górki
+                </td>
+                <td >
+                    Sadowa -os. Górki
+                </td>
+                <td>
+                    7470
+                </td>
+                <td >
+                    7470
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.102223&mlon=19.930349#map=19/52.102223/19.930349">10280186</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909832988">5909832988</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.929448999999998&right=19.931249&top=52.103123000000004&bottom=52.101323&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 8.86
+                </td>
+                <td>
+                    Starościńska
+                </td>
+                <td >
+                    Starościńska
+                </td>
+                <td>
+                    7471
+                </td>
+                <td >
+                    7471
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.102747&mlon=19.938455#map=19/52.102747/19.938455">10280229</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909832999">5909832999</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.937555&right=19.939355000000003&top=52.103647&bottom=52.101847&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 17.5
+                </td>
+                <td>
+                    Starzyńskiego - targowisko
+                </td>
+                <td >
+                    Starzyńskiego - targowisko
+                </td>
+                <td>
+                    7472
+                </td>
+                <td >
+                    7472
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.105791&mlon=19.936465#map=19/52.105791/19.936465">10280271</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909832987">5909832987</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.935564999999997&right=19.937365&top=52.106691000000005&bottom=52.104891&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 19.27
+                </td>
+                <td>
+                    Nowy Rynek
+                </td>
+                <td >
+                    Nowy Rynek
+                </td>
+                <td>
+                    7473
+                </td>
+                <td >
+                    7473
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.107475&mlon=19.944453#map=19/52.107475/19.944453">10280289</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5909833001">5909833001</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.943552999999998&right=19.945353&top=52.108375&bottom=52.106575&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.87
+                </td>
+                <td>
+                    Stary Rynek
+                </td>
+                <td >
+                    Stary Rynek
+                </td>
+                <td>
+                    7474
+                </td>
+                <td >
+                    7474
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v.2.0.1 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+</body>
+
+</html>

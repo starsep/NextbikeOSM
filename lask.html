@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
+    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
+</head>
+<style>
+    table,
+    td,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: white;
+        /*border: 1px solid black;*/
+    }
+
+    .fill {
+        background-color: #D4D4D4;
+    }
+
+    .red {
+        background-color: #FF8080;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <script>
+        $(function() {
+            $('table').floatThead({
+                useAbsolutePositioning: true
+            });
+        });
+        $.tablesorter.addParser({
+            id: 'refs',
+            is: function(s, table, cell, $cell) {
+                return false;
+            },
+            format: function(s, table, cell, cellIndex) {
+                if (s.length == 4) {
+                    return s.concat('0');
+                } else {
+                    return s;
+                }
+            },
+            type: 'numeric'
+        });
+        $(function() {
+            $('table').tablesorter({
+                widgets: ["zebra"],
+                widgetOptions: {
+                    zebra: [, "fill"]
+                },
+
+                headers: {
+                    0: {sorter: false},
+                    1: {sorter: false},
+                    2: {sorter: true},
+                    3: {sorter: false}, //name TOP
+                    4: {sorter: false}, //ref TOP
+                    5: {sorter: false}, //stands TOP
+                    6: {sorter: false}, //network
+                    7: {sorter: false},
+                    8: {sorter: false},
+                    9: {sorter: false},
+                    10: {sorter: 'refs'}, //nextb ref
+                    11: {sorter: 'refs'}, //ref osm
+                    12: {sorter: false},
+                    13: {sorter: false},
+                }
+            });
+        });
+    </script>
+    <i>Updated: Thu, 16 Mar @ 18:56:01</i>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">NextBike
+                    <br>uid</th>
+                <th rowspan="2">OSM id
+                    <br>(closest match)</th>
+                <th rowspan="2">Distance
+                    <br>(in meters)</th>
+                <th colspan="2">Name</th>
+                <th colspan="2">Ref</th>
+                <th colspan="2">Stands</th>
+                <th rowspan="2">Network</th>
+                <th rowspan="2">Operator</th>
+            </tr>
+            <tr>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.593584&mlon=19.129081#map=19/51.593584/19.129081">10214319</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6087951321">6087951321</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.128180999999998&right=19.129981&top=51.594484&bottom=51.592684&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Łask ul. Zielona
+                </td>
+                <td >
+                    Łask ul. Zielona
+                </td>
+                <td>
+                    7644
+                </td>
+                <td >
+                    7644
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.587885&mlon=19.136521#map=19/51.587885/19.136521">10279513</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6087951320">6087951320</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.135620999999997&right=19.137421&top=51.588785&bottom=51.586985&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Łask ul. Jana Pawła II
+                </td>
+                <td >
+                    Łask ul. Jana Pawła II
+                </td>
+                <td>
+                    7645
+                </td>
+                <td >
+                    7645
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.588895&mlon=19.148952#map=19/51.588895/19.148952">10279528</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6087951319">6087951319</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.148052&right=19.149852000000003&top=51.589795&bottom=51.587995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Łask ul. Inki - Danuty Siedzikówny
+                </td>
+                <td >
+                    Łask ul. Inki - Danuty Siedzikówny
+                </td>
+                <td>
+                    7646
+                </td>
+                <td >
+                    7646
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.611689&mlon=19.202653#map=19/51.611689/19.202653">10279583</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6087951318">6087951318</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.201753&right=19.203553000000003&top=51.612589&bottom=51.610789&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Łask - Kolumna Plac Szarych Szeregów
+                </td>
+                <td >
+                    Łask - Kolumna Plac Szarych Szeregów
+                </td>
+                <td>
+                    7647
+                </td>
+                <td >
+                    7647
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.614577&mlon=19.190926#map=19/51.614577/19.190926">10279606</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6087951317">6087951317</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.190026&right=19.191826000000002&top=51.615477&bottom=51.613676999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Łask - Kolumna ul. Lipowa
+                </td>
+                <td >
+                    Łask - Kolumna ul. Lipowa
+                </td>
+                <td>
+                    7648
+                </td>
+                <td >
+                    7648
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.592021&mlon=19.161671#map=19/51.592021/19.161671">10279638</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6087951316">6087951316</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.160770999999997&right=19.162571&top=51.592921000000004&bottom=51.591121&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 0.0
+                </td>
+                <td>
+                    Łask ul. Szkolna
+                </td>
+                <td >
+                    Łask ul. Szkolna
+                </td>
+                <td>
+                    7649
+                </td>
+                <td >
+                    7649
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Rowerowe Łódzkie
+                </td>
+                <td >
+                    NB Serwis
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v.2.0.1 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+</body>
+
+</html>

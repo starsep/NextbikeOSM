@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
+    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
+</head>
+<style>
+    table,
+    td,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: white;
+        /*border: 1px solid black;*/
+    }
+
+    .fill {
+        background-color: #D4D4D4;
+    }
+
+    .red {
+        background-color: #FF8080;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <script>
+        $(function() {
+            $('table').floatThead({
+                useAbsolutePositioning: true
+            });
+        });
+        $.tablesorter.addParser({
+            id: 'refs',
+            is: function(s, table, cell, $cell) {
+                return false;
+            },
+            format: function(s, table, cell, cellIndex) {
+                if (s.length == 4) {
+                    return s.concat('0');
+                } else {
+                    return s;
+                }
+            },
+            type: 'numeric'
+        });
+        $(function() {
+            $('table').tablesorter({
+                widgets: ["zebra"],
+                widgetOptions: {
+                    zebra: [, "fill"]
+                },
+
+                headers: {
+                    0: {sorter: false},
+                    1: {sorter: false},
+                    2: {sorter: true},
+                    3: {sorter: false}, //name TOP
+                    4: {sorter: false}, //ref TOP
+                    5: {sorter: false}, //stands TOP
+                    6: {sorter: false}, //network
+                    7: {sorter: false},
+                    8: {sorter: false},
+                    9: {sorter: false},
+                    10: {sorter: 'refs'}, //nextb ref
+                    11: {sorter: 'refs'}, //ref osm
+                    12: {sorter: false},
+                    13: {sorter: false},
+                }
+            });
+        });
+    </script>
+    <i>Updated: Thu, 16 Mar @ 18:56:00</i>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">NextBike
+                    <br>uid</th>
+                <th rowspan="2">OSM id
+                    <br>(closest match)</th>
+                <th rowspan="2">Distance
+                    <br>(in meters)</th>
+                <th colspan="2">Name</th>
+                <th colspan="2">Ref</th>
+                <th colspan="2">Stands</th>
+                <th rowspan="2">Network</th>
+                <th rowspan="2">Operator</th>
+            </tr>
+            <tr>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.109289&mlon=20.621729#map=19/52.109289/20.621729">322936</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234585">3100234585</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.620828999999997&right=20.622629&top=52.110189&bottom=52.108388999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.08
+                </td>
+                <td>
+                    PKP Deptak / ul. 1 Maja
+                </td>
+                <td >
+                    PKP Deptak / ul. 1 Maja
+                </td>
+                <td>
+                    6101
+                </td>
+                <td >
+                    6101
+                </td>
+                <td>
+                    16
+                </td>
+                <td >
+                    16
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.109503&mlon=20.628607#map=19/52.109503/20.628607">322947</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234586">3100234586</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.627706999999997&right=20.629507&top=52.110403&bottom=52.108602999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4.26
+                </td>
+                <td>
+                    Park im. hr. Skarbków / ul. 3 Maja
+                </td>
+                <td >
+                    Park im. hr. Skarbków / ul. 3 Maja
+                </td>
+                <td>
+                    6102
+                </td>
+                <td >
+                    6102
+                </td>
+                <td>
+                    10
+                </td>
+                <td >
+                    10
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.111592&mlon=20.640424#map=19/52.111592/20.640424">322950</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234587">3100234587</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.639523999999998&right=20.641324&top=52.112492&bottom=52.110692&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.27
+                </td>
+                <td>
+                    Hala Sportowa / ul. Westfala
+                </td>
+                <td >
+                    Hala Sportowa / ul. Westfala
+                </td>
+                <td>
+                    6103
+                </td>
+                <td >
+                    6103
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.104825&mlon=20.630404#map=19/52.104825/20.630404">322952</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234583">3100234583</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.629503999999997&right=20.631304&top=52.105725&bottom=52.103925&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 7.14
+                </td>
+                <td>
+                    Stawy Goliana / ul. Marii Skłodowskiej-Curie
+                </td>
+                <td >
+                    Stawy Goliana / ul. Marii Skłodowskiej-Curie
+                </td>
+                <td>
+                    6104
+                </td>
+                <td >
+                    6104
+                </td>
+                <td>
+                    16
+                </td>
+                <td >
+                    16
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.101342&mlon=20.639078#map=19/52.101342/20.639078">322954</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234582">3100234582</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.638178&right=20.639978000000003&top=52.102242000000004&bottom=52.100442&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 28.2
+                </td>
+                <td>
+                    Stawy Walczewskiego / ul. Nadarzyńska
+                </td>
+                <td >
+                    Stawy Walczewskiego / ul. Nadarzyńska
+                </td>
+                <td>
+                    6105
+                </td>
+                <td >
+                    6105
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.098057&mlon=20.62313#map=19/52.098057/20.62313">322956</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234580">3100234580</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.62223&right=20.62403&top=52.098957&bottom=52.097156999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 15.34
+                </td>
+                <td>
+                    Pływalnia WODNIK 2000 / ul. Montwiłła
+                </td>
+                <td >
+                    Pływalnia WODNIK 2000 / ul. Montwiłła
+                </td>
+                <td>
+                    6106
+                </td>
+                <td >
+                    6106
+                </td>
+                <td>
+                    8
+                </td>
+                <td >
+                    8
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.100245&mlon=20.627587#map=19/52.100245/20.627587">322958</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234581">3100234581</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.626686999999997&right=20.628487&top=52.101145&bottom=52.099345&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.79
+                </td>
+                <td>
+                    Targowisko Miejskie / ul. Radońska
+                </td>
+                <td >
+                    Targowisko Miejskie / ul. Radońska
+                </td>
+                <td>
+                    6107
+                </td>
+                <td >
+                    6107
+                </td>
+                <td>
+                    20
+                </td>
+                <td class="red" >
+                    24
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.104957&mlon=20.624068#map=19/52.104957/20.624068">322962</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234584">3100234584</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.623168&right=20.624968000000003&top=52.105857&bottom=52.104057&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 13.72
+                </td>
+                <td>
+                    Centrum Kultury / ul. Spółdzielcza
+                </td>
+                <td >
+                    Centrum Kultury / ul. Spółdzielcza
+                </td>
+                <td>
+                    6108
+                </td>
+                <td >
+                    6108
+                </td>
+                <td>
+                    22
+                </td>
+                <td >
+                    22
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.117657&mlon=20.614783#map=19/52.117657/20.614783">326572</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3746375910">3746375910</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.613882999999998&right=20.615683&top=52.118557&bottom=52.116757&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.06
+                </td>
+                <td>
+                    Zespół Szkół / ul. Zielony Rynek
+                </td>
+                <td >
+                    Zespół Szkół / ul. Zielony Rynek
+                </td>
+                <td>
+                    6109
+                </td>
+                <td >
+                    6109
+                </td>
+                <td>
+                    5
+                </td>
+                <td >
+                    5
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.11303&mlon=20.62347#map=19/52.11303/20.62347">7845585</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6088010096">6088010096</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.62257&right=20.624370000000003&top=52.11393&bottom=52.11213&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 8.52
+                </td>
+                <td>
+                    Parking/ ul. Żydowska
+                </td>
+                <td >
+                    Parking/ ul. Żydowska
+                </td>
+                <td>
+                    6810
+                </td>
+                <td class="red" >
+                    6110
+                </td>
+                <td>
+                    10
+                </td>
+                <td class="red" >
+                    12
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.10237&mlon=20.65031#map=19/52.10237/20.65031">7845592</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5713126836">5713126836</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.64941&right=20.651210000000003&top=52.10327&bottom=52.10147&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 28.53
+                </td>
+                <td>
+                    Parking/ ul. Piaskowa
+                </td>
+                <td >
+                    Parking/ ul. Piaskowa
+                </td>
+                <td>
+                    6811
+                </td>
+                <td >
+                    6811
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.11002&mlon=20.65438#map=19/52.11002/20.65438">7845603</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5713126835">5713126835</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.65348&right=20.65528&top=52.11092&bottom=52.10912&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 11.69
+                </td>
+                <td>
+                    Plac zabaw/ ul. Okrężna
+                </td>
+                <td >
+                    Plac zabaw/ ul. Okrężna
+                </td>
+                <td>
+                    6812
+                </td>
+                <td >
+                    6812
+                </td>
+                <td>
+                    21
+                </td>
+                <td class="red" >
+                    15
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.114299&mlon=20.644822#map=19/52.114299/20.644822">139497008</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/10697508140">10697508140</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.643922&right=20.645722000000003&top=52.115199000000004&bottom=52.113399&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 13.83
+                </td>
+                <td>
+                    ul. Teligi / ul. 3 Maja
+                </td>
+                <td class="red" >
+                    Teligi / 3 Maja
+                </td>
+                <td>
+                    6813
+                </td>
+                <td class="red" >
+                    6103
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.094446&mlon=20.617914#map=19/52.094446/20.617914">140157601</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234580">3100234580</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.617013999999998&right=20.618814&top=52.095346&bottom=52.093545999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 551.84
+                </td>
+                <td>
+                    ul. Daleka / ul. Staszica
+                </td>
+                <td class="red" >
+                    Pływalnia WODNIK 2000 / ul. Montwiłła
+                </td>
+                <td>
+                    6814
+                </td>
+                <td class="red" >
+                    6106
+                </td>
+                <td>
+                    12
+                </td>
+                <td class="red" >
+                    8
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.110906&mlon=20.621309#map=19/52.110906/20.621309">140158652</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/way/987196800">987196800</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.620409&right=20.622209&top=52.111806&bottom=52.110006&select=w">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 55.45
+                </td>
+                <td>
+                    Parking / ul. Traugutta
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    6815
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    12
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.077653&mlon=20.628861#map=19/52.077653/20.628861">140162201</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/3100234580">3100234580</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=20.627961&right=20.629761000000002&top=52.078553&bottom=52.076753&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 2317.68
+                </td>
+                <td>
+                    Adamowizna - parking / ul. Osowiecka
+                </td>
+                <td class="red" >
+                    Pływalnia WODNIK 2000 / ul. Montwiłła
+                </td>
+                <td>
+                    6816
+                </td>
+                <td class="red" >
+                    6106
+                </td>
+                <td>
+                    12
+                </td>
+                <td class="red" >
+                    8
+                </td>
+                <td >
+                    Grodziski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v.2.0.1 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+</body>
+
+</html>

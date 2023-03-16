@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
+    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" href="./theme.default.css">
+    <title>NextBikeOSM</title>
+</head>
+<style>
+    table,
+    td,
+    tr,
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: white;
+        /*border: 1px solid black;*/
+    }
+
+    .fill {
+        background-color: #D4D4D4;
+    }
+
+    .red {
+        background-color: #FF8080;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <script>
+        $(function() {
+            $('table').floatThead({
+                useAbsolutePositioning: true
+            });
+        });
+        $.tablesorter.addParser({
+            id: 'refs',
+            is: function(s, table, cell, $cell) {
+                return false;
+            },
+            format: function(s, table, cell, cellIndex) {
+                if (s.length == 4) {
+                    return s.concat('0');
+                } else {
+                    return s;
+                }
+            },
+            type: 'numeric'
+        });
+        $(function() {
+            $('table').tablesorter({
+                widgets: ["zebra"],
+                widgetOptions: {
+                    zebra: [, "fill"]
+                },
+
+                headers: {
+                    0: {sorter: false},
+                    1: {sorter: false},
+                    2: {sorter: true},
+                    3: {sorter: false}, //name TOP
+                    4: {sorter: false}, //ref TOP
+                    5: {sorter: false}, //stands TOP
+                    6: {sorter: false}, //network
+                    7: {sorter: false},
+                    8: {sorter: false},
+                    9: {sorter: false},
+                    10: {sorter: 'refs'}, //nextb ref
+                    11: {sorter: 'refs'}, //ref osm
+                    12: {sorter: false},
+                    13: {sorter: false},
+                }
+            });
+        });
+    </script>
+    <i>Updated: Thu, 16 Mar @ 18:56:01</i>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">NextBike
+                    <br>uid</th>
+                <th rowspan="2">OSM id
+                    <br>(closest match)</th>
+                <th rowspan="2">Distance
+                    <br>(in meters)</th>
+                <th colspan="2">Name</th>
+                <th colspan="2">Ref</th>
+                <th colspan="2">Stands</th>
+                <th rowspan="2">Network</th>
+                <th rowspan="2">Operator</th>
+            </tr>
+            <tr>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+                <th>nextbike</th>
+                <th>osm</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.4106&mlon=19.66075#map=19/51.4106/19.66075">19828715</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6902569090">6902569090</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.65985&right=19.66165&top=51.411500000000004&bottom=51.4097&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2.83
+                </td>
+                <td>
+                    Osiedle Słowackiego
+                </td>
+                <td >
+                    Osiedle Słowackiego
+                </td>
+                <td>
+                    6181
+                </td>
+                <td >
+                    6181
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.4219&mlon=19.67557#map=19/51.4219/19.67557">19828770</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6902569091">6902569091</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.67467&right=19.676470000000002&top=51.4228&bottom=51.421&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.82
+                </td>
+                <td>
+                    Osiedle Łódzka
+                </td>
+                <td >
+                    Osiedle Łódzka
+                </td>
+                <td>
+                    6182
+                </td>
+                <td >
+                    6182
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.41003&mlon=19.68511#map=19/51.41003/19.68511">19828785</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5783993293">5783993293</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.68421&right=19.686010000000003&top=51.41093&bottom=51.40913&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.84
+                </td>
+                <td>
+                    Dworzec Kolejowy
+                </td>
+                <td >
+                    Dworzec Kolejowy
+                </td>
+                <td>
+                    6183
+                </td>
+                <td >
+                    6183
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.40829&mlon=19.70365#map=19/51.40829/19.70365">19828835</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5783993292">5783993292</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.702749999999998&right=19.70455&top=51.40919&bottom=51.40739&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.25
+                </td>
+                <td>
+                    Stare Miasto - Mediateka
+                </td>
+                <td >
+                    Stare Miasto - Mediateka
+                </td>
+                <td>
+                    6184
+                </td>
+                <td >
+                    6184
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.40555&mlon=19.70793#map=19/51.40555/19.70793">19828983</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6902569087">6902569087</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.70703&right=19.708830000000003&top=51.40645&bottom=51.40465&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 5.35
+                </td>
+                <td>
+                    Osiedle Wyzwolenia
+                </td>
+                <td >
+                    Osiedle Wyzwolenia
+                </td>
+                <td>
+                    6185
+                </td>
+                <td >
+                    6185
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.40568&mlon=19.73872#map=19/51.40568/19.73872">19828996</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/7606179210">7606179210</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.73782&right=19.739620000000002&top=51.40658&bottom=51.404779999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 911.82
+                </td>
+                <td>
+                    Wierzeje
+                </td>
+                <td class="red" >
+                    Kąpielisko Słoneczko
+                </td>
+                <td>
+                    6186
+                </td>
+                <td >
+                    6186
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.384991&mlon=19.683046#map=19/51.384991/19.683046">19829014</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6902569092">6902569092</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.682146&right=19.683946000000002&top=51.385891&bottom=51.384091&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 4508.16
+                </td>
+                <td>
+                    Lotnisko
+                </td>
+                <td class="red" >
+                    Wierzeje
+                </td>
+                <td>
+                    6187
+                </td>
+                <td >
+                    6187
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.39993&mlon=19.69121#map=19/51.39993/19.69121">19829243</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6902569088">6902569088</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.69031&right=19.692110000000003&top=51.40083&bottom=51.399029999999996&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 6.48
+                </td>
+                <td>
+                    Park im.ks.J.Poniatowskiego
+                </td>
+                <td >
+                    Park im. ks. J. Poniatowskiego
+                </td>
+                <td>
+                    6188
+                </td>
+                <td >
+                    6188
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.40217&mlon=19.67329#map=19/51.40217/19.67329">19829274</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/6902569089">6902569089</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.67239&right=19.674190000000003&top=51.40307&bottom=51.40127&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3.74
+                </td>
+                <td>
+                    Dmowskiego - Poprzeczna
+                </td>
+                <td >
+                    Dmowskiego - Poprzeczna
+                </td>
+                <td>
+                    6189
+                </td>
+                <td >
+                    6189
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.40653&mlon=19.66323#map=19/51.40653/19.66323">19829377</a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5783993294">5783993294</a>
+                    <a href="http://localhost:8111/load_and_zoom?left=19.662329999999997&right=19.66413&top=51.40743&bottom=51.405629999999995&select=n">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 1.17
+                </td>
+                <td>
+                    Belzacka - Basen
+                </td>
+                <td >
+                    Belzacka - Basen
+                </td>
+                <td>
+                    6190
+                </td>
+                <td >
+                    6190
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Piotrkowski Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v.2.0.1 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+</body>
+
+</html>
