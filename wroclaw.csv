@@ -1,0 +1,31 @@
+51.111356,17.067636,addNode name=Chałubińskiego / Mikulicza-Radeckiego,ref=15018,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+51.116822,17.051845,addNode name=Sienkiewicza / Wyszyńskiego,ref=15053,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.112387,16.993157,addNode name=Robotnicza / Fabryczna,ref=15076,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.145074,16.871502,addNode name=Leśnica - pętla tramwajowa,ref=15084,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.137856,16.994273,addNode name=Osobowicka - pętla tramwajowa,ref=15098,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+52.271348,21.0568,addNode name=TEST_WROCŁAW_ANIA,ref=909090,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.048391,16.961699,addNode name=Aleja Bielany,ref=15253,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.1253,16.997218,addNode name=Popowicka / Niedźwiedzia,ref=15123,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+51.120068,17.077684,addNode name=al. Kochanowskiego / Śniadeckich ,ref=15128,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
+51.125652,16.968627,addNode name=Drzewieckiego / Dedala,ref=15141,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.127192,16.991832,addNode name=Popowicka / Rysia,ref=15172,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.14382,16.98789,addNode name=Osobowicka / Ostrowska,ref=15182,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
+51.13707,16.94095,addNode name=Wrocław Stadion, stacja kolejowa,ref=15199,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
+51.034956,16.950763,addNode name=Amazon WRO2,ref=15274,capacity=15,amenity=bicycle_rental,operator=Nextbike Polska
+51.196906,16.974741,addNode name=Dalimira/Pęgowska,ref=15275,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.114538,16.966035,addNode name=Nowodworska/Strzegomska,ref=15276,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.058262,17.052487,addNode name=Kopycińskiego/Drabika,ref=15278,capacity=16,amenity=bicycle_rental,operator=Nextbike Polska
+51.18079,16.999845,addNode name=Czarnuszkowa/Waniliowa,ref=15280,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.151405,17.127953,addNode name=Bierutowska,ref=15281,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.120579,16.863576,addNode name=Jerzmanowska/Kośnego,ref=15277,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.047299,17.091358,addNode name=Ziemniaczana/Boiskowa,ref=15279,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
+51.161667,17.027766,addNode name=Lekarska/Żmigrodzka,ref=15282,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.168502,17.109124,addNode name=Starodębowa (Wrocław Pawłowice),ref=15283,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.095298,16.971707,addNode name=Ostrowskiego,ref=15284,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.112322,16.973556,addNode name=Traktatowa (przystanek kolejowy),ref=15286,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.122409,17.012313,addNode name=Gnieźnieńska / Długa,ref=15288,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.153259,16.939513,addNode name=Maślicka / Brodnicka,ref=15291,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.153669,16.944094,addNode name=Bogatyńska / Turoszowska,ref=15293,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.090573,16.950684,addNode name=Ibn Siny Awicenny (Wrocław Zachodni),ref=15294,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.061535,17.065717,addNode name=Grapowa,ref=15295,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.166775,16.997604,addNode name=Wrocław Osobowice,ref=15296,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
