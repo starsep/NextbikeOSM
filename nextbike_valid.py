@@ -37,7 +37,7 @@ class NextbikeValidator:
         self.html = html
         self.envir = Environment(loader=PackageLoader("nextbike_valid", "templates"))
 
-    def matchViaRef(self, place: NP.Place) -> Optional[Element]:
+    def matchViaRef(self, place: NP.Place) -> Tuple[Optional[Element], float]:
         nextbikeRef = place.num
         result = None
         bestDistance = 10000000
@@ -48,7 +48,7 @@ class NextbikeValidator:
                 if dist < bestDistance:
                     bestDistance = dist
                     result = element
-        return result
+        return result, bestDistance
 
     def matchViaDistance(self, place: NP.Place) -> Tuple[Optional[Element], float]:
         bestDistance = 100000000
@@ -70,31 +70,20 @@ class NextbikeValidator:
     def pair(self, nextPlaces: List[NP.Place]):
         data = []
         for nextPlace in nextPlaces:
-            matchedElement = self.matchViaRef(nextPlace)
-            if matchedElement is not None:
-                point = GeoPoint.fromElement(matchedElement, self.osmParser)
-                dist = distance(nextPlace, point)
-                data.append(
-                    Match(
-                        distance=dist,
-                        nextbike=nextPlace,
-                        osm=matchedElement,
-                        osmType="way" if type(matchedElement) == Way else "node",
-                        matchedBy="id",
-                    )
-                )
-            else:
+            matchedElement, dist = self.matchViaRef(nextPlace)
+            matchedBy = "id"
+            if matchedElement is None:
                 matchedElement, dist = self.matchViaDistance(nextPlace)
-                data.append(
-                    Match(
-                        distance=dist,
-                        nextbike=nextPlace,
-                        osm=matchedElement,
-                        osmType="way" if type(matchedElement) == Way else "node",
-                        matchedBy="di",
-                    )
+                matchedBy = "di"
+            data.append(
+                Match(
+                    distance=dist,
+                    nextbike=nextPlace,
+                    osm=matchedElement,
+                    osmType="way" if type(matchedElement) == Way else "node",
+                    matchedBy=matchedBy,
                 )
-
+            )
         self.matches = data
 
     def html_it(self, filename="nextbikeOSM_results.html"):
