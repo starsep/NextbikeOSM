@@ -40,7 +40,7 @@ if __name__ == "__main__":
             update=False,
             network=str(networkId),
             osmAreaName=cityName,
-            htmlPath=f"docs/{slug}.html",
+            htmlPath=f"output/{slug}.html",
             feed=False,
             nextbikeParser=nextbikeParser,
         )
@@ -48,5 +48,5 @@ if __name__ == "__main__":
     environment = Environment(loader=PackageLoader("nextbike_valid", "templates"))
     template = environment.get_template("index.html")
     cities = [(cityName, slugify(cityName)) for (_, cityName) in networksPoland]
-    with open("docs/index.html", "w", encoding="utf-8") as f:
+    with open("output/index.html", "w", encoding="utf-8") as f:
         f.write(template.render(dict(cities=cities)))
