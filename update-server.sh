@@ -2,7 +2,7 @@
 date=$(/bin/date '+%Y%m%d')
 touch .dateOfLastRun
 if [[ "$(cat .dateOfLastRun)" != "$date" ]]; then
-    rm -rf cache
+    rm -rf cache nextbike.xml
 fi
 git pull
 rm -rf cache/overpass
