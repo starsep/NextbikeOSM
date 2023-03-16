@@ -39,10 +39,16 @@ class NextbikeValidator:
 
     def matchViaRef(self, place: NP.Place) -> Optional[Element]:
         nextbikeRef = place.num
+        result = None
+        bestDistance = 10000000
         for element in self.osmParser.elements:
             if "ref" in element.tags and element.tags["ref"] == nextbikeRef:
-                return element
-        return None
+                point = GeoPoint.fromElement(element, self.osmParser)
+                dist = distance(place, point)
+                if dist < bestDistance:
+                    bestDistance = dist
+                    result = element
+        return result
 
     def matchViaDistance(self, place: NP.Place) -> Tuple[Optional[Element], float]:
         bestDistance = 100000000
