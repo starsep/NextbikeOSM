@@ -1,3 +1,4 @@
+import shutil
 from pathlib import Path
 
 from jinja2 import Environment, PackageLoader
@@ -7,6 +8,7 @@ from nextbike_parser import NextbikeParser
 from nextbike_valid import main
 
 if __name__ == "__main__":
+    templatesDirectory = Path("templates")
     outputDirectory = Path("output")
     outputDirectory.mkdir(exist_ok=True)
     networksPoland = [
@@ -45,6 +47,7 @@ if __name__ == "__main__":
             network=str(networkId),
             osmAreaName=cityName,
             outputPath=outputDirectory / f"{slug}.html",
+            mapPath=outputDirectory / f"map-{slug}.html",
             feed=False,
             nextbikeParser=nextbikeParser,
         )
@@ -54,4 +57,4 @@ if __name__ == "__main__":
     cities = [(cityName, slugify(cityName)) for (_, cityName) in networksPoland]
     with (outputDirectory / "index.html").open("w", encoding="utf-8") as f:
         f.write(template.render(dict(cities=cities)))
-    Path()
+    shutil.copy(templatesDirectory / "index.js", outputDirectory / "index.js")

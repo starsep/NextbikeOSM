@@ -11,7 +11,7 @@ from distance import GeoPoint
 class Place(GeoPoint):
     uid: str
     name: str
-    num: int
+    num: str
     stands: str
 
 

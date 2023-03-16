@@ -1,5 +1,7 @@
 import argparse
+import dataclasses
 import difflib as SC
+import json
 from dataclasses import dataclass
 from pathlib import Path
 from time import localtime, strftime
@@ -26,12 +28,32 @@ class Match:
     ratio: float = 0.0
 
 
+@dataclass
+class MapFeatureTags:
+    name: str
+    ref: str
+    capacity: str
+
+
+@dataclass
+class MapFeature(GeoPoint):
+    tags: MapFeatureTags
+
+    @staticmethod
+    def fromMatch(match: Match):
+        return MapFeature(
+            lat=match.nextbike.lat,
+            lon=match.nextbike.lon,
+            tags=MapFeatureTags(
+                name=match.nextbike.name,
+                ref=match.nextbike.num,
+                capacity=match.nextbike.stands,
+            ),
+        )
+
+
 class NextbikeValidator:
-
-    """Analyzer class"""
-
     def __init__(self, nextbikeData, osmParser, html=None):
-
         self.nextbikeData = nextbikeData
         self.osmParser: OverpassParser = osmParser
         self.matches: List[Match] = []
@@ -87,7 +109,7 @@ class NextbikeValidator:
             )
         self.matches = data
 
-    def generateHtml(self, outputPath: Path):
+    def generateHtml(self, outputPath: Path, mapPath: Optional[Path] = None):
         timestamp = strftime("%a, %d %b @ %H:%M:%S", localtime())
         template = self.envir.get_template("base.html")
         matches = []
@@ -100,11 +122,30 @@ class NextbikeValidator:
                 else 0
             )
             matches.append(match)
-        fill_template = template.render(
-            {"matches": matches, "timestamp": timestamp, "VERSION": __VERSION__}
-        )
+        distanceThreshold = 50.0
         with outputPath.open("w", encoding="utf-8") as f:
-            f.write(fill_template)
+            context = {
+                "matches": matches,
+                "timestamp": timestamp,
+                "VERSION": __VERSION__,
+                "distanceThreshold": distanceThreshold,
+                "mapLink": str(mapPath.name),
+            }
+            f.write(template.render(context))
+        if mapPath is not None:
+            mapFeatures = list(
+                map(
+                    dataclasses.asdict,
+                    map(
+                        MapFeature.fromMatch,
+                        filter(lambda m: m.distance > distanceThreshold, matches),
+                    ),
+                )
+            )
+            mapTemplate = self.envir.get_template("map.html")
+            with mapPath.open("w", encoding="utf-8") as f:
+                context = {"featuresJson": json.dumps(mapFeatures)}
+                f.write(mapTemplate.render(context))
         # NEXT vs osm
         # uid  !=     iD
         # lat         lat
@@ -132,6 +173,7 @@ def main(
     outputPath: Path,
     feed: bool,
     nextbikeParser: NP.NextbikeParser,
+    mapPath: Optional[Path] = None,
 ):
     if update:
         NP.NextbikeParser.update()
@@ -144,7 +186,7 @@ def main(
         d = nextbikeParser.find_network(network)
     if validator.containsData(outputPath):
         validator.pair(d)
-        validator.generateHtml(outputPath)
+        validator.generateHtml(outputPath, mapPath)
         if feed:
             feed = FG.Feed(args.auto[2].rstrip(".html"), data.nodes, data.ways, d)
             feed.new_db()

@@ -84,7 +84,10 @@
             });
         });
     </script>
-    <i>Updated: {{ timestamp }}</i>
+    <i>Updated: {{ timestamp }}</i> <br/>
+    <span>
+        <a href="{{ mapLink }}">Map of Nextbike locations</a> where OpenStreetMap match has distance > {{ distanceThreshold }} metres.
+    </span>
     <table>
         <thead>
             <tr>
