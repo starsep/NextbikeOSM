@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from jinja2 import Environment, PackageLoader
 from slugify import slugify
 
@@ -5,6 +7,8 @@ from nextbike_parser import NextbikeParser
 from nextbike_valid import main
 
 if __name__ == "__main__":
+    outputDirectory = Path("output")
+    outputDirectory.mkdir(exist_ok=True)
     networksPoland = [
         (148, "Wrocław"),
         (251, "Lublin"),
@@ -40,7 +44,7 @@ if __name__ == "__main__":
             update=False,
             network=str(networkId),
             osmAreaName=cityName,
-            htmlPath=f"output/{slug}.html",
+            outputPath=outputDirectory / f"{slug}.html",
             feed=False,
             nextbikeParser=nextbikeParser,
         )
@@ -48,5 +52,6 @@ if __name__ == "__main__":
     environment = Environment(loader=PackageLoader("nextbike_valid", "templates"))
     template = environment.get_template("index.html")
     cities = [(cityName, slugify(cityName)) for (_, cityName) in networksPoland]
-    with open("output/index.html", "w", encoding="utf-8") as f:
+    with (outputDirectory / "index.html").open("w", encoding="utf-8") as f:
         f.write(template.render(dict(cities=cities)))
+    Path()

@@ -73,7 +73,11 @@ class NextbikeParser:
                     )
                     if "terminal_type" in place_attrib:
                         terminal_type = place_attrib["terminal_type"]
-                        if terminal_type == "sign" and type(stands) == int and cityName == "Warszawa":
+                        if (
+                            terminal_type == "sign"
+                            and type(stands) == int
+                            and cityName == "Warszawa"
+                        ):
                             # TODO: move logic somewhere else?
                             stands = stands * 2
                     stands = str(stands)

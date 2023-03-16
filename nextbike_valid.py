@@ -1,6 +1,7 @@
 import argparse
 import difflib as SC
 from dataclasses import dataclass
+from pathlib import Path
 from time import localtime, strftime
 from typing import List, Optional, Tuple
 
@@ -86,14 +87,10 @@ class NextbikeValidator:
             )
         self.matches = data
 
-    def html_it(self, filename="nextbikeOSM_results.html"):
-        """Produces html with processing data."""
-
+    def generateHtml(self, outputPath: Path):
         timestamp = strftime("%a, %d %b @ %H:%M:%S", localtime())
-
         template = self.envir.get_template("base.html")
         matches = []
-
         for match in self.matches:
             match.ratio = (
                 SC.SequenceMatcher(
@@ -103,14 +100,11 @@ class NextbikeValidator:
                 else 0
             )
             matches.append(match)
-
         fill_template = template.render(
             {"matches": matches, "timestamp": timestamp, "VERSION": __VERSION__}
         )
-
-        with open(filename, "w", encoding="utf-8") as f:
+        with outputPath.open("w", encoding="utf-8") as f:
             f.write(fill_template)
-
         # NEXT vs osm
         # uid  !=     iD
         # lat         lat
@@ -119,18 +113,14 @@ class NextbikeValidator:
         # num         ref {tags}
         # stands      capacity {tags}++
 
-    def containsData(self, path):
-
+    def containsData(self, path: Path):
         timek = strftime("%a, %d %b @ %H:%M:%S", localtime())
-
         if len(self.osmParser.nodes) == 0 and len(self.osmParser.ways) == 0:
             template = self.envir.get_template("empty.html")
             fill_template = template.render({"last": timek})
-
-            with open(path, "w", encoding="utf-8") as f:
+            with path.open("w", encoding="utf-8") as f:
                 f.write(fill_template)
-
-            print("OSM Data not found!")
+            print(f"{path}: OSM Data not found!")
             return False
         return True
 
@@ -139,7 +129,7 @@ def main(
     update: bool,
     network: str,
     osmAreaName: str,
-    htmlPath: str,
+    outputPath: Path,
     feed: bool,
     nextbikeParser: NP.NextbikeParser,
 ):
@@ -152,9 +142,9 @@ def main(
         d = nextbikeParser.find_city(network)
     else:
         d = nextbikeParser.find_network(network)
-    if validator.containsData(htmlPath):
+    if validator.containsData(outputPath):
         validator.pair(d)
-        validator.html_it(htmlPath)
+        validator.generateHtml(outputPath)
         if feed:
             feed = FG.Feed(args.auto[2].rstrip(".html"), data.nodes, data.ways, d)
             feed.new_db()
@@ -188,7 +178,7 @@ if __name__ == "__main__":
         update=args.update,
         network=args.auto[0],
         osmAreaName=args.auto[1],
-        htmlPath=args.auto[2],
+        outputPath=Path(args.auto[2]),
         feed=args.feed,
         nextbikeParser=NP.NextbikeParser(),
     )
