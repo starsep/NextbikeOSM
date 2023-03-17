@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -eu
 date=$(/bin/date '+%Y%m%d')
 touch .dateOfLastRun
 if [[ "$(cat .dateOfLastRun)" != "$date" ]]; then
