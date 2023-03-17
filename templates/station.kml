@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+{%- for feature in features %}
+<Placemark>
+  <name>{{ feature.tags.name | escape }}</name>
+  <description>{{ feature.tags.toDescription() | escape }}</description>
+  <Point>
+    <coordinates>{{ feature.lon }},{{ feature.lat }}</coordinates>
+  </Point>
+</Placemark>
+{%- endfor %}
+</Document>
+</kml>
