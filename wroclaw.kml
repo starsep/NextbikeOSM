@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Chałubińskiego / Mikulicza-Radeckiego</name>
+  <description>name=Chałubińskiego / Mikulicza-Radeckiego
+ref=15018
+capacity=4
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.067636,51.111356</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Sienkiewicza / Wyszyńskiego</name>
+  <description>name=Sienkiewicza / Wyszyńskiego
+ref=15053
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.051845,51.116822</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Robotnicza / Fabryczna</name>
+  <description>name=Robotnicza / Fabryczna
+ref=15076
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.993157,51.112387</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Leśnica - pętla tramwajowa</name>
+  <description>name=Leśnica - pętla tramwajowa
+ref=15084
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.871502,51.145074</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Osobowicka - pętla tramwajowa</name>
+  <description>name=Osobowicka - pętla tramwajowa
+ref=15098
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.994273,51.137856</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>TEST_WROCŁAW_ANIA</name>
+  <description>name=TEST_WROCŁAW_ANIA
+ref=909090
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.0568,52.271348</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Aleja Bielany</name>
+  <description>name=Aleja Bielany
+ref=15253
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.961699,51.048391</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Popowicka / Niedźwiedzia</name>
+  <description>name=Popowicka / Niedźwiedzia
+ref=15123
+capacity=4
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.997218,51.1253</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>al. Kochanowskiego / Śniadeckich </name>
+  <description>name=al. Kochanowskiego / Śniadeckich 
+ref=15128
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.077684,51.120068</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Drzewieckiego / Dedala</name>
+  <description>name=Drzewieckiego / Dedala
+ref=15141
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.968627,51.125652</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Popowicka / Rysia</name>
+  <description>name=Popowicka / Rysia
+ref=15172
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.991832,51.127192</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Osobowicka / Ostrowska</name>
+  <description>name=Osobowicka / Ostrowska
+ref=15182
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.98789,51.14382</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wrocław Stadion, stacja kolejowa</name>
+  <description>name=Wrocław Stadion, stacja kolejowa
+ref=15199
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.94095,51.13707</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Amazon WRO2</name>
+  <description>name=Amazon WRO2
+ref=15274
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.950763,51.034956</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Dalimira/Pęgowska</name>
+  <description>name=Dalimira/Pęgowska
+ref=15275
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.974741,51.196906</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Nowodworska/Strzegomska</name>
+  <description>name=Nowodworska/Strzegomska
+ref=15276
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.966035,51.114538</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kopycińskiego/Drabika</name>
+  <description>name=Kopycińskiego/Drabika
+ref=15278
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.052487,51.058262</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Czarnuszkowa/Waniliowa</name>
+  <description>name=Czarnuszkowa/Waniliowa
+ref=15280
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.999845,51.18079</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Bierutowska</name>
+  <description>name=Bierutowska
+ref=15281
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.127953,51.151405</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Jerzmanowska/Kośnego</name>
+  <description>name=Jerzmanowska/Kośnego
+ref=15277
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.863576,51.120579</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Ziemniaczana/Boiskowa</name>
+  <description>name=Ziemniaczana/Boiskowa
+ref=15279
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.091358,51.047299</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Lekarska/Żmigrodzka</name>
+  <description>name=Lekarska/Żmigrodzka
+ref=15282
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.027766,51.161667</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Starodębowa (Wrocław Pawłowice)</name>
+  <description>name=Starodębowa (Wrocław Pawłowice)
+ref=15283
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.109124,51.168502</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Ostrowskiego</name>
+  <description>name=Ostrowskiego
+ref=15284
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.971707,51.095298</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Traktatowa (przystanek kolejowy)</name>
+  <description>name=Traktatowa (przystanek kolejowy)
+ref=15286
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.973556,51.112322</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Gnieźnieńska / Długa</name>
+  <description>name=Gnieźnieńska / Długa
+ref=15288
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.012313,51.122409</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Maślicka / Brodnicka</name>
+  <description>name=Maślicka / Brodnicka
+ref=15291
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.939513,51.153259</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Bogatyńska / Turoszowska</name>
+  <description>name=Bogatyńska / Turoszowska
+ref=15293
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.944094,51.153669</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Ibn Siny Awicenny (Wrocław Zachodni)</name>
+  <description>name=Ibn Siny Awicenny (Wrocław Zachodni)
+ref=15294
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.950684,51.090573</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Grapowa</name>
+  <description>name=Grapowa
+ref=15295
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.065717,51.061535</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wrocław Osobowice</name>
+  <description>name=Wrocław Osobowice
+ref=15296
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.997604,51.166775</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

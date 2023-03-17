@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Dworzec PKP</name>
+  <description>name=Dworzec PKP
+ref=6305
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.569776,54.18167</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

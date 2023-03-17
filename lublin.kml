@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>ul. Poniatowskiego / XXIII LO</name>
+  <description>name=ul. Poniatowskiego / XXIII LO
+ref=60018
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.540373,51.251296</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Dworzec PKP</name>
+  <description>name=Dworzec PKP
+ref=60026
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.566476,51.23349</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Plac Singera</name>
+  <description>name=Plac Singera
+ref=60070
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.57551,51.25342</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Bazylianówka / al. Spółdzielczości Pracy </name>
+  <description>name=ul. Bazylianówka / al. Spółdzielczości Pracy 
+ref=60071
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.57268,51.25905</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Choiny P+R</name>
+  <description>name=Choiny P+R
+ref=60072
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.55097,51.28464</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>al. Andersa cmentarz</name>
+  <description>name=al. Andersa cmentarz
+ref=60073
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.57839,51.25989</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Związkowa / al. Spółdzielczości Pracy</name>
+  <description>name=ul. Związkowa / al. Spółdzielczości Pracy
+ref=60074
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.5728,51.26948</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Szeligowskiego Nord Park</name>
+  <description>name=ul. Szeligowskiego Nord Park
+ref=60075
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.55823,51.25659</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>al. Smorawińskiego / al. Spółdzielczości Pracy</name>
+  <description>name=al. Smorawińskiego / al. Spółdzielczości Pracy
+ref=60076
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.571562,51.262393</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Do Dysa / al. Spółdzielczości Pracy </name>
+  <description>name=ul. Do Dysa / al. Spółdzielczości Pracy 
+ref=60077
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.57277,51.27565</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Turystyczna / PH Tatary</name>
+  <description>name=ul. Turystyczna / PH Tatary
+ref=60078
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.59792,51.25155</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Pancerniaków</name>
+  <description>name=ul. Pancerniaków
+ref=60079
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.61698,51.23265</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Krańcowa / Rondo Kasprzaka</name>
+  <description>name=ul. Krańcowa / Rondo Kasprzaka
+ref=60080
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.594644,51.235962</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Specjalna Strefa Ekonomiczna</name>
+  <description>name=Specjalna Strefa Ekonomiczna
+ref=60081
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.64592,51.22159</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Kunickiego PKP</name>
+  <description>name=ul. Kunickiego PKP
+ref=60082
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.57148,51.2317</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Arena Lublin</name>
+  <description>name=Arena Lublin
+ref=60083
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.55837,51.2335</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Krochmalna / ul. Przeskok</name>
+  <description>name=ul. Krochmalna / ul. Przeskok
+ref=60084
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.55133,51.22555</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Lotnicza / LSS</name>
+  <description>name=ul. Lotnicza / LSS
+ref=60085
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.5859,51.23289</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Kunickiego / ul. Matejki</name>
+  <description>name=ul. Kunickiego / ul. Matejki
+ref=60086
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.578213,51.219445</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Diamentowa / ul. Zemborzycka</name>
+  <description>name=ul. Diamentowa / ul. Zemborzycka
+ref=60087
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.559642,51.203344</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Jana Pawła II / os. Górki</name>
+  <description>name=ul. Jana Pawła II / os. Górki
+ref=60088
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.530701,51.225277</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Szmaragdowa</name>
+  <description>name=ul. Szmaragdowa
+ref=60089
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.518985,51.226903</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Osiedle Poręba pętla</name>
+  <description>name=Osiedle Poręba pętla
+ref=60090
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.50179,51.22192</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Biedronki liceum</name>
+  <description>name=ul. Biedronki liceum
+ref=60091
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.50739,51.22994</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Zana E’Leclerc</name>
+  <description>name=ul. Zana E’Leclerc
+ref=60092
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.518896,51.241159</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Zana / ul. Brzeskiej</name>
+  <description>name=ul. Zana / ul. Brzeskiej
+ref=60093
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.53656,51.2355</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Filaretów / ul. Fantastyczna</name>
+  <description>name=ul. Filaretów / ul. Fantastyczna
+ref=60094
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.52527,51.22777</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Wolska</name>
+  <description>name=ul. Wolska
+ref=60095
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.57659,51.23623</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Zamojska</name>
+  <description>name=ul. Zamojska
+ref=60096
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.56891,51.24276</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Dolna Panny Marii</name>
+  <description>name=ul. Dolna Panny Marii
+ref=60097
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.5609,51.24347</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Nałęczowska / al. Kraśnicka</name>
+  <description>name=ul. Nałęczowska / al. Kraśnicka
+ref=60098
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.519256,51.248567</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Hotel Victoria</name>
+  <description>name=Hotel Victoria
+ref=60100
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.55516,51.24179</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Obrońców Pokoju / ul.Raabego</name>
+  <description>name=ul. Obrońców Pokoju / ul.Raabego
+ref=60101
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.545142,51.245121</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Wieniawska</name>
+  <description>name=ul. Wieniawska
+ref=60102
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.551804,51.249768</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Radziwiłłowska / ul. Niecała</name>
+  <description>name=ul. Radziwiłłowska / ul. Niecała
+ref=60103
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.55996,51.24944</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rondo Kilara</name>
+  <description>name=Rondo Kilara
+ref=60104
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.543014,51.26812</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Centrum Spotkania Kultur</name>
+  <description>name=Centrum Spotkania Kultur
+ref=60105
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.547953,51.247337</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>al. Unii Lubelskiej / Błonia pod Zamkiem</name>
+  <description>name=al. Unii Lubelskiej / Błonia pod Zamkiem
+ref=60107
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.5742,51.24966</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Koncertowa / ul. Braci Wieniawskich</name>
+  <description>name=ul. Koncertowa / ul. Braci Wieniawskich
+ref=60099
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.541816,51.2622</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

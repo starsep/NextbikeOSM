@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>ul. Daleka / ul. Staszica</name>
+  <description>name=ul. Daleka / ul. Staszica
+ref=6814
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.617914,52.094446</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Parking / ul. Traugutta</name>
+  <description>name=Parking / ul. Traugutta
+ref=6815
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.621309,52.110906</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Adamowizna - parking / ul. Osowiecka</name>
+  <description>name=Adamowizna - parking / ul. Osowiecka
+ref=6816
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.628861,52.077653</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

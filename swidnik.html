@@ -84,9 +84,11 @@
             });
         });
     </script>
-    <i>Updated: Fri, 17 Mar @ 19:21:46</i> <br/>
+    <i>Updated: Fri, 17 Mar @ 20:56:54</i> <br/>
     <span>
-        <a href="map-swidnik.html">Map of Nextbike locations</a> where OpenStreetMap match has distance &gt; 50.0 metres. <a href="swidnik.csv">CSV in SCEE format</a>
+        <a href="map-swidnik.html">Map of Nextbike locations</a> where OpenStreetMap match has distance &gt; 50 metres.
+        <a href="swidnik.kml">KML</a>
+        <a href="swidnik.csv">CSV in SCEE format</a>
     </span>
     <table>
         <thead>
@@ -117,10 +119,13 @@
             <tr>
                 <td>
                     <a href="https://osm.org/?mlat=51.21601&mlon=22.69805#map=19/51.21601/22.69805">47282821</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.21601&bottom=51.21601&left=22.69805&right=22.69805">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
                 </td>
                 <td>
                     <a href="https://osm.org/node/4028753037">4028753037</a>
-                    <a href="http://localhost:8111/load_and_zoom?left=22.697149999999997&right=22.69895&top=51.21691&bottom=51.215109999999996&select=n">
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n4028753037">
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
@@ -155,10 +160,13 @@
             <tr>
                 <td>
                     <a href="https://osm.org/?mlat=51.21123&mlon=22.70819#map=19/51.21123/22.70819">47283833</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.21123&bottom=51.21123&left=22.70819&right=22.70819">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
                 </td>
                 <td>
                     <a href="https://osm.org/node/4028753039">4028753039</a>
-                    <a href="http://localhost:8111/load_and_zoom?left=22.707289999999997&right=22.70909&top=51.21213&bottom=51.21033&select=n">
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n4028753039">
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
@@ -193,10 +201,13 @@
             <tr>
                 <td>
                     <a href="https://osm.org/?mlat=51.22004&mlon=22.69323#map=19/51.22004/22.69323">47283899</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.22004&bottom=51.22004&left=22.69323&right=22.69323">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
                 </td>
                 <td>
                     <a href="https://osm.org/node/4028753035">4028753035</a>
-                    <a href="http://localhost:8111/load_and_zoom?left=22.69233&right=22.69413&top=51.22094&bottom=51.219139999999996&select=n">
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n4028753035">
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
@@ -231,10 +242,13 @@
             <tr>
                 <td>
                     <a href="https://osm.org/?mlat=51.21889&mlon=22.70785#map=19/51.21889/22.70785">47284255</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.21889&bottom=51.21889&left=22.70785&right=22.70785">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
                 </td>
                 <td>
                     <a href="https://osm.org/node/4028753038">4028753038</a>
-                    <a href="http://localhost:8111/load_and_zoom?left=22.70695&right=22.708750000000002&top=51.21979&bottom=51.21799&select=n">
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n4028753038">
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
@@ -269,10 +283,13 @@
             <tr>
                 <td>
                     <a href="https://osm.org/?mlat=51.225972&mlon=22.69666#map=19/51.225972/22.69666">47284308</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.225972&bottom=51.225972&left=22.69666&right=22.69666">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
                 </td>
                 <td>
                     <a href="https://osm.org/node/4028753036">4028753036</a>
-                    <a href="http://localhost:8111/load_and_zoom?left=22.69576&right=22.697560000000003&top=51.226872&bottom=51.225072&select=n">
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n4028753036">
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
@@ -307,6 +324,6 @@
         </tbody>
     </table>
     <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v3.0.0 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
-
 </html>
