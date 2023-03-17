@@ -15,7 +15,7 @@ import nextbike_parser as NP
 from distance import GeoPoint, distance
 from overpass_parser import OverpassParser
 
-__VERSION__ = "2.0.1"
+__VERSION__ = "3.0.0"
 
 
 @dataclass
