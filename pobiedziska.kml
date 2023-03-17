@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Biskupice</name>
+  <description>name=Biskupice
+ref=6243
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.16864,52.46732</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

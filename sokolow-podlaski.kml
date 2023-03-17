@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Sabnie</name>
+  <description>name=Sabnie
+ref=6284
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.30837,52.49621</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Jabłonna Lacka</name>
+  <description>name=Jabłonna Lacka
+ref=6285
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.43914,52.47632</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

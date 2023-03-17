@@ -84,9 +84,11 @@
             });
         });
     </script>
-    <i>Updated: Fri, 17 Mar @ 19:22:14</i> <br/>
+    <i>Updated: Fri, 17 Mar @ 20:58:49</i> <br/>
     <span>
-        <a href="map-olesno.html">Map of Nextbike locations</a> where OpenStreetMap match has distance &gt; 50.0 metres. <a href="olesno.csv">CSV in SCEE format</a>
+        <a href="map-olesno.html">Map of Nextbike locations</a> where OpenStreetMap match has distance &gt; 50 metres.
+        <a href="olesno.kml">KML</a>
+        <a href="olesno.csv">CSV in SCEE format</a>
     </span>
     <table>
         <thead>
@@ -117,10 +119,13 @@
             <tr>
                 <td>
                     <a href="https://osm.org/?mlat=50.88166&mlon=18.42489#map=19/50.88166/18.42489">22493741</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.88166&bottom=50.88166&left=18.42489&right=18.42489">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
                 </td>
                 <td>
                     <a href="https://osm.org/node/7853620658">7853620658</a>
-                    <a href="http://localhost:8111/load_and_zoom?left=18.42399&right=18.425790000000003&top=50.88256&bottom=50.880759999999995&select=n">
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n7853620658">
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
@@ -155,6 +160,6 @@
         </tbody>
     </table>
     <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v3.0.0 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
-
 </html>

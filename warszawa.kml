@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>OSiR Żoliborz</name>
+  <description>name=OSiR Żoliborz
+ref=9411
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.985734,52.277729</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>al. Komandosów</name>
+  <description>name=al. Komandosów
+ref=9412
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.168017,52.253001</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rondo Śmigielskiego</name>
+  <description>name=Rondo Śmigielskiego
+ref=9421
+capacity=14
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.189258,52.247163</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Stawki - Dubois</name>
+  <description>name=Stawki - Dubois
+ref=9436
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.991379,52.253213</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Bysławska</name>
+  <description>name=Bysławska
+ref=9439
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.205074,52.159678</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Centrum Zdrowia Dziecka</name>
+  <description>name=Centrum Zdrowia Dziecka
+ref=9445
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.191126,52.207438</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Czerwonych Beretów - Frontowa</name>
+  <description>name=Czerwonych Beretów - Frontowa
+ref=9452
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.177609,52.262273</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Dworzec Zachodni</name>
+  <description>name=Dworzec Zachodni
+ref=9462
+capacity=24
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.966339,52.218454</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Senatorska - Bielańska</name>
+  <description>name=Senatorska - Bielańska
+ref=9465
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.006692,52.243571</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Szaserów - Serocka</name>
+  <description>name=Szaserów - Serocka
+ref=9466
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.101847,52.24697</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Powstańców Śląskich - Połczyńska</name>
+  <description>name=Powstańców Śląskich - Połczyńska
+ref=9470
+capacity=24
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.917589,52.220591</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Gościniec</name>
+  <description>name=Gościniec
+ref=9472
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.223207,52.222881</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wolska - Płocka</name>
+  <description>name=Wolska - Płocka
+ref=9474
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.96597,52.233087</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Górczewska - Płocka</name>
+  <description>name=Górczewska - Płocka
+ref=9479
+capacity=18
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.965578,52.23734</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Sobieskiego - Śródziemnomorska</name>
+  <description>name=Sobieskiego - Śródziemnomorska
+ref=9498
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.062015,52.175434</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Marymoncka - Przy Agorze</name>
+  <description>name=Marymoncka - Przy Agorze
+ref=9505
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.944576,52.295106</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Marywilska - P&amp;R Żerań</name>
+  <description>name=Marywilska - P&amp;R Żerań
+ref=9506
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.000138,52.315244</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Metro Bródno</name>
+  <description>name=Metro Bródno
+ref=9508
+capacity=24
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.027245,52.293889</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Plac Zawiszy</name>
+  <description>name=Plac Zawiszy
+ref=9511
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.989825,52.225335</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Metro Dworzec Wileński - Targowa</name>
+  <description>name=Metro Dworzec Wileński - Targowa
+ref=9515
+capacity=24
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.035691,52.254294</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Metro Kondratowicza </name>
+  <description>name=Metro Kondratowicza 
+ref=9521
+capacity=24
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.048282,52.291748</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Metro Ulrychów</name>
+  <description>name=Metro Ulrychów
+ref=9534
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.931161,52.240163</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Metro Zacisze</name>
+  <description>name=Metro Zacisze
+ref=9541
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.062266,52.283476</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Orlich Gniazd</name>
+  <description>name=Orlich Gniazd
+ref=9546
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.92013,52.248819</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Walcownicza - Filmowa</name>
+  <description>name=Walcownicza - Filmowa
+ref=9550
+capacity=14
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.216018,52.162519</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>OSiR Wawer</name>
+  <description>name=OSiR Wawer
+ref=9566
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.162012,52.219459</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Pętla Sadyba</name>
+  <description>name=Pętla Sadyba
+ref=9577
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.068535,52.181474</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Pętla Witolin</name>
+  <description>name=Pętla Witolin
+ref=9583
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.113097,52.236522</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Metro Wilanowska - Dworzec Południowy</name>
+  <description>name=Metro Wilanowska - Dworzec Południowy
+ref=9589
+capacity=24
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.023577,52.18082</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PKP Rembertów - Cyrulików</name>
+  <description>name=PKP Rembertów - Cyrulików
+ref=9591
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.157396,52.257579</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Branickiego - Ledóchowskiej</name>
+  <description>name=Branickiego - Ledóchowskiej
+ref=9597
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.073689,52.155439</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PKP Ursus Północny </name>
+  <description>name=PKP Ursus Północny 
+ref=9601
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.887875,52.206211</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PKP Wawer</name>
+  <description>name=PKP Wawer
+ref=9606
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.149214,52.223054</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PKP Wesoła</name>
+  <description>name=PKP Wesoła
+ref=9611
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.224155,52.253523</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Lazurowa - Sternicza</name>
+  <description>name=Lazurowa - Sternicza
+ref=9624
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.897887,52.220789</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Plac Hallera - Dąbrowszczaków</name>
+  <description>name=Plac Hallera - Dąbrowszczaków
+ref=9632
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.030544,52.261381</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Powstańców Śląskich - Pełczyńskiego</name>
+  <description>name=Powstańców Śląskich - Pełczyńskiego
+ref=9633
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.912148,52.242502</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Radzymińska - Łodygowa</name>
+  <description>name=Radzymińska - Łodygowa
+ref=9638
+capacity=18
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.07535,52.286662</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rondo Bułhaka</name>
+  <description>name=Rondo Bułhaka
+ref=9640
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.223424,52.246276</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Park Kępa Potocka</name>
+  <description>name=Park Kępa Potocka
+ref=9659
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.978694,52.28794</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rondo Fieldorfa</name>
+  <description>name=Rondo Fieldorfa
+ref=9663
+capacity=14
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.169537,52.264811</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rondo Mościckiego</name>
+  <description>name=Rondo Mościckiego
+ref=9669
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.126986,52.23393</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Metro Szwedzka</name>
+  <description>name=Metro Szwedzka
+ref=9690
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.046161,52.263298</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Żwirki i Wigury - Woronicza</name>
+  <description>name=Żwirki i Wigury - Woronicza
+ref=9702
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.982139,52.194579</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Marymoncka - Podleśna</name>
+  <description>name=Marymoncka - Podleśna
+ref=9699
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.958925,52.281039</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Powstańców Śląskich - Wrocławska</name>
+  <description>name=Powstańców Śląskich - Wrocławska
+ref=9642
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.91931,52.257631</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PKP Międzylesie</name>
+  <description>name=PKP Międzylesie
+ref=9587
+capacity=18
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.168801,52.205017</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Miasteczko Orange</name>
+  <description>name=Miasteczko Orange
+ref=6453
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.946434,52.208711</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Korkowa</name>
+  <description>name=Korkowa
+ref=9502
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.147235,52.23828</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

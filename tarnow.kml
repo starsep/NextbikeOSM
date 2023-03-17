@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Osiedle Legionów</name>
+  <description>name=Osiedle Legionów
+ref=3890
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.00299,50.02666</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Osiedle Westerplatte</name>
+  <description>name=Osiedle Westerplatte
+ref=3891
+capacity=13
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.00667,50.03047</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Mościckiego - Osiedle</name>
+  <description>name=Mościckiego - Osiedle
+ref=3892
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.96975,50.01163</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Słoneczna</name>
+  <description>name=Słoneczna
+ref=3895
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.0041,50.01759</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Konarskiego - Sąd</name>
+  <description>name=Konarskiego - Sąd
+ref=3896
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.992723,50.009141</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Piaskowa – Park</name>
+  <description>name=Piaskowa – Park
+ref=3897
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.981917,50.032008</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

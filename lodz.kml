@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>ZOO Orientarium</name>
+  <description>name=ZOO Orientarium
+ref=8697
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.412686,51.763879</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

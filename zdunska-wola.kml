@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Plac Żelazny – Dworzec</name>
+  <description>name=Plac Żelazny – Dworzec
+ref=7497
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.947065,51.610169</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Parkowa - Browar</name>
+  <description>name=Parkowa - Browar
+ref=7697
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.93512,51.5991</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Łąkoszyńska - SP6</name>
+  <description>name=Łąkoszyńska - SP6
+ref=7696
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.36399,52.22203</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Graniczna</name>
+  <description>name=Graniczna
+ref=8698
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.34133,52.24417</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Zbożowa</name>
+  <description>name=Zbożowa
+ref=8699
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.32178,52.2328</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Józefów</name>
+  <description>name=Józefów
+ref=8700
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.390434,52.220551</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

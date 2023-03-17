@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Unii Europejskiej</name>
+  <description>name=Unii Europejskiej
+ref=63011
+capacity=13
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.17171,54.21807</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Bukowe</name>
+  <description>name=Bukowe
+ref=63012
+capacity=13
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.20076,54.21308</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Morskie</name>
+  <description>name=Morskie
+ref=63013
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.16028,54.20773</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Strefa Ekonomiczna</name>
+  <description>name=Strefa Ekonomiczna
+ref=63014
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.14793,54.1952</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Żytnia</name>
+  <description>name=Żytnia
+ref=63016
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.18493,54.1647</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Stawisińskiego</name>
+  <description>name=Stawisińskiego
+ref=63019
+capacity=13
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.19181,54.18685</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Zagroda Jamneńska</name>
+  <description>name=Zagroda Jamneńska
+ref=63027
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.17028,54.24544</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wąwozowa</name>
+  <description>name=Wąwozowa
+ref=63028
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.18377,54.21114</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wodna dolina</name>
+  <description>name=Wodna dolina
+ref=63030
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.20822,54.17835</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
