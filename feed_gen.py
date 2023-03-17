@@ -63,18 +63,18 @@ class Feed:
         baza = self.detuple(dbaza)
 
         for i in self.features:
-            osm_hist = c.execute(sel.format(self.objname, str(i.iD))).fetchone()
+            osm_hist = c.execute(sel.format(self.objname, str(i.id))).fetchone()
 
             if osm_hist is None:
                 self.osm_new.append(i)
-                c.execute(new.format(self.objname, i.iD, i.version))
+                c.execute(new.format(self.objname, i.id, i.version))
             else:
                 if osm_hist[1] == i.version:
-                    baza.remove(int(i.iD))
+                    baza.remove(int(i.id))
                 else:
                     self.osm_changes.append(i)
-                    c.execute(upd.format(self.objname, i.version, i.iD))
-                    baza.remove(int(i.iD))
+                    c.execute(upd.format(self.objname, i.version, i.id))
+                    baza.remove(int(i.id))
 
         if baza != []:
             for i in baza:

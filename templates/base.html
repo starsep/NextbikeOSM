@@ -117,10 +117,13 @@
             <tr>
                 <td>
                     <a href="https://osm.org/?mlat={{ match.nextbike.lat }}&mlon={{ match.nextbike.lon }}#map=19/{{ match.nextbike.lat }}/{{ match.nextbike.lon }}">{{ match.nextbike.uid }}</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top={{ match.nextbike.lat }}&bottom={{ match.nextbike.lat }}&left={{ match.nextbike.lon }}&right={{ match.nextbike.lon }}">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
                 </td>
                 <td>
                     <a href="https://osm.org/{{ match.osmType }}/{{ match.osm.id }}">{{ match.osm.id }}</a>
-                    <a href="http://localhost:8111/load_and_zoom?left={{ match.nextbike.lon|float - 0.0009 }}&right={{ match.nextbike.lon|float + 0.0009 }}&top={{ match.nextbike.lat|float + 0.0009 }}&bottom={{ match.nextbike.lat|float - 0.0009 }}&select={{ match.osmType[0] ~ match.osm.iD }}">
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects={{ match.osmType[0] ~ match.osm.id }}">
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
@@ -155,6 +158,6 @@
         </tbody>
     </table>
     <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v{{VERSION}} (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
-
 </html>
