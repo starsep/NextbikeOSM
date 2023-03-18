@@ -114,22 +114,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Dworzec Zachodni</name>
-  <description>name=Dworzec Zachodni
-ref=9462
-capacity=24
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.966339,52.218454</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Senatorska - Bielańska</name>
   <description>name=Senatorska - Bielańska
 ref=9465
