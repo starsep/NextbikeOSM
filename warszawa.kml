@@ -82,38 +82,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Czerwonych Beretów - Frontowa</name>
-  <description>name=Czerwonych Beretów - Frontowa
-ref=9452
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.177609,52.262273</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Senatorska - Bielańska</name>
-  <description>name=Senatorska - Bielańska
-ref=9465
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.006692,52.243571</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Szaserów - Serocka</name>
   <description>name=Szaserów - Serocka
 ref=9466
@@ -322,22 +290,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Orlich Gniazd</name>
-  <description>name=Orlich Gniazd
-ref=9546
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.92013,52.248819</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Walcownicza - Filmowa</name>
   <description>name=Walcownicza - Filmowa
 ref=9550
@@ -482,22 +434,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Plac Hallera - Dąbrowszczaków</name>
-  <description>name=Plac Hallera - Dąbrowszczaków
-ref=9632
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.030544,52.261381</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Powstańców Śląskich - Pełczyńskiego</name>
   <description>name=Powstańców Śląskich - Pełczyńskiego
 ref=9633
@@ -562,22 +498,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Rondo Fieldorfa</name>
-  <description>name=Rondo Fieldorfa
-ref=9663
-capacity=14
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.169537,52.264811</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Rondo Mościckiego</name>
   <description>name=Rondo Mościckiego
 ref=9669
@@ -639,22 +559,6 @@ network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
     <coordinates>20.958925,52.281039</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Powstańców Śląskich - Wrocławska</name>
-  <description>name=Powstańców Śląskich - Wrocławska
-ref=9642
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.91931,52.257631</coordinates>
   </Point>
 </Placemark>
 <Placemark>

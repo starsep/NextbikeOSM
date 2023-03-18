@@ -189,17 +189,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Czarnuszkowa/Waniliowa</name>
-  <description>name=Czarnuszkowa/Waniliowa
-ref=15280
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.999845,51.18079</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Bierutowska</name>
   <description>name=Bierutowska
 ref=15281
