@@ -162,6 +162,22 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>al. Jana Pawła II - Plac Mirowski</name>
+  <description>name=al. Jana Pawła II - Plac Mirowski
+ref=9482
+capacity=28
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.995731,52.238666</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Sobieskiego - Śródziemnomorska</name>
   <description>name=Sobieskiego - Śródziemnomorska
 ref=9498
