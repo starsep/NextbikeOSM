@@ -57,17 +57,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>TEST_WROCŁAW_ANIA</name>
-  <description>name=TEST_WROCŁAW_ANIA
-ref=909090
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.0568,52.271348</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Aleja Bielany</name>
   <description>name=Aleja Bielany
 ref=15253

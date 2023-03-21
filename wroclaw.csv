@@ -3,7 +3,6 @@
 51.112387,16.993157,addNode name=Robotnicza / Fabryczna,ref=15076,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.145074,16.871502,addNode name=Leśnica - pętla tramwajowa,ref=15084,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.137856,16.994273,addNode name=Osobowicka - pętla tramwajowa,ref=15098,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-52.271348,21.0568,addNode name=TEST_WROCŁAW_ANIA,ref=909090,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.048391,16.961699,addNode name=Aleja Bielany,ref=15253,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.1253,16.997218,addNode name=Popowicka / Niedźwiedzia,ref=15123,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 51.120068,17.077684,addNode name=al. Kochanowskiego / Śniadeckich ,ref=15128,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
