@@ -57,17 +57,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Aleja Bielany</name>
-  <description>name=Aleja Bielany
-ref=15253
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.961699,51.048391</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Popowicka / Niedźwiedzia</name>
   <description>name=Popowicka / Niedźwiedzia
 ref=15123
@@ -131,17 +120,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>16.94095,51.13707</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Amazon WRO2</name>
-  <description>name=Amazon WRO2
-ref=15274
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.950763,51.034956</coordinates>
   </Point>
 </Placemark>
 <Placemark>
