@@ -17,7 +17,7 @@ from overpass_parser import OverpassParser
 
 __VERSION__ = "3.0.0"
 
-DISTANCE_THRESHOLD_MISMATCH = 50
+DISTANCE_THRESHOLD_MISMATCH = 100
 MAX_DISTANCE = 1000000
 
 
