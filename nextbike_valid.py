@@ -210,6 +210,16 @@ class NextbikeValidator:
         return True
 
 
+def _calculateBbox(data: List[NP.Place]) -> Tuple[float, float, float, float]:
+    latLonEpsilon = 0.002
+    return (
+        min((place.lat for place in data)) - latLonEpsilon,
+        min((place.lon for place in data)) - latLonEpsilon,
+        max((place.lat for place in data)) + latLonEpsilon,
+        max((place.lon for place in data)) + latLonEpsilon,
+    )
+
+
 def main(
     update: bool,
     network: str,
@@ -222,17 +232,23 @@ def main(
     if update:
         NP.NextbikeParser.update()
         nextbikeParser.get_uids()
-    data = OverpassParser(osmAreaName)
-    validator = NextbikeValidator(nextbikeParser, data)
+    overpassParser = OverpassParser()
+    validator = NextbikeValidator(nextbikeParser, overpassParser)
     if network.isnumeric():
-        d = nextbikeParser.find_city(network)
+        nextbikeData = nextbikeParser.find_city(network)
     else:
-        d = nextbikeParser.find_network(network)
+        nextbikeData = nextbikeParser.find_network(network)
+    overpassParser.fetchData(placeName=osmAreaName, bbox=_calculateBbox(nextbikeData))
     if validator.containsData(outputPath):
-        validator.pair(d)
+        validator.pair(nextbikeData)
         validator.generateHtml(outputPath, mapPath)
         if feed:
-            feed = FG.Feed(args.auto[2].rstrip(".html"), data.nodes, data.ways, d)
+            feed = FG.Feed(
+                args.auto[2].rstrip(".html"),
+                overpassParser.nodes,
+                overpassParser.ways,
+                nextbikeData,
+            )
             feed.new_db()
             feed.check_db()
             feed.make_feeds()

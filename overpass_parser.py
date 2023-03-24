@@ -1,4 +1,4 @@
-from typing import Dict, List, cast
+from typing import Dict, List, cast, Tuple
 
 import overpy
 from diskcache import Cache
@@ -10,12 +10,14 @@ cacheOverpass = Cache(str(cacheDirectory / "overpass"))
 
 
 @cacheOverpass.memoize()
-def fetchOverpassData(placeName: str) -> overpy.Result:
+def fetchOverpassData(placeName: str, bbox: Tuple[float, float, float, float]) -> overpy.Result:
+    (minLat, minLon, maxLat, maxLon) = bbox
     query = f"""
     [out:xml][timeout:250];
     area[admin_level=8][name="{placeName}"]->.searchArea;
     (
         nwr[amenity=bicycle_rental](area.searchArea);
+        nwr[amenity=bicycle_rental]({minLat}, {minLon}, {maxLat}, {maxLon});
     );
     (._;>;);
     out body;
@@ -24,10 +26,15 @@ def fetchOverpassData(placeName: str) -> overpy.Result:
 
 
 class OverpassParser:
-    def __init__(self, placeName: str):
-        self.data: overpy.Result = fetchOverpassData(placeName)
-        self.ways: Dict[int, overpy.Way] = {way.id: way for way in self.data.ways}
-        self.nodes: Dict[int, overpy.Node] = {node.id: node for node in self.data.nodes}
+    def __init__(self):
+        self.ways: Dict[int, overpy.Way] = {}
+        self.nodes: Dict[int, overpy.Node] = {}
+        self.elements: List[overpy.Element] = []
+
+    def fetchData(self, placeName: str, bbox: Tuple[float, float, float, float]):
+        data: overpy.Result = fetchOverpassData(placeName, bbox)
+        self.ways = {way.id: way for way in data.ways}
+        self.nodes: Dict[int, overpy.Node] = {node.id: node for node in data.nodes}
         self.elements: List[overpy.Element] = cast(
             List[overpy.Element], list(self.nodes.values())
         ) + list(self.ways.values())
