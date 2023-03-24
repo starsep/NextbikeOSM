@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<Placemark>
-  <name>Kupiecka (Bachus)</name>
-  <description>name=Kupiecka (Bachus)
-ref=1123
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>15.506537,51.940303</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>

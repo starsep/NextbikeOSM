@@ -35,28 +35,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Leśnica - pętla tramwajowa</name>
-  <description>name=Leśnica - pętla tramwajowa
-ref=15084
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.871502,51.145074</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Osobowicka - pętla tramwajowa</name>
-  <description>name=Osobowicka - pętla tramwajowa
-ref=15098
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.994273,51.137856</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Popowicka / Niedźwiedzia</name>
   <description>name=Popowicka / Niedźwiedzia
 ref=15123
@@ -109,17 +87,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>16.98789,51.14382</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Wrocław Stadion, stacja kolejowa</name>
-  <description>name=Wrocław Stadion, stacja kolejowa
-ref=15199
-capacity=6
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.94095,51.13707</coordinates>
   </Point>
 </Placemark>
 <Placemark>

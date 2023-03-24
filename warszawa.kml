@@ -34,22 +34,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Stawki - Dubois</name>
-  <description>name=Stawki - Dubois
-ref=9436
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.991379,52.253213</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Bysławska</name>
   <description>name=Bysławska
 ref=9439
@@ -130,22 +114,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Wolska - Płocka</name>
-  <description>name=Wolska - Płocka
-ref=9474
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.96597,52.233087</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Górczewska - Płocka</name>
   <description>name=Górczewska - Płocka
 ref=9479
@@ -159,22 +127,6 @@ network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
     <coordinates>20.965578,52.23734</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>al. Jana Pawła II - Plac Mirowski</name>
-  <description>name=al. Jana Pawła II - Plac Mirowski
-ref=9482
-capacity=28
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.995731,52.238666</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -239,22 +191,6 @@ network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
     <coordinates>21.027245,52.293889</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Plac Zawiszy</name>
-  <description>name=Plac Zawiszy
-ref=9511
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.989825,52.225335</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -367,22 +303,6 @@ network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
     <coordinates>21.113097,52.236522</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Metro Wilanowska - Dworzec Południowy</name>
-  <description>name=Metro Wilanowska - Dworzec Południowy
-ref=9589
-capacity=24
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.023577,52.18082</coordinates>
   </Point>
 </Placemark>
 <Placemark>
