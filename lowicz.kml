@@ -12,27 +12,5 @@ operator=Nextbike Polska</description>
     <coordinates>19.949966,52.114787</coordinates>
   </Point>
 </Placemark>
-<Placemark>
-  <name>Grunwaldzka - SP 3</name>
-  <description>name=Grunwaldzka - SP 3
-ref=7464
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.946192,52.11941</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Podleśna</name>
-  <description>name=Podleśna
-ref=7468
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.929298,52.082957</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>

@@ -12,49 +12,5 @@ operator=Nextbike Polska</description>
     <coordinates>15.506537,51.940303</coordinates>
   </Point>
 </Placemark>
-<Placemark>
-  <name>Zacisze/Prosta</name>
-  <description>name=Zacisze/Prosta
-ref=1138
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>15.477801,51.943944</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Konstytucji 3 Maja (Wenus)</name>
-  <description>name=Konstytucji 3 Maja (Wenus)
-ref=1149
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>15.506481,51.935897</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Sulechowska (CRS)</name>
-  <description>name=Sulechowska (CRS)
-ref=1150
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>15.523532,51.956863</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Nowa/Browarna</name>
-  <description>name=Nowa/Browarna
-ref=1158
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>15.514117,51.925131</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>

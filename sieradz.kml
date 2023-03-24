@@ -2,17 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Bohaterów Września</name>
-  <description>name=Bohaterów Września
-ref=7666
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.706627,51.589452</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Skrzetuskiego / Czarnieckiego</name>
   <description>name=Skrzetuskiego / Czarnieckiego
 ref=8701

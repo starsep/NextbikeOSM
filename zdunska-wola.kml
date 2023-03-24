@@ -12,16 +12,5 @@ operator=Nextbike Polska</description>
     <coordinates>18.947065,51.610169</coordinates>
   </Point>
 </Placemark>
-<Placemark>
-  <name>Parkowa - Browar</name>
-  <description>name=Parkowa - Browar
-ref=7697
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.93512,51.5991</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>

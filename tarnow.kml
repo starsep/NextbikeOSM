@@ -2,28 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Osiedle Legionów</name>
-  <description>name=Osiedle Legionów
-ref=3890
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.00299,50.02666</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Osiedle Westerplatte</name>
-  <description>name=Osiedle Westerplatte
-ref=3891
-capacity=13
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.00667,50.03047</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Mościckiego - Osiedle</name>
   <description>name=Mościckiego - Osiedle
 ref=3892
