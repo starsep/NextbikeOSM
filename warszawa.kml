@@ -466,22 +466,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Żwirki i Wigury - Woronicza</name>
-  <description>name=Żwirki i Wigury - Woronicza
-ref=9702
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.982139,52.194579</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Marymoncka - Podleśna</name>
   <description>name=Marymoncka - Podleśna
 ref=9699
