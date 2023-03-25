@@ -129,7 +129,7 @@
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
-                <td {% if match.distance>50 %}class="red"{% endif %}> {% if match.match == 'id' %}<b>{% endif %}{{ match.distance }}{% if match.match == 'id' %}</b>{% endif %}
+                <td {% if match.distance>distanceThreshold %}class="red"{% endif %}> {% if match.match == 'id' %}<b>{% endif %}{{ match.distance }}{% if match.match == 'id' %}</b>{% endif %}
                 </td>
                 <td>
                     {{ match.nextbike.name }}
