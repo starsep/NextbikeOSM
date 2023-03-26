@@ -24,7 +24,7 @@ if __name__ == "__main__":
         main(
             update=False,
             network=str(networkId),
-            osmAreaName=cityName,
+            cityName=cityName,
             outputPath=outputDirectory / f"{slug}.html",
             mapPath=outputDirectory / f"map-{slug}.html",
             nextbikeParser=nextbikeParser,

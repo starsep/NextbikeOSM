@@ -132,7 +132,7 @@ class NextbikeValidator:
             )
         self.matches = data
 
-    def generateHtml(self, outputPath: Path, mapPath: Optional[Path] = None):
+    def generateHtml(self, outputPath: Path, mapPath: Path, cityName: str):
         timestamp = strftime("%a, %d %b @ %H:%M:%S", localtime())
         template = self.envir.get_template("base.html")
         matches = []
@@ -153,35 +153,38 @@ class NextbikeValidator:
                 "timestamp": timestamp,
                 "VERSION": __VERSION__,
                 "distanceThreshold": DISTANCE_THRESHOLD_MISMATCH,
+                "cityName": cityName,
                 "mapLink": str(mapPath.name),
                 "csvLink": str(csvPath.name),
                 "kmlLink": str(kmlPath.name),
             }
             f.write(template.render(context))
-        if mapPath is not None:
-            networkTags = dict(
-                amenity="bicycle_rental",
-                operator="Nextbike Polska",
-            )
-            if "warszawa" in outputPath.name:  # TODO: move logic
-                networkTags["bicycle_rental"] = "dropoff_point"
-                networkTags["brand"] = "Veturilo"
-                networkTags["brand:wikidata"] = "Q3847868"
-                networkTags["network"] = "Veturilo"
-                networkTags["network:wikidata"] = "Q3847868"
-            mismatches = list(
-                filter(lambda m: m.distance > DISTANCE_THRESHOLD_MISMATCH, matches)
-            )
-            mapFeatures = list(map(MapFeature.fromMatch(networkTags), mismatches))
-            self.generateMap(mapPath, mapFeatures)
-            self.generateCSV(csvPath, mapFeatures)
-            self.generateKML(kmlPath, mapFeatures)
+        networkTags = dict(
+            amenity="bicycle_rental",
+            operator="Nextbike Polska",
+        )
+        if "warszawa" in outputPath.name:  # TODO: move logic
+            networkTags["bicycle_rental"] = "dropoff_point"
+            networkTags["brand"] = "Veturilo"
+            networkTags["brand:wikidata"] = "Q3847868"
+            networkTags["network"] = "Veturilo"
+            networkTags["network:wikidata"] = "Q3847868"
+        mismatches = list(
+            filter(lambda m: m.distance > DISTANCE_THRESHOLD_MISMATCH, matches)
+        )
+        mapFeatures = list(map(MapFeature.fromMatch(networkTags), mismatches))
+        self.generateMap(mapPath, mapFeatures, cityName)
+        self.generateCSV(csvPath, mapFeatures)
+        self.generateKML(kmlPath, mapFeatures)
 
-    def generateMap(self, mapPath: Path, mapFeatures: List[MapFeature]):
+    def generateMap(self, mapPath: Path, mapFeatures: List[MapFeature], cityName: str):
         mapFeaturesDict = list(map(dataclasses.asdict, mapFeatures))
         mapTemplate = self.envir.get_template("map.html")
         with mapPath.open("w", encoding="utf-8") as f:
-            context = {"featuresJson": json.dumps(mapFeaturesDict)}
+            context = {
+                "featuresJson": json.dumps(mapFeaturesDict),
+                "cityName": cityName,
+            }
             f.write(mapTemplate.render(context))
 
     @staticmethod
@@ -221,7 +224,7 @@ def _calculateBbox(data: List[NP.Place]) -> Tuple[float, float, float, float]:
 def main(
     update: bool,
     network: str,
-    osmAreaName: str,
+    cityName: str,
     outputPath: Path,
     nextbikeParser: NP.NextbikeParser,
     mapPath: Optional[Path] = None,
@@ -235,7 +238,8 @@ def main(
         nextbikeData = nextbikeParser.find_city(network)
     else:
         nextbikeData = nextbikeParser.find_network(network)
-    overpassParser.fetchData(placeName=osmAreaName, bbox=_calculateBbox(nextbikeData))
+    overpassParser.fetchData(placeName=cityName, bbox=_calculateBbox(nextbikeData))
     if validator.containsData(outputPath):
         validator.pair(nextbikeData)
-        validator.generateHtml(outputPath, mapPath)
+        validator.generateHtml(outputPath, mapPath, cityName)
+
