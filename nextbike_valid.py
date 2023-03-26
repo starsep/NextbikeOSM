@@ -1,4 +1,3 @@
-import argparse
 import dataclasses
 import difflib as SC
 import json
@@ -253,34 +252,3 @@ def main(
             feed.check_db()
             feed.make_feeds()
             feed.create_feed()
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "-a",
-        "--auto",
-        action="store",
-        nargs=3,
-        metavar=("NETWORK", "OSM_AREA_NAME", "HTML_PATH"),
-        help="NETWORK is uid or name to be found in nextbike_uids.txt",
-        required=True,
-    )
-    parser.add_argument(
-        "-u",
-        "--update",
-        action="store_true",
-        help="updates manually nextbike .xml file and .set file with uids",
-    )
-    parser.add_argument(
-        "-f", "--feed", action="store_true", help="runs feed creation (only with -a!)"
-    )
-    args = parser.parse_args()
-    main(
-        update=args.update,
-        network=args.auto[0],
-        osmAreaName=args.auto[1],
-        outputPath=Path(args.auto[2]),
-        feed=args.feed,
-        nextbikeParser=NP.NextbikeParser(),
-    )
