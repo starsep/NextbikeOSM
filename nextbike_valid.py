@@ -9,7 +9,6 @@ from typing import List, Optional, Tuple
 from jinja2 import Environment, PackageLoader
 from overpy import Element, Way
 
-import feed_gen as FG
 import nextbike_parser as NP
 from distance import GeoPoint, distance
 from overpass_parser import OverpassParser
@@ -224,7 +223,6 @@ def main(
     network: str,
     osmAreaName: str,
     outputPath: Path,
-    feed: bool,
     nextbikeParser: NP.NextbikeParser,
     mapPath: Optional[Path] = None,
 ):
@@ -241,14 +239,3 @@ def main(
     if validator.containsData(outputPath):
         validator.pair(nextbikeData)
         validator.generateHtml(outputPath, mapPath)
-        if feed:
-            feed = FG.Feed(
-                args.auto[2].rstrip(".html"),
-                overpassParser.nodes,
-                overpassParser.ways,
-                nextbikeData,
-            )
-            feed.new_db()
-            feed.check_db()
-            feed.make_feeds()
-            feed.create_feed()

@@ -27,7 +27,6 @@ if __name__ == "__main__":
             osmAreaName=cityName,
             outputPath=outputDirectory / f"{slug}.html",
             mapPath=outputDirectory / f"map-{slug}.html",
-            feed=False,
             nextbikeParser=nextbikeParser,
         )
 
