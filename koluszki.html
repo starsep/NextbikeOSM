@@ -1,34 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="./jquery.floatThead.min.js"></script>
-    <script type="text/javascript" src="./jquery.tablesorter.min.js"></script>
-    <link rel="stylesheet" href="./theme.default.css">
-    <title>NextBikeOSM</title>
+    <title>Koluszki - NextBikeOSM</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    
+    <script src="sorttable.js" integrity="sha256-n3657FhpVO0BrpRmnXeQho7yfKvMVBh0QcoYkQr2O8w="></script>
 </head>
 <style>
-    table,
-    td,
-    tr,
-    th {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-
-    thead {
-        background-color: white;
-        /*border: 1px solid black;*/
-    }
-
-    .fill {
-        background-color: #D4D4D4;
-    }
-
     .red {
-        background-color: #FF8080;
+        color: red;
     }
 
     .svg {
@@ -36,82 +17,27 @@
         height: 20px;
     }
 </style>
-
 <body>
-    <script>
-        $(function() {
-            $('table').floatThead({
-                useAbsolutePositioning: true
-            });
-        });
-        $.tablesorter.addParser({
-            id: 'refs',
-            is: function(s, table, cell, $cell) {
-                return false;
-            },
-            format: function(s, table, cell, cellIndex) {
-                if (s.length == 4) {
-                    return s.concat('0');
-                } else {
-                    return s;
-                }
-            },
-            type: 'numeric'
-        });
-        $(function() {
-            $('table').tablesorter({
-                widgets: ["zebra"],
-                widgetOptions: {
-                    zebra: [, "fill"]
-                },
-
-                headers: {
-                    0: {sorter: false},
-                    1: {sorter: false},
-                    2: {sorter: true},
-                    3: {sorter: false}, //name TOP
-                    4: {sorter: false}, //ref TOP
-                    5: {sorter: false}, //stands TOP
-                    6: {sorter: false}, //network
-                    7: {sorter: false},
-                    8: {sorter: false},
-                    9: {sorter: false},
-                    10: {sorter: 'refs'}, //nextb ref
-                    11: {sorter: 'refs'}, //ref osm
-                    12: {sorter: false},
-                    13: {sorter: false},
-                }
-            });
-        });
-    </script>
-    <i>Updated: Mon, 27 Mar @ 00:00:26</i> <br/>
+    <i>Updated: Mon, 27 Mar @ 01:00:21</i> <br/>
     <span>
         <a href="map-koluszki.html">Map of Nextbike locations</a> where OpenStreetMap match has distance &gt; 100 metres.
         <a href="koluszki.kml">KML</a>
         <a href="koluszki.csv">CSV in SCEE format</a>
     </span>
-    <table>
+    <table class="sortable">
         <thead>
             <tr>
-                <th rowspan="2">NextBike
-                    <br>uid</th>
-                <th rowspan="2">OSM id
-                    <br>(closest match)</th>
-                <th rowspan="2">Distance
-                    <br>(in meters)</th>
-                <th colspan="2">Name</th>
-                <th colspan="2">Ref</th>
-                <th colspan="2">Stands</th>
-                <th rowspan="2">Network</th>
-                <th rowspan="2">Operator</th>
-            </tr>
-            <tr>
-                <th>nextbike</th>
-                <th>osm</th>
-                <th>nextbike</th>
-                <th>osm</th>
-                <th>nextbike</th>
-                <th>osm</th>
+                <th>NextBike uid</th>
+                <th>OSM id (closest match)</th>
+                <th>Distance (in meters)</th>
+                <th>Name NB</th>
+                <th>Name OSM</th>
+                <th>Ref NB</th>
+                <th>Ref OSM</th>
+                <th>Stands NB</th>
+                <th>Stands OSM</th>
+                <th>Network</th>
+                <th>Operator</th>
             </tr>
         </thead>
         <tbody>
