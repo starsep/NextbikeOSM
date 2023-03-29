@@ -114,22 +114,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Górczewska - Płocka</name>
-  <description>name=Górczewska - Płocka
-ref=9479
-capacity=18
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.965578,52.23734</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Sobieskiego - Śródziemnomorska</name>
   <description>name=Sobieskiego - Śródziemnomorska
 ref=9498
