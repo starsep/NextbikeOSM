@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>GPP Business Park</name>
+  <description>name=GPP Business Park
+ref=5877
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.028361,50.283083</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Gliwicka / Wiśniowa</name>
+  <description>name=Gliwicka / Wiśniowa
+ref=7261
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.979816,50.269608</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kościuszki / Poniatowskiego / Szeligiewicza</name>
+  <description>name=Kościuszki / Poniatowskiego / Szeligiewicza
+ref=7262
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.013389,50.250278</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Skwer rtm. Pileckiego</name>
+  <description>name=Skwer rtm. Pileckiego
+ref=7263
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.973039,50.257943</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Ośrodek Sportowy &#39;Podlesianka&#39;</name>
+  <description>name=Ośrodek Sportowy &#39;Podlesianka&#39;
+ref=7268
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.974972,50.179306</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Boisko &#39;Rapid&#39;</name>
+  <description>name=Boisko &#39;Rapid&#39;
+ref=7269
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.016389,50.271528</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kościuszki / Zgrzebnioka</name>
+  <description>name=Kościuszki / Zgrzebnioka
+ref=7272
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.005194,50.239917</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Park Bolina</name>
+  <description>name=Park Bolina
+ref=7273
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.0885,50.23238</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Boya-Żeleńskiego / Migdałowców</name>
+  <description>name=Boya-Żeleńskiego / Migdałowców
+ref=7275
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.991873,50.188202</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Gliwicka - MOPS</name>
+  <description>name=Gliwicka - MOPS
+ref=7276
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.996887,50.265469</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Fabryka Porcelany</name>
+  <description>name=Fabryka Porcelany
+ref=7277
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.061783,50.254334</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>1 Maja / Bohaterów Monte Cassino</name>
+  <description>name=1 Maja / Bohaterów Monte Cassino
+ref=7278
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.0535,50.26005</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Green Park</name>
+  <description>name=Green Park
+ref=5898
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.047639,50.255444</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rynek - Pomnik</name>
+  <description>name=Rynek - Pomnik
+ref=5926
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.021618,50.26082</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
