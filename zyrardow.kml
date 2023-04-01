@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Nad Zalewem</name>
+  <description>name=Nad Zalewem
+ref=8225
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.45076,52.03703</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Aqua</name>
+  <description>name=Aqua
+ref=8226
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.44694,52.06789</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Eko-park</name>
+  <description>name=Eko-park
+ref=8227
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.43381,52.06818</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

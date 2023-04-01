@@ -2,6 +2,17 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
+  <name>Zaścianki / Stacja paliw</name>
+  <description>name=Zaścianki / Stacja paliw
+ref=85106
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.252681,53.125414</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Wyszyńskiego</name>
   <description>name=Wyszyńskiego
 ref=8514

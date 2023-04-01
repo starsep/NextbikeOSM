@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Rynek Wieluński</name>
+  <description>name=Rynek Wieluński
+ref=6331
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.096477,50.816385</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Promenada/Amfiteatr</name>
+  <description>name=Promenada/Amfiteatr
+ref=6332
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.128957,50.834213</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Park Wodny</name>
+  <description>name=Park Wodny
+ref=6334
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.11941,50.8261</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Armii Krajowej/Politechnika</name>
+  <description>name=Armii Krajowej/Politechnika
+ref=6342
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.11769,50.82184</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PKP Centrum</name>
+  <description>name=PKP Centrum
+ref=6341
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.118782,50.808588</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Bialska - aleja Brzozowa</name>
+  <description>name=ul. Bialska - aleja Brzozowa
+ref=6340
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.086314,50.831274</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Limanowskiego Stadion</name>
+  <description>name=Limanowskiego Stadion
+ref=6351
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.157298,50.776577</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Plac Orląt Lwowskich</name>
+  <description>name=Plac Orląt Lwowskich
+ref=6352
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.147812,50.785919</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Św. Rocha/Szkoła</name>
+  <description>name=Św. Rocha/Szkoła
+ref=6353
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.065864,50.833006</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PKP RAKÓW</name>
+  <description>name=PKP RAKÓW
+ref=6354
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.15357,50.78817</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Pływalnia Kryta - MOSiR (al. Niepodległości)</name>
+  <description>name=Pływalnia Kryta - MOSiR (al. Niepodległości)
+ref=6356
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.13224,50.78974</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
+<Placemark>
+  <name>Wierzeje</name>
+  <description>name=Wierzeje
+ref=6186
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.73872,51.40568</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Lotnisko</name>
+  <description>name=Lotnisko
+ref=6187
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.683046,51.384991</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
