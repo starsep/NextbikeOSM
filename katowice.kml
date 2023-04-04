@@ -35,17 +35,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Skwer rtm. Pileckiego</name>
-  <description>name=Skwer rtm. Pileckiego
-ref=7263
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.973039,50.257943</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Ośrodek Sportowy &#39;Podlesianka&#39;</name>
   <description>name=Ośrodek Sportowy &#39;Podlesianka&#39;
 ref=7268
