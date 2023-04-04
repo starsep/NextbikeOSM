@@ -306,22 +306,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>PKP Ursus Północny </name>
-  <description>name=PKP Ursus Północny 
-ref=9601
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.887875,52.206211</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>PKP Wawer</name>
   <description>name=PKP Wawer
 ref=9606
