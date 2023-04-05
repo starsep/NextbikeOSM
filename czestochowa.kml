@@ -90,14 +90,14 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Św. Rocha/Szkoła</name>
-  <description>name=Św. Rocha/Szkoła
+  <name>Rondo Szwejkowskiego</name>
+  <description>name=Rondo Szwejkowskiego
 ref=6353
 capacity=15
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>19.065864,50.833006</coordinates>
+    <coordinates>19.176947,50.790737</coordinates>
   </Point>
 </Placemark>
 <Placemark>
