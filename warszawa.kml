@@ -162,22 +162,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Metro Dworzec Wileński - Targowa</name>
-  <description>name=Metro Dworzec Wileński - Targowa
-ref=9515
-capacity=24
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.035691,52.254294</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Metro Kondratowicza </name>
   <description>name=Metro Kondratowicza 
 ref=9521
