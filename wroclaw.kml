@@ -2,17 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Chałubińskiego / Mikulicza-Radeckiego</name>
-  <description>name=Chałubińskiego / Mikulicza-Radeckiego
-ref=15018
-capacity=4
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.067636,51.111356</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Sienkiewicza / Wyszyńskiego</name>
   <description>name=Sienkiewicza / Wyszyńskiego
 ref=15053
