@@ -79,6 +79,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Walońska (Angel Poland Group)</name>
+  <description>name=Walońska (Angel Poland Group)
+ref=15262
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.051548,51.103781</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Dalimira/Pęgowska</name>
   <description>name=Dalimira/Pęgowska
 ref=15275
