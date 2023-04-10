@@ -274,22 +274,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>PKP Wawer</name>
-  <description>name=PKP Wawer
-ref=9606
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.149214,52.223054</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>PKP Wesoła</name>
   <description>name=PKP Wesoła
 ref=9611
