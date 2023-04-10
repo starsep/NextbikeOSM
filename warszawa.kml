@@ -82,38 +82,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Metro Kondratowicza </name>
-  <description>name=Metro Kondratowicza 
-ref=9521
-capacity=24
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.048282,52.291748</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Metro Zacisze</name>
-  <description>name=Metro Zacisze
-ref=9541
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.062266,52.283476</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Pętla Sadyba</name>
   <description>name=Pętla Sadyba
 ref=9577
@@ -162,22 +130,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Radzymińska - Łodygowa</name>
-  <description>name=Radzymińska - Łodygowa
-ref=9638
-capacity=18
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.07535,52.286662</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Park Kępa Potocka</name>
   <description>name=Park Kępa Potocka
 ref=9659
@@ -191,22 +143,6 @@ network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
     <coordinates>20.978694,52.28794</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Metro Szwedzka</name>
-  <description>name=Metro Szwedzka
-ref=9690
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.046161,52.263298</coordinates>
   </Point>
 </Placemark>
 <Placemark>
