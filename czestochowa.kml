@@ -122,5 +122,16 @@ operator=Nextbike Polska</description>
     <coordinates>19.13224,50.78974</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>.Teststation IT - FVZ22 Adrian</name>
+  <description>name=.Teststation IT - FVZ22 Adrian
+ref=930109
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.110718,50.807236</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
