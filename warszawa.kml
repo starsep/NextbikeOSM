@@ -34,38 +34,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Bysławska</name>
-  <description>name=Bysławska
-ref=9439
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.205074,52.159678</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Centrum Zdrowia Dziecka</name>
-  <description>name=Centrum Zdrowia Dziecka
-ref=9445
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.191126,52.207438</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Szaserów - Serocka</name>
   <description>name=Szaserów - Serocka
 ref=9466
@@ -191,38 +159,6 @@ network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
     <coordinates>21.062266,52.283476</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Walcownicza - Filmowa</name>
-  <description>name=Walcownicza - Filmowa
-ref=9550
-capacity=14
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.216018,52.162519</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>OSiR Wawer</name>
-  <description>name=OSiR Wawer
-ref=9566
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.162012,52.219459</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -399,22 +335,6 @@ network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
     <coordinates>20.958925,52.281039</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>PKP Międzylesie</name>
-  <description>name=PKP Międzylesie
-ref=9587
-capacity=18
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.168801,52.205017</coordinates>
   </Point>
 </Placemark>
 <Placemark>
