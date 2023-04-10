@@ -18,22 +18,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Szaserów - Serocka</name>
-  <description>name=Szaserów - Serocka
-ref=9466
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.101847,52.24697</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Powstańców Śląskich - Połczyńska</name>
   <description>name=Powstańców Śląskich - Połczyńska
 ref=9470
