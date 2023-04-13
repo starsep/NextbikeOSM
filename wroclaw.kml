@@ -101,17 +101,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Nowodworska/Strzegomska</name>
-  <description>name=Nowodworska/Strzegomska
-ref=15276
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.966035,51.114538</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Kopycińskiego/Drabika</name>
   <description>name=Kopycińskiego/Drabika
 ref=15278
