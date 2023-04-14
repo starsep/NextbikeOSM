@@ -98,6 +98,22 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Puławska - Pileckiego</name>
+  <description>name=Puławska - Pileckiego
+ref=9609
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.018196,52.153378</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Park Kępa Potocka</name>
   <description>name=Park Kępa Potocka
 ref=9659
