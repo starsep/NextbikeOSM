@@ -189,17 +189,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Traktatowa (przystanek kolejowy)</name>
-  <description>name=Traktatowa (przystanek kolejowy)
-ref=15286
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.973556,51.112322</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Gnieźnieńska / Długa</name>
   <description>name=Gnieźnieńska / Długa
 ref=15288
