@@ -2,22 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>OSiR Żoliborz</name>
-  <description>name=OSiR Żoliborz
-ref=9411
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.985734,52.277729</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Sobieskiego - Śródziemnomorska</name>
   <description>name=Sobieskiego - Śródziemnomorska
 ref=9498
