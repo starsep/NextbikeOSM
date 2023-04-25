@@ -82,13 +82,17 @@ class NextbikeValidator:
         self.matches: List[Match] = []
         self.html = html
         self.envir = Environment(loader=PackageLoader("nextbike_valid", "templates"))
+        self.refMatches = dict()
 
     def matchViaRef(self, place: NP.Place) -> Tuple[Optional[Element], float]:
         nextbikeRef = place.num
+        if nextbikeRef not in self.refMatches:
+            self.refMatches[nextbikeRef] = list()
         result = None
         bestDistance = MAX_DISTANCE
         for element in self.osmParser.elements:
             if "ref" in element.tags and element.tags["ref"] == nextbikeRef:
+                self.refMatches[nextbikeRef].append([element, "way" if type(element) == Way else "node"])
                 point = GeoPoint.fromElement(element, self.osmParser)
                 dist = distance(place, point)
                 if dist < bestDistance:
@@ -157,6 +161,11 @@ class NextbikeValidator:
                 "mapLink": str(mapPath.name),
                 "csvLink": str(csvPath.name),
                 "kmlLink": str(kmlPath.name),
+                "refDuplicates": {
+                    ref: duplicates
+                    for ref, duplicates in self.refMatches.items()
+                    if len(duplicates) > 1
+                }
             }
             f.write(template.render(context))
         networkTags = dict(

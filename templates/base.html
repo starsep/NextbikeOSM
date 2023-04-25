@@ -85,6 +85,20 @@
             {% endfor %}
         </tbody>
     </table>
+    {% if refDuplicates %}
+    <h3>Duplicates by ref</h3>
+    {% for ref, duplicates in refDuplicates.items() %}
+    <span>
+        {{ ref }}:
+        {% for (duplicate, osmType) in duplicates %}
+            <a href="https://osm.org/{{ osmType }}/{{ duplicate.id }}">{{ duplicate.id }}</a>
+            <a target="hiddenIframe" href="http://localhost:8111/load_object?objects={{ osmType[0] ~ duplicate.id }}">
+                <img src="./josm.svg" class="svg" alt="josm">
+            </a>
+        {% endfor %}
+    </span>
+    {% endfor %}
+    {% endif %}
     <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v{{VERSION}} (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
     <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
