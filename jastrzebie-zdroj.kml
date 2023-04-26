@@ -12,5 +12,104 @@ operator=Nextbike Polska</description>
     <coordinates>18.602343,49.951855</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>PRZYSTANEK ul. Zdrojowa </name>
+  <description>name=PRZYSTANEK ul. Zdrojowa 
+ref=60704
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.574431,49.951049</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ROD SŁONECZNIK ul. Jagiełły </name>
+  <description>name=ROD SŁONECZNIK ul. Jagiełły 
+ref=60708
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.576778,49.942816</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>OSIEDLE PIONIERÓW  deptak </name>
+  <description>name=OSIEDLE PIONIERÓW  deptak 
+ref=60715
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.603019,49.944196</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>OSIEDLE BARBARY ul. Szkolna</name>
+  <description>name=OSIEDLE BARBARY ul. Szkolna
+ref=60719
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.618816,49.948769</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>OSIEDLE PRZYJAŹŃ  ul. Wyspiańskiego</name>
+  <description>name=OSIEDLE PRZYJAŹŃ  ul. Wyspiańskiego
+ref=60720
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.571317,49.963181</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>GÓRNE ul. Grodzka.</name>
+  <description>name=GÓRNE ul. Grodzka.
+ref=60723
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.608203,49.95757</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PRZYSTANEK ul. Armii Krajowej</name>
+  <description>name=PRZYSTANEK ul. Armii Krajowej
+ref=60724
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.48804,49.941949</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>OSIEDLE BOGOCZOWIEC  orlik</name>
+  <description>name=OSIEDLE BOGOCZOWIEC  orlik
+ref=60725
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.56738,49.957857</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PRZYSTANEK ul. Jagiełły</name>
+  <description>name=PRZYSTANEK ul. Jagiełły
+ref=60726
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.582897,49.93757</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
