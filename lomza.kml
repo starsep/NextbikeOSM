@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Park Wodny</name>
+  <description>name=Park Wodny
+ref=60204
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.06983,53.16726</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Straż Pożarna</name>
+  <description>name=Straż Pożarna
+ref=60213
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.063909,53.159311</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Aleja Park</name>
+  <description>name=Aleja Park
+ref=60214
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.0632,53.16797</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Perspektywa</name>
+  <description>name=Perspektywa
+ref=60215
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>22.0824,53.15893</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

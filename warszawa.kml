@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
+<Placemark>
+  <name>Dolina Służewiecka - Nowoursynowska</name>
+  <description>name=Dolina Służewiecka - Nowoursynowska
+ref=9704
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.041258,52.17034</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Puławska - Bogatki </name>
+  <description>name=Puławska - Bogatki 
+ref=9706
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.018331,52.132479</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
