@@ -13,8 +13,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Straż Pożarna</name>
-  <description>name=Straż Pożarna
+  <name>Przykoszarowa</name>
+  <description>name=Przykoszarowa
 ref=60213
 capacity=10
 amenity=bicycle_rental
