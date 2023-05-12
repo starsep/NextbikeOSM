@@ -1,10 +1,10 @@
-49.951855,18.602343,addNode name=.Teststation IT - FVZ22 Adrian,ref=930109,capacity=15,amenity=bicycle_rental,operator=Nextbike Polska
-49.951049,18.574431,addNode name=PRZYSTANEK ul. Zdrojowa ,ref=60704,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-49.942816,18.576778,addNode name=ROD SŁONECZNIK ul. Jagiełły ,ref=60708,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-49.944196,18.603019,addNode name=OSIEDLE PIONIERÓW  deptak ,ref=60715,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-49.948769,18.618816,addNode name=OSIEDLE BARBARY ul. Szkolna,ref=60719,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-49.963181,18.571317,addNode name=OSIEDLE PRZYJAŹŃ  ul. Wyspiańskiego,ref=60720,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-49.95757,18.608203,addNode name=GÓRNE ul. Grodzka.,ref=60723,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-49.941949,18.48804,addNode name=PRZYSTANEK ul. Armii Krajowej,ref=60724,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-49.957857,18.56738,addNode name=OSIEDLE BOGOCZOWIEC  orlik,ref=60725,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-49.93757,18.582897,addNode name=PRZYSTANEK ul. Jagiełły,ref=60726,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+49.951049,18.574431,addNode name=PRZYSTANEK ul. Zdrojowa ,ref=60704,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+49.95291,18.606363,addNode name=AL. PIŁSUDSKIEGO - AL. KATOWICKA,ref=60706,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
+49.942816,18.576778,addNode name=ROD SŁONECZNIK ul. Jagiełły ,ref=60708,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+49.944196,18.603019,addNode name=OSIEDLE PIONIERÓW  deptak ,ref=60715,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+49.948769,18.618816,addNode name=OSIEDLE BARBARY ul. Szkolna,ref=60719,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+49.963181,18.571317,addNode name=OSIEDLE PRZYJAŹŃ  ul. Wyspiańskiego,ref=60720,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+49.95757,18.608203,addNode name=GÓRNE ul. Grodzka.,ref=60723,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+49.941861,18.558274,addNode name=PRZYSTANEK ul. Armii Krajowej,ref=60724,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+49.957857,18.56738,addNode name=OSIEDLE BOGOCZOWIEC  orlik,ref=60725,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+49.93757,18.582897,addNode name=PRZYSTANEK ul. Jagiełły,ref=60726,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska

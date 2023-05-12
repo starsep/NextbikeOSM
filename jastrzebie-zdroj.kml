@@ -2,21 +2,10 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>.Teststation IT - FVZ22 Adrian</name>
-  <description>name=.Teststation IT - FVZ22 Adrian
-ref=930109
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.602343,49.951855</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>PRZYSTANEK ul. Zdrojowa </name>
   <description>name=PRZYSTANEK ul. Zdrojowa 
 ref=60704
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -24,10 +13,21 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>AL. PIŁSUDSKIEGO - AL. KATOWICKA</name>
+  <description>name=AL. PIŁSUDSKIEGO - AL. KATOWICKA
+ref=60706
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.606363,49.95291</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>ROD SŁONECZNIK ul. Jagiełły </name>
   <description>name=ROD SŁONECZNIK ul. Jagiełły 
 ref=60708
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -38,7 +38,7 @@ operator=Nextbike Polska</description>
   <name>OSIEDLE PIONIERÓW  deptak </name>
   <description>name=OSIEDLE PIONIERÓW  deptak 
 ref=60715
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -49,7 +49,7 @@ operator=Nextbike Polska</description>
   <name>OSIEDLE BARBARY ul. Szkolna</name>
   <description>name=OSIEDLE BARBARY ul. Szkolna
 ref=60719
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -60,7 +60,7 @@ operator=Nextbike Polska</description>
   <name>OSIEDLE PRZYJAŹŃ  ul. Wyspiańskiego</name>
   <description>name=OSIEDLE PRZYJAŹŃ  ul. Wyspiańskiego
 ref=60720
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -71,7 +71,7 @@ operator=Nextbike Polska</description>
   <name>GÓRNE ul. Grodzka.</name>
   <description>name=GÓRNE ul. Grodzka.
 ref=60723
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -82,18 +82,18 @@ operator=Nextbike Polska</description>
   <name>PRZYSTANEK ul. Armii Krajowej</name>
   <description>name=PRZYSTANEK ul. Armii Krajowej
 ref=60724
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>18.48804,49.941949</coordinates>
+    <coordinates>18.558274,49.941861</coordinates>
   </Point>
 </Placemark>
 <Placemark>
   <name>OSIEDLE BOGOCZOWIEC  orlik</name>
   <description>name=OSIEDLE BOGOCZOWIEC  orlik
 ref=60725
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -104,7 +104,7 @@ operator=Nextbike Polska</description>
   <name>PRZYSTANEK ul. Jagiełły</name>
   <description>name=PRZYSTANEK ul. Jagiełły
 ref=60726
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
