@@ -134,17 +134,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Jerzmanowska/Kośnego</name>
-  <description>name=Jerzmanowska/Kośnego
-ref=15277
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.863576,51.120579</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Ziemniaczana/Boiskowa</name>
   <description>name=Ziemniaczana/Boiskowa
 ref=15279
