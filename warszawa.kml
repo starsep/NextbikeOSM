@@ -5,7 +5,7 @@
   <name>Stacja tymczasowa Veturilo </name>
   <description>name=Stacja tymczasowa Veturilo 
 ref=6400
-capacity=None
+capacity=20
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
