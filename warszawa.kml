@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<Placemark>
-  <name>Stacja tymczasowa Veturilo </name>
-  <description>name=Stacja tymczasowa Veturilo 
-ref=6400
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.141223,52.171358</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>
