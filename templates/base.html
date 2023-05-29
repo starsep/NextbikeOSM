@@ -20,7 +20,9 @@
 <body>
     <i>Updated: {{ timestamp }}</i> <br/>
     <span>
-        <a href="{{ mapLink }}">Map of Nextbike locations</a> where OpenStreetMap match has distance &gt; {{ distanceThreshold }} metres.
+        Nextbike locations ({{ countMismatches }}) where OpenStreetMap match has distance &gt; {{ distanceThreshold }} metres.
+        <br/>
+        <a href="{{ mapLink }}">Map</a>
         <a href="{{ kmlLink }}">KML</a>
         <a href="{{ csvLink }}">CSV in SCEE format</a>
     </span>

@@ -151,23 +151,6 @@ class NextbikeValidator:
             matches.append(match)
         csvPath = outputPath.with_suffix(".csv")
         kmlPath = outputPath.with_suffix(".kml")
-        with outputPath.open("w", encoding="utf-8") as f:
-            context = {
-                "matches": matches,
-                "timestamp": timestamp,
-                "VERSION": __VERSION__,
-                "distanceThreshold": DISTANCE_THRESHOLD_MISMATCH,
-                "cityName": cityName,
-                "mapLink": str(mapPath.name),
-                "csvLink": str(csvPath.name),
-                "kmlLink": str(kmlPath.name),
-                "refDuplicates": {
-                    ref: duplicates
-                    for ref, duplicates in self.refMatches.items()
-                    if len(duplicates) > 1
-                }
-            }
-            f.write(template.render(context))
         networkTags = dict(
             amenity="bicycle_rental",
             operator="Nextbike Polska",
@@ -182,6 +165,24 @@ class NextbikeValidator:
             filter(lambda m: m.distance > DISTANCE_THRESHOLD_MISMATCH, matches)
         )
         mapFeatures = list(map(MapFeature.fromMatch(networkTags), mismatches))
+        with outputPath.open("w", encoding="utf-8") as f:
+            context = {
+                "matches": matches,
+                "timestamp": timestamp,
+                "countMismatches": len(mapFeatures),
+                "VERSION": __VERSION__,
+                "distanceThreshold": DISTANCE_THRESHOLD_MISMATCH,
+                "cityName": cityName,
+                "mapLink": str(mapPath.name),
+                "csvLink": str(csvPath.name),
+                "kmlLink": str(kmlPath.name),
+                "refDuplicates": {
+                    ref: duplicates
+                    for ref, duplicates in self.refMatches.items()
+                    if len(duplicates) > 1
+                }
+            }
+            f.write(template.render(context))
         self.generateMap(mapPath, mapFeatures, cityName)
         self.generateCSV(csvPath, mapFeatures)
         self.generateKML(kmlPath, mapFeatures)
