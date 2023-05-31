@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Otwock - NextBikeOSM</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    
+    <script src="sorttable.js" integrity="sha256-n3657FhpVO0BrpRmnXeQho7yfKvMVBh0QcoYkQr2O8w="></script>
+</head>
+<style>
+    .red {
+        color: red;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+<body>
+    <i>Updated: Thu, 01 Jun @ 00:00:29</i> <br/>
+    <span>
+        Nextbike locations (1) where OpenStreetMap match has distance &gt; 100 metres.
+        <br/>
+        <a href="map-otwock.html">Map</a>
+        <a href="otwock.kml">KML</a>
+        <a href="otwock.csv">CSV in SCEE format</a>
+    </span>
+    <table class="sortable">
+        <thead>
+            <tr>
+                <th>NextBike uid</th>
+                <th>OSM id (closest match)</th>
+                <th>Distance (in meters)</th>
+                <th>Name NB</th>
+                <th>Name OSM</th>
+                <th>Ref NB</th>
+                <th>Ref OSM</th>
+                <th>Stands NB</th>
+                <th>Stands OSM</th>
+                <th>Network</th>
+                <th>Operator</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.109615&mlon=21.26318#map=19/52.109615/21.26318">41787581</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.109615&bottom=52.109615&left=21.26318&right=21.26318">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/5829906540">5829906540</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n5829906540">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 321.89
+                </td>
+                <td>
+                    Teststation IT - sign
+                </td>
+                <td class="red" >
+                    Skwer 7 Pułku Ułanów
+                </td>
+                <td>
+                    930108
+                </td>
+                <td class="red" >
+                    2266
+                </td>
+                <td>
+                    6
+                </td>
+                <td class="red" >
+                    11
+                </td>
+                <td >
+                    Otwocki Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v3.0.0 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
+</body>
+</html>
