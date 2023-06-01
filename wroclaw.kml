@@ -243,5 +243,60 @@ operator=Nextbike Polska</description>
     <coordinates>16.997604,51.166775</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Bielany Wrocławskie Kolejowa P&amp;R</name>
+  <description>name=Bielany Wrocławskie Kolejowa P&amp;R
+ref=15302
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.976374,51.03795</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wysoka Nastrojowa</name>
+  <description>name=Wysoka Nastrojowa
+ref=15303
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.003956,51.052835</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Mokronos Górny PKP</name>
+  <description>name=Mokronos Górny PKP
+ref=15304
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.908149,51.078886</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Smolec</name>
+  <description>name=Smolec
+ref=15305
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.911286,51.087048</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Psary</name>
+  <description>name=Psary
+ref=15306
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.026957,51.182349</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>

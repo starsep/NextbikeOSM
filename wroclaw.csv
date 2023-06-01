@@ -20,3 +20,8 @@
 51.090573,16.950684,addNode name=Ibn Siny Awicenny (Wrocław Zachodni),ref=15294,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.061535,17.065717,addNode name=Grapowa,ref=15295,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.166775,16.997604,addNode name=Wrocław Osobowice,ref=15296,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.03795,16.976374,addNode name=Bielany Wrocławskie Kolejowa P&R,ref=15302,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.052835,17.003956,addNode name=Wysoka Nastrojowa,ref=15303,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.078886,16.908149,addNode name=Mokronos Górny PKP,ref=15304,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.087048,16.911286,addNode name=Smolec,ref=15305,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.182349,17.026957,addNode name=Psary,ref=15306,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
