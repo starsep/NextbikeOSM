@@ -2,6 +2,17 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
+  <name>Plaża Miejska</name>
+  <description>name=Plaża Miejska
+ref=6171
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.23687,52.12394</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Teststation IT - sign</name>
   <description>name=Teststation IT - sign
 ref=930108
@@ -10,6 +21,17 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>21.26318,52.109615</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Medyk</name>
+  <description>name=Medyk
+ref=6180
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.278453,52.085886</coordinates>
   </Point>
 </Placemark>
 </Document>
