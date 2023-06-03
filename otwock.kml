@@ -13,17 +13,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Teststation IT - sign</name>
-  <description>name=Teststation IT - sign
-ref=930108
-capacity=6
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.26318,52.109615</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Medyk</name>
   <description>name=Medyk
 ref=6180
