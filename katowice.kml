@@ -46,17 +46,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Boisko &#39;Rapid&#39;</name>
-  <description>name=Boisko &#39;Rapid&#39;
-ref=7269
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.016389,50.271528</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Kościuszki / Zgrzebnioka</name>
   <description>name=Kościuszki / Zgrzebnioka
 ref=7272
