@@ -170,7 +170,7 @@ operator=Nextbike Polska</description>
   <name>Ostrowskiego</name>
   <description>name=Ostrowskiego
 ref=15284
-capacity=None
+capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>

@@ -13,7 +13,7 @@
 51.047299,17.091358,addNode name=Ziemniaczana/Boiskowa,ref=15279,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 51.161667,17.027766,addNode name=Lekarska/Żmigrodzka,ref=15282,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.168502,17.109124,addNode name=Starodębowa (Wrocław Pawłowice),ref=15283,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-51.095298,16.971707,addNode name=Ostrowskiego,ref=15284,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.095298,16.971707,addNode name=Ostrowskiego,ref=15284,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.122409,17.012313,addNode name=Gnieźnieńska / Długa,ref=15288,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.153259,16.939513,addNode name=Maślicka / Brodnicka,ref=15291,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.153669,16.944094,addNode name=Bogatyńska / Turoszowska,ref=15293,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
