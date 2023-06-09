@@ -211,17 +211,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Ibn Siny Awicenny (Wrocław Zachodni)</name>
-  <description>name=Ibn Siny Awicenny (Wrocław Zachodni)
-ref=15294
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.950684,51.090573</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Grapowa</name>
   <description>name=Grapowa
 ref=15295
@@ -263,39 +252,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>17.003956,51.052835</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Mokronos Górny PKP</name>
-  <description>name=Mokronos Górny PKP
-ref=15304
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.908149,51.078886</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Smolec</name>
-  <description>name=Smolec
-ref=15305
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.911286,51.087048</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Psary</name>
-  <description>name=Psary
-ref=15306
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.026957,51.182349</coordinates>
   </Point>
 </Placemark>
 </Document>
