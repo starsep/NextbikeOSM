@@ -123,17 +123,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Bierutowska</name>
-  <description>name=Bierutowska
-ref=15281
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.127953,51.151405</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Ziemniaczana/Boiskowa</name>
   <description>name=Ziemniaczana/Boiskowa
 ref=15279
@@ -208,17 +197,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>16.944094,51.153669</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Grapowa</name>
-  <description>name=Grapowa
-ref=15295
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.065717,51.061535</coordinates>
   </Point>
 </Placemark>
 <Placemark>
