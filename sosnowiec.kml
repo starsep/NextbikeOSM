@@ -12,5 +12,16 @@ operator=Nextbike Polska</description>
     <coordinates>19.12756,50.278798</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Sosnowiec Fun Festiwal</name>
+  <description>name=Sosnowiec Fun Festiwal
+ref=6275
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.169161,50.288069</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
