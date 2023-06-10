@@ -112,28 +112,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Kopycińskiego/Drabika</name>
-  <description>name=Kopycińskiego/Drabika
-ref=15278
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.052487,51.058262</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Ziemniaczana/Boiskowa</name>
-  <description>name=Ziemniaczana/Boiskowa
-ref=15279
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.091358,51.047299</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Lekarska/Żmigrodzka</name>
   <description>name=Lekarska/Żmigrodzka
 ref=15282
@@ -142,17 +120,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>17.027766,51.161667</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Starodębowa (Wrocław Pawłowice)</name>
-  <description>name=Starodębowa (Wrocław Pawłowice)
-ref=15283
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.109124,51.168502</coordinates>
   </Point>
 </Placemark>
 <Placemark>

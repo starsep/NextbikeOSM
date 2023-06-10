@@ -8,10 +8,7 @@
 51.103781,17.051548,addNode name=Walońska (Angel Poland Group),ref=15262,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.196906,16.974741,addNode name=Dalimira/Pęgowska,ref=15275,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.114538,16.966035,addNode name=Nowodworska/Strzegomska,ref=15276,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.058262,17.052487,addNode name=Kopycińskiego/Drabika,ref=15278,capacity=16,amenity=bicycle_rental,operator=Nextbike Polska
-51.047299,17.091358,addNode name=Ziemniaczana/Boiskowa,ref=15279,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 51.161667,17.027766,addNode name=Lekarska/Żmigrodzka,ref=15282,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.168502,17.109124,addNode name=Starodębowa (Wrocław Pawłowice),ref=15283,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.095298,16.971707,addNode name=Ostrowskiego,ref=15284,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.122409,17.012313,addNode name=Gnieźnieńska / Długa,ref=15288,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.153259,16.939513,addNode name=Maślicka / Brodnicka,ref=15291,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
