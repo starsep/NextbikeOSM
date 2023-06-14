@@ -167,17 +167,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Wrocław Osobowice</name>
-  <description>name=Wrocław Osobowice
-ref=15296
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.997604,51.166775</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Bielany Wrocławskie Kolejowa P&amp;R</name>
   <description>name=Bielany Wrocławskie Kolejowa P&amp;R
 ref=15302
