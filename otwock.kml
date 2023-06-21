@@ -13,6 +13,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Wólka Mlądzka</name>
+  <description>name=Wólka Mlądzka
+ref=6179
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.333761,52.136477</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Medyk</name>
   <description>name=Medyk
 ref=6180
