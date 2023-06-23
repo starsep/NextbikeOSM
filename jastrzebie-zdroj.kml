@@ -111,5 +111,16 @@ operator=Nextbike Polska</description>
     <coordinates>18.585306,49.937794</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Szymańcówka</name>
+  <description>name=Szymańcówka
+ref=888888
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.551718,49.949185</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
