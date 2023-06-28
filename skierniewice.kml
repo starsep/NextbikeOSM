@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
+<Placemark>
+  <name>Sielska Stanica</name>
+  <description>name=Sielska Stanica
+ref=8702
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.2098,52.011872</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
