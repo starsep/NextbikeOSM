@@ -49,5 +49,69 @@ network:wikidata=Q3847868</description>
     <coordinates>20.988205,52.186191</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Kleszczowa – Krańcowa</name>
+  <description>name=Kleszczowa – Krańcowa
+ref=9707
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.923586,52.196958</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Chrościckiego – al. 4 Czerwca 1989 r.</name>
+  <description>name=Chrościckiego – al. 4 Czerwca 1989 r.
+ref=9708
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.893987,52.209302</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>1 Sierpnia – DK Włochy</name>
+  <description>name=1 Sierpnia – DK Włochy
+ref=9709
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.967765,52.194609</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Włodarzewska - Maszynowa</name>
+  <description>name=Włodarzewska - Maszynowa
+ref=9710
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.950999,52.202733</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Amfiteatr Janów</name>
+  <description>name=Amfiteatr Janów
+ref=60261
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.38703,51.14949</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Lubelska/Rondo Dmowskiego</name>
+  <description>name=Lubelska/Rondo Dmowskiego
+ref=60262
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.43807,51.14592</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Park Wodny</name>
+  <description>name=Park Wodny
+ref=60263
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.45458,51.1401</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Armii Krajowej/Park Miejski</name>
+  <description>name=Armii Krajowej/Park Miejski
+ref=60264
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.46488,51.1353</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Armii Krajowej/Busy</name>
+  <description>name=Armii Krajowej/Busy
+ref=60265
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.46747,51.13067</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Lwowska/Wirskiego</name>
+  <description>name=Lwowska/Wirskiego
+ref=60266
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.46735,51.12395</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Przystań Żółtańce</name>
+  <description>name=Przystań Żółtańce
+ref=60267
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.44142,51.09909</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rondo WOŚP</name>
+  <description>name=Rondo WOŚP
+ref=60268
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.46794,51.12151</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Hrubieszowska/Szkoła Muzyczna</name>
+  <description>name=Hrubieszowska/Szkoła Muzyczna
+ref=60269
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.49869,51.12377</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wojsławicka</name>
+  <description>name=Wojsławicka
+ref=60270
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.48277,51.12556</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wołyńska/MPGK</name>
+  <description>name=Wołyńska/MPGK
+ref=60272
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.50779,51.13587</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Dworzec PKP</name>
+  <description>name=Dworzec PKP
+ref=60273
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.49366,51.14008</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Piłsudskiego/ Szwoleżerów</name>
+  <description>name=Piłsudskiego/ Szwoleżerów
+ref=60274
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.49405,51.13467</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>CHDK</name>
+  <description>name=CHDK
+ref=60275
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.48928,51.13195</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Lwowska/Deptak</name>
+  <description>name=Lwowska/Deptak
+ref=60276
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.47183,51.13131</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Plac Gdański</name>
+  <description>name=Plac Gdański
+ref=60277
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>23.4716,51.13396</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
