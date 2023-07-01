@@ -53,7 +53,7 @@ network:wikidata=Q3847868</description>
   <name>Kleszczowa – Krańcowa</name>
   <description>name=Kleszczowa – Krańcowa
 ref=9707
-capacity=None
+capacity=16
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
@@ -69,7 +69,7 @@ network:wikidata=Q3847868</description>
   <name>Chrościckiego – al. 4 Czerwca 1989 r.</name>
   <description>name=Chrościckiego – al. 4 Czerwca 1989 r.
 ref=9708
-capacity=None
+capacity=20
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
@@ -85,7 +85,7 @@ network:wikidata=Q3847868</description>
   <name>1 Sierpnia – DK Włochy</name>
   <description>name=1 Sierpnia – DK Włochy
 ref=9709
-capacity=None
+capacity=12
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
@@ -101,7 +101,7 @@ network:wikidata=Q3847868</description>
   <name>Włodarzewska - Maszynowa</name>
   <description>name=Włodarzewska - Maszynowa
 ref=9710
-capacity=None
+capacity=20
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
