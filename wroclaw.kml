@@ -57,6 +57,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Piękna / Nyska</name>
+  <description>name=Piękna / Nyska
+ref=15152
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.053103,51.084782</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Popowicka / Rysia</name>
   <description>name=Popowicka / Rysia
 ref=15172
