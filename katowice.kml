@@ -79,17 +79,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Gliwicka - MOPS</name>
-  <description>name=Gliwicka - MOPS
-ref=7276
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.996887,50.265469</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Fabryka Porcelany</name>
   <description>name=Fabryka Porcelany
 ref=7277
