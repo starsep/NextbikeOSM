@@ -5,11 +5,22 @@
   <name>Teststation IT - GZM 2023</name>
   <description>name=Teststation IT - GZM 2023
 ref=999847
-capacity=8
+capacity=200
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>20.970755,52.260458</coordinates>
+    <coordinates>21.05135,52.272044</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Teststation IT - sign</name>
+  <description>name=Teststation IT - sign
+ref=930108
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.962891,72.711903</coordinates>
   </Point>
 </Placemark>
 </Document>
