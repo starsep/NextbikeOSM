@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
+<Placemark>
+  <name>Factory Annopol</name>
+  <description>name=Factory Annopol
+ref=6426
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.024163,52.298441</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PRAGA 306/PZO</name>
+  <description>name=PRAGA 306/PZO
+ref=6445
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.062545,52.247246</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
