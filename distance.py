@@ -2,11 +2,10 @@ from dataclasses import dataclass
 from typing import cast
 
 from overpy import Element, Node, Way
-from pyproj import Geod
 
 from overpass_parser import OverpassParser
 
-wgs84Geod = Geod(ellps="WGS84")
+from math import sin, cos, sqrt, atan2, radians
 
 
 @dataclass
@@ -27,8 +26,12 @@ class GeoPoint:
             return GeoPoint(lat=centerLat, lon=centerLon)
 
 
-def distance(pointA: GeoPoint, pointB: GeoPoint):
-    return round(
-        wgs84Geod.inv(pointA.lon, pointA.lat, pointB.lon, pointB.lat)[2],
-        ndigits=2,
-    )
+def distance(point: GeoPoint, other: GeoPoint) -> float:
+    R = 6373.0
+    lon1, lat1, lon2, lat2 = map(radians, [point.lon, point.lat, other.lon, other.lat])
+
+    deltaLon = lon2 - lon1
+    deltaLat = lat2 - lat1
+    a = (sin(deltaLat / 2)) ** 2 + cos(lat1) * cos(lat2) * (sin(deltaLon / 2)) ** 2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+    return int(R * c * 1000)
