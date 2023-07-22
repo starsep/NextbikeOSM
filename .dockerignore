@@ -1,0 +1,11 @@
+cache
+.git
+.mypy_cache
+output
+demo.png
+__pycache__
+.idea
+.ruff_cache
+.dockerignore
+Dockerfile
+.gitignore

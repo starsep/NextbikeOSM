@@ -1,9 +1,9 @@
-import os
 import urllib.request as urllib
 import xml.etree.ElementTree as XML
 from dataclasses import dataclass
 from typing import List
 
+from configuration import cacheDirectory
 from distance import GeoPoint
 
 
@@ -29,15 +29,18 @@ class Network:
     cities: List[City]
 
 
+nextbikeFilePath = cacheDirectory / "nextbike.xml"
+
+
 class NextbikeParser:
     def __init__(self):
         path = "https://nextbike.net/maps/nextbike-official.xml"
-        if "nextbike.xml" in os.listdir():
+        if nextbikeFilePath.exists():
             pass
         else:
-            urllib.urlretrieve(path, "nextbike.xml")
+            urllib.urlretrieve(path, nextbikeFilePath)
 
-        file = XML.parse("nextbike.xml")
+        file = XML.parse(nextbikeFilePath)
         root = file.getroot()
 
         C_list = []
@@ -164,4 +167,4 @@ class NextbikeParser:
     @staticmethod
     def update():
         path = "https://nextbike.net/maps/nextbike-live.xml"
-        urllib.urlretrieve(path, "nextbike.xml")
+        urllib.urlretrieve(path, nextbikeFilePath)

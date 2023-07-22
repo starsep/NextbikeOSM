@@ -9,6 +9,17 @@ You need to have [Python 3](https://www.python.org/downloads/) installed
 2. Install dependencies with `pip install -r requirements.txt`
 3. Run file run.py
 
+## Docker
+```
+docker build -t nextbikeosm .
+docker run --rm \
+    -v "$(pwd)/cache:/app/cache" \
+    --env GITHUB_USERNAME=example \
+    --env GITHUB_TOKEN=12345 \
+    --env TZ=Europe/Warsaw \
+    -t nextbikeosm
+```
+
 ## Technical details
 This script tries to match stations by ref, when impossible looks for closest node using Haversine formula. ***Note that sometimes the closest node is not correct node!*** Then checks tags and compares strings in name tag using [GESTALT.C (Ratcliff/Obershelp Pattern Recognition Algorithm)](http://collaboration.cmc.ec.gc.ca/science/rpn/biblio/ddj/Website/articles/DDJ/1988/8807/8807c/8807c.htm) built-in [python difflib module](https://docs.python.org/3.4/library/difflib.html). And of course...it make html from it :)
 
