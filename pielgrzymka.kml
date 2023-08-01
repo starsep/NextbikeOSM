@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>GCKiB Pielgrzymka</name>
+  <description>name=GCKiB Pielgrzymka
+ref=6295
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.818015,51.120655</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
