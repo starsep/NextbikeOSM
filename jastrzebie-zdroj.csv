@@ -8,3 +8,4 @@
 49.941861,18.558274,addNode name=PRZYSTANEK ul. Armii Krajowej,ref=60724,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 49.957857,18.56738,addNode name=OSIEDLE BOGOCZOWIEC  orlik,ref=60725,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 49.937794,18.585306,addNode name=PRZYSTANEK ul. Jagiełły,ref=60726,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
+49.936222,18.546528,addNode name=Żelazny Szlak Rowerowy,ref=888888,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
