@@ -2,17 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Dolina 3-ch Stawów</name>
-  <description>name=Dolina 3-ch Stawów
-ref=5869
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.025222,50.24109</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>GPP Business Park</name>
   <description>name=GPP Business Park
 ref=5877
