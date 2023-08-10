@@ -111,5 +111,16 @@ operator=Nextbike Polska</description>
     <coordinates>19.15357,50.78817</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Pływalnia Kryta - MOSiR (al. Niepodległości)</name>
+  <description>name=Pływalnia Kryta - MOSiR (al. Niepodległości)
+ref=6356
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.13224,50.78974</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
