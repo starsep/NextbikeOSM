@@ -24,17 +24,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Park Wodny</name>
-  <description>name=Park Wodny
-ref=6334
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.11941,50.8261</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Armii Krajowej/Politechnika</name>
   <description>name=Armii Krajowej/Politechnika
 ref=6342
