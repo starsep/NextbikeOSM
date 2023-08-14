@@ -112,6 +112,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Bierutowska</name>
+  <description>name=Bierutowska
+ref=15281
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.13217,51.152216</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Lekarska/Żmigrodzka</name>
   <description>name=Lekarska/Żmigrodzka
 ref=15282
