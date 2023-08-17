@@ -5,7 +5,6 @@
 51.125652,16.968627,addNode name=Drzewieckiego / Dedala,ref=15141,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.127192,16.991832,addNode name=Popowicka / Rysia,ref=15172,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.14382,16.98789,addNode name=Osobowicka / Ostrowska,ref=15182,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
-51.101535,17.030316,addNode name=DCF Kino,ref=15307,capacity=20,amenity=bicycle_rental,operator=Nextbike Polska
 51.196906,16.974741,addNode name=Dalimira/Pęgowska,ref=15275,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.114538,16.966035,addNode name=Nowodworska/Strzegomska,ref=15276,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.152216,17.13217,addNode name=Bierutowska,ref=15281,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
