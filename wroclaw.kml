@@ -16,7 +16,7 @@ operator=Nextbike Polska</description>
   <name>Robotnicza / Fabryczna</name>
   <description>name=Robotnicza / Fabryczna
 ref=15076
-capacity=10
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -27,7 +27,7 @@ operator=Nextbike Polska</description>
   <name>Popowicka / Niedźwiedzia</name>
   <description>name=Popowicka / Niedźwiedzia
 ref=15123
-capacity=4
+capacity=5
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -49,7 +49,7 @@ operator=Nextbike Polska</description>
   <name>Drzewieckiego / Dedala</name>
   <description>name=Drzewieckiego / Dedala
 ref=15141
-capacity=10
+capacity=20
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -60,7 +60,7 @@ operator=Nextbike Polska</description>
   <name>Popowicka / Rysia</name>
   <description>name=Popowicka / Rysia
 ref=15172
-capacity=10
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -71,7 +71,7 @@ operator=Nextbike Polska</description>
   <name>Osobowicka / Ostrowska</name>
   <description>name=Osobowicka / Ostrowska
 ref=15182
-capacity=6
+capacity=3
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -82,7 +82,7 @@ operator=Nextbike Polska</description>
   <name>Dalimira/Pęgowska</name>
   <description>name=Dalimira/Pęgowska
 ref=15275
-capacity=10
+capacity=7
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -170,7 +170,7 @@ operator=Nextbike Polska</description>
   <name>Bielany Wrocławskie Kolejowa P&amp;R</name>
   <description>name=Bielany Wrocławskie Kolejowa P&amp;R
 ref=15302
-capacity=10
+capacity=None
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -181,7 +181,7 @@ operator=Nextbike Polska</description>
   <name>Wysoka Nastrojowa</name>
   <description>name=Wysoka Nastrojowa
 ref=15303
-capacity=10
+capacity=None
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
