@@ -104,7 +104,7 @@ operator=Nextbike Polska</description>
   <name>Pływalnia Kryta - MOSiR (al. Niepodległości)</name>
   <description>name=Pływalnia Kryta - MOSiR (al. Niepodległości)
 ref=6356
-capacity=None
+capacity=12
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
