@@ -170,7 +170,7 @@ operator=Nextbike Polska</description>
   <name>Bielany Wrocławskie Kolejowa P&amp;R</name>
   <description>name=Bielany Wrocławskie Kolejowa P&amp;R
 ref=15302
-capacity=None
+capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -181,7 +181,7 @@ operator=Nextbike Polska</description>
   <name>Wysoka Nastrojowa</name>
   <description>name=Wysoka Nastrojowa
 ref=15303
-capacity=None
+capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
