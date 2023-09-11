@@ -2,17 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Nad Zalewem</name>
-  <description>name=Nad Zalewem
-ref=8225
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>20.45076,52.03703</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Aqua</name>
   <description>name=Aqua
 ref=8226
