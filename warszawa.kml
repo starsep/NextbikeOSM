@@ -17,5 +17,21 @@ network:wikidata=Q3847868</description>
     <coordinates>21.007851,52.210833</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Eventy i Konferencje</name>
+  <description>name=Eventy i Konferencje
+ref=888888
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.081757,52.165012</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
