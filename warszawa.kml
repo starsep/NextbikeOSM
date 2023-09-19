@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<Placemark>
-  <name>al. Niepodległości - Batorego</name>
-  <description>name=al. Niepodległości - Batorego
-ref=9558
-capacity=30
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.007851,52.210833</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>
