@@ -90,17 +90,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>1 Maja / Bohaterów Monte Cassino</name>
-  <description>name=1 Maja / Bohaterów Monte Cassino
-ref=7278
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.0535,50.26005</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Green Park</name>
   <description>name=Green Park
 ref=5898
