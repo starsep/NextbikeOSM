@@ -188,27 +188,5 @@ operator=Nextbike Polska</description>
     <coordinates>17.003956,51.052835</coordinates>
   </Point>
 </Placemark>
-<Placemark>
-  <name>Mobilna stacja WRM</name>
-  <description>name=Mobilna stacja WRM
-ref=888887
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.943442,51.116477</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Mobilna stacja WRM 2</name>
-  <description>name=Mobilna stacja WRM 2
-ref=888886
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.942667,51.118515</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>

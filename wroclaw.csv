@@ -15,5 +15,3 @@
 51.153669,16.944094,addNode name=Bogatyńska / Turoszowska,ref=15293,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.03795,16.976374,addNode name=Bielany Wrocławskie Kolejowa P&R,ref=15302,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.052835,17.003956,addNode name=Wysoka Nastrojowa,ref=15303,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.116477,16.943442,addNode name=Mobilna stacja WRM,ref=888887,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-51.118515,16.942667,addNode name=Mobilna stacja WRM 2,ref=888886,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
