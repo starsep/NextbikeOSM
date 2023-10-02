@@ -5,7 +5,7 @@
   <name>Rembrandta – Miedza </name>
   <description>name=Rembrandta – Miedza 
 ref=9713
-capacity=None
+capacity=16
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
