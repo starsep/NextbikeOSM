@@ -18,6 +18,54 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Puławska – Pelikanów</name>
+  <description>name=Puławska – Pelikanów
+ref=9711
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.01854,52.12293</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Puławska – Karmazynowa </name>
+  <description>name=Puławska – Karmazynowa 
+ref=9712
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.01887,52.111877</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Al.KEN – Płaskowickiej</name>
+  <description>name=Al.KEN – Płaskowickiej
+ref=9714
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.051991,52.144443</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Rembrandta – Miedza </name>
   <description>name=Rembrandta – Miedza 
 ref=9713
