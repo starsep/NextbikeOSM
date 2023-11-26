@@ -46,17 +46,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Drzewieckiego / Dedala</name>
-  <description>name=Drzewieckiego / Dedala
-ref=15141
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.968627,51.125652</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Popowicka / Rysia</name>
   <description>name=Popowicka / Rysia
 ref=15172
