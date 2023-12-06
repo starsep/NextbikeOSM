@@ -68,6 +68,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Sukielicka / Rogowska</name>
+  <description>name=Sukielicka / Rogowska
+ref=15264
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.946011,51.118185</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Dalimira/Pęgowska</name>
   <description>name=Dalimira/Pęgowska
 ref=15275
