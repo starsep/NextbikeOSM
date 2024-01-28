@@ -78,7 +78,7 @@ class NextbikeParser:
                         terminal_type = place_attrib["terminal_type"]
                         if (
                             terminal_type == "sign"
-                            and type(stands) == int
+                            and isinstance(stands, int)
                             and cityName == "Warszawa"
                         ):
                             # TODO: move logic somewhere else?
