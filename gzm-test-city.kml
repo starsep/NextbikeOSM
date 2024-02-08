@@ -13,6 +13,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>.Teststation IT - Adrian </name>
+  <description>name=.Teststation IT - Adrian 
+ref=930109
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.851144,52.186139</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Teststation IT - sign (R)</name>
   <description>name=Teststation IT - sign (R)
 ref=999848
@@ -20,7 +31,7 @@ capacity=6
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>21.051607,52.272701</coordinates>
+    <coordinates>21.0568,52.271388</coordinates>
   </Point>
 </Placemark>
 </Document>
