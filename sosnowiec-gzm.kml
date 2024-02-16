@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>.Teststation IT</name>
+  <description>name=.Teststation IT
+ref=930109
+capacity=15
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.151332,50.273272</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27651</name>
+  <description>name=27651
+ref=27651
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.12756,50.278798</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
