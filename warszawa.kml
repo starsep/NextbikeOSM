@@ -18,10 +18,10 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Kaliskiego - Kocjana </name>
-  <description>name=Kaliskiego - Kocjana 
-ref=9633
-capacity=16
+  <name>Wołoska - Woronicza </name>
+  <description>name=Wołoska - Woronicza 
+ref=9588
+capacity=22
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
@@ -30,14 +30,14 @@ brand:wikidata=Q3847868
 network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
-    <coordinates>20.897757,52.249465</coordinates>
+    <coordinates>21.00247,52.18937</coordinates>
   </Point>
 </Placemark>
 <Placemark>
-  <name>11 listopada - Inżynierska</name>
-  <description>name=11 listopada - Inżynierska
-ref=9660
-capacity=20
+  <name>Kaliskiego - Kocjana </name>
+  <description>name=Kaliskiego - Kocjana 
+ref=9633
+capacity=16
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
