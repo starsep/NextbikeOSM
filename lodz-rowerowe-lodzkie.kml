@@ -2,8 +2,8 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Łódź Fabryczna</name>
-  <description>name=Łódź Fabryczna
+  <name>Rowerowe Łódzkie - Łódź Fabryczna</name>
+  <description>name=Rowerowe Łódzkie - Łódź Fabryczna
 ref=7488
 capacity=15
 amenity=bicycle_rental
@@ -13,8 +13,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Przystanek Centrum</name>
-  <description>name=Przystanek Centrum
+  <name>Rowerowe Łódzkie - Przystanek Centrum</name>
+  <description>name=Rowerowe Łódzkie - Przystanek Centrum
 ref=7699
 capacity=5
 amenity=bicycle_rental
@@ -24,8 +24,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>ZOO Orientarium</name>
-  <description>name=ZOO Orientarium
+  <name>Rowerowe Łódzkie - ZOO Orientarium</name>
+  <description>name=Rowerowe Łódzkie - ZOO Orientarium
 ref=8697
 capacity=5
 amenity=bicycle_rental
