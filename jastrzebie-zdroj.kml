@@ -2,6 +2,17 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
+  <name>OSIEDLE PIONIERÓW al. Piłsudskiego </name>
+  <description>name=OSIEDLE PIONIERÓW al. Piłsudskiego 
+ref=60702
+capacity=7
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.6,49.95</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>PRZYSTANEK ul. Zdrojowa </name>
   <description>name=PRZYSTANEK ul. Zdrojowa 
 ref=60704
@@ -21,6 +32,17 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.606363,49.95291</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>DWORZEC AUTOBUSOWY ul. Broniewskiego </name>
+  <description>name=DWORZEC AUTOBUSOWY ul. Broniewskiego 
+ref=60707
+capacity=4
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.572,49.944</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -120,6 +142,28 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.5585,49.945278</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>DUBIELEC ul. Rybnicka</name>
+  <description>name=DUBIELEC ul. Rybnicka
+ref=60728
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.616,49.97</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ZOFIÓWKA ul. RYBNICKA</name>
+  <description>name=ZOFIÓWKA ul. RYBNICKA
+ref=60729
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.62,49.966</coordinates>
   </Point>
 </Placemark>
 </Document>
