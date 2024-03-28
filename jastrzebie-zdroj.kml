@@ -148,7 +148,7 @@ operator=Nextbike Polska</description>
   <name>DUBIELEC ul. Rybnicka</name>
   <description>name=DUBIELEC ul. Rybnicka
 ref=60728
-capacity=None
+capacity=2
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -159,7 +159,7 @@ operator=Nextbike Polska</description>
   <name>ZOFIÓWKA ul. RYBNICKA</name>
   <description>name=ZOFIÓWKA ul. RYBNICKA
 ref=60729
-capacity=None
+capacity=2
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
