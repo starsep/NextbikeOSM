@@ -2,6 +2,39 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
+  <name>Kretomińska</name>
+  <description>name=Kretomińska
+ref=63016
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.212538,54.157069</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Fałata </name>
+  <description>name=Fałata 
+ref=63017
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.189692,54.197231</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Władysława IV/Wańkowicz</name>
+  <description>name=Władysława IV/Wańkowicz
+ref=63018
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.185718,54.202047</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Zagroda Jamneńska</name>
   <description>name=Zagroda Jamneńska
 ref=63027
