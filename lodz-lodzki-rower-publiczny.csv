@@ -1,39 +1,20 @@
-51.746579,19.397801,addNode name=Łódzki Rower Publiczny - Wyszyńskiego/Armii Krajowej,ref=16001,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.782644,19.456934,addNode name=Łódzki Rower Publiczny - Bojowników Getta / Majzela,ref=16002,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.749418,19.423379,addNode name=Łódzki Rower Publiczny - Bratysławska / Wróblewskiego,ref=16003,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.733307,19.493994,addNode name=Łódzki Rower Publiczny - Broniewskiego / Tatrzańska,ref=16004,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.756183,19.541879,addNode name=Łódzki Rower Publiczny - Wujaka / Gogola,ref=16005,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.774395,19.423105,addNode name=Łódzki Rower Publiczny - Ossowskiego / Augustyniaka,ref=16006,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.780467,19.439588,addNode name=Łódzki Rower Publiczny - Drewnowska / Karskiego,ref=16007,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.781456,19.428673,addNode name=Łódzki Rower Publiczny - Drewnowska / Okrzei,ref=16008,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.76992,19.466944,addNode name=Łódzki Rower Publiczny - Dworzec Łódź Fabryczna,ref=16009,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.772387,19.451136,addNode name=Łódzki Rower Publiczny - Wólczańska / Więckowskiego,ref=16012,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.765064,19.450468,addNode name=Łódzki Rower Publiczny - Gdańska / Struga,ref=16013,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.772212,19.448312,addNode name=Łódzki Rower Publiczny - Gdańska / Więckowskiego,ref=16014,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.73855,19.479419,addNode name=Łódzki Rower Publiczny - Kilińskiego / Dąbrowskiego,ref=16015,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.763019,19.467586,addNode name=Łódzki Rower Publiczny - Kilińskiego / Nawrot,ref=16016,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.774961,19.462563,addNode name=Łódzki Rower Publiczny - Kilińskiego / Rewolucji 1905 r,ref=16017,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.743458,19.476905,addNode name=Łódzki Rower Publiczny - Kilińskiego / Zarzewska,ref=16018,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.763256,19.450791,addNode name=Łódzki Rower Publiczny - Kopernika / Gdańska,ref=16019,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.760096,19.442421,addNode name=Łódzki Rower Publiczny - Kopernika / Łąkowa,ref=16020,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.761963,19.447262,addNode name=Łódzki Rower Publiczny - Kopernika / Żeromskiego,ref=16021,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.762292,19.454869,addNode name=Łódzki Rower Publiczny - Kościuszki / Zamenhofa,ref=16022,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.78748,19.429079,addNode name=Łódzki Rower Publiczny - Lutomierska / Klonowa,ref=16024,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.791251,19.454265,addNode name=Łódzki Rower Publiczny -  Łagiewnicka / Dolna,ref=16025,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.794934,19.434611,addNode name=Łódzki Rower Publiczny - Mackiewicza / Olsztyńska,ref=16027,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.794834,19.465671,addNode name=Łódzki Rower Publiczny - Marysińska / Górnicza,ref=16028,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.757604,19.449142,addNode name=Łódzki Rower Publiczny - Mickiewicza / Żeromskiego,ref=16030,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.771328,19.463767,addNode name=Łódzki Rower Publiczny - Narutowicza / Kilińskiego,ref=16031,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.773637,19.487053,addNode name=Łódzki Rower Publiczny - Narutowicza / Matejki,ref=16033,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.773932,19.491097,addNode name=Łódzki Rower Publiczny - Narutowicza / Muszyńskiego,ref=16034,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.772319,19.47261,addNode name=Łódzki Rower Publiczny - Narutowicza / Uniwersytecka,ref=16035,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.763874,19.475744,addNode name=Łódzki Rower Publiczny - Nawrot / Wodna,ref=16036,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.78822,19.463877,addNode name=Łódzki Rower Publiczny - Organizacji WiN / Marynarska,ref=16037,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.729564,19.457073,addNode name=Łódzki Rower Publiczny -  Paderewskiego / Ciołkowskiego,ref=16038,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.784733,19.439521,addNode name=Łódzki Rower Publiczny - Lutomierska / Gnieźnieńska,ref=16023,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.761187,19.479175,addNode name=Łódzki Rower Publiczny - Park Źródliska,ref=16039,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.751835,19.442299,addNode name=Łódzki Rower Publiczny - Parkowa / Inżynierska,ref=16040,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.794927,19.455666,addNode name=Łódzki Rower Publiczny - Łagiewnicka / Stefana,ref=16026,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.755614,19.448452,addNode name=Łódzki Rower Publiczny - Żeromskiego / Park Poniatowskiego,ref=16029,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.772941,19.483325,addNode name=Łódzki Rower Publiczny - Narutowicza / Kopcińskiego,ref=16032,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.760552,19.468997,addNode name=Łódzki Rower Publiczny - Piłsudskiego / Kilińskiego,ref=16041,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
@@ -48,13 +29,10 @@
 51.765331,19.457284,addNode name=Łódzki Rower Publiczny - Piotrkowska / Tuwima,ref=16050,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.762134,19.457803,addNode name=Łódzki Rower Publiczny - Piotrkowska / Zamenhofa,ref=16051,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.755957,19.458702,addNode name=Łódzki Rower Publiczny - Piotrkowska / Żwirki,ref=16052,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.769631,19.447326,addNode name=Łódzki Rower Publiczny - Plac Barlickiego,ref=16053,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.772022,19.470008,addNode name=Łódzki Rower Publiczny - Plac Dąbrowskiego,ref=16054,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.740913,19.462779,addNode name=Łódzki Rower Publiczny - Plac Niepodległości,ref=16055,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.776634,19.477731,addNode name=Łódzki Rower Publiczny - Plac Pokoju,ref=16056,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.742416,19.462619,addNode name=Łódzki Rower Publiczny - Plac Reymonta,ref=16057,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.767505,19.443088,addNode name=Łódzki Rower Publiczny - Pogonowskiego / 6 Sierpnia,ref=16058,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.796902,19.444276,addNode name=Łódzki Rower Publiczny - Pojezierska / Zgierska,ref=16059,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.734096,19.452371,addNode name=Łódzki Rower Publiczny - Politechniki / Cieszyńska,ref=16060,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.749537,19.45045,addNode name=Łódzki Rower Publiczny - Politechniki / Hala EXPO,ref=16061,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.747272,19.450365,addNode name=Łódzki Rower Publiczny - Politechniki / Kampus C PŁ,ref=16062,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
@@ -72,7 +50,6 @@
 51.753996,19.48429,addNode name=Łódzki Rower Publiczny - Przędzalniana / Tymienieckiego,ref=16074,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.746395,19.466987,addNode name=Łódzki Rower Publiczny - Sosnowa / Senatorska,ref=16075,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.749108,19.473766,addNode name=Łódzki Rower Publiczny - Milionowa / Kilińskiego,ref=16076,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.818199,19.426738,addNode name=Łódzki Rower Publiczny - Stawowa / XLII LO,ref=16077,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.748071,19.490177,addNode name=Łódzki Rower Publiczny - Przybyszewskiego / Śmigłego-Rydza,ref=16078,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.752211,19.452572,addNode name=Łódzki Rower Publiczny - Radwańska / Stefanowskiego,ref=16079,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.732089,19.453541,addNode name=Łódzki Rower Publiczny - Rondo Lotników Lwowskich,ref=16080,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
@@ -85,33 +62,12 @@
 51.737327,19.489539,addNode name=Łódzki Rower Publiczny - Śmigłego-Rydza / Dąbrowskiego,ref=16089,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.741692,19.488616,addNode name=Łódzki Rower Publiczny - Śmigłego-Rydza / Przędzalniana,ref=16090,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.757122,19.473587,addNode name=Łódzki Rower Publiczny - Targowa / Fabryczna,ref=16091,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.792601,19.392525,addNode name=Łódzki Rower Publiczny - Traktorowa / Rojna,ref=16092,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.768466,19.462976,addNode name=Łódzki Rower Publiczny - Szwaczek - Traugutta,ref=16093,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.766513,19.469488,addNode name=Łódzki Rower Publiczny - Tuwima / Dowborczyków,ref=16094,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.754608,19.417436,addNode name=Łódzki Rower Publiczny - Wileńska / Grodzieńska,ref=16095,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.757799,19.433137,addNode name=Łódzki Rower Publiczny - Włókniarzy / Karolewska,ref=16096,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.78965,19.420586,addNode name=Łódzki Rower Publiczny - Włókniarzy / Wielkopolska,ref=16097,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.790756,19.486742,addNode name=Łódzki Rower Publiczny - Wojska Polskiego / Palki,ref=16098,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.783936,19.46653,addNode name=Łódzki Rower Publiczny - Dworzec Północny,ref=16099,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.790289,19.478515,addNode name=Łódzki Rower Publiczny - Wojska Polskiego / Sporna,ref=16100,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.748302,19.405781,addNode name=Łódzki Rower Publiczny - Wyszyńskiego / Retkińska,ref=16101,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.787309,19.448423,addNode name=Łódzki Rower Publiczny - Zachodnia / Limanowskiego,ref=16103,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.783139,19.449631,addNode name=Łódzki Rower Publiczny - Zachodnia / Lutomierska,ref=16104,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.796028,19.476241,addNode name=Łódzki Rower Publiczny - Zagajnikowa / Okopowa,ref=16105,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.790321,19.449742,addNode name=Łódzki Rower Publiczny - Zgierska / Dolna,ref=16106,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.786571,19.452754,addNode name=Łódzki Rower Publiczny - Zgierska / Limanowskiego,ref=16107,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.818679,19.432223,addNode name=Łódzki Rower Publiczny - Zgierska / Pasieczna,ref=16108,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.780978,19.453676,addNode name=Łódzki Rower Publiczny - Zgierska / Stary Rynek,ref=16109,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.793045,19.447757,addNode name=Łódzki Rower Publiczny - Zgierska / Stefana,ref=16110,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.771183,19.43835,addNode name=Łódzki Rower Publiczny - Żeligowskiego / 1 Maja,ref=16111,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.764256,19.441207,addNode name=Łódzki Rower Publiczny - Struga / 28 Pułku Strzelców Kaniowskich,ref=16112,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.768615,19.437913,addNode name=Łódzki Rower Publiczny - Żeligowskiego / Zielona,ref=16113,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.752098,19.424872,addNode name=Łódzki Rower Publiczny - Bratysławska / Wileńska,ref=16114,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.758667,19.526712,addNode name=Łódzki Rower Publiczny - Chmielowskiego / Czernika,ref=16115,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.789872,19.457779,addNode name=Łódzki Rower Publiczny - Młynarska / Zofii,ref=16116,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.759026,19.457834,addNode name=Łódzki Rower Publiczny - Piotrkowska Centrum,ref=16117,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.820501,19.442482,addNode name=Łódzki Rower Publiczny - Plac Słoneczny,ref=16118,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.776146,19.454672,addNode name=Łódzki Rower Publiczny - Plac Wolności,ref=16119,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.795722,19.374477,addNode name=Łódzki Rower Publiczny - Rydzowa / Rojna,ref=16120,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.752023,19.46473,addNode name=Łódzki Rower Publiczny - Sienkiewicza / Tylna,ref=16084,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.755427,19.452392,addNode name=Łódzki Rower Publiczny - Stefanowskiego / Żwirki,ref=16087,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
