@@ -13,17 +13,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Promenada/Amfiteatr</name>
-  <description>name=Promenada/Amfiteatr
-ref=6332
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.128957,50.834213</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Armii Krajowej/Politechnika</name>
   <description>name=Armii Krajowej/Politechnika
 ref=6342
@@ -64,7 +53,7 @@ capacity=15
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>19.157298,50.776577</coordinates>
+    <coordinates>19.157469,50.775894</coordinates>
   </Point>
 </Placemark>
 <Placemark>
