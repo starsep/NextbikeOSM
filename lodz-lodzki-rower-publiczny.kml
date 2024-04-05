@@ -35,17 +35,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Dworzec Łódź Fabryczna</name>
-  <description>name=Łódzki Rower Publiczny - Dworzec Łódź Fabryczna
-ref=16009
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.466944,51.76992</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Kilińskiego / Dąbrowskiego</name>
   <description>name=Łódzki Rower Publiczny - Kilińskiego / Dąbrowskiego
 ref=16015
@@ -68,17 +57,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Kilińskiego / Rewolucji 1905 r</name>
-  <description>name=Łódzki Rower Publiczny - Kilińskiego / Rewolucji 1905 r
-ref=16017
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.462563,51.774961</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Kilińskiego / Zarzewska</name>
   <description>name=Łódzki Rower Publiczny - Kilińskiego / Zarzewska
 ref=16018
@@ -98,50 +76,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>19.454869,51.762292</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Narutowicza / Kilińskiego</name>
-  <description>name=Łódzki Rower Publiczny - Narutowicza / Kilińskiego
-ref=16031
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.463767,51.771328</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Narutowicza / Matejki</name>
-  <description>name=Łódzki Rower Publiczny - Narutowicza / Matejki
-ref=16033
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.487053,51.773637</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Narutowicza / Muszyńskiego</name>
-  <description>name=Łódzki Rower Publiczny - Narutowicza / Muszyńskiego
-ref=16034
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.491097,51.773932</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Narutowicza / Uniwersytecka</name>
-  <description>name=Łódzki Rower Publiczny - Narutowicza / Uniwersytecka
-ref=16035
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.47261,51.772319</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -197,17 +131,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>19.448452,51.755614</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Narutowicza / Kopcińskiego</name>
-  <description>name=Łódzki Rower Publiczny - Narutowicza / Kopcińskiego
-ref=16032
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.483325,51.772941</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -288,17 +211,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Piotrkowska / Pasaż Rubinsteina</name>
-  <description>name=Łódzki Rower Publiczny - Piotrkowska / Pasaż Rubinsteina
-ref=16048
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.456265,51.767729</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Piotrkowska / Plac Katedralny</name>
   <description>name=Łódzki Rower Publiczny - Piotrkowska / Plac Katedralny
 ref=16049
@@ -343,17 +255,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Plac Dąbrowskiego</name>
-  <description>name=Łódzki Rower Publiczny - Plac Dąbrowskiego
-ref=16054
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.470008,51.772022</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Plac Niepodległości</name>
   <description>name=Łódzki Rower Publiczny - Plac Niepodległości
 ref=16055
@@ -362,17 +263,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>19.462779,51.740913</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Plac Pokoju</name>
-  <description>name=Łódzki Rower Publiczny - Plac Pokoju
-ref=16056
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.477731,51.776634</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -442,105 +332,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Pomorska / Kilińskiego</name>
-  <description>name=Łódzki Rower Publiczny - Pomorska / Kilińskiego
-ref=16065
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.461717,51.777485</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Pomorska / Lumumby</name>
-  <description>name=Łódzki Rower Publiczny - Pomorska / Lumumby
-ref=16066
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.494493,51.778387</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Pomorska / Matejki</name>
-  <description>name=Łódzki Rower Publiczny - Pomorska / Matejki
-ref=16067
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.485453,51.778519</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Pomorska / Sterlinga</name>
-  <description>name=Łódzki Rower Publiczny - Pomorska / Sterlinga
-ref=16068
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.468254,51.778071</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Pomorska / Tamka</name>
-  <description>name=Łódzki Rower Publiczny - Pomorska / Tamka
-ref=16069
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.48922,51.778305</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Pomorska / Wierzbowa</name>
-  <description>name=Łódzki Rower Publiczny - Pomorska / Wierzbowa
-ref=16070
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.477758,51.778702</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Pomorska / Wydział Filologiczny</name>
-  <description>name=Łódzki Rower Publiczny - Pomorska / Wydział Filologiczny
-ref=16071
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.494118,51.777489</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - POW / Rewolucji 1905 r</name>
-  <description>name=Łódzki Rower Publiczny - POW / Rewolucji 1905 r
-ref=16072
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.466071,51.774682</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Poznańskich / Knychalskiego</name>
-  <description>name=Łódzki Rower Publiczny - Poznańskich / Knychalskiego
-ref=16073
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.470664,51.769914</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Przędzalniana / Tymienieckiego</name>
   <description>name=Łódzki Rower Publiczny - Przędzalniana / Tymienieckiego
 ref=16074
@@ -607,17 +398,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Rondo Solidarności</name>
-  <description>name=Łódzki Rower Publiczny - Rondo Solidarności
-ref=16081
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.481963,51.778584</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Sienkiewicza / Pasaż Schillera</name>
   <description>name=Łódzki Rower Publiczny - Sienkiewicza / Pasaż Schillera
 ref=16082
@@ -662,17 +442,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Sterlinga / Rewolucji 1905 r</name>
-  <description>name=Łódzki Rower Publiczny - Sterlinga / Rewolucji 1905 r
-ref=16088
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.468733,51.775834</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Śmigłego-Rydza / Dąbrowskiego</name>
   <description>name=Łódzki Rower Publiczny - Śmigłego-Rydza / Dąbrowskiego
 ref=16089
@@ -703,17 +472,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>19.473587,51.757122</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Szwaczek - Traugutta</name>
-  <description>name=Łódzki Rower Publiczny - Szwaczek - Traugutta
-ref=16093
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.462976,51.768466</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -769,17 +527,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>19.457834,51.759026</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Plac Wolności</name>
-  <description>name=Łódzki Rower Publiczny - Plac Wolności
-ref=16119
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.454672,51.776146</coordinates>
   </Point>
 </Placemark>
 <Placemark>
