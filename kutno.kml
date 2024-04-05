@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<Placemark>
-  <name>Józefów</name>
-  <description>name=Józefów
-ref=8700
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.390434,52.220551</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>
