@@ -13,17 +13,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>27047</name>
-  <description>name=27047
-ref=27047
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.018738,50.261601</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>27178</name>
   <description>name=27178
 ref=27178
