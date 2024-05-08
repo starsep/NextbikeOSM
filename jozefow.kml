@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Józefovia</name>
+  <description>name=Józefovia
+ref=9801
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.250321,52.131838</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Józefów centrum</name>
+  <description>name=Józefów centrum
+ref=9808
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.234595,52.137315</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Michalin</name>
+  <description>name=Michalin
+ref=9802
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.224555,52.149244</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Sobieskiego</name>
+  <description>name=Sobieskiego
+ref=9803
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.236498,52.151729</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Skate Park</name>
+  <description>name=Skate Park
+ref=9804
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.214187,52.145987</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Nadwiślańska</name>
+  <description>name=Nadwiślańska
+ref=9805
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.189676,52.146067</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wawerska</name>
+  <description>name=Wawerska
+ref=9806
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.216905,52.137281</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wyszyńskiego</name>
+  <description>name=Wyszyńskiego
+ref=9807
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.207115,52.120466</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

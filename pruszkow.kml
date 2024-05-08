@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
+<Placemark>
+  <name>WKD Pruszków</name>
+  <description>name=WKD Pruszków
+ref=6068
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.816098,52.161773</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Pogodna</name>
+  <description>name=Pogodna
+ref=6076
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.804691,52.156261</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Sadowa</name>
+  <description>name=Sadowa
+ref=6077
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.828273,52.170699</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>

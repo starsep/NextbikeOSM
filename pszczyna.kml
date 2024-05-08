@@ -5,11 +5,22 @@
   <name>Centrum Przesiadkowe ul. Parkowa</name>
   <description>name=Centrum Przesiadkowe ul. Parkowa
 ref=6468
-capacity=10
+capacity=12
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.975569,49.937195</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Osiedle Powstańców Śląskich</name>
+  <description>name=Osiedle Powstańców Śląskich
+ref=6469
+capacity=12
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.947738,49.985638</coordinates>
   </Point>
 </Placemark>
 </Document>
