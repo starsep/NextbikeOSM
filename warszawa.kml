@@ -114,22 +114,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Warsaw Spire</name>
-  <description>name=Warsaw Spire
-ref=6423
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.983233,52.232538</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Uniwersytet - SWPS </name>
   <description>name=Uniwersytet - SWPS 
 ref=6429
