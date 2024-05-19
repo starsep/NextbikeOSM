@@ -34,5 +34,16 @@ operator=Nextbike Polska</description>
     <coordinates>20.628861,52.077653</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Świetlica - Łąki</name>
+  <description>name=Świetlica - Łąki
+ref=6817
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.612935,52.118686</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
