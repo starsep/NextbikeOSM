@@ -50,22 +50,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Wołoska - Woronicza </name>
-  <description>name=Wołoska - Woronicza 
-ref=9588
-capacity=22
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.00247,52.18937</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Św. Bonifacego - al. gen. W. Sikorskiego</name>
   <description>name=Św. Bonifacego - al. gen. W. Sikorskiego
 ref=9590
@@ -111,22 +95,6 @@ network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
     <coordinates>20.897757,52.249465</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Uniwersytet - SWPS </name>
-  <description>name=Uniwersytet - SWPS 
-ref=6429
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.066431,52.247531</coordinates>
   </Point>
 </Placemark>
 </Document>
