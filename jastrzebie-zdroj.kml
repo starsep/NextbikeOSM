@@ -144,5 +144,16 @@ operator=Nextbike Polska</description>
     <coordinates>18.62,49.966</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Carbonarium</name>
+  <description>name=Carbonarium
+ref=60730
+capacity=3
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.566074,49.941989</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
