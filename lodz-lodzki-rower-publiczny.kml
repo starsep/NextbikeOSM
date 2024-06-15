@@ -12,16 +12,5 @@ operator=Nextbike Polska</description>
     <coordinates>19.473766,51.749108</coordinates>
   </Point>
 </Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Wojska Polskiego / Sporna</name>
-  <description>name=Łódzki Rower Publiczny - Wojska Polskiego / Sporna
-ref=16100
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.478515,51.790289</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>
