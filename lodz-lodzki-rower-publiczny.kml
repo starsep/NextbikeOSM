@@ -12,16 +12,5 @@ operator=Nextbike Polska</description>
     <coordinates>19.473766,51.749108</coordinates>
   </Point>
 </Placemark>
-<Placemark>
-  <name>Aquapark &#34;FALA&#34; </name>
-  <description>name=Aquapark &#34;FALA&#34; 
-ref=16121
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.422171,51.764641</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>
