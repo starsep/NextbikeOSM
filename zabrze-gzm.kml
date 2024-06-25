@@ -12,16 +12,5 @@ operator=Nextbike Polska</description>
     <coordinates>18.797636,50.36552</coordinates>
   </Point>
 </Placemark>
-<Placemark>
-  <name>27040</name>
-  <description>name=27040
-ref=27040
-capacity=7
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.809168,50.378687</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>
