@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
+<Placemark>
+  <name>Park Nauki Torus</name>
+  <description>name=Park Nauki Torus
+ref=6150
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>20.597745,52.868419</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
