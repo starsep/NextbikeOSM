@@ -12,5 +12,16 @@ operator=Nextbike Polska</description>
     <coordinates>19.473766,51.749108</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Łódzki Rower Publiczny - Zachodnia - Manufaktura</name>
+  <description>name=Łódzki Rower Publiczny - Zachodnia - Manufaktura
+ref=16077
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.451004,51.78054</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
