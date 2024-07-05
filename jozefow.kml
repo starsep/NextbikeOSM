@@ -2,17 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Józefovia</name>
-  <description>name=Józefovia
-ref=9801
-capacity=8
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.250321,52.131838</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Józefów centrum</name>
   <description>name=Józefów centrum
 ref=9808
@@ -32,17 +21,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>21.224555,52.149244</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Sobieskiego</name>
-  <description>name=Sobieskiego
-ref=9803
-capacity=8
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.236498,52.151729</coordinates>
   </Point>
 </Placemark>
 <Placemark>

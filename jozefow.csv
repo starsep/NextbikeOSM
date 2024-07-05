@@ -1,7 +1,5 @@
-52.131838,21.250321,addNode name=Józefovia,ref=9801,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
 52.137315,21.234595,addNode name=Józefów centrum,ref=9808,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
 52.149244,21.224555,addNode name=Michalin,ref=9802,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
-52.151729,21.236498,addNode name=Sobieskiego,ref=9803,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
 52.145987,21.214187,addNode name=Skate Park,ref=9804,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
 52.146067,21.189676,addNode name=Nadwiślańska,ref=9805,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
 52.137281,21.216905,addNode name=Wawerska,ref=9806,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
