@@ -4,13 +4,13 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 from time import localtime, strftime
-from typing import List, Optional, Tuple
+from typing import List, Optional, Tuple, cast
 
 from jinja2 import Environment, PackageLoader
-from overpy import Element, Way
+from overpy import Element, Way, Node
 
 import nextbike_parser as NP
-from distance import GeoPoint, distance
+from starsep_utils import GeoPoint, haversine
 from overpass_parser import OverpassParser
 
 __VERSION__ = "3.0.0"
@@ -51,7 +51,7 @@ class MapFeatureTags:
         return [f"{key}={value}" for key, value in self._toTagsDict().items()]
 
 
-@dataclass
+@dataclass(frozen=True)
 class MapFeature(GeoPoint):
     tags: MapFeatureTags
 
@@ -75,6 +75,18 @@ class MapFeature(GeoPoint):
         return f"{self.lat},{self.lon},addNode " + self.tags.toCSV()
 
 
+def geoPointFromElement(element: Element, overpassParser: OverpassParser) -> GeoPoint:
+    if type(element) == Node:
+        node = cast(Node, element)
+        return GeoPoint(lat=node.lat, lon=node.lon)
+    if type(element) == Way:
+        way = cast(Way, element)
+        nodes = [node for node in overpassParser.ways[way.id].nodes]
+        centerLat = sum(map(lambda x: x.lat, nodes)) / len(nodes)
+        centerLon = sum(map(lambda x: x.lon, nodes)) / len(nodes)
+        return GeoPoint(lat=centerLat, lon=centerLon)
+
+
 class NextbikeValidator:
     def __init__(self, nextbikeData, osmParser, html=None):
         self.nextbikeData = nextbikeData
@@ -93,8 +105,8 @@ class NextbikeValidator:
         for element in self.osmParser.elements:
             if "ref" in element.tags and element.tags["ref"] == nextbikeRef:
                 self.refMatches[nextbikeRef].append([element, "way" if type(element) == Way else "node"])
-                point = GeoPoint.fromElement(element, self.osmParser)
-                dist = distance(place, point)
+                point = geoPointFromElement(element, self.osmParser)
+                dist = haversine(place, point)
                 if dist < bestDistance:
                     bestDistance = dist
                     result = element
@@ -110,8 +122,8 @@ class NextbikeValidator:
                 or element.tags["amenity"] != "bicycle_rental"
             ):
                 continue
-            point = GeoPoint.fromElement(element, self.osmParser)
-            dist = distance(place, point)
+            point = geoPointFromElement(element, self.osmParser)
+            dist = haversine(place, point)
             if dist < bestDistance:
                 bestDistance = dist
                 best = element

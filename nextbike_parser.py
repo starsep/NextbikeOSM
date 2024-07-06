@@ -4,10 +4,10 @@ from dataclasses import dataclass
 from typing import List
 
 from configuration import cacheDirectory
-from distance import GeoPoint
+from starsep_utils import GeoPoint
 
 
-@dataclass
+@dataclass(frozen=True)
 class Place(GeoPoint):
     uid: str
     name: str
