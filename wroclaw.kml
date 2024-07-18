@@ -188,5 +188,27 @@ operator=Nextbike Polska</description>
     <coordinates>17.003956,51.052835</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>24. Międzynarodowy Festiwal Filmowy mBank Nowe Horyzonty - 2</name>
+  <description>name=24. Międzynarodowy Festiwal Filmowy mBank Nowe Horyzonty - 2
+ref=888887
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.027,51.11272</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>24. Międzynarodowy Festiwal Filmowy mBank Nowe Horyzonty - 3</name>
+  <description>name=24. Międzynarodowy Festiwal Filmowy mBank Nowe Horyzonty - 3
+ref=888888
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.030243,51.101611</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
