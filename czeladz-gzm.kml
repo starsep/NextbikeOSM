@@ -1,5 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
+<Placemark>
+  <name>27211</name>
+  <description>name=27211
+ref=27211
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.090989,50.304914</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27093</name>
+  <description>name=27093
+ref=27093
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.084255,50.311702</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27325</name>
+  <description>name=27325
+ref=27325
+capacity=4
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.100718,50.307985</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27374</name>
+  <description>name=27374
+ref=27374
+capacity=4
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.073872,50.297869</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27885</name>
+  <description>name=27885
+ref=27885
+capacity=4
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.061689,50.323951</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27916</name>
+  <description>name=27916
+ref=27916
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.070418,50.3166</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27403</name>
+  <description>name=27403
+ref=27403
+capacity=4
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.064024,50.332494</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27453</name>
+  <description>name=27453
+ref=27453
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.101151,50.301939</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27938- Brak stacji</name>
+  <description>name=27938- Brak stacji
+ref=27938
+capacity=9
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.104381,50.316631</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
