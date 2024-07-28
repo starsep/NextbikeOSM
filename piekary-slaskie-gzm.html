@@ -1,16 +1,873 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
+    <title>Piekary Śląskie (GZM) - NextBikeOSM</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    
+    <script src="sorttable.js" integrity="sha256-n3657FhpVO0BrpRmnXeQho7yfKvMVBh0QcoYkQr2O8w="></script>
 </head>
+<style>
+    .red {
+        color: red;
+    }
 
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
 <body>
-    <h2>Received empty dataset...sorry :(</h2>
-    <br>Add some data in this vicinity, then look here later.
-    <br>
-    <br>
-    <i>Last checked: Sun, 28 Jul @ 11:00:37</i>
+    <i>Updated: Sun, 28 Jul @ 12:00:40</i> <br/>
+    <span>
+        Nextbike locations (19) where OpenStreetMap match has distance &gt; 100 metres.
+        <br/>
+        <a href="map-piekary-slaskie-gzm.html">Map</a>
+        <a href="piekary-slaskie-gzm.kml">KML</a>
+        <a href="piekary-slaskie-gzm.csv">CSV in SCEE format</a>
+    </span>
+    <table class="sortable">
+        <thead>
+            <tr>
+                <th>NextBike uid</th>
+                <th>OSM id (closest match)</th>
+                <th>Distance (in meters)</th>
+                <th>Name NB</th>
+                <th>Name OSM</th>
+                <th>Ref NB</th>
+                <th>Ref OSM</th>
+                <th>Stands NB</th>
+                <th>Stands OSM</th>
+                <th>Network</th>
+                <th>Operator</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.381347&mlon=18.938316#map=19/50.381347/18.938316">330814661</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.381347&bottom=50.381347&left=18.938316&right=18.938316">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 1764
+                </td>
+                <td>
+                    27218
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27218
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.367954&mlon=18.979237#map=19/50.367954/18.979237">332506489</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.367954&bottom=50.367954&left=18.979237&right=18.979237">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 3008
+                </td>
+                <td>
+                    27013
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27013
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.36411&mlon=18.990608#map=19/50.36411/18.990608">332518750</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.36411&bottom=50.36411&left=18.990608&right=18.990608">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 3815
+                </td>
+                <td>
+                    27073
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27073
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.370625&mlon=18.970548#map=19/50.370625/18.970548">332530778</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.370625&bottom=50.370625&left=18.970548&right=18.970548">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 2469
+                </td>
+                <td>
+                    27132
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27132
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.364886&mlon=18.998916#map=19/50.364886/18.998916">332533953</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.364886&bottom=50.364886&left=18.998916&right=18.998916">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 4140
+                </td>
+                <td>
+                    27146
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27146
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    4
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.397717&mlon=18.957462#map=19/50.397717/18.957462">332559516</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.397717&bottom=50.397717&left=18.957462&right=18.957462">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 718
+                </td>
+                <td>
+                    27372
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27372
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.344473&mlon=18.998443#map=19/50.344473/18.998443">332559572</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.344473&bottom=50.344473&left=18.998443&right=18.998443">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 5952
+                </td>
+                <td>
+                    27373
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27373
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    3
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.393483&mlon=18.967451#map=19/50.393483/18.967451">332559855</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.393483&bottom=50.393483&left=18.967451&right=18.967451">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 732
+                </td>
+                <td>
+                    27378
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27378
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    4
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.40988&mlon=18.951068#map=19/50.40988/18.951068">339761051</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.40988&bottom=50.40988&left=18.951068&right=18.951068">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 2123
+                </td>
+                <td>
+                    27801
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27801
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.34561&mlon=18.980005#map=19/50.34561/18.980005">339766887</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.34561&bottom=50.34561&left=18.980005&right=18.980005">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 5318
+                </td>
+                <td>
+                    27831
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27831
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.375151&mlon=18.944979#map=19/50.375151/18.944979">339767301</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.375151&bottom=50.375151&left=18.944979&right=18.944979">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 2007
+                </td>
+                <td>
+                    27838
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27838
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.391753&mlon=18.960774#map=19/50.391753/18.960774">339767839</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.391753&bottom=50.391753&left=18.960774&right=18.960774">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 222
+                </td>
+                <td>
+                    27846
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27846
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.367891&mlon=18.983536#map=19/50.367891/18.983536">339779043</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.367891&bottom=50.367891&left=18.983536&right=18.983536">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 3179
+                </td>
+                <td>
+                    27893
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27893
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.391302&mlon=18.957799#map=19/50.391302/18.957799">339779613</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.391302&bottom=50.391302&left=18.957799&right=18.957799">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 6
+                </td>
+                <td>
+                    27903
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27903
+                </td>
+                <td >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.376393&mlon=18.944896#map=19/50.376393/18.944896">450095191</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.376393&bottom=50.376393&left=18.944896&right=18.944896">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 1887
+                </td>
+                <td>
+                    27483
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27483
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    2
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.345625&mlon=19.009308#map=19/50.345625/19.009308">450095479</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.345625&bottom=50.345625&left=19.009308&right=19.009308">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 6257
+                </td>
+                <td>
+                    27421
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27421
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    3
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.340105&mlon=18.963995#map=19/50.340105/18.963995">450095772</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.340105&bottom=50.340105&left=18.963995&right=18.963995">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 5707
+                </td>
+                <td>
+                    27456
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27456
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.371548&mlon=18.955645#map=19/50.371548/18.955645">450095972</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.371548&bottom=50.371548&left=18.955645&right=18.955645">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 2197
+                </td>
+                <td>
+                    27580
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27580
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.400148&mlon=18.947363#map=19/50.400148/18.947363">450096187</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.400148&bottom=50.400148&left=18.947363&right=18.947363">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 1231
+                </td>
+                <td>
+                    27438
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27438
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.413084&mlon=18.950387#map=19/50.413084/18.950387">450096452</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.413084&bottom=50.413084&left=18.950387&right=18.950387">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12078121707">12078121707</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12078121707">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 2482
+                </td>
+                <td>
+                    27577
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27577
+                </td>
+                <td class="red" >
+                    27903
+                </td>
+                <td>
+                    3
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v3.0.0 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
-
 </html>
