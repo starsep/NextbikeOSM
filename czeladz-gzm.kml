@@ -90,8 +90,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>27938- Brak stacji</name>
-  <description>name=27938- Brak stacji
+  <name>27938</name>
+  <description>name=27938
 ref=27938
 capacity=9
 amenity=bicycle_rental

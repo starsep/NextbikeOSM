@@ -563,8 +563,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>27930 - Brak stacji</name>
-  <description>name=27930 - Brak stacji
+  <name>27930</name>
+  <description>name=27930
 ref=27930
 capacity=5
 amenity=bicycle_rental
@@ -574,8 +574,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>27934- Brak stacji</name>
-  <description>name=27934- Brak stacji
+  <name>27934</name>
+  <description>name=27934
 ref=27934
 capacity=5
 amenity=bicycle_rental
@@ -596,8 +596,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>27936- Brak stacji</name>
-  <description>name=27936- Brak stacji
+  <name>27936</name>
+  <description>name=27936
 ref=27936
 capacity=5
 amenity=bicycle_rental
@@ -607,8 +607,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>27937- Brak stacji</name>
-  <description>name=27937- Brak stacji
+  <name>27937</name>
+  <description>name=27937
 ref=27937
 capacity=5
 amenity=bicycle_rental
