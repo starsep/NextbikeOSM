@@ -74,6 +74,13 @@ class MapFeature(GeoPoint):
     def toCSV(self) -> str:
         return f"{self.lat},{self.lon},addNode " + self.tags.toCSV()
 
+    def toJSON(self) -> dict:
+        return {
+            "lat": self.lat,
+            "lon": self.lon,
+            "tags": self.tags._toTagsDict(),
+        }
+
 
 def geoPointFromElement(element: Element, overpassParser: OverpassParser) -> GeoPoint:
     if type(element) == Node:
@@ -200,7 +207,7 @@ class NextbikeValidator:
         self.generateKML(kmlPath, mapFeatures)
 
     def generateMap(self, mapPath: Path, mapFeatures: List[MapFeature], cityName: str):
-        mapFeaturesDict = list(map(dataclasses.asdict, mapFeatures))
+        mapFeaturesDict = list(map(lambda q: q.toJSON(), mapFeatures))
         mapTemplate = self.envir.get_template("map.html")
         with mapPath.open("w", encoding="utf-8") as f:
             context = {
