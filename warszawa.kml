@@ -34,22 +34,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Dw. Wschodni – Lubelska</name>
-  <description>name=Dw. Wschodni – Lubelska
-ref=9550
-capacity=20
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.05336,52.25061</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Św. Bonifacego - al. gen. W. Sikorskiego</name>
   <description>name=Św. Bonifacego - al. gen. W. Sikorskiego
 ref=9590
