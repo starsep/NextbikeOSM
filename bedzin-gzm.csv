@@ -1,7 +1,5 @@
-50.32661,19.151856,addNode name=27033,ref=27033,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 50.348411,19.082795,addNode name=27050,ref=27050,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 50.329802,19.120711,addNode name=27063,ref=27063,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
-50.327064,19.161579,addNode name=27303,ref=27303,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 50.323899,19.118423,addNode name=27307,ref=27307,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 50.312266,19.120375,addNode name=27333,ref=27333,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 50.332793,19.122327,addNode name=27384,ref=27384,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
@@ -9,8 +7,6 @@
 50.31921,19.134731,addNode name=27796,ref=27796,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 50.351425,19.083394,addNode name=27329,ref=27329,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 50.326769,19.127733,addNode name=27466,ref=27466,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
-50.330893,19.1445,addNode name=27614,ref=27614,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
-50.353102,19.139337,addNode name=27537,ref=27537,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 50.343317,19.080911,addNode name=27533,ref=27533,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 50.31949,19.113942,addNode name=27610,ref=27610,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 50.316704,19.114507,addNode name=27090,ref=27090,capacity=3,amenity=bicycle_rental,operator=Nextbike Polska
