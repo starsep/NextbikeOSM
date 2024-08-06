@@ -159,7 +159,7 @@ operator=Nextbike Polska</description>
   <name>27253</name>
   <description>name=27253
 ref=27253
-capacity=5
+capacity=7
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -500,7 +500,7 @@ operator=Nextbike Polska</description>
   <name>27469</name>
   <description>name=27469
 ref=27469
-capacity=5
+capacity=6
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
