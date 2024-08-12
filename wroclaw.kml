@@ -188,16 +188,5 @@ operator=Nextbike Polska</description>
     <coordinates>17.003956,51.052835</coordinates>
   </Point>
 </Placemark>
-<Placemark>
-  <name>Stacja Wirtualna - Tour de Pologne </name>
-  <description>name=Stacja Wirtualna - Tour de Pologne 
-ref=888888
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.076953,51.107692</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>
