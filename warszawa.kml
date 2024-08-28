@@ -65,5 +65,21 @@ network:wikidata=Q3847868</description>
     <coordinates>21.045167,52.177247</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>al. Stanów Zjednoczonych - Międzynarodowa</name>
+  <description>name=al. Stanów Zjednoczonych - Międzynarodowa
+ref=9691
+capacity=24
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.067016,52.232953</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
