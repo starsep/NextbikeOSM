@@ -34,6 +34,22 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Solec - al. 3 Maja</name>
+  <description>name=Solec - al. 3 Maja
+ref=9528
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.046341,52.215851</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Plac Na Rozdrożu</name>
   <description>name=Plac Na Rozdrożu
 ref=9545
