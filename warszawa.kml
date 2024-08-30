@@ -34,8 +34,8 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Solec - al. 3 Maja</name>
-  <description>name=Solec - al. 3 Maja
+  <name>Czerniakowska- Szwoleżerów</name>
+  <description>name=Czerniakowska- Szwoleżerów
 ref=9528
 capacity=20
 amenity=bicycle_rental
@@ -82,8 +82,8 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>al. Stanów Zjednoczonych - Międzynarodowa</name>
-  <description>name=al. Stanów Zjednoczonych - Międzynarodowa
+  <name>Międzynarodowa - Zwycięzców</name>
+  <description>name=Międzynarodowa - Zwycięzców
 ref=9691
 capacity=24
 amenity=bicycle_rental
