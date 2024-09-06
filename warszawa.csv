@@ -4,3 +4,4 @@
 52.219962,21.02583,addNode name=Plac Na Rozdrożu,ref=9545,capacity=24,amenity=bicycle_rental,operator=Nextbike Polska,bicycle_rental=dropoff_point,brand=Veturilo,brand:wikidata=Q3847868,network=Veturilo,network:wikidata=Q3847868
 52.177247,21.045167,addNode name=Św. Bonifacego - al. gen. W. Sikorskiego,ref=9590,capacity=20,amenity=bicycle_rental,operator=Nextbike Polska,bicycle_rental=dropoff_point,brand=Veturilo,brand:wikidata=Q3847868,network=Veturilo,network:wikidata=Q3847868
 52.232953,21.067016,addNode name=Międzynarodowa - Zwycięzców,ref=9691,capacity=24,amenity=bicycle_rental,operator=Nextbike Polska,bicycle_rental=dropoff_point,brand=Veturilo,brand:wikidata=Q3847868,network=Veturilo,network:wikidata=Q3847868
+52.168315,21.075315,addNode name=Aleja Wilanowska - Kosiarzy ,ref=9715,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska,bicycle_rental=dropoff_point,brand=Veturilo,brand:wikidata=Q3847868,network=Veturilo,network:wikidata=Q3847868
