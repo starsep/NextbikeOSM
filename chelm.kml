@@ -46,17 +46,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Armii Krajowej/Busy</name>
-  <description>name=Armii Krajowej/Busy
-ref=60265
-capacity=15
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>23.46747,51.13067</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Lwowska/Wirskiego</name>
   <description>name=Lwowska/Wirskiego
 ref=60266
