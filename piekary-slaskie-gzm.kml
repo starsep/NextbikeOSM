@@ -35,17 +35,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>27372</name>
-  <description>name=27372
-ref=27372
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.957462,50.397717</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>27373</name>
   <description>name=27373
 ref=27373
@@ -54,28 +43,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.998443,50.344473</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27378</name>
-  <description>name=27378
-ref=27378
-capacity=4
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.967451,50.393483</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27801</name>
-  <description>name=27801
-ref=27801
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.951068,50.40988</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -98,17 +65,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.944979,50.375151</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27846</name>
-  <description>name=27846
-ref=27846
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.960774,50.391753</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -153,28 +109,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.955645,50.371548</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27438</name>
-  <description>name=27438
-ref=27438
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.947363,50.400148</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27577</name>
-  <description>name=27577
-ref=27577
-capacity=3
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.950387,50.413084</coordinates>
   </Point>
 </Placemark>
 </Document>
