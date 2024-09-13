@@ -57,17 +57,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Osobowicka / Ostrowska</name>
-  <description>name=Osobowicka / Ostrowska
-ref=15182
-capacity=3
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.98789,51.14382</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Sukielicka / Rogowska</name>
   <description>name=Sukielicka / Rogowska
 ref=15264
