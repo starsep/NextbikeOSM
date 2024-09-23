@@ -24,6 +24,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Popowicka / Niedźwiedzia</name>
+  <description>name=Popowicka / Niedźwiedzia
+ref=15123
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.997218,51.1253</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>al. Kochanowskiego / Śniadeckich </name>
   <description>name=al. Kochanowskiego / Śniadeckich 
 ref=15128
@@ -32,6 +43,61 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>17.077684,51.120068</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Plac Staszica</name>
+  <description>name=Plac Staszica
+ref=15154
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.03061,51.12274</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Popowicka / Rysia</name>
+  <description>name=Popowicka / Rysia
+ref=15172
+capacity=4
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.991832,51.127192</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Osobowicka / Ostrowska</name>
+  <description>name=Osobowicka / Ostrowska
+ref=15182
+capacity=3
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.98789,51.14382</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Sukielicka / Rogowska</name>
+  <description>name=Sukielicka / Rogowska
+ref=15264
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.946011,51.118185</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>WroSound</name>
+  <description>name=WroSound
+ref=13037
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.050642,51.107456</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -87,6 +153,39 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>16.971707,51.095298</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Gnieźnieńska / Długa</name>
+  <description>name=Gnieźnieńska / Długa
+ref=15288
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.012313,51.122409</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Maślicka / Brodnicka</name>
+  <description>name=Maślicka / Brodnicka
+ref=15291
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.939513,51.153259</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Bogatyńska / Turoszowska</name>
+  <description>name=Bogatyńska / Turoszowska
+ref=15293
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.944094,51.153669</coordinates>
   </Point>
 </Placemark>
 <Placemark>

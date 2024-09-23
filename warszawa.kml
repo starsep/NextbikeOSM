@@ -98,22 +98,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Stacja tymczasowa - Dni Transportu Publicznego</name>
-  <description>name=Stacja tymczasowa - Dni Transportu Publicznego
-ref=6400
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>20.932515,52.297732</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Aleja Wilanowska - Kosiarzy </name>
   <description>name=Aleja Wilanowska - Kosiarzy 
 ref=9715
