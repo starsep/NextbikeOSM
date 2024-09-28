@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Węzeł Marki - S8</name>
+  <description>name=Węzeł Marki - S8
+ref=4471
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.09173,52.30724</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Urząd Miasta Marki</name>
+  <description>name=Urząd Miasta Marki
+ref=4472
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.10772,52.32681</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wspólna</name>
+  <description>name=Wspólna
+ref=4473
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.11466,52.33441</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Struga</name>
+  <description>name=Struga
+ref=4474
+capacity=22
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.133943,52.358675</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Sosnowa</name>
+  <description>name=Sosnowa
+ref=4476
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.0948,52.3203</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Saturna</name>
+  <description>name=Saturna
+ref=4477
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.12614,52.32911</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

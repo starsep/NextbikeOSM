@@ -1,16 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
+    <title>Marki - NextBikeOSM</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    
+    <script src="sorttable.js" integrity="sha256-n3657FhpVO0BrpRmnXeQho7yfKvMVBh0QcoYkQr2O8w="></script>
 </head>
+<style>
+    .red {
+        color: red;
+    }
 
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
 <body>
-    <h2>Received empty dataset...sorry :(</h2>
-    <br>Add some data in this vicinity, then look here later.
-    <br>
-    <br>
-    <i>Last checked: Sat, 28 Sep @ 22:00:44</i>
+    <i>Updated: Sat, 28 Sep @ 23:00:47</i> <br/>
+    <span>
+        Nextbike locations (6) where OpenStreetMap match has distance &gt; 100 metres.
+        <br/>
+        <a href="map-marki.html">Map</a>
+        <a href="marki.kml">KML</a>
+        <a href="marki.csv">CSV in SCEE format</a>
+    </span>
+    <table class="sortable">
+        <thead>
+            <tr>
+                <th>NextBike uid</th>
+                <th>OSM id (closest match)</th>
+                <th>Distance (in meters)</th>
+                <th>Name NB</th>
+                <th>Name OSM</th>
+                <th>Ref NB</th>
+                <th>Ref OSM</th>
+                <th>Stands NB</th>
+                <th>Stands OSM</th>
+                <th>Network</th>
+                <th>Operator</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.30724&mlon=21.09173#map=19/52.30724/21.09173">9799784</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.30724&bottom=52.30724&left=21.09173&right=21.09173">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12207595688">12207595688</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12207595688">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 6128
+                </td>
+                <td>
+                    Węzeł Marki - S8
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    4471
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    8
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.32681&mlon=21.10772#map=19/52.32681/21.10772">9799791</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.32681&bottom=52.32681&left=21.10772&right=21.10772">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12207595688">12207595688</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12207595688">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 3814
+                </td>
+                <td>
+                    Urząd Miasta Marki
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    4472
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    8
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.33441&mlon=21.11466#map=19/52.33441/21.11466">9799795</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.33441&bottom=52.33441&left=21.11466&right=21.11466">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12207595688">12207595688</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12207595688">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 2970
+                </td>
+                <td>
+                    Wspólna
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    4473
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    8
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.358675&mlon=21.133943#map=19/52.358675/21.133943">9799799</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.358675&bottom=52.358675&left=21.133943&right=21.133943">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12207595688">12207595688</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12207595688">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 1565
+                </td>
+                <td>
+                    Struga
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    4474
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    22
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.36095&mlon=21.11127#map=19/52.36095/21.11127">9799804</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.36095&bottom=52.36095&left=21.11127&right=21.11127">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12207595688">12207595688</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12207595688">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 9
+                </td>
+                <td>
+                    Czarna Struga
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    4475
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    8
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.3203&mlon=21.0948#map=19/52.3203/21.0948">88093735</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.3203&bottom=52.3203&left=21.0948&right=21.0948">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12207595688">12207595688</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12207595688">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 4666
+                </td>
+                <td>
+                    Sosnowa
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    4476
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    8
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.32911&mlon=21.12614#map=19/52.32911/21.12614">88093843</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.32911&bottom=52.32911&left=21.12614&right=21.12614">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/12207595688">12207595688</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n12207595688">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 3692
+                </td>
+                <td>
+                    Saturna
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    4477
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    8
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v3.0.0 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
-
 </html>
