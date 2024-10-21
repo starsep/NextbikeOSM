@@ -273,7 +273,7 @@ capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>19.196587,50.275158</coordinates>
+    <coordinates>19.194663,50.275871</coordinates>
   </Point>
 </Placemark>
 </Document>
