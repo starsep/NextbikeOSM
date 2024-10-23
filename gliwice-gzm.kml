@@ -2,17 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>27052</name>
-  <description>name=27052
-ref=27052
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.68361,50.29941</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>27094</name>
   <description>name=27094
 ref=27094
@@ -21,28 +10,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.711314,50.323503</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27233</name>
-  <description>name=27233
-ref=27233
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.657528,50.296251</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27244</name>
-  <description>name=27244
-ref=27244
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.671292,50.308686</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -65,39 +32,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.730482,50.305104</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27349</name>
-  <description>name=27349
-ref=27349
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.665592,50.310785</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27353</name>
-  <description>name=27353
-ref=27353
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.689008,50.293844</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27832</name>
-  <description>name=27832
-ref=27832
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.675599,50.303617</coordinates>
   </Point>
 </Placemark>
 <Placemark>
