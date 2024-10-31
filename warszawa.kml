@@ -82,22 +82,6 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Międzynarodowa - Zwycięzców</name>
-  <description>name=Międzynarodowa - Zwycięzców
-ref=9691
-capacity=24
-amenity=bicycle_rental
-operator=Nextbike Polska
-bicycle_rental=dropoff_point
-brand=Veturilo
-brand:wikidata=Q3847868
-network=Veturilo
-network:wikidata=Q3847868</description>
-  <Point>
-    <coordinates>21.067016,52.232953</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Aleja Wilanowska - Kosiarzy </name>
   <description>name=Aleja Wilanowska - Kosiarzy 
 ref=9715
