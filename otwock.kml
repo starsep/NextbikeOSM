@@ -5,7 +5,7 @@
   <name>Plaża Miejska</name>
   <description>name=Plaża Miejska
 ref=6171
-capacity=10
+capacity=7
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -16,7 +16,7 @@ operator=Nextbike Polska</description>
   <name>Medyk</name>
   <description>name=Medyk
 ref=6180
-capacity=10
+capacity=7
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>

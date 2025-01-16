@@ -5,7 +5,7 @@
   <name>Węzeł Marki - S8</name>
   <description>name=Węzeł Marki - S8
 ref=4471
-capacity=8
+capacity=15
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -16,7 +16,7 @@ operator=Nextbike Polska</description>
   <name>Urząd Miasta Marki</name>
   <description>name=Urząd Miasta Marki
 ref=4472
-capacity=8
+capacity=15
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -27,7 +27,7 @@ operator=Nextbike Polska</description>
   <name>Wspólna</name>
   <description>name=Wspólna
 ref=4473
-capacity=8
+capacity=15
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -38,7 +38,7 @@ operator=Nextbike Polska</description>
   <name>Struga</name>
   <description>name=Struga
 ref=4474
-capacity=22
+capacity=15
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -49,7 +49,7 @@ operator=Nextbike Polska</description>
   <name>Sosnowa</name>
   <description>name=Sosnowa
 ref=4476
-capacity=8
+capacity=15
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -60,7 +60,7 @@ operator=Nextbike Polska</description>
   <name>Saturna</name>
   <description>name=Saturna
 ref=4477
-capacity=8
+capacity=15
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>

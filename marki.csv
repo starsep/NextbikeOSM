@@ -1,6 +1,6 @@
-52.30724,21.09173,addNode name=Węzeł Marki - S8,ref=4471,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
-52.32681,21.10772,addNode name=Urząd Miasta Marki,ref=4472,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
-52.33441,21.11466,addNode name=Wspólna,ref=4473,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
-52.358675,21.133943,addNode name=Struga,ref=4474,capacity=22,amenity=bicycle_rental,operator=Nextbike Polska
-52.3203,21.0948,addNode name=Sosnowa,ref=4476,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
-52.32911,21.12614,addNode name=Saturna,ref=4477,capacity=8,amenity=bicycle_rental,operator=Nextbike Polska
+52.30724,21.09173,addNode name=Węzeł Marki - S8,ref=4471,capacity=15,amenity=bicycle_rental,operator=Nextbike Polska
+52.32681,21.10772,addNode name=Urząd Miasta Marki,ref=4472,capacity=15,amenity=bicycle_rental,operator=Nextbike Polska
+52.33441,21.11466,addNode name=Wspólna,ref=4473,capacity=15,amenity=bicycle_rental,operator=Nextbike Polska
+52.358675,21.133943,addNode name=Struga,ref=4474,capacity=15,amenity=bicycle_rental,operator=Nextbike Polska
+52.3203,21.0948,addNode name=Sosnowa,ref=4476,capacity=15,amenity=bicycle_rental,operator=Nextbike Polska
+52.32911,21.12614,addNode name=Saturna,ref=4477,capacity=15,amenity=bicycle_rental,operator=Nextbike Polska
