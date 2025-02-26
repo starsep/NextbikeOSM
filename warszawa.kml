@@ -114,8 +114,8 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Urząd Dzielnicy Ursus </name>
-  <description>name=Urząd Dzielnicy Ursus 
+  <name>Ursus Ratusz</name>
+  <description>name=Ursus Ratusz
 ref=9716
 capacity=10
 amenity=bicycle_rental
@@ -130,8 +130,8 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Eko Park </name>
-  <description>name=Eko Park 
+  <name>EkoPark - Warszawska</name>
+  <description>name=EkoPark - Warszawska
 ref=9718
 capacity=10
 amenity=bicycle_rental
@@ -162,8 +162,8 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Galeria Gawra</name>
-  <description>name=Galeria Gawra
+  <name>Warszawska - Hermana</name>
+  <description>name=Warszawska - Hermana
 ref=9720
 capacity=10
 amenity=bicycle_rental
