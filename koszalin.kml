@@ -16,7 +16,7 @@ operator=Nextbike Polska</description>
   <name>Fałata </name>
   <description>name=Fałata 
 ref=63017
-capacity=12
+capacity=13
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -38,7 +38,7 @@ operator=Nextbike Polska</description>
   <name>Zagroda Jamneńska</name>
   <description>name=Zagroda Jamneńska
 ref=63027
-capacity=6
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
@@ -49,7 +49,7 @@ operator=Nextbike Polska</description>
   <name>Wąwozowa</name>
   <description>name=Wąwozowa
 ref=63028
-capacity=10
+capacity=18
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
