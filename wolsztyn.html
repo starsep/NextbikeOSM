@@ -1,16 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
+    <title>Wolsztyn - NextBikeOSM</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    
+    <script src="sorttable.js" integrity="sha256-n3657FhpVO0BrpRmnXeQho7yfKvMVBh0QcoYkQr2O8w="></script>
 </head>
+<style>
+    .red {
+        color: red;
+    }
 
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
 <body>
-    <h2>Received empty dataset...sorry :(</h2>
-    <br>Add some data in this vicinity, then look here later.
-    <br>
-    <br>
-    <i>Last checked: Mon, 17 Mar @ 13:00:19</i>
+    <i>Updated: Mon, 17 Mar @ 15:00:06</i> <br/>
+    <span>
+        Nextbike locations (0) where OpenStreetMap match has distance &gt; 100 metres.
+        <br/>
+        <a href="map-wolsztyn.html">Map</a>
+        <a href="wolsztyn.kml">KML</a>
+        <a href="wolsztyn.csv">CSV in SCEE format</a>
+    </span>
+    <table class="sortable">
+        <thead>
+            <tr>
+                <th>NextBike uid</th>
+                <th>OSM id (closest match)</th>
+                <th>Distance (in meters)</th>
+                <th>Name NB</th>
+                <th>Name OSM</th>
+                <th>Ref NB</th>
+                <th>Ref OSM</th>
+                <th>Stands NB</th>
+                <th>Stands OSM</th>
+                <th>Network</th>
+                <th>Operator</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.119209&mlon=16.121698#map=19/52.119209/16.121698">117110032</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.119209&bottom=52.119209&left=16.121698&right=16.121698">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/way/1368379099">1368379099</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=w1368379099">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 4
+                </td>
+                <td>
+                    Komorowska
+                </td>
+                <td >
+                    Komorowska
+                </td>
+                <td>
+                    60231
+                </td>
+                <td >
+                    60231
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Wolsztyński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.119278&mlon=16.101272#map=19/52.119278/16.101272">117110205</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.119278&bottom=52.119278&left=16.101272&right=16.101272">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/way/1368379100">1368379100</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=w1368379100">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 2
+                </td>
+                <td>
+                    MOSiR
+                </td>
+                <td >
+                    MOSiR
+                </td>
+                <td>
+                    60232
+                </td>
+                <td >
+                    60232
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Wolsztyński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=52.112134&mlon=16.108117#map=19/52.112134/16.108117">117110441</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=52.112134&bottom=52.112134&left=16.108117&right=16.108117">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/way/1368379101">1368379101</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=w1368379101">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 15
+                </td>
+                <td>
+                    Dworzec
+                </td>
+                <td >
+                    Dworzec
+                </td>
+                <td>
+                    60233
+                </td>
+                <td >
+                    60233
+                </td>
+                <td>
+                    12
+                </td>
+                <td >
+                    12
+                </td>
+                <td >
+                    Wolsztyński Rower Miejski
+                </td>
+                <td >
+                    Nextbike Polska
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v3.0.0 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
-
 </html>
