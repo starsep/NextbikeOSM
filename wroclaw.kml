@@ -134,69 +134,69 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Ostrowskiego</name>
-  <description>name=Ostrowskiego
-ref=15284
+  <name>Boiskowa / Koreańska</name>
+  <description>name=Boiskowa / Koreańska
+ref=15308
 capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>16.971707,51.095298</coordinates>
+    <coordinates>17.083497,51.048334</coordinates>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Gnieźnieńska / Długa</name>
-  <description>name=Gnieźnieńska / Długa
-ref=15288
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.012313,51.122409</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Maślicka / Brodnicka</name>
-  <description>name=Maślicka / Brodnicka
-ref=15291
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.939513,51.153259</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Bogatyńska / Turoszowska</name>
-  <description>name=Bogatyńska / Turoszowska
-ref=15293
-capacity=None
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.944094,51.153669</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Bielany Wrocławskie Kolejowa P&amp;R</name>
-  <description>name=Bielany Wrocławskie Kolejowa P&amp;R
-ref=15302
+  <name>Magellana</name>
+  <description>name=Magellana
+ref=15309
 capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>16.976374,51.03795</coordinates>
+    <coordinates>17.120592,51.109813</coordinates>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Wysoka Nastrojowa</name>
-  <description>name=Wysoka Nastrojowa
-ref=15303
+  <name>Jerzmanowska / Adamczewskich</name>
+  <description>name=Jerzmanowska / Adamczewskich
+ref=15310
 capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>17.003956,51.052835</coordinates>
+    <coordinates>16.866329,51.12056</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Jodłowicka</name>
+  <description>name=Jodłowicka
+ref=15311
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.899695,51.168598</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wrocław Żerniki (stacja kolejowa)</name>
+  <description>name=Wrocław Żerniki (stacja kolejowa)
+ref=15312
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.913849,51.126461</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Międzyrzecka</name>
+  <description>name=Międzyrzecka
+ref=15313
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.080458,51.09501</coordinates>
   </Point>
 </Placemark>
 </Document>
