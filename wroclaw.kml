@@ -46,14 +46,25 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Plac Staszica</name>
-  <description>name=Plac Staszica
+  <name>Nyska / Piękna</name>
+  <description>name=Nyska / Piękna
+ref=15152
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.0568,51.08537</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>pl. Strzelecki</name>
+  <description>name=pl. Strzelecki
 ref=15154
 capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>17.03061,51.12274</coordinates>
+    <coordinates>17.02995,51.12266</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -141,7 +152,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>17.083497,51.048334</coordinates>
+    <coordinates>17.0832,51.04874</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -174,7 +185,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>16.899695,51.168598</coordinates>
+    <coordinates>16.89701,51.16994</coordinates>
   </Point>
 </Placemark>
 <Placemark>

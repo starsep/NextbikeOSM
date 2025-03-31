@@ -13,17 +13,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>ul. Daleka / ul. Staszica</name>
-  <description>name=ul. Daleka / ul. Staszica
-ref=6814
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>20.617914,52.094446</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Adamowizna - parking / ul. Osowiecka</name>
   <description>name=Adamowizna - parking / ul. Osowiecka
 ref=6816
