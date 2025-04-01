@@ -145,6 +145,28 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Bielany Wrocławskie Kolejowa P&amp;R</name>
+  <description>name=Bielany Wrocławskie Kolejowa P&amp;R
+ref=15302
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.976374,51.03795</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wysoka Nastrojowa</name>
+  <description>name=Wysoka Nastrojowa
+ref=15303
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.003956,51.052835</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Boiskowa / Koreańska</name>
   <description>name=Boiskowa / Koreańska
 ref=15308
