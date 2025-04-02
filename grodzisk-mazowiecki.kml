@@ -2,28 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Szkoła Książenice</name>
-  <description>name=Szkoła Książenice
-ref=6109
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>20.696183,52.072045</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Adamowizna - parking / ul. Osowiecka</name>
-  <description>name=Adamowizna - parking / ul. Osowiecka
-ref=6816
-capacity=12
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>20.628861,52.077653</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Świetlica - Łąki</name>
   <description>name=Świetlica - Łąki
 ref=6817
