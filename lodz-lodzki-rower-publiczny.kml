@@ -123,17 +123,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Wojska Polskiego / Głowackiego</name>
-  <description>name=Łódzki Rower Publiczny - Wojska Polskiego / Głowackiego
-ref=16122
-capacity=7
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.47138,51.78711</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Wólczańska / Skorupki</name>
   <description>name=Łódzki Rower Publiczny - Wólczańska / Skorupki
 ref=16123
