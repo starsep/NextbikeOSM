@@ -2,6 +2,22 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
+  <name>Jana Kazimierza - Gizów</name>
+  <description>name=Jana Kazimierza - Gizów
+ref=9471
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.945553,52.224946</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Grójecka - Bitwy Warszawskiej 1920 roku</name>
   <description>name=Grójecka - Bitwy Warszawskiej 1920 roku
 ref=9549
