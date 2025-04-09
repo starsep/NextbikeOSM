@@ -90,17 +90,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Wojska Polskiego / Sporna</name>
-  <description>name=Łódzki Rower Publiczny - Wojska Polskiego / Sporna
-ref=16100
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.47942,51.78936</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Liściasta / Zgierska</name>
   <description>name=Łódzki Rower Publiczny - Liściasta / Zgierska
 ref=16102
@@ -252,17 +241,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>19.5358,51.75718</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Łódzki Rower Publiczny - Rojna / Kaczeńcowa</name>
-  <description>name=Łódzki Rower Publiczny - Rojna / Kaczeńcowa
-ref=16135
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.38473,51.79412</coordinates>
   </Point>
 </Placemark>
 <Placemark>
