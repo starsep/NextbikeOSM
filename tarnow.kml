@@ -13,17 +13,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Słoneczna</name>
-  <description>name=Słoneczna
-ref=3895
-capacity=16
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.001241,50.017874</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Konarskiego - Sąd</name>
   <description>name=Konarskiego - Sąd
 ref=3896
