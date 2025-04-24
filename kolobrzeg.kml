@@ -5,11 +5,99 @@
   <name>Ratusz</name>
   <description>name=Ratusz
 ref=6303
-capacity=20
+capacity=None
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>15.574109,54.177548</coordinates>
+    <coordinates>15.57261,54.17793</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Park im. Żeromskiego/ ul. Konopnickiej</name>
+  <description>name=Park im. Żeromskiego/ ul. Konopnickiej
+ref=6313
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.57087,54.18481</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Galeria Molo</name>
+  <description>name=Galeria Molo
+ref=6301
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.56142,54.18509</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Sikorskiego - parking rowerowy</name>
+  <description>name=ul. Sikorskiego - parking rowerowy
+ref=6314
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.58144,54.18535</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Sułkowskiego - przy Arce</name>
+  <description>name=ul. Sułkowskiego - przy Arce
+ref=6315
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.6085,54.1907</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>MOSIR- ul. Łopuskiego</name>
+  <description>name=MOSIR- ul. Łopuskiego
+ref=6316
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.56723,54.17505</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. J. Kasprowicza/ H. Kołłątaja</name>
+  <description>name=ul. J. Kasprowicza/ H. Kołłątaja
+ref=6317
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.58803,54.18362</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Artyleryjska</name>
+  <description>name=ul. Artyleryjska
+ref=6318
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.56888,54.16748</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. K. Szymanowskiego</name>
+  <description>name=ul. K. Szymanowskiego
+ref=6319
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.54244,54.1561</coordinates>
   </Point>
 </Placemark>
 </Document>

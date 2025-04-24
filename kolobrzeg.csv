@@ -1,1 +1,9 @@
-54.177548,15.574109,addNode name=Ratusz,ref=6303,capacity=20,amenity=bicycle_rental,operator=Nextbike Polska
+54.17793,15.57261,addNode name=Ratusz,ref=6303,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+54.18481,15.57087,addNode name=Park im. Żeromskiego/ ul. Konopnickiej,ref=6313,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+54.18509,15.56142,addNode name=Galeria Molo,ref=6301,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+54.18535,15.58144,addNode name=ul. Sikorskiego - parking rowerowy,ref=6314,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+54.1907,15.6085,addNode name=ul. Sułkowskiego - przy Arce,ref=6315,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+54.17505,15.56723,addNode name=MOSIR- ul. Łopuskiego,ref=6316,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+54.18362,15.58803,addNode name=ul. J. Kasprowicza/ H. Kołłątaja,ref=6317,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+54.16748,15.56888,addNode name=ul. Artyleryjska,ref=6318,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+54.1561,15.54244,addNode name=ul. K. Szymanowskiego,ref=6319,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
