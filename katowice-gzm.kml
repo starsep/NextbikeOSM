@@ -12,5 +12,16 @@ operator=Nextbike Polska</description>
     <coordinates>18.977056,50.233833</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>STS Katowice</name>
+  <description>name=STS Katowice
+ref=27120
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.05067,50.25197</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
