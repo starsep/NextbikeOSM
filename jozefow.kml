@@ -23,5 +23,27 @@ operator=Nextbike Polska</description>
     <coordinates>21.207115,52.120466</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Polna/Piaskowa</name>
+  <description>name=Polna/Piaskowa
+ref=9809
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.221143,52.135707</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ICSiR</name>
+  <description>name=ICSiR
+ref=9810
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>21.22857,52.128501</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>

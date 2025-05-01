@@ -33,5 +33,21 @@ network:wikidata=Q3847868</description>
     <coordinates>20.977878,52.212891</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Nextbike Przasnyska</name>
+  <description>name=Nextbike Przasnyska
+ref=6455
+capacity=8
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.970714,52.260516</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
