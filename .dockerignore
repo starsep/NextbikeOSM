@@ -9,3 +9,5 @@ __pycache__
 .dockerignore
 Dockerfile
 .gitignore
+venv
+.venv
