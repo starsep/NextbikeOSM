@@ -7,7 +7,7 @@ from slugify import slugify
 
 from nextbike_parser import NextbikeParser
 from nextbike_valid import main
-from starsep_utils.healthchecks import healthchecks
+from starsep_utils import healthchecks
 
 if __name__ == "__main__":
     healthchecks("/start")
