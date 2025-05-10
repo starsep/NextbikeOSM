@@ -35,7 +35,10 @@ if __name__ == "__main__":
 
     environment = Environment(loader=PackageLoader("nextbike_valid", "templates"))
     template = environment.get_template("index.html")
-    cities = sorted([(cityName, slugify(cityName)) for (_, cityName) in networksPoland], key=lambda x: x[0])
+    cities = sorted(
+        [(cityName, slugify(cityName)) for (_, cityName) in networksPoland],
+        key=lambda x: x[0],
+    )
     with (outputDirectory / "index.html").open("w", encoding="utf-8") as f:
         f.write(template.render(dict(cities=cities)))
     shutil.copy(templatesDirectory / "index.js", outputDirectory / "index.js")

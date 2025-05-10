@@ -10,7 +10,9 @@ cacheOverpass = Cache(str(cacheDirectory / "overpass"))
 
 
 @cacheOverpass.memoize()
-def fetchOverpassData(placeName: str, bbox: Tuple[float, float, float, float]) -> overpy.Result:
+def fetchOverpassData(
+    placeName: str, bbox: Tuple[float, float, float, float]
+) -> overpy.Result:
     (minLat, minLon, maxLat, maxLon) = bbox
     query = f"""
     [out:xml][timeout:250];

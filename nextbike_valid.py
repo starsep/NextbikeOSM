@@ -1,4 +1,3 @@
-import dataclasses
 import difflib as SC
 import json
 from dataclasses import dataclass
@@ -83,10 +82,10 @@ class MapFeature(GeoPoint):
 
 
 def geoPointFromElement(element: Element, overpassParser: OverpassParser) -> GeoPoint:
-    if type(element) == Node:
+    if type(element) is Node:
         node = cast(Node, element)
         return GeoPoint(lat=node.lat, lon=node.lon)
-    if type(element) == Way:
+    if type(element) is Way:
         way = cast(Way, element)
         nodes = [node for node in overpassParser.ways[way.id].nodes]
         centerLat = sum(map(lambda x: x.lat, nodes)) / len(nodes)
@@ -111,7 +110,9 @@ class NextbikeValidator:
         bestDistance = MAX_DISTANCE
         for element in self.osmParser.elements:
             if "ref" in element.tags and element.tags["ref"] == nextbikeRef:
-                self.refMatches[nextbikeRef].append([element, "way" if type(element) == Way else "node"])
+                self.refMatches[nextbikeRef].append(
+                    [element, "way" if type(element) is Way else "node"]
+                )
                 point = geoPointFromElement(element, self.osmParser)
                 dist = haversine(place, point)
                 if dist < bestDistance:
@@ -149,7 +150,7 @@ class NextbikeValidator:
                     distance=dist,
                     nextbike=nextPlace,
                     osm=matchedElement,
-                    osmType="way" if type(matchedElement) == Way else "node",
+                    osmType="way" if type(matchedElement) is Way else "node",
                     matchedBy=matchedBy,
                 )
             )
@@ -199,7 +200,7 @@ class NextbikeValidator:
                     ref: duplicates
                     for ref, duplicates in self.refMatches.items()
                     if len(duplicates) > 1
-                }
+                },
             }
             f.write(template.render(context))
         self.generateMap(mapPath, mapFeatures, cityName)
@@ -271,4 +272,3 @@ def main(
     if validator.containsData(outputPath):
         validator.pair(nextbikeData)
         validator.generateHtml(outputPath, mapPath, cityName)
-
