@@ -8,7 +8,7 @@ if [[ "$(cat cache/dateOfLastRun)" != "$date" ]]; then
 fi
 rm -rf cache/overpass
 git clone https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/starsep/NextbikeOSM --depth 1 --branch gh-pages output
-python run.py
+uv run python run.py
 (
     cd output || exit 1
     git config user.name "NextbikeOSMBot"
