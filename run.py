@@ -7,8 +7,10 @@ from slugify import slugify
 
 from nextbike_parser import NextbikeParser
 from nextbike_valid import main
+from starsep_utils.healthchecks import healthchecks
 
 if __name__ == "__main__":
+    healthchecks("/start")
     templatesDirectory = Path("templates")
     outputDirectory = Path("output")
     outputDirectory.mkdir(exist_ok=True)
@@ -37,3 +39,4 @@ if __name__ == "__main__":
     with (outputDirectory / "index.html").open("w", encoding="utf-8") as f:
         f.write(template.render(dict(cities=cities)))
     shutil.copy(templatesDirectory / "index.js", outputDirectory / "index.js")
+    healthchecks()
