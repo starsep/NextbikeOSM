@@ -27,7 +27,7 @@ operator=Nextbike Polska</description>
   <name>Świetlica - Łąki</name>
   <description>name=Świetlica - Łąki
 ref=6817
-capacity=None
+capacity=4
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
