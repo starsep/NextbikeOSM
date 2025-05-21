@@ -101,8 +101,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>PRZYSTANEK ul. Jagiełły</name>
-  <description>name=PRZYSTANEK ul. Jagiełły
+  <name>PRZYSTANEK ul. Jagiełły (WPK)</name>
+  <description>name=PRZYSTANEK ul. Jagiełły (WPK)
 ref=60726
 capacity=4
 amenity=bicycle_rental
