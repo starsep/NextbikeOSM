@@ -1,6 +1,7 @@
 51.78475,19.46087,addNode name=Łódzki Rower Publiczny - Wojska Polskiego / Franciszkańska,ref=16002,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.75596,19.43165,addNode name=Łódzki Rower Publiczny - Bandurskiego / Dworzec Łódź Kaliska,ref=16010,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 51.75539,19.42675,addNode name=Łódzki Rower Publiczny - Bandurskiego / Karolewska,ref=16011,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
+51.77427,19.49558,addNode name=Łódzki Rower Publiczny - Narutowicza / Radiostacja,ref=16034,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.75996,19.54458,addNode name=Łódzki Rower Publiczny - Rokicińska / Gogola,ref=16048,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 51.80028,19.37593,addNode name=Łódzki Rower Publiczny - Rydzowa / Aleksandrowska,ref=16050,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.75763,19.44504,addNode name=Łódzki Rower Publiczny - Mickiewicza / Łąkowa,ref=16051,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
@@ -35,3 +36,4 @@
 51.72874,19.4695,addNode name=Łódzki Rower Publiczny - Paderewskiego / Tuszyńska,ref=16150,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 51.753,19.52911,addNode name=Łódzki Rower Publiczny - Przybyszewskiego / Puszkina,ref=16151,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 51.77036,19.47715,addNode name=Łódzki Rower Publiczny - Tramwajowa / Węglowa,ref=16148,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
+51.799376,19.413649,addNode name=Łódzki Rower Publiczny - Business Support Solutions SA,ref=16167,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
