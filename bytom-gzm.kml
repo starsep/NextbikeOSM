@@ -108,7 +108,7 @@ capacity=5
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>18.93511,50.336732</coordinates>
+    <coordinates>18.844173,50.365986</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -164,6 +164,17 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.931928,50.341703</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>27734</name>
+  <description>name=27734
+ref=27734
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.876581,50.397829</coordinates>
   </Point>
 </Placemark>
 <Placemark>
