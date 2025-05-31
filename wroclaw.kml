@@ -167,6 +167,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Psary</name>
+  <description>name=Psary
+ref=15306
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.029398,51.185896</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Boiskowa / Koreańska</name>
   <description>name=Boiskowa / Koreańska
 ref=15308
