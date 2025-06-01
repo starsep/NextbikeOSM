@@ -243,5 +243,93 @@ operator=Nextbike Polska</description>
     <coordinates>17.080458,51.09501</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Stawowa / Wiśniowa Mokronos Dolny</name>
+  <description>name=Stawowa / Wiśniowa Mokronos Dolny
+ref=15315
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.935071,51.071014</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wrocławska / Spacerowa Mokronos Górny</name>
+  <description>name=Wrocławska / Spacerowa Mokronos Górny
+ref=15316
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.918775,51.074543</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Osiedlowa/Ciepłownicza Siechnice</name>
+  <description>name=Osiedlowa/Ciepłownicza Siechnice
+ref=15317
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.153896,51.025382</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Siechnice PKP</name>
+  <description>name=Siechnice PKP
+ref=15318
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.144258,51.038098</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Siechnice UM</name>
+  <description>name=Siechnice UM
+ref=15319
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.150512,51.032555</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Radwanice ul. Kolejowa (Biedronka)</name>
+  <description>name=Radwanice ul. Kolejowa (Biedronka)
+ref=15322
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.105197,51.057135</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Żerniki Wrocławskie Pętla </name>
+  <description>name=Żerniki Wrocławskie Pętla 
+ref=15321
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.056056,51.033391</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Święta Katarzyna PKP</name>
+  <description>name=Święta Katarzyna PKP
+ref=15320
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.123084,51.029405</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
