@@ -185,7 +185,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>17.0832,51.04874</coordinates>
+    <coordinates>17.082919,51.049944</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -196,7 +196,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>17.120417,51.109665</coordinates>
+    <coordinates>17.121695,51.113571</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -218,7 +218,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>16.89701,51.16994</coordinates>
+    <coordinates>16.896987,51.169936</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -229,7 +229,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>16.913849,51.126461</coordinates>
+    <coordinates>16.91389,51.12645</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -244,6 +244,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Radosna /Brzozowa</name>
+  <description>name=Radosna /Brzozowa
+ref=15314
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.015579,51.052994</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Stawowa / Wiśniowa Mokronos Dolny</name>
   <description>name=Stawowa / Wiśniowa Mokronos Dolny
 ref=15315
@@ -251,7 +262,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>16.935071,51.071014</coordinates>
+    <coordinates>16.936914,51.070569</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -262,7 +273,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>16.918775,51.074543</coordinates>
+    <coordinates>16.919512,51.074457</coordinates>
   </Point>
 </Placemark>
 <Placemark>

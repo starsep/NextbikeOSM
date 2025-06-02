@@ -14,14 +14,15 @@
 51.03795,16.976374,addNode name=Bielany Wrocławskie Kolejowa P&R,ref=15302,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.052835,17.003956,addNode name=Wysoka/Nastrojowa,ref=15303,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.185896,17.029398,addNode name=Psary,ref=15306,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.04874,17.0832,addNode name=Boiskowa / Koreańska,ref=15308,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.109665,17.120417,addNode name=Magellana,ref=15309,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.049944,17.082919,addNode name=Boiskowa / Koreańska,ref=15308,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.113571,17.121695,addNode name=Magellana,ref=15309,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.12056,16.866329,addNode name=Jerzmanowska / Adamczewskich,ref=15310,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.16994,16.89701,addNode name=Jodłowicka,ref=15311,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.126461,16.913849,addNode name=Wrocław Żerniki (stacja kolejowa),ref=15312,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.169936,16.896987,addNode name=Jodłowicka,ref=15311,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.12645,16.91389,addNode name=Wrocław Żerniki (stacja kolejowa),ref=15312,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.09501,17.080458,addNode name=Międzyrzecka,ref=15313,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.071014,16.935071,addNode name=Stawowa / Wiśniowa Mokronos Dolny,ref=15315,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.074543,16.918775,addNode name=Wrocławska / Spacerowa Mokronos Górny,ref=15316,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.052994,17.015579,addNode name=Radosna /Brzozowa,ref=15314,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.070569,16.936914,addNode name=Stawowa / Wiśniowa Mokronos Dolny,ref=15315,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.074457,16.919512,addNode name=Wrocławska / Spacerowa Mokronos Górny,ref=15316,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.025382,17.153896,addNode name=Osiedlowa/Ciepłownicza Siechnice,ref=15317,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.038098,17.144258,addNode name=Siechnice PKP,ref=15318,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.032555,17.150512,addNode name=Siechnice UM,ref=15319,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
