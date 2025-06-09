@@ -5,11 +5,33 @@
   <name>Kupiecka (Bachus)</name>
   <description>name=Kupiecka (Bachus)
 ref=1123
-capacity=16
+capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>15.506537,51.940303</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Botaniczna (Kąpielisko H2Ochla)</name>
+  <description>name=Botaniczna (Kąpielisko H2Ochla)
+ref=1161
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.487686,51.90488</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Muzeum Etnograficzne (Skansen)</name>
+  <description>name=Muzeum Etnograficzne (Skansen)
+ref=1162
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>15.476626,51.890521</coordinates>
   </Point>
 </Placemark>
 </Document>
