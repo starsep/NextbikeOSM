@@ -57,8 +57,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>pl. Strzelecki</name>
-  <description>name=pl. Strzelecki
+  <name>pl. Staszica</name>
+  <description>name=pl. Staszica
 ref=15154
 capacity=10
 amenity=bicycle_rental
@@ -189,8 +189,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Magellana</name>
-  <description>name=Magellana
+  <name>Swojczycka / Magellana</name>
+  <description>name=Swojczycka / Magellana
 ref=15309
 capacity=10
 amenity=bicycle_rental

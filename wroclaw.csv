@@ -3,7 +3,7 @@
 51.1253,16.997218,addNode name=Popowicka / Niedźwiedzia,ref=15123,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 51.120068,17.077684,addNode name=al. Kochanowskiego / Śniadeckich ,ref=15128,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.08537,17.0568,addNode name=Nyska / Piękna,ref=15152,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.12266,17.02995,addNode name=pl. Strzelecki,ref=15154,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.12266,17.02995,addNode name=pl. Staszica,ref=15154,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.127192,16.991832,addNode name=Popowicka / Rysia,ref=15172,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 51.14382,16.98789,addNode name=Osobowicka / Ostrowska,ref=15182,capacity=3,amenity=bicycle_rental,operator=Nextbike Polska
 51.118185,16.946011,addNode name=Sukielicka / Rogowska,ref=15264,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
@@ -15,7 +15,7 @@
 51.052835,17.003956,addNode name=Wysoka/Nastrojowa,ref=15303,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.185896,17.029398,addNode name=Psary,ref=15306,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.049944,17.082919,addNode name=Boiskowa / Koreańska,ref=15308,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.113559,17.120977,addNode name=Magellana,ref=15309,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.113559,17.120977,addNode name=Swojczycka / Magellana,ref=15309,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.12056,16.866329,addNode name=Jerzmanowska / Adamczewskich,ref=15310,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.169936,16.896987,addNode name=Jodłowicka,ref=15311,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.12645,16.91389,addNode name=Wrocław Żerniki (stacja kolejowa),ref=15312,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
