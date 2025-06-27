@@ -167,8 +167,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Psary</name>
-  <description>name=Psary
+  <name>Psary Centrum</name>
+  <description>name=Psary Centrum
 ref=15306
 capacity=10
 amenity=bicycle_rental
