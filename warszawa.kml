@@ -5,7 +5,7 @@
   <name>Pl. Bankowy - Ratusz</name>
   <description>name=Pl. Bankowy - Ratusz
 ref=9464
-capacity=28
+capacity=20
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
