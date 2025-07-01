@@ -65,5 +65,133 @@ network:wikidata=Q3847868</description>
     <coordinates>20.970714,52.260516</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>City Point Targówek</name>
+  <description>name=City Point Targówek
+ref=6415
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.08448,52.261518</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>al. Rzeczypospolitej - Oś Królewska</name>
+  <description>name=al. Rzeczypospolitej - Oś Królewska
+ref=9721
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.07056,52.16453</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wał Zawadowski - Zaściankowa</name>
+  <description>name=Wał Zawadowski - Zaściankowa
+ref=9722
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.122148,52.17096</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Drewny - Korbońskiego</name>
+  <description>name=Drewny - Korbońskiego
+ref=9723
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.098231,52.131222</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>WKD Raków</name>
+  <description>name=WKD Raków
+ref=9724
+capacity=24
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.936542,52.194721</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Ostródzka- Hemara</name>
+  <description>name=Ostródzka- Hemara
+ref=9725
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.048469,52.326732</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Solec – Al. 3 Maja</name>
+  <description>name=Solec – Al. 3 Maja
+ref=9726
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.034109,52.234651</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Sobieskiego – Bonifacego</name>
+  <description>name=Sobieskiego – Bonifacego
+ref=9727
+capacity=24
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.056354,52.181743</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
