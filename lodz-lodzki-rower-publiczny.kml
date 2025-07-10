@@ -167,6 +167,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Łódzki Rower Publiczny - Tatrzańska / Park Podolski</name>
+  <description>name=Łódzki Rower Publiczny - Tatrzańska / Park Podolski
+ref=16128
+capacity=5
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>19.494853,51.743689</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Łódzki Rower Publiczny - Tatrzańska / Dąbrowskiego</name>
   <description>name=Łódzki Rower Publiczny - Tatrzańska / Dąbrowskiego
 ref=16129
