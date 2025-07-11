@@ -167,8 +167,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Tatrzańska / Park Podolski</name>
-  <description>name=Łódzki Rower Publiczny - Tatrzańska / Park Podolski
+  <name>Łódzki Rower Publiczny - Tatrzańska - Gen Stefana Grota Roweckiego</name>
+  <description>name=Łódzki Rower Publiczny - Tatrzańska - Gen Stefana Grota Roweckiego
 ref=16128
 capacity=5
 amenity=bicycle_rental
