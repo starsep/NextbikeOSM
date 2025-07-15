@@ -35,17 +35,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Narutowicza / Radiostacja</name>
-  <description>name=Łódzki Rower Publiczny - Narutowicza / Radiostacja
-ref=16034
-capacity=6
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.49558,51.77427</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Rokicińska / Gogola</name>
   <description>name=Łódzki Rower Publiczny - Rokicińska / Gogola
 ref=16048
