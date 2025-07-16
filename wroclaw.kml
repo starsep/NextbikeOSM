@@ -342,5 +342,27 @@ operator=Nextbike Polska</description>
     <coordinates>17.123084,51.029405</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>DCF - Nowe Horyzonty</name>
+  <description>name=DCF - Nowe Horyzonty
+ref=6392
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.030459,51.101767</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Arsenał - Nowe Horyzonty</name>
+  <description>name=Arsenał - Nowe Horyzonty
+ref=6391
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.026409,51.112885</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
