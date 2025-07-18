@@ -364,5 +364,16 @@ operator=Nextbike Polska</description>
     <coordinates>17.026409,51.112885</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>WROSOUND - Nowe Horyzonty</name>
+  <description>name=WROSOUND - Nowe Horyzonty
+ref=6394
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.050517,51.107178</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
