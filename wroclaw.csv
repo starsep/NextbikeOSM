@@ -20,7 +20,6 @@
 51.169936,16.896987,addNode name=Jodłowicka,ref=15311,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.12645,16.91389,addNode name=Wrocław Żerniki (stacja kolejowa),ref=15312,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.09501,17.080458,addNode name=Międzyrzecka,ref=15313,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.052994,17.015579,addNode name=Radosna /Brzozowa,ref=15314,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.07055,16.936889,addNode name=Stawowa / Wiśniowa Mokronos Dolny,ref=15315,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.074457,16.919512,addNode name=Wrocławska / Spacerowa Mokronos Górny,ref=15316,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.025382,17.153896,addNode name=Osiedlowa/Ciepłownicza Siechnice,ref=15317,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
@@ -29,6 +28,7 @@
 51.057135,17.105197,addNode name=Radwanice ul. Kolejowa (Biedronka),ref=15322,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.033391,17.056056,addNode name=Żerniki Wrocławskie Pętla ,ref=15321,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.029405,17.123084,addNode name=Święta Katarzyna PKP,ref=15320,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
+51.054164,17.012027,addNode name=Ułańska,ref=15330,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.101767,17.030459,addNode name=DCF - Nowe Horyzonty,ref=6392,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.112885,17.026409,addNode name=Arsenał - Nowe Horyzonty,ref=6391,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.107178,17.050517,addNode name=WROSOUND - Nowe Horyzonty,ref=6394,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
