@@ -145,6 +145,28 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Bielany Wrocławskie Kolejowa P&amp;R</name>
+  <description>name=Bielany Wrocławskie Kolejowa P&amp;R
+ref=15302
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.976374,51.03795</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Psary Centrum</name>
+  <description>name=Psary Centrum
+ref=15306
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.029398,51.185896</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Boiskowa / Koreańska</name>
   <description>name=Boiskowa / Koreańska
 ref=15308
@@ -211,6 +233,94 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Stawowa / Wiśniowa Mokronos Dolny</name>
+  <description>name=Stawowa / Wiśniowa Mokronos Dolny
+ref=15315
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.936889,51.07055</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wrocławska / Spacerowa Mokronos Górny</name>
+  <description>name=Wrocławska / Spacerowa Mokronos Górny
+ref=15316
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.919512,51.074457</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Osiedlowa/Ciepłownicza Siechnice</name>
+  <description>name=Osiedlowa/Ciepłownicza Siechnice
+ref=15317
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.153896,51.025382</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Siechnice PKP</name>
+  <description>name=Siechnice PKP
+ref=15318
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.144258,51.038098</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Siechnice UM</name>
+  <description>name=Siechnice UM
+ref=15319
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.150512,51.032555</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Radwanice ul. Kolejowa (Biedronka)</name>
+  <description>name=Radwanice ul. Kolejowa (Biedronka)
+ref=15322
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.105197,51.057135</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Żerniki Wrocławskie Pętla </name>
+  <description>name=Żerniki Wrocławskie Pętla 
+ref=15321
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.056056,51.033391</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Święta Katarzyna PKP</name>
+  <description>name=Święta Katarzyna PKP
+ref=15320
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.123084,51.029405</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Ułańska</name>
   <description>name=Ułańska
 ref=15330
@@ -219,6 +329,17 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>17.012027,51.054164</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kamieniec Wrocławski - Szkoła</name>
+  <description>name=Kamieniec Wrocławski - Szkoła
+ref=15331
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.17357,51.077945</coordinates>
   </Point>
 </Placemark>
 <Placemark>
