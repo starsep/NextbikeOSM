@@ -2,17 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Nadwiślańska</name>
-  <description>name=Nadwiślańska
-ref=9805
-capacity=8
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.189676,52.146067</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Wyszyńskiego</name>
   <description>name=Wyszyńskiego
 ref=9807
