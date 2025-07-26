@@ -2,28 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>Wyszyńskiego</name>
-  <description>name=Wyszyńskiego
-ref=9807
-capacity=8
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.207115,52.120466</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Polna/Piaskowa</name>
-  <description>name=Polna/Piaskowa
-ref=9809
-capacity=8
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>21.221143,52.135707</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>ICSiR</name>
   <description>name=ICSiR
 ref=9810
