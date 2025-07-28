@@ -1,4 +1,5 @@
 51.116822,17.051845,addNode name=Sienkiewicza / Wyszyńskiego,ref=15053,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.108016,16.983383,addNode name=Uniwersytet WSB Merito,ref=15071,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.112387,16.993157,addNode name=Robotnicza / Fabryczna,ref=15076,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 51.1253,16.997218,addNode name=Popowicka / Niedźwiedzia,ref=15123,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 51.120068,17.077684,addNode name=al. Kochanowskiego / Śniadeckich ,ref=15128,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
@@ -28,9 +29,10 @@
 51.057135,17.105197,addNode name=Radwanice ul. Kolejowa (Biedronka),ref=15322,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.033391,17.056056,addNode name=Żerniki Wrocławskie Pętla ,ref=15321,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.029405,17.123084,addNode name=Święta Katarzyna PKP,ref=15320,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
+51.103202,17.157738,addNode name=Wrocław Wojnów, Przy Torze (przystanek kolejowy),ref=15323,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.081812,16.956361,addNode name=Awicenny,ref=15324,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.110345,16.880269,addNode name=Port Lotniczy,ref=15325,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.068826,17.032052,addNode name=Wrocław Wojszyce (przystanek kolejowy),ref=15326,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+51.107838,17.073909,addNode name=Hala Stulecia,ref=15328,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.054164,17.012027,addNode name=Ułańska,ref=15330,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.077945,17.17357,addNode name=Kamieniec Wrocławski - Szkoła,ref=15331,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
-51.101767,17.030459,addNode name=DCF - Nowe Horyzonty,ref=6392,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-51.112885,17.026409,addNode name=Arsenał - Nowe Horyzonty,ref=6391,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-51.107178,17.050517,addNode name=WROSOUND - Nowe Horyzonty,ref=6394,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
