@@ -79,17 +79,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Piękna</name>
-  <description>name=Piękna
-ref=15168
-capacity=6
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.056849,51.084944</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Popowicka / Rysia</name>
   <description>name=Popowicka / Rysia
 ref=15172
@@ -175,6 +164,17 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>16.976374,51.03795</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wysoka/Nastrojowa</name>
+  <description>name=Wysoka/Nastrojowa
+ref=15303
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.003956,51.052835</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -361,7 +361,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>16.956361,51.081812</coordinates>
+    <coordinates>16.956292,51.081686</coordinates>
   </Point>
 </Placemark>
 <Placemark>
