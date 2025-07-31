@@ -387,6 +387,17 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Marszowicka</name>
+  <description>name=Marszowicka
+ref=15327
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.881418,51.16525</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Hala Stulecia</name>
   <description>name=Hala Stulecia
 ref=15328
@@ -417,6 +428,39 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>17.17357,51.077945</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wysoka Parkowa / Lipowa</name>
+  <description>name=Wysoka Parkowa / Lipowa
+ref=15339
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.006756,51.047569</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Ślęza Parkowa</name>
+  <description>name=Ślęza Parkowa
+ref=15340
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.986136,51.037394</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Akademia Wojsk Lądowych</name>
+  <description>name=Akademia Wojsk Lądowych
+ref=15338
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.055193,51.141921</coordinates>
   </Point>
 </Placemark>
 </Document>
