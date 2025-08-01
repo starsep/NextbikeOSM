@@ -57,17 +57,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Nyska / Piękna</name>
-  <description>name=Nyska / Piękna
-ref=15152
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.0568,51.08537</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>pl. Staszica</name>
   <description>name=pl. Staszica
 ref=15154
@@ -420,17 +409,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Kamieniec Wrocławski - Szkoła</name>
-  <description>name=Kamieniec Wrocławski - Szkoła
-ref=15331
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.17357,51.077945</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Wysoka Parkowa / Lipowa</name>
   <description>name=Wysoka Parkowa / Lipowa
 ref=15339
@@ -438,7 +416,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>17.006756,51.047569</coordinates>
+    <coordinates>17.014538,51.042472</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -449,7 +427,7 @@ capacity=10
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>16.986136,51.037394</coordinates>
+    <coordinates>16.993278,51.034473</coordinates>
   </Point>
 </Placemark>
 <Placemark>
