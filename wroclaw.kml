@@ -409,6 +409,39 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Kamieniec Wrocławski - Szkoła</name>
+  <description>name=Kamieniec Wrocławski - Szkoła
+ref=15331
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.17357,51.077945</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Dobrzykowice P&amp;R</name>
+  <description>name=Dobrzykowice P&amp;R
+ref=15332
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.18119,51.086982</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Dobrzykowice ul. Szkolna</name>
+  <description>name=Dobrzykowice ul. Szkolna
+ref=15333
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.192763,51.094503</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Wysoka Parkowa / Lipowa</name>
   <description>name=Wysoka Parkowa / Lipowa
 ref=15339

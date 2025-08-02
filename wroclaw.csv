@@ -35,6 +35,9 @@
 51.16525,16.881418,addNode name=Marszowicka,ref=15327,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.107838,17.073909,addNode name=Hala Stulecia,ref=15328,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.054164,17.012027,addNode name=Ułańska,ref=15330,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.077945,17.17357,addNode name=Kamieniec Wrocławski - Szkoła,ref=15331,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.086982,17.18119,addNode name=Dobrzykowice P&R,ref=15332,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
+51.094503,17.192763,addNode name=Dobrzykowice ul. Szkolna,ref=15333,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.042472,17.014538,addNode name=Wysoka Parkowa / Lipowa,ref=15339,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.034473,16.993278,addNode name=Ślęza Parkowa,ref=15340,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.141921,17.055193,addNode name=Akademia Wojsk Lądowych,ref=15338,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
