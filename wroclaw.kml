@@ -75,7 +75,7 @@ capacity=6
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>17.053113,51.084689</coordinates>
+    <coordinates>17.05681,51.085272</coordinates>
   </Point>
 </Placemark>
 <Placemark>
@@ -156,39 +156,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Bielany Wrocławskie Kolejowa P&amp;R</name>
-  <description>name=Bielany Wrocławskie Kolejowa P&amp;R
-ref=15302
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.976374,51.03795</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Wysoka/Nastrojowa</name>
-  <description>name=Wysoka/Nastrojowa
-ref=15303
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.003956,51.052835</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Psary Centrum</name>
-  <description>name=Psary Centrum
-ref=15306
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.029398,51.185896</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Boiskowa / Koreańska</name>
   <description>name=Boiskowa / Koreańska
 ref=15308
@@ -255,28 +222,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Stawowa / Wiśniowa Mokronos Dolny</name>
-  <description>name=Stawowa / Wiśniowa Mokronos Dolny
-ref=15315
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.936889,51.07055</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Wrocławska / Spacerowa Mokronos Górny</name>
-  <description>name=Wrocławska / Spacerowa Mokronos Górny
-ref=15316
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.919512,51.074457</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Osiedlowa/Ciepłownicza Siechnice</name>
   <description>name=Osiedlowa/Ciepłownicza Siechnice
 ref=15317
@@ -321,8 +266,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Żerniki Wrocławskie Pętla </name>
-  <description>name=Żerniki Wrocławskie Pętla 
+  <name>Żerniki Wrocławskie Pętla</name>
+  <description>name=Żerniki Wrocławskie Pętla
 ref=15321
 capacity=6
 amenity=bicycle_rental
@@ -417,61 +362,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>17.012027,51.054164</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Kamieniec Wrocławski - Szkoła</name>
-  <description>name=Kamieniec Wrocławski - Szkoła
-ref=15331
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.17357,51.077945</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Dobrzykowice P&amp;R</name>
-  <description>name=Dobrzykowice P&amp;R
-ref=15332
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.18119,51.086982</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Dobrzykowice ul. Szkolna</name>
-  <description>name=Dobrzykowice ul. Szkolna
-ref=15333
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.192763,51.094503</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Wysoka Parkowa / Lipowa</name>
-  <description>name=Wysoka Parkowa / Lipowa
-ref=15339
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.014538,51.042472</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Ślęza Parkowa</name>
-  <description>name=Ślęza Parkowa
-ref=15340
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.993278,51.034473</coordinates>
   </Point>
 </Placemark>
 <Placemark>
