@@ -46,8 +46,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Żerniki Wrocławskie Pętla </name>
-  <description>name=Żerniki Wrocławskie Pętla 
+  <name>Żerniki Wrocławskie Pętla</name>
+  <description>name=Żerniki Wrocławskie Pętla
 ref=15321
 capacity=6
 amenity=bicycle_rental
