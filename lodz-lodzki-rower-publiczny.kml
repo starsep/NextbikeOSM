@@ -145,17 +145,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Łódzki Rower Publiczny - Przybyszewskiego / Nurta - Kaszyńskiego</name>
-  <description>name=Łódzki Rower Publiczny - Przybyszewskiego / Nurta - Kaszyńskiego
-ref=16127
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>19.50441,51.74928</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Łódzki Rower Publiczny - Tatrzańska - Gen Stefana Grota Roweckiego</name>
   <description>name=Łódzki Rower Publiczny - Tatrzańska - Gen Stefana Grota Roweckiego
 ref=16128
