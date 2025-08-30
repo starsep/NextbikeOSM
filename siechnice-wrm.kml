@@ -67,5 +67,16 @@ operator=Nextbike Polska</description>
     <coordinates>17.123084,51.029405</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Radomierzyce Wrocławska</name>
+  <description>name=Radomierzyce Wrocławska
+ref=15341
+capacity=3
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.038286,51.045807</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
