@@ -78,5 +78,16 @@ operator=Nextbike Polska</description>
     <coordinates>17.038286,51.045807</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Bystrzyków Kalinowa</name>
+  <description>name=Bystrzyków Kalinowa
+ref=15342
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.041388,51.031695</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>

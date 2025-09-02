@@ -2,6 +2,22 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
+  <name>Pętla Stegny</name>
+  <description>name=Pętla Stegny
+ref=9590
+capacity=20
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.0487,52.1779</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Stanów Zjednoczonych - Międzynarodowa</name>
   <description>name=Stanów Zjednoczonych - Międzynarodowa
 ref=9691
