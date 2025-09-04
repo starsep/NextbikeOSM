@@ -1,16 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
+    <title>Wisznia (WRM) - NextBikeOSM</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    
+    <script src="sorttable.js" integrity="sha256-n3657FhpVO0BrpRmnXeQho7yfKvMVBh0QcoYkQr2O8w="></script>
 </head>
+<style>
+    .red {
+        color: red;
+    }
 
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
 <body>
-    <h2>Received empty dataset...sorry :(</h2>
-    <br>Add some data in this vicinity, then look here later.
-    <br>
-    <br>
-    <i>Last checked: Thu, 04 Sep @ 21:02:14</i>
+    <i>Updated: Fri, 05 Sep @ 01:04:00</i> <br/>
+    <span>
+        Nextbike locations (5) where OpenStreetMap match has distance &gt; 100 metres.
+        <br/>
+        <a href="map-wisznia-wrm.html">Map</a>
+        <a href="wisznia-wrm.kml">KML</a>
+        <a href="wisznia-wrm.csv">CSV in SCEE format</a>
+    </span>
+    <table class="sortable">
+        <thead>
+            <tr>
+                <th>NextBike uid</th>
+                <th>OSM id (closest match)</th>
+                <th>Distance (in meters)</th>
+                <th>Name NB</th>
+                <th>Name OSM</th>
+                <th>Ref NB</th>
+                <th>Ref OSM</th>
+                <th>Stands NB</th>
+                <th>Stands OSM</th>
+                <th>Network</th>
+                <th>Operator</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.185896&mlon=17.029398#map=19/51.185896/17.029398">190517322</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.185896&bottom=51.185896&left=17.029398&right=17.029398">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/10965083510">10965083510</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n10965083510">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 428
+                </td>
+                <td>
+                    Psary Centrum
+                </td>
+                <td class="red" >
+                    Psary
+                </td>
+                <td>
+                    15306
+                </td>
+                <td >
+                    15306
+                </td>
+                <td>
+                    10
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Wrocławski Rower Miejski
+                </td>
+                <td >
+                    NextBike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.174139&mlon=17.048944#map=19/51.174139/17.048944">544487128</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.174139&bottom=51.174139&left=17.048944&right=17.048944">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/10965083510">10965083510</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n10965083510">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 1781
+                </td>
+                <td>
+                    Krzyżanowice Centrum
+                </td>
+                <td class="red" >
+                    Psary
+                </td>
+                <td>
+                    15334
+                </td>
+                <td class="red" >
+                    15306
+                </td>
+                <td>
+                    10
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Wrocławski Rower Miejski
+                </td>
+                <td >
+                    NextBike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.194073&mlon=17.018857#map=19/51.194073/17.018857">544487372</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.194073&bottom=51.194073&left=17.018857&right=17.018857">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/10965083510">10965083510</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n10965083510">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 1422
+                </td>
+                <td>
+                    Szymanów Centrum
+                </td>
+                <td class="red" >
+                    Psary
+                </td>
+                <td>
+                    15335
+                </td>
+                <td class="red" >
+                    15306
+                </td>
+                <td>
+                    10
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Wrocławski Rower Miejski
+                </td>
+                <td >
+                    NextBike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.244796&mlon=17.043789#map=19/51.244796/17.043789">544487616</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.244796&bottom=51.244796&left=17.043789&right=17.043789">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/10965083510">10965083510</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n10965083510">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 7044
+                </td>
+                <td>
+                    Wisznia Mała Centrum
+                </td>
+                <td class="red" >
+                    Psary
+                </td>
+                <td>
+                    15336
+                </td>
+                <td class="red" >
+                    15306
+                </td>
+                <td>
+                    10
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Wrocławski Rower Miejski
+                </td>
+                <td >
+                    NextBike
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=51.207709&mlon=17.039581#map=19/51.207709/17.039581">544488132</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=51.207709&bottom=51.207709&left=17.039581&right=17.039581">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/10965083510">10965083510</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n10965083510">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td class="red"> 2954
+                </td>
+                <td>
+                    Kryniczno Centrum
+                </td>
+                <td class="red" >
+                    Psary
+                </td>
+                <td>
+                    15337
+                </td>
+                <td class="red" >
+                    15306
+                </td>
+                <td>
+                    10
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Wrocławski Rower Miejski
+                </td>
+                <td >
+                    NextBike
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v3.0.0 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
-
 </html>

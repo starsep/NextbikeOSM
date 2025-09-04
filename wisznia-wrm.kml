@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Psary Centrum</name>
+  <description>name=Psary Centrum
+ref=15306
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.029398,51.185896</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Krzyżanowice Centrum</name>
+  <description>name=Krzyżanowice Centrum
+ref=15334
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.048944,51.174139</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Szymanów Centrum</name>
+  <description>name=Szymanów Centrum
+ref=15335
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.018857,51.194073</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wisznia Mała Centrum</name>
+  <description>name=Wisznia Mała Centrum
+ref=15336
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.043789,51.244796</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kryniczno Centrum</name>
+  <description>name=Kryniczno Centrum
+ref=15337
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.039581,51.207709</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
