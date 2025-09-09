@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Wysoka/Nastrojowa</name>
+  <description>name=Wysoka/Nastrojowa
+ref=15303
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.003956,51.052835</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wysoka Parkowa / Lipowa</name>
+  <description>name=Wysoka Parkowa / Lipowa
+ref=15339
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.014538,51.042472</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Ślęza Parkowa</name>
+  <description>name=Ślęza Parkowa
+ref=15340
+capacity=10
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.993278,51.034473</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
