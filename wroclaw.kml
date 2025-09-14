@@ -233,17 +233,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Awicenny</name>
-  <description>name=Awicenny
-ref=15324
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.956292,51.081686</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Port Lotniczy</name>
   <description>name=Port Lotniczy
 ref=15325

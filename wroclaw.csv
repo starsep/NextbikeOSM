@@ -19,7 +19,6 @@
 51.12645,16.91389,addNode name=Wrocław Żerniki (stacja kolejowa),ref=15312,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.09501,17.080458,addNode name=Międzyrzecka,ref=15313,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.103202,17.157738,addNode name=Wrocław Wojnów, Przy Torze (przystanek kolejowy),ref=15323,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
-51.081686,16.956292,addNode name=Awicenny,ref=15324,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.110345,16.880269,addNode name=Port Lotniczy,ref=15325,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.068934,17.032088,addNode name=Wrocław Wojszyce (przystanek kolejowy),ref=15326,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
 51.16525,16.881418,addNode name=Marszowicka,ref=15327,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
