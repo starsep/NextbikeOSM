@@ -49,5 +49,21 @@ network:wikidata=Q3847868</description>
     <coordinates>21.067961,52.230115</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Maraton Warszawski</name>
+  <description>name=Maraton Warszawski
+ref=6414
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.004695,52.232789</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
