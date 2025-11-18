@@ -298,5 +298,16 @@ operator=Nextbike Polska</description>
     <coordinates>17.055193,51.141921</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Amazon WRO1</name>
+  <description>name=Amazon WRO1
+ref=15343
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>16.942182,51.040113</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
