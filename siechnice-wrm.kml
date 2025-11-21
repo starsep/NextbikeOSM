@@ -79,8 +79,8 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Bystrzyków Kalinowa</name>
-  <description>name=Bystrzyków Kalinowa
+  <name>Biestrzyków Kalinowa</name>
+  <description>name=Biestrzyków Kalinowa
 ref=15342
 capacity=None
 amenity=bicycle_rental

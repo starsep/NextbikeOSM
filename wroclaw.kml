@@ -57,6 +57,28 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Koszarowa / UWr</name>
+  <description>name=Koszarowa / UWr
+ref=15145
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.07014,51.140719</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Konduktorska</name>
+  <description>name=Konduktorska
+ref=15150
+capacity=4
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.054217,51.066807</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>pl. Staszica</name>
   <description>name=pl. Staszica
 ref=15154

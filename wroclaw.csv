@@ -3,6 +3,8 @@
 51.112387,16.993157,addNode name=Robotnicza / Fabryczna,ref=15076,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 51.1253,16.997218,addNode name=Popowicka / Niedźwiedzia,ref=15123,capacity=5,amenity=bicycle_rental,operator=Nextbike Polska
 51.120068,17.077684,addNode name=al. Kochanowskiego / Śniadeckich ,ref=15128,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
+51.140719,17.07014,addNode name=Koszarowa / UWr,ref=15145,capacity=16,amenity=bicycle_rental,operator=Nextbike Polska
+51.066807,17.054217,addNode name=Konduktorska,ref=15150,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 51.12266,17.02995,addNode name=pl. Staszica,ref=15154,capacity=10,amenity=bicycle_rental,operator=Nextbike Polska
 51.085272,17.05681,addNode name=Piękna,ref=15168,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 51.127192,16.991832,addNode name=Popowicka / Rysia,ref=15172,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
