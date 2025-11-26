@@ -24,28 +24,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>27284</name>
-  <description>name=27284
-ref=27284
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.8395,50.3636</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27286</name>
-  <description>name=27286
-ref=27286
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.844173,50.365986</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>27723</name>
   <description>name=27723
 ref=27723
@@ -87,17 +65,6 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.898398,50.333231</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>27616</name>
-  <description>name=27616
-ref=27616
-capacity=5
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.893576,50.348737</coordinates>
   </Point>
 </Placemark>
 <Placemark>
