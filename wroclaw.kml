@@ -331,5 +331,16 @@ operator=Nextbike Polska</description>
     <coordinates>16.942182,51.040113</coordinates>
   </Point>
 </Placemark>
+<Placemark>
+  <name>Pomorska/Cybulskiego</name>
+  <description>name=Pomorska/Cybulskiego
+ref=15344
+capacity=6
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>17.031259,51.116591</coordinates>
+  </Point>
+</Placemark>
 </Document>
 </kml>
