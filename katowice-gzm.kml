@@ -2,14 +2,14 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 <Placemark>
-  <name>27120</name>
-  <description>name=27120
-ref=27120
+  <name>27520</name>
+  <description>name=27520
+ref=27520
 capacity=5
 amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
-    <coordinates>19.05067,50.25197</coordinates>
+    <coordinates>18.981383,50.251495</coordinates>
   </Point>
 </Placemark>
 </Document>

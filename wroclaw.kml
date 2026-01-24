@@ -189,17 +189,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>Swojczycka / Magellana</name>
-  <description>name=Swojczycka / Magellana
-ref=15309
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>17.120977,51.113559</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>Jerzmanowska / Adamczewskich</name>
   <description>name=Jerzmanowska / Adamczewskich
 ref=15310

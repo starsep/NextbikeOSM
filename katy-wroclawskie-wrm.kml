@@ -1,27 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<Placemark>
-  <name>Stawowa / Wiśniowa Mokronos Dolny</name>
-  <description>name=Stawowa / Wiśniowa Mokronos Dolny
-ref=15315
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.936889,51.07055</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
-  <name>Wrocławska / Spacerowa Mokronos Górny</name>
-  <description>name=Wrocławska / Spacerowa Mokronos Górny
-ref=15316
-capacity=10
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>16.919512,51.074457</coordinates>
-  </Point>
-</Placemark>
 </Document>
 </kml>

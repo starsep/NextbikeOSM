@@ -1,16 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="UTF-8">
+    <title>Mierzęcice (GZM) - NextBikeOSM</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    
+    <script src="sorttable.js" integrity="sha256-n3657FhpVO0BrpRmnXeQho7yfKvMVBh0QcoYkQr2O8w="></script>
 </head>
+<style>
+    .red {
+        color: red;
+    }
 
+    .svg {
+        width: 20px;
+        height: 20px;
+    }
+</style>
 <body>
-    <h2>Received empty dataset...sorry :(</h2>
-    <br>Add some data in this vicinity, then look here later.
-    <br>
-    <br>
-    <i>Last checked: Tue, 16 Dec @ 06:03:53</i>
+    <i>Updated: Sat, 24 Jan @ 07:04:16</i> <br/>
+    <span>
+        Nextbike locations (0) where OpenStreetMap match has distance &gt; 100 metres.
+        <br/>
+        <a href="map-mierzecice-gzm.html">Map</a>
+        <a href="mierzecice-gzm.kml">KML</a>
+        <a href="mierzecice-gzm.csv">CSV in SCEE format</a>
+    </span>
+    <table class="sortable">
+        <thead>
+            <tr>
+                <th>NextBike uid</th>
+                <th>OSM id (closest match)</th>
+                <th>Distance (in meters)</th>
+                <th>Name NB</th>
+                <th>Name OSM</th>
+                <th>Ref NB</th>
+                <th>Ref OSM</th>
+                <th>Stands NB</th>
+                <th>Stands OSM</th>
+                <th>Network</th>
+                <th>Operator</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.444664&mlon=19.129095#map=19/50.444664/19.129095">332519164</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.444664&bottom=50.444664&left=19.129095&right=19.129095">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/13391796854">13391796854</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n13391796854">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 3
+                </td>
+                <td>
+                    27081
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27081
+                </td>
+                <td >
+                    27081
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike GZM
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <a href="https://osm.org/?mlat=50.46335&mlon=19.129372#map=19/50.46335/19.129372">332544226</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top=50.46335&bottom=50.46335&left=19.129372&right=19.129372">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://osm.org/node/13391796853">13391796853</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_object?objects=n13391796853">
+                        <img src="./josm.svg" class="svg" alt="josm">
+                    </a>
+                </td>
+                <td > 9
+                </td>
+                <td>
+                    27473
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td>
+                    27473
+                </td>
+                <td >
+                    27473
+                </td>
+                <td>
+                    5
+                </td>
+                <td class="red" >
+                    NONE
+                </td>
+                <td >
+                    Metrorower
+                </td>
+                <td >
+                    Nextbike GZM
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v3.0.0 (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
-
 </html>
