@@ -3,9 +3,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{{ cityName }} - NextBikeOSM</title>
+    <title>{{ cityName }} - RooveeOSM</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-    {# TODO commit sortable.js to main branch and copy to output #}
     <script src="sorttable.js" integrity="sha256-n3657FhpVO0BrpRmnXeQho7yfKvMVBh0QcoYkQr2O8w="></script>
 </head>
 <style>
@@ -21,7 +20,7 @@
 <body>
     <i>Updated: {{ timestamp }}</i> <br/>
     <span>
-        Nextbike locations ({{ countMismatches }}) where OpenStreetMap match has distance &gt; {{ distanceThreshold }} metres.
+        Roovee locations ({{ countMismatches }}) where OpenStreetMap match has distance &gt; {{ distanceThreshold }} metres.
         <br/>
         <a href="{{ mapLink }}">Map</a>
         <a href="{{ kmlLink }}">KML</a>
@@ -30,15 +29,11 @@
     <table class="sortable">
         <thead>
             <tr>
-                <th>NextBike uid</th>
+                <th>Roovee location</th>
                 <th>OSM id (closest match)</th>
                 <th>Distance (in meters)</th>
-                <th>Name NB</th>
+                <th>Name Roovee</th>
                 <th>Name OSM</th>
-                <th>Ref NB</th>
-                <th>Ref OSM</th>
-                <th>Stands NB</th>
-                <th>Stands OSM</th>
                 <th>Network</th>
                 <th>Operator</th>
             </tr>
@@ -47,8 +42,8 @@
             {% for match in matches %}
             <tr>
                 <td>
-                    <a href="https://osm.org/?mlat={{ match.nextbike.lat }}&mlon={{ match.nextbike.lon }}#map=19/{{ match.nextbike.lat }}/{{ match.nextbike.lon }}">{{ match.nextbike.uid }}</a>
-                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top={{ match.nextbike.lat }}&bottom={{ match.nextbike.lat }}&left={{ match.nextbike.lon }}&right={{ match.nextbike.lon }}">
+                    <a href="https://osm.org/?mlat={{ match.place.lat }}&mlon={{ match.place.lon }}#map=19/{{ match.place.lat }}/{{ match.place.lon }}">OSM</a>
+                    <a target="hiddenIframe" href="http://localhost:8111/load_and_zoom?top={{ match.place.lat }}&bottom={{ match.place.lat }}&left={{ match.place.lon }}&right={{ match.place.lon }}">
                         <img src="./josm.svg" class="svg" alt="josm">
                     </a>
                 </td>
@@ -61,22 +56,10 @@
                 <td {% if match.distance>distanceThreshold %}class="red"{% endif %}> {% if match.match == 'id' %}<b>{% endif %}{{ match.distance }}{% if match.match == 'id' %}</b>{% endif %}
                 </td>
                 <td>
-                    {{ match.nextbike.name }}
+                    {{ match.place.name }}
                 </td>
                 <td {% if match.ratio|float <= 0.8 %}class="red" {% endif %}>
                     {{ match.osm.tags.name|default("NONE") }}
-                </td>
-                <td>
-                    {{ match.nextbike.num }}
-                </td>
-                <td {% if match.nextbike.num != match.osm.tags.ref %}class="red" {% endif %}>
-                    {{ match.osm.tags.ref|default("NONE") }}
-                </td>
-                <td>
-                    {{ match.nextbike.stands }}
-                </td>
-                <td {% if match.nextbike.stands != match.osm.tags.capacity %}class="red" {% endif %}>
-                    {{ match.osm.tags.capacity|default("NONE") }}
                 </td>
                 <td {% if not match.osm.tags.network %}class="red" {% endif %}>
                     {{ match.osm.tags.network|default("NONE") }}
@@ -88,21 +71,7 @@
             {% endfor %}
         </tbody>
     </table>
-    {% if refDuplicates %}
-    <h3>Duplicates by ref</h3>
-    {% for ref, duplicates in refDuplicates.items() %}
-    <span>
-        {{ ref }}:
-        {% for (duplicate, osmType) in duplicates %}
-            <a href="https://osm.org/{{ osmType }}/{{ duplicate.id }}">{{ duplicate.id }}</a>
-            <a target="hiddenIframe" href="http://localhost:8111/load_object?objects={{ osmType[0] ~ duplicate.id }}">
-                <img src="./josm.svg" class="svg" alt="josm">
-            </a>
-        {% endfor %}
-    </span>
-    {% endfor %}
-    {% endif %}
-    <i>Created using <a href="https://github.com/starsep/NextbikeOSM">starsep/NextbikeOSM</a> v{{VERSION}} (fork of <a href="https://github.com/javnik36/NextbikeOSM">javnik36/NextbikeOSM</a>)</i>
+    <i>Created using <a href="https://github.com/starsep/RooveeOSM">starsep/RooveeOSM</a></i>
     <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
 </body>
 </html>
