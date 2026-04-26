@@ -1,9 +1,9 @@
-name: GitHub Pages
+name: Deploy
 
 on:
   push:
     branches:
-      - gh-pages
+      - pages
 
 jobs:
   deploy:
