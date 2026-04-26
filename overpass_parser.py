@@ -1,7 +1,9 @@
+import asyncio
 from typing import Dict, List, Tuple, cast
 
 import overpy
 from diskcache import Cache
+from starsep_utils import downloadOverpassData
 
 from configuration import OVERPASS_URL, cacheDirectory
 
@@ -28,6 +30,12 @@ def fetchOverpassData(
     (._;>;);
     out body;
     """
+    # TODO: remove overpy
+    # overpassResult = asyncio.run(
+    #     downloadOverpassData(
+    #         query=query, overpassUrl=OVERPASS_URL, userAgent="starsep/NextbikeOSM"
+    #     ),
+    # )
     return overpassApi.query(query)
 
 
