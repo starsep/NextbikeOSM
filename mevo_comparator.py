@@ -1,42 +1,97 @@
+import dataclasses
 import difflib as SC
 import json
+import urllib.parse
 from dataclasses import dataclass
 from pathlib import Path
 from time import localtime, strftime
-from typing import List, Optional, Tuple, cast
+from typing import Dict, List, Optional, Tuple
 
 from jinja2 import Environment, PackageLoader
-from overpy import Element, Node, Way
+from overpy import Element, Way
 from starsep_utils import GeoPoint, haversine
 
-import nextbike_parser as NP
+from mevo_parser import MevoParser, Station
 from overpass_parser import OverpassParser
-
-__VERSION__ = "3.0.0"
 
 DISTANCE_THRESHOLD_MISMATCH = 100
 MAX_DISTANCE = 1000000
+OSM_URL = "https://osm.org"
+JOSM_URL = "http://localhost:8111"
+
+
+def mevoNetworkTags():
+    # Should match https://nsi.guide/index.html?t=brands&k=amenity&v=bicycle_rental&tt=mevo
+    networkTags = dict(
+        amenity="bicycle_rental",
+        brand="MEVO",
+        network="MEVO",
+        operator="CityBike Global",
+        opening_hours="24/7",
+    )
+    networkTags["brand:wikidata"] = "Q60860236"
+    networkTags["network:wikidata"] = "Q60860236"
+    return networkTags
 
 
 @dataclass
 class Match:
     distance: float
-    nextbike: NP.Place
+    place: Station
     osm: Element
     osmType: str
-    matchedBy: str
     ratio: float = 0.0
+
+    @property
+    def osmMarkLink(self):
+        return f"{OSM_URL}?mlat={self.place.lat}&mlon={self.place.lon}#map=19/{self.place.lat}/{self.place.lon}"
+
+    @property
+    def josmAreaLink(self):
+        return f"{JOSM_URL}/load_and_zoom?top={self.place.lat}&bottom={self.place.lat}&left={self.place.lon}&right={self.place.lon}"
+
+    @property
+    def osmLink(self):
+        return f"{OSM_URL}/{self.osmType}/{self.osm.id}"
+
+    @property
+    def josmLink(self):
+        return f"{JOSM_URL}/load_object?objects={self.osmType[0]}{self.osm.id}"
+
+    @property
+    def tags(self) -> dict[str, str]:
+        result = mevoNetworkTags()
+        result["ref:mevo"] = self.place.ref
+        result["ref"] = ""
+        result["name"] = "MEVO " + self.place.name
+        result["capacity"] = str(self.place.capacity)
+        return result
+
+    @property
+    def josmTags(self):
+        return urllib.parse.quote_plus(
+            "|".join([f"{key}={value}" for key, value in self.tags.items()])
+        )
+
+    @property
+    def addJosmLink(self):
+        return f"{JOSM_URL}/add_node?lon={self.place.lon}&lat={self.place.lat}&addtags={self.josmTags}"
+
+    @property
+    def updateJosmLink(self):
+        result = f"{JOSM_URL}/load_object?objects={self.osmType[0]}{self.osm.id}&lon={self.place.lon}&lat={self.place.lat}&addtags={self.josmTags}"
+        if "disused:amenity" in self.osm.tags:
+            result += "%7Cdisused:amenity="
+        return result
 
 
 @dataclass
 class MapFeatureTags:
     name: str
-    ref: str
-    capacity: str
-    extraTags: dict[str, str]
+    extraTags: Dict[str, str]
 
-    def _toTagsDict(self) -> dict[str, str]:
-        result = dict(name=self.name, ref=self.ref, capacity=self.capacity)
+    def _toTagsDict(self) -> Dict[str, str]:
+        result = dict(name=self.name)
         result.update(self.extraTags)
         return result
 
@@ -55,15 +110,13 @@ class MapFeature(GeoPoint):
     tags: MapFeatureTags
 
     @staticmethod
-    def fromMatch(extraTags: dict[str, str]):
+    def fromMatch(extraTags: Dict[str, str]):
         def foo(match: Match) -> MapFeature:
             return MapFeature(
-                lat=match.nextbike.lat,
-                lon=match.nextbike.lon,
+                lat=match.place.lat,
+                lon=match.place.lon,
                 tags=MapFeatureTags(
-                    name=match.nextbike.name,
-                    ref=match.nextbike.num,
-                    capacity=match.nextbike.stands,
+                    name=match.place.name,
                     extraTags=extraTags,
                 ),
             )
@@ -73,97 +126,60 @@ class MapFeature(GeoPoint):
     def toCSV(self) -> str:
         return f"{self.lat},{self.lon},addNode " + self.tags.toCSV()
 
-    def toJSON(self) -> dict:
-        return {
-            "lat": self.lat,
-            "lon": self.lon,
-            "tags": self.tags._toTagsDict(),
-        }
 
-
-def geoPointFromElement(element: Element, overpassParser: OverpassParser) -> GeoPoint:
-    if type(element) is Node:
-        node = cast(Node, element)
-        return GeoPoint(lat=node.lat, lon=node.lon)
-    if type(element) is Way:
-        way = cast(Way, element)
-        nodes = [node for node in overpassParser.ways[way.id].nodes]
-        centerLat = sum(map(lambda x: x.lat, nodes)) / len(nodes)
-        centerLon = sum(map(lambda x: x.lon, nodes)) / len(nodes)
-        return GeoPoint(lat=centerLat, lon=centerLon)
-
-
-class NextbikeValidator:
-    def __init__(self, nextbikeData, osmParser, html=None):
-        self.nextbikeData = nextbikeData
+class MevoComparator:
+    def __init__(self, data, osmParser, html=None):
+        self.data = data
         self.osmParser: OverpassParser = osmParser
         self.matches: List[Match] = []
         self.html = html
-        self.envir = Environment(loader=PackageLoader("nextbike_valid", "templates"))
-        self.refMatches = dict()
+        self.envir = Environment(loader=PackageLoader("mevo_comparator", "templates"))
 
-    def matchViaRef(self, place: NP.Place) -> Tuple[Optional[Element], float]:
-        nextbikeRef = place.num
-        if nextbikeRef not in self.refMatches:
-            self.refMatches[nextbikeRef] = list()
-        result = None
-        bestDistance = MAX_DISTANCE
-        for element in self.osmParser.elements:
-            if "ref" in element.tags and element.tags["ref"] == nextbikeRef:
-                self.refMatches[nextbikeRef].append(
-                    [element, "way" if type(element) is Way else "node"]
-                )
-                point = geoPointFromElement(element, self.osmParser)
-                dist = haversine(place, point)
-                if dist < bestDistance:
-                    bestDistance = dist
-                    result = element
-        return result, bestDistance
-
-    def matchViaDistance(self, place: NP.Place) -> Tuple[Optional[Element], float]:
+    def matchViaDistance(self, place: Station) -> Tuple[Optional[Element], float]:
         bestDistance = MAX_DISTANCE
         best: Optional[Element] = None
 
         for element in self.osmParser.elements:
-            if (
-                "amenity" not in element.tags
-                or element.tags["amenity"] != "bicycle_rental"
+            if "amenity" not in element.tags:
+                continue
+            if element.tags["amenity"] not in ["bicycle_rental", "bicycle_parking"]:
+                continue
+            if element.tags["amenity"] == "bicycle_parking" and (
+                "disused:amenity" not in element.tags
+                or element.tags["disused:amenity"] != "bicycle_rental"
             ):
                 continue
-            point = geoPointFromElement(element, self.osmParser)
+            point = GeoPoint.fromElement(element, self.osmParser)
             dist = haversine(place, point)
             if dist < bestDistance:
                 bestDistance = dist
                 best = element
         return best, bestDistance
 
-    def pair(self, nextPlaces: List[NP.Place]):
+    def pair(self, places: List[Station]):
         data = []
-        for nextPlace in nextPlaces:
-            matchedElement, dist = self.matchViaRef(nextPlace)
-            matchedBy = "id"
-            if matchedElement is None:
-                matchedElement, dist = self.matchViaDistance(nextPlace)
-                matchedBy = "di"
+        for place in places:
+            matchedElement, dist = self.matchViaDistance(place)
             data.append(
                 Match(
                     distance=dist,
-                    nextbike=nextPlace,
+                    place=place,
                     osm=matchedElement,
                     osmType="way" if type(matchedElement) is Way else "node",
-                    matchedBy=matchedBy,
                 )
             )
         self.matches = data
 
     def generateHtml(self, outputPath: Path, mapPath: Path, cityName: str):
         timestamp = strftime("%a, %d %b @ %H:%M:%S", localtime())
-        template = self.envir.get_template("nextbike.html")
+        template = self.envir.get_template("mevo.html")
         matches = []
         for match in self.matches:
             match.ratio = (
                 SC.SequenceMatcher(
-                    None, match.nextbike.name, match.osm.tags.get("name")
+                    None,
+                    match.place.name,
+                    match.osm.tags.get("name").replace("MEVO ", ""),
                 ).ratio()
                 if match.osm.tags.get("name") is not None
                 else 0
@@ -171,36 +187,20 @@ class NextbikeValidator:
             matches.append(match)
         csvPath = outputPath.with_suffix(".csv")
         kmlPath = outputPath.with_suffix(".kml")
-        networkTags = dict(
-            amenity="bicycle_rental",
-            operator="Nextbike Polska",
-        )
-        if "warszawa" in outputPath.name:  # TODO: move logic
-            networkTags["bicycle_rental"] = "dropoff_point"
-            networkTags["brand"] = "Veturilo"
-            networkTags["brand:wikidata"] = "Q3847868"
-            networkTags["network"] = "Veturilo"
-            networkTags["network:wikidata"] = "Q3847868"
         mismatches = list(
             filter(lambda m: m.distance > DISTANCE_THRESHOLD_MISMATCH, matches)
         )
-        mapFeatures = list(map(MapFeature.fromMatch(networkTags), mismatches))
+        mapFeatures = list(map(MapFeature.fromMatch(mevoNetworkTags()), mismatches))
         with outputPath.open("w", encoding="utf-8") as f:
             context = {
                 "matches": matches,
                 "timestamp": timestamp,
                 "countMismatches": len(mapFeatures),
-                "VERSION": __VERSION__,
                 "distanceThreshold": DISTANCE_THRESHOLD_MISMATCH,
                 "cityName": cityName,
                 "mapLink": str(mapPath.name),
                 "csvLink": str(csvPath.name),
                 "kmlLink": str(kmlPath.name),
-                "refDuplicates": {
-                    ref: duplicates
-                    for ref, duplicates in self.refMatches.items()
-                    if len(duplicates) > 1
-                },
             }
             f.write(template.render(context))
         self.generateMap(mapPath, mapFeatures, cityName)
@@ -208,7 +208,7 @@ class NextbikeValidator:
         self.generateKML(kmlPath, mapFeatures)
 
     def generateMap(self, mapPath: Path, mapFeatures: List[MapFeature], cityName: str):
-        mapFeaturesDict = list(map(lambda q: q.toJSON(), mapFeatures))
+        mapFeaturesDict = list(map(dataclasses.asdict, mapFeatures))
         mapTemplate = self.envir.get_template("map.html")
         with mapPath.open("w", encoding="utf-8") as f:
             context = {
@@ -241,7 +241,9 @@ class NextbikeValidator:
         return True
 
 
-def _calculateBbox(data: List[NP.Place]) -> Tuple[float, float, float, float]:
+def _calculateBbox(data: List[Station]) -> Tuple[float, float, float, float]:
+    if len(data) == 0:
+        return 0, 0, 0, 0
     latLonEpsilon = 0.002
     return (
         min((place.lat for place in data)) - latLonEpsilon,
@@ -251,26 +253,18 @@ def _calculateBbox(data: List[NP.Place]) -> Tuple[float, float, float, float]:
     )
 
 
-def nextbike_run(
-    update: bool,
-    network: str,
-    cityName: str,
+def mevo_run(
     outputPath: Path,
-    nextbikeParser: NP.NextbikeParser,
+    mevoParser: MevoParser,
     mapPath: Optional[Path] = None,
 ):
-    if update:
-        NP.NextbikeParser.update()
-        nextbikeParser.get_uids()
     overpassParser = OverpassParser()
-    validator = NextbikeValidator(nextbikeParser, overpassParser)
-    if network.isnumeric():
-        nextbikeData = nextbikeParser.find_city(network)
-    else:
-        nextbikeData = nextbikeParser.find_network(network)
+    validator = MevoComparator(mevoParser, overpassParser)
+    mevoData = mevoParser.downloadNetwork()
+    name = "województwo pomorskie"
     overpassParser.fetchData(
-        placeName=cityName, bbox=_calculateBbox(nextbikeData), admin_level=8
+        placeName=name, bbox=_calculateBbox(mevoData), admin_level=4
     )
     if validator.containsData(outputPath):
-        validator.pair(nextbikeData)
-        validator.generateHtml(outputPath, mapPath, cityName)
+        validator.pair(mevoData)
+        validator.generateHtml(outputPath, mapPath, name)

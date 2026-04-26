@@ -1,0 +1,109 @@
+<!-- TODO: extract common part from mevo/nextbike -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ cityName }} - MevoOSM</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <script src="sorttable.js" integrity="sha256-n3657FhpVO0BrpRmnXeQho7yfKvMVBh0QcoYkQr2O8w="></script>
+</head>
+<style>
+    .red {
+        color: red;
+    }
+
+    .svg {
+        width: 20px;
+        height: 20px;
+        text-decoration: none;
+    }
+    th {
+        position: sticky;
+        top: 0;
+    }
+</style>
+<body>
+    <i>Updated: {{ timestamp }}</i> <br/>
+    <span id="summary">
+        Mevo locations ({{ countMismatches }}) where OpenStreetMap match has distance &gt; {{ distanceThreshold }} metres.
+        <br/>
+        <a href="{{ mapLink }}">Map</a>
+        <a href="{{ kmlLink }}">KML</a>
+        <a href="{{ csvLink }}">CSV in SCEE format</a>
+    </span>
+    <div id="datatable">
+        <p>Datatable</p>
+        <table class="sortable">
+            <thead>
+                <tr>
+                    <th>Mevo location</th>
+                    <th>OSM id (closest match)</th>
+                    <th>Distance (in meters)</th>
+                    <th>Name Mevo</th>
+                    <th>Name OSM</th>
+                    <th>Ref Mevo</th>
+                    <th>ref:mevo OSM</th>
+                    <th>Capacity Mevo</th>
+                    <th>Capacity OSM</th>
+                    <th>Network</th>
+                    <th>Operator</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for match in matches %}
+                <tr>
+                    <td>
+                        <a href="{{ match.osmMarkLink }}">OSM</a>
+                        <a target="hiddenIframe" href="{{ match.josmAreaLink }}">
+                            <img src="./josm.svg" class="svg" alt="josm">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{{ match.osmLink }}">{{ match.osm.id }}</a>
+                        <a target="hiddenIframe" href="{{ match.josmLink }}" style="text-decoration: none">
+                            <img src="./josm.svg" class="svg" alt="josm">
+                        </a>
+                        &nbsp;
+                        <a target="hiddenIframe" href="{{ match.addJosmLink }}" style="text-decoration: none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/></svg>
+                        </a>
+                        &nbsp;
+                        <a target="hiddenIframe" href="{{ match.updateJosmLink }}" style="text-decoration: none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-shift-fill"><path d="M7.27 2.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v3a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-3H1.654C.78 10.5.326 9.455.924 8.816z"/></svg>
+                        </a>
+                    </td>
+                    <td {% if match.distance>distanceThreshold %}class="red"{% endif %}> {% if match.match == 'id' %}<b>{% endif %}{{ match.distance }}{% if match.match == 'id' %}</b>{% endif %}
+                    </td>
+                    <td>
+                        MEVO {{ match.place.name }}
+                    </td>
+                    <td {% if match.ratio|float <= 0.8 %}class="red" {% endif %}>
+                        {{ match.osm.tags.name|default("NONE") }}
+                    </td>
+                    <td>
+                        {{ match.place.ref }}
+                    </td>
+                    <td>
+                    {{ match.osm.tags["ref:mevo"]|default("NONE") }}
+                    </td>
+                    <td>
+                        {{ match.place.capacity|default("NONE") }}
+                    </td>
+                    <td>
+                        {{ match.osm.tags.capacity|default("NONE") }}
+                    </td>
+                    <td {% if not match.osm.tags.network %}class="red" {% endif %}>
+                        {{ match.osm.tags.network|default("NONE") }}
+                    </td>
+                    <td {% if not match.osm.tags.operator %}class="red" {% endif %}>
+                        {{ match.osm.tags.operator|default("NONE") }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <i>Created using <a href="https://github.com/starsep/MevoOSM">starsep/MevoOSM</a></i>
+    <iframe style="display:none;" id="hiddenIframe" name="hiddenIframe"></iframe>
+</body>
+</html>
