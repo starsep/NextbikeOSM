@@ -6,10 +6,10 @@ from time import localtime, strftime
 from typing import List, Optional, Tuple, cast
 
 from jinja2 import Environment, PackageLoader
-from overpy import Element, Way, Node
+from overpy import Element, Node, Way
+from starsep_utils import GeoPoint, haversine
 
 import nextbike_parser as NP
-from starsep_utils import GeoPoint, haversine
 from overpass_parser import OverpassParser
 
 __VERSION__ = "3.0.0"
@@ -251,7 +251,7 @@ def _calculateBbox(data: List[NP.Place]) -> Tuple[float, float, float, float]:
     )
 
 
-def main(
+def nextbike_run(
     update: bool,
     network: str,
     cityName: str,

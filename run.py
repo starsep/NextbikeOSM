@@ -7,7 +7,7 @@ from slugify import slugify
 from starsep_utils import healthchecks
 
 from nextbike_parser import NextbikeParser
-from nextbike_valid import main
+from nextbike_valid import nextbike_run
 
 
 def run() -> None:
@@ -25,7 +25,7 @@ def run() -> None:
                     networksPoland.append((city.uid, city.name.removesuffix(" (RL)")))
     for networkId, cityName in networksPoland:
         slug = slugify(cityName)
-        main(
+        nextbike_run(
             update=False,
             network=str(networkId),
             cityName=cityName,
