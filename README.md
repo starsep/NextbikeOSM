@@ -3,12 +3,6 @@
 
 This application parses data about bicycle rentals in nextbike public bike-sharing systems like (for more data [see wikipedia](https://en.wikipedia.org/wiki/Nextbike)) from [their website](http://nextbike.net/maps/nextbike-official.xml) and compares with data from [OpenStreetMap](http://www.openstreetmap.org).
 
-## How to run this?
-You need to have [Python 3](https://www.python.org/downloads/) installed
-1. Download all files from this project
-2. Install dependencies with `pip install -r requirements.txt`
-3. Run file run.py
-
 ## Docker
 ```
 docker build -t nextbikeosm .
@@ -29,3 +23,5 @@ If you want to help me and add something to code or see any bug just call an iss
 
 [Copyright (c) 2015 javnik36](https://github.com/javnik36/NextbikeOSM/blob/master/LICENCE)
 [Copyright (c) 2023 starsep](https://github.com/starsep/NextbikeOSM/blob/main/LICENCE)
+
+Part of icons from https://icons.getbootstrap.com
