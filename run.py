@@ -4,12 +4,13 @@ from pathlib import Path
 
 from jinja2 import Environment, PackageLoader
 from slugify import slugify
+from starsep_utils import healthchecks
 
 from nextbike_parser import NextbikeParser
 from nextbike_valid import main
-from starsep_utils import healthchecks
 
-if __name__ == "__main__":
+
+def run() -> None:
     healthchecks("/start")
     templatesDirectory = Path("templates")
     outputDirectory = Path("output")
@@ -43,3 +44,7 @@ if __name__ == "__main__":
         f.write(template.render(dict(cities=cities)))
     shutil.copy(templatesDirectory / "index.js", outputDirectory / "index.js")
     healthchecks()
+
+
+if __name__ == "__main__":
+    run()
