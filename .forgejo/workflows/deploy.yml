@@ -3,7 +3,7 @@ name: Deploy to Bunny CDN
 on:
   push:
     branches:
-      - gh-pages # TODO: rename
+      - pages
 
 jobs:
   deploy:
