@@ -10,7 +10,7 @@ from nextbike_parser import NextbikeParser
 from nextbike_valid import nextbike_run
 
 
-def run() -> None:
+def main() -> None:
     healthchecks("/start")
     templatesDirectory = Path("templates")
     outputDirectory = Path("output")
@@ -47,4 +47,4 @@ def run() -> None:
 
 
 if __name__ == "__main__":
-    run()
+    main()
