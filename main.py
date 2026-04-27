@@ -118,14 +118,14 @@ if __name__ == "__main__":
     shutil.copy(staticDirectory / "josm.svg", outputDirectory / "josm.svg")
     try:
         nextbike_main()
-    except Exception as e:
-        logging.exception("Nextbike failed", e)
+    except Exception:
+        logging.exception("Nextbike failed")
     try:
         mevo_main()
-    except Exception as e:
-        logging.exception("Mevo failed", e)
+    except Exception:
+        logging.exception("Mevo failed")
     try:
         roovee_main()
-    except Exception as e:
-        logging.exception("Roovee failed", e)
+    except Exception:
+        logging.exception("Roovee failed")
     healthchecks()

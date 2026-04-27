@@ -7,10 +7,9 @@ from time import localtime, strftime
 from typing import Dict, List, Optional, Tuple
 
 from jinja2 import Environment, PackageLoader
-from overpy import Element, Way
-from starsep_utils import GeoPoint, haversine
+from starsep_utils import Element, GeoPoint, OverpassResult, Way, haversine
 
-from overpass_parser import OverpassParser
+from overpass_parser import fetchOverpassData
 from roovee_parser import Place, RooveeNetwork, RooveeParser
 
 DISTANCE_THRESHOLD_MISMATCH = 100
@@ -69,10 +68,10 @@ class MapFeature(GeoPoint):
 
 
 class RooveeComparator:
-    def __init__(self, data, osmParser, html=None):
+    def __init__(self, data, overpassResult: OverpassResult, html=None):
         self.data = data
-        self.osmParser: OverpassParser = osmParser
-        self.matches: List[Match] = []
+        self.overpassResult = overpassResult
+        self.matches: list[Match] = []
         self.html = html
         self.envir = Environment(loader=PackageLoader("roovee_comparator", "templates"))
 
@@ -80,13 +79,13 @@ class RooveeComparator:
         bestDistance = MAX_DISTANCE
         best: Optional[Element] = None
 
-        for element in self.osmParser.elements:
+        for element in self.overpassResult.allElements():
             if (
                 "amenity" not in element.tags
                 or element.tags["amenity"] != "bicycle_rental"
             ):
                 continue
-            point = GeoPoint.fromElement(element, self.osmParser)
+            point = element.center(self.overpassResult)
             dist = haversine(place, point)
             if dist < bestDistance:
                 bestDistance = dist
@@ -171,7 +170,7 @@ class RooveeComparator:
 
     def containsData(self, path: Path):
         timek = strftime("%a, %d %b @ %H:%M:%S", localtime())
-        if len(self.osmParser.nodes) == 0 and len(self.osmParser.ways) == 0:
+        if len(self.overpassResult.nodes) == 0 and len(self.overpassResult.ways) == 0:
             template = self.envir.get_template("empty.html")
             fill_template = template.render({"last": timek})
             with path.open("w", encoding="utf-8") as f:
@@ -199,12 +198,11 @@ def roovee_run(
     rooveeParser: RooveeParser,
     mapPath: Optional[Path] = None,
 ):
-    overpassParser = OverpassParser()
-    validator = RooveeComparator(rooveeParser, overpassParser)
     rooveeData = rooveeParser.downloadNetwork(network)
-    overpassParser.fetchData(
+    overpassResult = fetchOverpassData(
         placeName=network.name, bbox=_calculateBbox(rooveeData), admin_level=8
     )
+    validator = RooveeComparator(rooveeParser, overpassResult)
     if validator.containsData(outputPath):
         validator.pair(rooveeData)
         validator.generateHtml(outputPath, mapPath, network.name)

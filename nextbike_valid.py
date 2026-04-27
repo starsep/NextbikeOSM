@@ -3,14 +3,13 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 from time import localtime, strftime
-from typing import List, Optional, Tuple, cast
+from typing import cast
 
 from jinja2 import Environment, PackageLoader
-from overpy import Element, Node, Way
-from starsep_utils import GeoPoint, haversine
+from starsep_utils import Element, GeoPoint, OverpassResult, Way, haversine
 
 import nextbike_parser as NP
-from overpass_parser import OverpassParser
+from overpass_parser import fetchOverpassData
 
 __VERSION__ = "3.0.0"
 
@@ -81,23 +80,11 @@ class MapFeature(GeoPoint):
         }
 
 
-def geoPointFromElement(element: Element, overpassParser: OverpassParser) -> GeoPoint:
-    if type(element) is Node:
-        node = cast(Node, element)
-        return GeoPoint(lat=node.lat, lon=node.lon)
-    if type(element) is Way:
-        way = cast(Way, element)
-        nodes = [node for node in overpassParser.ways[way.id].nodes]
-        centerLat = sum(map(lambda x: x.lat, nodes)) / len(nodes)
-        centerLon = sum(map(lambda x: x.lon, nodes)) / len(nodes)
-        return GeoPoint(lat=centerLat, lon=centerLon)
-
-
 class NextbikeValidator:
-    def __init__(self, nextbikeData, osmParser, html=None):
+    def __init__(self, nextbikeData, overpassResult: OverpassResult, html=None):
         self.nextbikeData = nextbikeData
-        self.osmParser: OverpassParser = osmParser
-        self.matches: List[Match] = []
+        self.overpassResult = overpassResult
+        self.matches: list[Match] = []
         self.html = html
         self.envir = Environment(loader=PackageLoader("nextbike_valid", "templates"))
         self.refMatches = dict()
@@ -108,12 +95,12 @@ class NextbikeValidator:
             self.refMatches[nextbikeRef] = list()
         result = None
         bestDistance = MAX_DISTANCE
-        for element in self.osmParser.elements:
+        for element in self.overpassResult.allElements():
             if "ref" in element.tags and element.tags["ref"] == nextbikeRef:
                 self.refMatches[nextbikeRef].append(
                     [element, "way" if type(element) is Way else "node"]
                 )
-                point = geoPointFromElement(element, self.osmParser)
+                point = element.center(self.overpassResult)
                 dist = haversine(place, point)
                 if dist < bestDistance:
                     bestDistance = dist
@@ -124,13 +111,13 @@ class NextbikeValidator:
         bestDistance = MAX_DISTANCE
         best: Optional[Element] = None
 
-        for element in self.osmParser.elements:
+        for element in self.overpassResult.allElements():
             if (
                 "amenity" not in element.tags
                 or element.tags["amenity"] != "bicycle_rental"
             ):
                 continue
-            point = geoPointFromElement(element, self.osmParser)
+            point = element.center(self.overpassResult)
             dist = haversine(place, point)
             if dist < bestDistance:
                 bestDistance = dist
@@ -231,7 +218,7 @@ class NextbikeValidator:
 
     def containsData(self, path: Path):
         timek = strftime("%a, %d %b @ %H:%M:%S", localtime())
-        if len(self.osmParser.nodes) == 0 and len(self.osmParser.ways) == 0:
+        if len(self.overpassResult.nodes) == 0 and len(self.overpassResult.ways) == 0:
             template = self.envir.get_template("empty.html")
             fill_template = template.render({"last": timek})
             with path.open("w", encoding="utf-8") as f:
@@ -262,15 +249,14 @@ def nextbike_run(
     if update:
         NP.NextbikeParser.update()
         nextbikeParser.get_uids()
-    overpassParser = OverpassParser()
-    validator = NextbikeValidator(nextbikeParser, overpassParser)
     if network.isnumeric():
         nextbikeData = nextbikeParser.find_city(network)
     else:
         nextbikeData = nextbikeParser.find_network(network)
-    overpassParser.fetchData(
+    overpassResult = fetchOverpassData(
         placeName=cityName, bbox=_calculateBbox(nextbikeData), admin_level=8
     )
+    validator = NextbikeValidator(nextbikeParser, overpassResult)
     if validator.containsData(outputPath):
         validator.pair(nextbikeData)
         validator.generateHtml(outputPath, mapPath, cityName)
