@@ -1,9 +1,10 @@
-import urllib.request as urllib
 import xml.etree.ElementTree as XML
 from dataclasses import dataclass
 
-from configuration import cacheDirectory
+import httpx
 from starsep_utils import GeoPoint
+
+from configuration import cacheDirectory
 
 
 @dataclass(frozen=True)
@@ -33,11 +34,11 @@ nextbikeFilePath = cacheDirectory / "nextbike.xml"
 
 class NextbikeParser:
     def __init__(self):
-        path = "https://nextbike.net/maps/nextbike-official.xml"
-        if nextbikeFilePath.exists():
-            pass
-        else:
-            urllib.urlretrieve(path, nextbikeFilePath)
+        url = "https://maps2.nextbike.net/maps/nextbike-official.xml"
+        if not nextbikeFilePath.exists():
+            response = httpx.get(url)
+            response.raise_for_status()
+            nextbikeFilePath.write_bytes(response.content)
 
         file = XML.parse(nextbikeFilePath)
         root = file.getroot()
@@ -165,5 +166,7 @@ class NextbikeParser:
 
     @staticmethod
     def update():
-        path = "https://nextbike.net/maps/nextbike-live.xml"
-        urllib.urlretrieve(path, nextbikeFilePath)
+        url = "https://maps2.nextbike.net/maps/nextbike-live.xml"
+        response = httpx.get(url)
+        response.raise_for_status()
+        nextbikeFilePath.write_bytes(response.content)
