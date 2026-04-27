@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Os. Grzybowe w Złotnikach</name>
+  <description>name=Os. Grzybowe w Złotnikach
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.844976202821456,52.48426901998977</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Pętla Autobusowa Jelonek</name>
+  <description>name=Pętla Autobusowa Jelonek
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.858378552699197,52.47978573780582</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Meteorytowa w Suchym Lesie (przy os. Przylesie)</name>
+  <description>name=ul. Meteorytowa w Suchym Lesie (przy os. Przylesie)
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.897392101445057,52.4734889972252</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Urząd Gminy w Suchym Lesie 1</name>
+  <description>name=Urząd Gminy w Suchym Lesie 1
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.87301219348125,52.47368691839403</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Urząd Gminy w Suchym Lesie 2</name>
+  <description>name=Urząd Gminy w Suchym Lesie 2
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.873221405784413,52.473369794864965</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Węzeł Przesiadkowy w Złotnikach</name>
+  <description>name=Węzeł Przesiadkowy w Złotnikach
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.836280257549273,52.49582784719815</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Chojno</name>
+  <description>name=Chojno
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.022485075458643,51.62328627160509</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Dębno Polskie</name>
+  <description>name=Dębno Polskie
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.87830530163695,51.586084592405875</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Osiedle Sarnowa</name>
+  <description>name=Osiedle Sarnowa
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.906559511762083,51.629035607322585</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rawicz ul. Dworcowa/11 Listopada (parking)</name>
+  <description>name=Rawicz ul. Dworcowa/11 Listopada (parking)
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.840514322826017,51.60944253646749</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Słupia Kapitulna (przy przystanku autobusowym)</name>
+  <description>name=Słupia Kapitulna (przy przystanku autobusowym)
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.964550389614907,51.6065909442346</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Poznańska w Rawiczu</name>
+  <description>name=ul. Poznańska w Rawiczu
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.860089092080536,51.61763685581797</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Rynek w Rawiczu</name>
+  <description>name=ul. Rynek w Rawiczu
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.858552200222316,51.608603262919246</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>ul. Sarnowska</name>
+  <description>name=ul. Sarnowska
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.8666422627329,51.61408957105315</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

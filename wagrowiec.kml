@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Bobrownicka</name>
+  <description>name=Bobrownicka
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.182071172,52.809092123</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>BOBROWNICKA/LEŚNA</name>
+  <description>name=BOBROWNICKA/LEŚNA
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.176375826,52.809950658</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Gnieźnieńska - Targowisko</name>
+  <description>name=Gnieźnieńska - Targowisko
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.216815741,52.798108982</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Jankowo</name>
+  <description>name=Jankowo
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.210659313482367,52.79289584402186</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Klasztorna</name>
+  <description>name=Klasztorna
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.194948724,52.80473882</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Łęgowo</name>
+  <description>name=Łęgowo
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.172354873842337,52.790759933144514</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Leśna</name>
+  <description>name=Leśna
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.177900791,52.814400449</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Letnia - Szkoła</name>
+  <description>name=Letnia - Szkoła
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.190997349,52.814025462</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Nad Nielbą</name>
+  <description>name=Nad Nielbą
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.220265885,52.810872767</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Orzeszkowa/Kraszewskiego</name>
+  <description>name=Orzeszkowa/Kraszewskiego
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.225817005,52.822425897</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>OS.WSCHÓD/11 LISTOPADA</name>
+  <description>name=OS.WSCHÓD/11 LISTOPADA
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.230471371830095,52.80838303561162</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Piaskowa</name>
+  <description>name=Piaskowa
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.218522465,52.802166249</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>POLINOVA</name>
+  <description>name=POLINOVA
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.18921907251147,52.791458827660236</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rogozińska/ Słoneczna</name>
+  <description>name=Rogozińska/ Słoneczna
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.1744424862024,52.80481974542843</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wierzbowa</name>
+  <description>name=Wierzbowa
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.19139986,52.799154867</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

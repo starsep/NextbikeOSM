@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Centrum Sportowe Psarskie</name>
+  <description>name=Centrum Sportowe Psarskie
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.993110366196994,52.0958289768987</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Deptak Jeziorany</name>
+  <description>name=Deptak Jeziorany
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.010977626,52.079189314</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Jeziorany</name>
+  <description>name=Jeziorany
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.010259973,52.076177166</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kilińskiego</name>
+  <description>name=Kilińskiego
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.008072885776844,52.08157301109276</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Muzeum Śremskie</name>
+  <description>name=Muzeum Śremskie
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.024224236413254,52.085699587093764</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Plac 20 Października</name>
+  <description>name=Plac 20 Października
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.02068610320284,52.09537739178827</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Plaża Miejska (czynna w okresie wakacyjnym)</name>
+  <description>name=Plaża Miejska (czynna w okresie wakacyjnym)
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.00887304697028,52.0718662954223</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Zamenhoffa</name>
+  <description>name=Zamenhoffa
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.018001258623144,52.083225329730844</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
