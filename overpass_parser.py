@@ -1,4 +1,5 @@
 import asyncio
+import time
 
 from diskcache import Cache
 from starsep_utils import OverpassResult, downloadOverpassData
@@ -26,8 +27,11 @@ def fetchOverpassData(
     (._;>;);
     out body;
     """
-    return asyncio.run(
+    result = asyncio.run(
         downloadOverpassData(
             query=query, overpassUrl=OVERPASS_URL, userAgent="starsep/NextbikeOSM"
         ),
     )
+    # Overpass return 429 when requesting too often
+    time.sleep(10)
+    return result
