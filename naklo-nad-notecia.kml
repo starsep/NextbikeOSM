@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>ul. Bohaterów</name>
+  <description>name=ul. Bohaterów
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.582526649529022,53.137919127812495</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

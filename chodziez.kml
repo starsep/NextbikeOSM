@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Parking Bike &amp; Ride-26</name>
+  <description>name=Parking Bike &amp; Ride-26
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.91466156960979,52.9973208218123</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Parking Bike &amp; Ride-27</name>
+  <description>name=Parking Bike &amp; Ride-27
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>16.90071065800025,52.98873178932218</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

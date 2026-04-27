@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>ul. Jagiełły</name>
+  <description>name=ul. Jagiełły
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.420223717971602,51.705869514457305</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

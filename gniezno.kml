@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>17 Dywizji Piechoty</name>
+  <description>name=17 Dywizji Piechoty
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.605548324834082,52.520280759598364</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>3 Maja - Szpital</name>
+  <description>name=3 Maja - Szpital
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.600289790096113,52.54113965060764</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Budowlanych</name>
+  <description>name=Budowlanych
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.614840453827377,52.542509508514705</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Czarnieckiego - Liliowa</name>
+  <description>name=Czarnieckiego - Liliowa
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.58026020552255,52.5364649948403</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Galeria Gniezno</name>
+  <description>name=Galeria Gniezno
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.61129772258609,52.561482101001054</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Galeria Piastova</name>
+  <description>name=Galeria Piastova
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.597844517430122,52.52732120989725</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Gdańska</name>
+  <description>name=Gdańska
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.609221878538914,52.56011602600807</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Grunwaldzka - Wesoła</name>
+  <description>name=Grunwaldzka - Wesoła
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.601344041155244,52.516328391448035</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Inowrocławska</name>
+  <description>name=Inowrocławska
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.647653559145624,52.540548083491124</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Jezioro Winiary</name>
+  <description>name=Jezioro Winiary
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.610094729684754,52.54575176816325</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Jolenty</name>
+  <description>name=Jolenty
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.605127367161924,52.540635743396955</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kawiary</name>
+  <description>name=Kawiary
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.613334447850413,52.52099326801193</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kazimierza Wielkiego</name>
+  <description>name=Kazimierza Wielkiego
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.60044857602272,52.54923570146104</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kłeckowska - MTD</name>
+  <description>name=Kłeckowska - MTD
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.579380408999995,52.54124807480185</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kolejowa</name>
+  <description>name=Kolejowa
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.62855937983291,52.53045195544846</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kostrzewskiego</name>
+  <description>name=Kostrzewskiego
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.582969724311724,52.53305429515319</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Łubieńskiego</name>
+  <description>name=Łubieńskiego
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.60058389052704,52.53536615286004</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Ludwiczaka</name>
+  <description>name=Ludwiczaka
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.579339847850395,52.51909674224613</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Orzeszkowej 2</name>
+  <description>name=Orzeszkowej 2
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.561402328357527,52.52767997509517</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Owocowa</name>
+  <description>name=Owocowa
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.557741167161954,52.5326171411846</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Paczkowskiego</name>
+  <description>name=Paczkowskiego
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.61224067668645,52.54067076970204</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Park Miejski</name>
+  <description>name=Park Miejski
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.605378851817704,52.53505457510039</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Parkowa</name>
+  <description>name=Parkowa
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.612942824834075,52.5369495932945</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Pustachowska</name>
+  <description>name=Pustachowska
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.594093903670114,52.50760615264707</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Roosevelta</name>
+  <description>name=Roosevelta
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.62038762086677,52.539929046834445</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Roosevelta a Laubitza</name>
+  <description>name=Roosevelta a Laubitza
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.62355307827644,52.54089992301356</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Rynek</name>
+  <description>name=Rynek
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.59615535948984,52.535585860633375</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Słoneczna - Velux</name>
+  <description>name=Słoneczna - Velux
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.614033971686588,52.526156160085435</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Sportowa</name>
+  <description>name=Sportowa
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.612432054081385,52.543427103719445</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Warszawska</name>
+  <description>name=Warszawska
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.596132315047086,52.53294741791047</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wierzbiczany</name>
+  <description>name=Wierzbiczany
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.629604469014346,52.534302025547234</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wierzbiczany - Orlik</name>
+  <description>name=Wierzbiczany - Orlik
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.635959404410098,52.533519510078</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Winiary - Plac zabaw</name>
+  <description>name=Winiary - Plac zabaw
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.608659921542056,52.54906579219229</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wolności</name>
+  <description>name=Wolności
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.604205774834032,52.511441522707734</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Wrzesińska - Regiment</name>
+  <description>name=Wrzesińska - Regiment
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.595347651653306,52.514316341829385</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Zientarskiego</name>
+  <description>name=Zientarskiego
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.5902362032349,52.53530978981243</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

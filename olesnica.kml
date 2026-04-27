@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Europejska/Gryczana</name>
+  <description>name=Europejska/Gryczana
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.36662932068786,51.194966590919236</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>PKP Rataje</name>
+  <description>name=PKP Rataje
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>17.36453855667366,51.215199667667605</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>

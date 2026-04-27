@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>Centrum</name>
+  <description>name=Centrum
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>21.58775381704496,53.07493867243961</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Dworzec PKS</name>
+  <description>name=Dworzec PKS
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>21.573082422491314,53.08467330329256</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Kupiec</name>
+  <description>name=Kupiec
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>21.572123901947897,53.08161097049284</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Leśna</name>
+  <description>name=Leśna
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>21.5416289222874,53.073260514793816</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Nowy Szpital</name>
+  <description>name=Nowy Szpital
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>21.59300768368478,53.065711951765</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Plaża Miejska</name>
+  <description>name=Plaża Miejska
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>21.56851203561464,53.09115107976692</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Ratusz</name>
+  <description>name=Ratusz
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>21.567982016242365,53.084376628797955</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Stary Szpital</name>
+  <description>name=Stary Szpital
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>21.56414082917874,53.07430943834223</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
