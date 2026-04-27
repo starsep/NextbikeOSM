@@ -45,7 +45,7 @@ class MapFeatureTags:
     def toCSV(self) -> str:
         return ",".join(self._keyValues())
 
-    def _keyValues(self) -> List[str]:
+    def _keyValues(self) -> list[str]:
         return [f"{key}={value}" for key, value in self._toTagsDict().items()]
 
 
@@ -89,7 +89,7 @@ class NextbikeValidator:
         self.envir = Environment(loader=PackageLoader("nextbike_valid", "templates"))
         self.refMatches = dict()
 
-    def matchViaRef(self, place: NP.Place) -> Tuple[Optional[Element], float]:
+    def matchViaRef(self, place: NP.Place) -> tuple[Element | None, float]:
         nextbikeRef = place.num
         if nextbikeRef not in self.refMatches:
             self.refMatches[nextbikeRef] = list()
@@ -107,9 +107,9 @@ class NextbikeValidator:
                     result = element
         return result, bestDistance
 
-    def matchViaDistance(self, place: NP.Place) -> Tuple[Optional[Element], float]:
+    def matchViaDistance(self, place: NP.Place) -> tuple[Element | None, float]:
         bestDistance = MAX_DISTANCE
-        best: Optional[Element] = None
+        best: Element | None = None
 
         for element in self.overpassResult.allElements():
             if (
@@ -124,7 +124,7 @@ class NextbikeValidator:
                 best = element
         return best, bestDistance
 
-    def pair(self, nextPlaces: List[NP.Place]):
+    def pair(self, nextPlaces: list[NP.Place]):
         data = []
         for nextPlace in nextPlaces:
             matchedElement, dist = self.matchViaRef(nextPlace)
@@ -194,7 +194,7 @@ class NextbikeValidator:
         self.generateCSV(csvPath, mapFeatures)
         self.generateKML(kmlPath, mapFeatures)
 
-    def generateMap(self, mapPath: Path, mapFeatures: List[MapFeature], cityName: str):
+    def generateMap(self, mapPath: Path, mapFeatures: list[MapFeature], cityName: str):
         mapFeaturesDict = list(map(lambda q: q.toJSON(), mapFeatures))
         mapTemplate = self.envir.get_template("map.html")
         with mapPath.open("w", encoding="utf-8") as f:
@@ -205,12 +205,12 @@ class NextbikeValidator:
             f.write(mapTemplate.render(context))
 
     @staticmethod
-    def generateCSV(csvPath: Path, mapFeatures: List[MapFeature]):
+    def generateCSV(csvPath: Path, mapFeatures: list[MapFeature]):
         with csvPath.open("w") as f:
             for feature in mapFeatures:
                 f.write(feature.toCSV() + "\n")
 
-    def generateKML(self, kmlPath: Path, mapFeatures: List[MapFeature]):
+    def generateKML(self, kmlPath: Path, mapFeatures: list[MapFeature]):
         kmlTemplate = self.envir.get_template("station.kml")
         with kmlPath.open("w", encoding="utf-8") as f:
             context = {"features": mapFeatures}
@@ -228,13 +228,13 @@ class NextbikeValidator:
         return True
 
 
-def _calculateBbox(data: List[NP.Place]) -> Tuple[float, float, float, float]:
+def _calculateBbox(data: list[NP.Place]) -> tuple[float, float, float, float]:
     latLonEpsilon = 0.002
     return (
-        min((place.lat for place in data)) - latLonEpsilon,
-        min((place.lon for place in data)) - latLonEpsilon,
-        max((place.lat for place in data)) + latLonEpsilon,
-        max((place.lon for place in data)) + latLonEpsilon,
+        min(place.lat for place in data) - latLonEpsilon,
+        min(place.lon for place in data) - latLonEpsilon,
+        max(place.lat for place in data) + latLonEpsilon,
+        max(place.lon for place in data) + latLonEpsilon,
     )
 
 
@@ -244,7 +244,7 @@ def nextbike_run(
     cityName: str,
     outputPath: Path,
     nextbikeParser: NP.NextbikeParser,
-    mapPath: Optional[Path] = None,
+    mapPath: Path | None = None,
 ):
     if update:
         NP.NextbikeParser.update()

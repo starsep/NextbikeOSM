@@ -4,7 +4,6 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 from time import localtime, strftime
-from typing import Dict, List, Optional, Tuple
 
 from jinja2 import Environment, PackageLoader
 from starsep_utils import Element, GeoPoint, OverpassResult, Way, haversine
@@ -28,9 +27,9 @@ class Match:
 @dataclass
 class MapFeatureTags:
     name: str
-    extraTags: Dict[str, str]
+    extraTags: dict[str, str]
 
-    def _toTagsDict(self) -> Dict[str, str]:
+    def _toTagsDict(self) -> dict[str, str]:
         result = dict(name=self.name)
         result.update(self.extraTags)
         return result
@@ -41,7 +40,7 @@ class MapFeatureTags:
     def toCSV(self) -> str:
         return ",".join(self._keyValues())
 
-    def _keyValues(self) -> List[str]:
+    def _keyValues(self) -> list[str]:
         return [f"{key}={value}" for key, value in self._toTagsDict().items()]
 
 
@@ -50,7 +49,7 @@ class MapFeature(GeoPoint):
     tags: MapFeatureTags
 
     @staticmethod
-    def fromMatch(extraTags: Dict[str, str]):
+    def fromMatch(extraTags: dict[str, str]):
         def foo(match: Match) -> MapFeature:
             return MapFeature(
                 lat=match.place.lat,
@@ -75,9 +74,9 @@ class RooveeComparator:
         self.html = html
         self.envir = Environment(loader=PackageLoader("roovee_comparator", "templates"))
 
-    def matchViaDistance(self, place: Place) -> Tuple[Optional[Element], float]:
+    def matchViaDistance(self, place: Place) -> tuple[Element | None, float]:
         bestDistance = MAX_DISTANCE
-        best: Optional[Element] = None
+        best: Element | None = None
 
         for element in self.overpassResult.allElements():
             if (
@@ -92,7 +91,7 @@ class RooveeComparator:
                 best = element
         return best, bestDistance
 
-    def pair(self, places: List[Place]):
+    def pair(self, places: list[Place]):
         data = []
         for place in places:
             matchedElement, dist = self.matchViaDistance(place)
@@ -146,7 +145,7 @@ class RooveeComparator:
         self.generateCSV(csvPath, mapFeatures)
         self.generateKML(kmlPath, mapFeatures)
 
-    def generateMap(self, mapPath: Path, mapFeatures: List[MapFeature], cityName: str):
+    def generateMap(self, mapPath: Path, mapFeatures: list[MapFeature], cityName: str):
         mapFeaturesDict = list(map(dataclasses.asdict, mapFeatures))
         mapTemplate = self.envir.get_template("map.html")
         with mapPath.open("w", encoding="utf-8") as f:
@@ -157,12 +156,12 @@ class RooveeComparator:
             f.write(mapTemplate.render(context))
 
     @staticmethod
-    def generateCSV(csvPath: Path, mapFeatures: List[MapFeature]):
+    def generateCSV(csvPath: Path, mapFeatures: list[MapFeature]):
         with csvPath.open("w") as f:
             for feature in mapFeatures:
                 f.write(feature.toCSV() + "\n")
 
-    def generateKML(self, kmlPath: Path, mapFeatures: List[MapFeature]):
+    def generateKML(self, kmlPath: Path, mapFeatures: list[MapFeature]):
         kmlTemplate = self.envir.get_template("station.kml")
         with kmlPath.open("w", encoding="utf-8") as f:
             context = {"features": mapFeatures}
@@ -180,15 +179,15 @@ class RooveeComparator:
         return True
 
 
-def _calculateBbox(data: List[Place]) -> Tuple[float, float, float, float]:
+def _calculateBbox(data: list[Place]) -> tuple[float, float, float, float]:
     if len(data) == 0:
         return 0, 0, 0, 0
     latLonEpsilon = 0.002
     return (
-        min((place.lat for place in data)) - latLonEpsilon,
-        min((place.lon for place in data)) - latLonEpsilon,
-        max((place.lat for place in data)) + latLonEpsilon,
-        max((place.lon for place in data)) + latLonEpsilon,
+        min(place.lat for place in data) - latLonEpsilon,
+        min(place.lon for place in data) - latLonEpsilon,
+        max(place.lat for place in data) + latLonEpsilon,
+        max(place.lon for place in data) + latLonEpsilon,
     )
 
 
@@ -196,7 +195,7 @@ def roovee_run(
     network: RooveeNetwork,
     outputPath: Path,
     rooveeParser: RooveeParser,
-    mapPath: Optional[Path] = None,
+    mapPath: Path | None = None,
 ):
     rooveeData = rooveeParser.downloadNetwork(network)
     overpassResult = fetchOverpassData(

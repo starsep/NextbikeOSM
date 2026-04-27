@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-from typing import List
 
 import httpx
 from starsep_utils import GeoPoint
@@ -13,13 +12,13 @@ class Station(GeoPoint):
 
 
 class MevoParser:
-    def downloadNetwork(self) -> List[Station]:
+    def downloadNetwork(self) -> list[Station]:
         # https://rowermevo.pl/open-data/realtime
         data = httpx.get(
             "https://gbfs.urbansharing.com/rowermevo.pl/station_information.json",
             headers={"Client-Identifier": "starsep-mevoosm"},
         ).json()
-        stations: List[Station] = []
+        stations: list[Station] = []
         for station in data["data"]["stations"]:
             # if station["is_virtual_station"]:
             #     continue

@@ -1,7 +1,6 @@
 import urllib.request as urllib
 import xml.etree.ElementTree as XML
 from dataclasses import dataclass
-from typing import List
 
 from configuration import cacheDirectory
 from starsep_utils import GeoPoint
@@ -19,14 +18,14 @@ class Place(GeoPoint):
 class City:
     uid: str
     name: str
-    places: List[Place]
+    places: list[Place]
 
 
 @dataclass
 class Network:
     name: str
     countryCode: str
-    cities: List[City]
+    cities: list[City]
 
 
 nextbikeFilePath = cacheDirectory / "nextbike.xml"
@@ -119,7 +118,7 @@ class NextbikeParser:
 
     def check_uids(self, new_uids):
         old_uids = []
-        with open("uids.set", "r") as f:
+        with open("uids.set") as f:
             for line in f.readlines():
                 line = line.rstrip()
                 old_uids.append(line)
@@ -133,9 +132,9 @@ class NextbikeParser:
         new = diff(new_uids, old_uids)
 
         if len(removed) > 0:
-            print("REMOVED UIDS FOUND! {0}".format(str(removed)))
+            print(f"REMOVED UIDS FOUND! {str(removed)}")
         if len(new) > 0:
-            print("NEW UIDS FOUND! {0}".format(str(new)))
+            print(f"NEW UIDS FOUND! {str(new)}")
 
     def get_uids(self, cons="n"):
         """Makes file with all uids from xml-file. If cons='y' it's print it to console too."""
@@ -162,7 +161,7 @@ class NextbikeParser:
 
         with open("uids.set", "w") as f:
             for i in uids:
-                f.write("{0}\n".format(i))
+                f.write(f"{i}\n")
 
     @staticmethod
     def update():
