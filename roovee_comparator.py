@@ -107,7 +107,7 @@ class RooveeComparator:
 
     def generateHtml(self, outputPath: Path, mapPath: Path, cityName: str):
         timestamp = strftime("%a, %d %b @ %H:%M:%S", localtime())
-        template = self.envir.get_template("base.html")
+        template = self.envir.get_template("roovee.html")
         matches = []
         for match in self.matches:
             match.ratio = (
