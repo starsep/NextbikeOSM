@@ -11,6 +11,7 @@ dependencies = [
     "jinja2>=3.1.6",
     "python-slugify>=8.0.4",
     "starsep-utils>=0.9.3",
+    "tqdm>=4.67.3",
 ]
 
 [dependency-groups]

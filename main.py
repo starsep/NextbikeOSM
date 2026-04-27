@@ -1,11 +1,13 @@
 #!/usr/bin/env -S uv run python
 import logging
 import shutil
+from os import name
 from pathlib import Path
 
 from jinja2 import Environment, PackageLoader
 from slugify import slugify
 from starsep_utils import healthchecks
+from tqdm import tqdm
 
 from mevo_comparator import mevo_run
 from mevo_parser import MevoParser
@@ -28,7 +30,7 @@ def nextbike_main():
             for city in country.cities:
                 if len(city.places) > 0:
                     networksPoland.append((city.uid, city.name.removesuffix(" (RL)")))
-    for networkId, cityName in networksPoland:
+    for networkId, cityName in tqdm(networksPoland, desc="Processing Nextbike"):
         slug = slugify(cityName)
         nextbike_run(
             update=False,
@@ -91,7 +93,7 @@ def roovee_main():
         RooveeNetwork(tenant="zmigrod", name="Żmigród"),
     ]
     rooveeParser = RooveeParser()
-    for network in roovee_networks:
+    for network in tqdm(roovee_networks, desc="Processing Roovee"):
         slug = slugify(network.name)
         roovee_run(
             network=network,
