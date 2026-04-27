@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+  <name>10. Plac Rodła - al. Wyzwolenia</name>
+  <description>name=10. Plac Rodła - al. Wyzwolenia
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.554211669946913,53.432205471618786</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>129. Plaża Dąbie</name>
+  <description>name=129. Plaża Dąbie
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.664763584245536,53.40205132862929</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>205. Mierzyn - Alicji (wirtualna) </name>
+  <description>name=205. Mierzyn - Alicji (wirtualna) 
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.460959787413072,53.43235300346474</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>26. Dworzec Główny PKP</name>
+  <description>name=26. Dworzec Główny PKP
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.552608690725473,53.41929191038793</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>301. Warzymice</name>
+  <description>name=301. Warzymice
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.48552972233081,53.390269735177384</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>68. Rondo Sybiraków</name>
+  <description>name=68. Rondo Sybiraków
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.549275237435632,53.4458537341679</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>70.Dworzec Niebuszewo</name>
+  <description>name=70.Dworzec Niebuszewo
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.554098962550137,53.447941690351435</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>71. Fabryka Wody</name>
+  <description>name=71. Fabryka Wody
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.566754143894553,53.443638823675414</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>82. Wernyhory</name>
+  <description>name=82. Wernyhory
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.497577096318262,53.44484383956921</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>83. Plac Lotników </name>
+  <description>name=83. Plac Lotników 
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.550839479606624,53.430613769903</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>84. Osiedle za Sterem</name>
+  <description>name=84. Osiedle za Sterem
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.487499804121192,53.42896608356123</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>85.Modra</name>
+  <description>name=85.Modra
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.473171140545187,53.45475522375857</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>86. Mściwoja</name>
+  <description>name=86. Mściwoja
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.56026187119611,53.42472941002127</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>87. Małkowskiego Parking</name>
+  <description>name=87. Małkowskiego Parking
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.541116748770868,53.42783289154216</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>91. Królewskiego - Rostocka</name>
+  <description>name=91. Królewskiego - Rostocka
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.556089486742572,53.46274268304283</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>92. Łączna</name>
+  <description>name=92. Łączna
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.561466326918747,53.47123360421971</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>93. Królewskiego</name>
+  <description>name=93. Królewskiego
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.558706776386545,53.46771526138819</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>94. Hoża - Bogumińska</name>
+  <description>name=94. Hoża - Bogumińska
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.577129896185141,53.46266493765476</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>95. Hoża Studzienna</name>
+  <description>name=95. Hoża Studzienna
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.579936180745152,53.45997347302548</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>96. Złotowska</name>
+  <description>name=96. Złotowska
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.539339104307277,53.46528610387116</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>97. Szczecińska</name>
+  <description>name=97. Szczecińska
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.544816989415876,53.47184953218406</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>98. Miłosza</name>
+  <description>name=98. Miłosza
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.547647488125293,53.47695394122884</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>99. Dembowskiego</name>
+  <description>name=99. Dembowskiego
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.560076643701606,53.44684416385683</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>99. Wirtualna Pomorzany</name>
+  <description>name=99. Wirtualna Pomorzany
+amenity=bicycle_rental
+operator=Roovee
+operator:wikidata=Q60860205</description>
+  <Point>
+    <coordinates>14.526060271668415,53.40493385964487</coordinates>
+  </Point>
+</Placemark>
+</Document>
+</kml>
