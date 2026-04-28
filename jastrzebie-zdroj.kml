@@ -68,17 +68,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>GÓRNE ul. Grodzka.</name>
-  <description>name=GÓRNE ul. Grodzka.
-ref=60723
-capacity=4
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.608203,49.95757</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>PRZYSTANEK ul. Armii Krajowej</name>
   <description>name=PRZYSTANEK ul. Armii Krajowej
 ref=60724
@@ -112,17 +101,6 @@ operator=Nextbike Polska</description>
   </Point>
 </Placemark>
 <Placemark>
-  <name>PRZYSTANEK 1 Maja-Kasztanowa</name>
-  <description>name=PRZYSTANEK 1 Maja-Kasztanowa
-ref=60727
-capacity=6
-amenity=bicycle_rental
-operator=Nextbike Polska</description>
-  <Point>
-    <coordinates>18.559228,49.945597</coordinates>
-  </Point>
-</Placemark>
-<Placemark>
   <name>DUBIELEC ul. Rybnicka</name>
   <description>name=DUBIELEC ul. Rybnicka
 ref=60728
@@ -142,6 +120,28 @@ amenity=bicycle_rental
 operator=Nextbike Polska</description>
   <Point>
     <coordinates>18.62,49.966</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>OSIEDLE Złote Łany  </name>
+  <description>name=OSIEDLE Złote Łany  
+ref=60731
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.543083,49.941472</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Moszczenica – poczta</name>
+  <description>name=Moszczenica – poczta
+ref=60732
+capacity=None
+amenity=bicycle_rental
+operator=Nextbike Polska</description>
+  <Point>
+    <coordinates>18.543944,49.938778</coordinates>
   </Point>
 </Placemark>
 </Document>

@@ -5,7 +5,7 @@
   <name>Okopowa - Leszno</name>
   <description>name=Okopowa - Leszno
 ref=9460
-capacity=16
+capacity=12
 amenity=bicycle_rental
 operator=Nextbike Polska
 bicycle_rental=dropoff_point
@@ -34,6 +34,22 @@ network:wikidata=Q3847868</description>
   </Point>
 </Placemark>
 <Placemark>
+  <name>Żelazna - Prosta</name>
+  <description>name=Żelazna - Prosta
+ref=9481
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>20.992293,52.232386</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
   <name>Pętla Stegny</name>
   <description>name=Pętla Stegny
 ref=9590
@@ -47,6 +63,22 @@ network=Veturilo
 network:wikidata=Q3847868</description>
   <Point>
     <coordinates>21.0487,52.1779</coordinates>
+  </Point>
+</Placemark>
+<Placemark>
+  <name>Branickiego - Rzeczypospolitej</name>
+  <description>name=Branickiego - Rzeczypospolitej
+ref=9597
+capacity=16
+amenity=bicycle_rental
+operator=Nextbike Polska
+bicycle_rental=dropoff_point
+brand=Veturilo
+brand:wikidata=Q3847868
+network=Veturilo
+network:wikidata=Q3847868</description>
+  <Point>
+    <coordinates>21.076109,52.156896</coordinates>
   </Point>
 </Placemark>
 <Placemark>

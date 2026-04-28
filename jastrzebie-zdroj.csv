@@ -4,10 +4,10 @@
 49.944196,18.603019,addNode name=OSIEDLE PIONIERÓW  deptak ,ref=60715,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 49.948769,18.618816,addNode name=OSIEDLE BARBARY ul. Szkolna,ref=60719,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 49.963181,18.571317,addNode name=OSIEDLE PRZYJAŹŃ  ul. Wyspiańskiego,ref=60720,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
-49.95757,18.608203,addNode name=GÓRNE ul. Grodzka.,ref=60723,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 49.941861,18.558274,addNode name=PRZYSTANEK ul. Armii Krajowej,ref=60724,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 49.957857,18.56738,addNode name=OSIEDLE BOGOCZOWIEC  orlik,ref=60725,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
 49.93806,18.58386,addNode name=PRZYSTANEK ul. Jagiełły (WPK),ref=60726,capacity=4,amenity=bicycle_rental,operator=Nextbike Polska
-49.945597,18.559228,addNode name=PRZYSTANEK 1 Maja-Kasztanowa,ref=60727,capacity=6,amenity=bicycle_rental,operator=Nextbike Polska
 49.97,18.616,addNode name=DUBIELEC ul. Rybnicka,ref=60728,capacity=2,amenity=bicycle_rental,operator=Nextbike Polska
 49.966,18.62,addNode name=ZOFIÓWKA ul. RYBNICKA,ref=60729,capacity=2,amenity=bicycle_rental,operator=Nextbike Polska
+49.941472,18.543083,addNode name=OSIEDLE Złote Łany  ,ref=60731,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
+49.938778,18.543944,addNode name=Moszczenica – poczta,ref=60732,capacity=None,amenity=bicycle_rental,operator=Nextbike Polska
