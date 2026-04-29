@@ -9,6 +9,7 @@ from jinja2 import Environment, PackageLoader
 from starsep_utils import Element, GeoPoint, OverpassResult, Way, haversine
 
 import nextbike_parser as NP
+from geodesk_source import geodesk_bicycle_rentals
 from overpass_parser import fetchOverpassData
 
 __VERSION__ = "3.0.0"
@@ -253,6 +254,9 @@ def nextbike_run(
         nextbikeData = nextbikeParser.find_city(network)
     else:
         nextbikeData = nextbikeParser.find_network(network)
+    geodesk_bicycle_rentals(
+        place_name=cityName, bbox=_calculateBbox(nextbikeData), admin_level=8
+    )  # TODO: use geodesk result
     overpassResult = fetchOverpassData(
         placeName=cityName, bbox=_calculateBbox(nextbikeData), admin_level=8
     )
